@@ -1,0 +1,1654 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "market-agent-russia",
+  "created_date": "2026-11-18",
+  "base_storage": {
+    "provider": "Google Drive",
+    "folder_id": "1Y9ejj2e_TAgy0GJlrVgUbY9Z9Ab47oIy",
+    "url": "https://drive.google.com/drive/folders/1Y9ejj2e_TAgy0GJlrVgUbY9Z9Ab47oIy"
+  },
+  "scope": "navigation_and_semantic_index_not_materialized_data",
+  "inventory": {
+    "local_file": "inventory.json",
+    "file_count": 150,
+    "folder_count": 38,
+    "github_local_path": "research_data/AI_CONTEXT/inventory.json"
+  },
+  "indexed_dataset_count": 43,
+  "indexed_datasets": [
+    {
+      "dataset_id": "DRIVE:1ROHPhKgCXomav-3BeppVQS-Vx48MlphH",
+      "native_dataset_id": "RU_DIG_001",
+      "title": "Доступ домохозяйств к интернету по годам и типу местности",
+      "description": "Доля российских домохозяйств с доступом к интернету, включая широкополосный доступ и доступ с персонального компьютера.",
+      "data_file": {
+        "file_id": "1ROHPhKgCXomav-3BeppVQS-Vx48MlphH",
+        "url": "https://drive.google.com/file/d/1ROHPhKgCXomav-3BeppVQS-Vx48MlphH/view",
+        "path": "03_цифровое_поведение_населения/01_интернет_и_устройства/ru_digital_household_internet_access_2010_2024.csv",
+        "repository_path": "research_data/datasets/digital_behavior/ru_digital_household_internet_access_2010_2024.csv"
+      },
+      "topic": "digital_behavior",
+      "grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "population": "Домохозяйства, не отдельные физические лица",
+      "denominator": "Все домохозяйства в России или соответствующей местности",
+      "years": [
+        2010,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "geography": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "source": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "quality_status": "published_hse_table_reproducing_rosstat_data",
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": {
+        "file_id": "1d5PVkFabuhlG8ZjWavj0SyWTdv2B2mYf",
+        "url": "https://drive.google.com/file/d/1d5PVkFabuhlG8ZjWavj0SyWTdv2B2mYf/view",
+        "repository_path": "research_data/metadata/digital_behavior/ru_digital_household_internet_access_2010_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE",
+        "url": "https://drive.google.com/file/d/1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE/view",
+        "repository_path": "research_data/sources/digital_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1gjYBPIqzyki5TtkJMP2yndps-kPYP2Gk",
+      "native_dataset_id": "RU_DIG_002",
+      "title": "Использование интернета населением: когда-либо, за 3 месяца, ежедневно",
+      "description": "Национальные временные ряды распространённости интернета у населения России.",
+      "data_file": {
+        "file_id": "1gjYBPIqzyki5TtkJMP2yndps-kPYP2Gk",
+        "url": "https://drive.google.com/file/d/1gjYBPIqzyki5TtkJMP2yndps-kPYP2Gk/view",
+        "path": "03_цифровое_поведение_населения/01_интернет_и_устройства/ru_digital_individual_internet_usage_2013_2024.csv",
+        "repository_path": "research_data/datasets/digital_behavior/ru_digital_individual_internet_usage_2013_2024.csv"
+      },
+      "topic": "digital_behavior",
+      "grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "population": "Лица возраста 15 лет и старше, до 2016 включительно — 15–72 года",
+      "denominator": "Общая численность населения соответствующего возрастного охвата; не пользователи интернета",
+      "years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "geography": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "source": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "quality_status": "published_hse_table_reproducing_rosstat_data",
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": {
+        "file_id": "1RSarjj5GJexWxwvXheOINESCRpLtQZp7",
+        "url": "https://drive.google.com/file/d/1RSarjj5GJexWxwvXheOINESCRpLtQZp7/view",
+        "repository_path": "research_data/metadata/digital_behavior/ru_digital_individual_internet_usage_2013_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE",
+        "url": "https://drive.google.com/file/d/1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE/view",
+        "repository_path": "research_data/sources/digital_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1zMP1C852B9CTPmskEfsuyZ1Qqsdbc5Gh",
+      "native_dataset_id": "RU_DIG_003",
+      "title": "Частота интернета у городского и сельского населения",
+      "description": "Распределение населения России 15+ по регулярности пользования интернетом, включая никогда не пользовавшихся.",
+      "data_file": {
+        "file_id": "1zMP1C852B9CTPmskEfsuyZ1Qqsdbc5Gh",
+        "url": "https://drive.google.com/file/d/1zMP1C852B9CTPmskEfsuyZ1Qqsdbc5Gh/view",
+        "path": "03_цифровое_поведение_населения/01_интернет_и_устройства/ru_digital_internet_frequency_by_settlement_2023_2024.csv",
+        "repository_path": "research_data/datasets/digital_behavior/ru_digital_internet_frequency_by_settlement_2023_2024.csv"
+      },
+      "topic": "digital_behavior",
+      "grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "population": "Лица возраста 15 лет и старше",
+      "denominator": "Население соответствующего типа местности",
+      "years": [
+        2023,
+        2024
+      ],
+      "geography": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "source": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "quality_status": "published_hse_table_reproducing_rosstat_data",
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": {
+        "file_id": "1wLzccY_LJ7-XKUOlNL_hXMbjYdgRhs0f",
+        "url": "https://drive.google.com/file/d/1wLzccY_LJ7-XKUOlNL_hXMbjYdgRhs0f/view",
+        "repository_path": "research_data/metadata/digital_behavior/ru_digital_internet_frequency_by_settlement_2023_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE",
+        "url": "https://drive.google.com/file/d/1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE/view",
+        "repository_path": "research_data/sources/digital_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1W2X5JX8AqWgSZ9AA3hwqlc1XeUcA0kQf",
+      "native_dataset_id": "RU_DIG_004",
+      "title": "Устройства выхода в интернет: сотовая связь и Wi-Fi",
+      "description": "Использование смартфонов, планшетов и ноутбуков для выхода в интернет по типам связи.",
+      "data_file": {
+        "file_id": "1W2X5JX8AqWgSZ9AA3hwqlc1XeUcA0kQf",
+        "url": "https://drive.google.com/file/d/1W2X5JX8AqWgSZ9AA3hwqlc1XeUcA0kQf/view",
+        "path": "03_цифровое_поведение_населения/01_интернет_и_устройства/ru_digital_mobile_devices_for_internet_2023_2024.csv",
+        "repository_path": "research_data/datasets/digital_behavior/ru_digital_mobile_devices_for_internet_2023_2024.csv"
+      },
+      "topic": "digital_behavior",
+      "grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "population": "Лица возраста 15 лет и старше",
+      "denominator": "Все население 15 лет и старше",
+      "years": [
+        2023,
+        2024
+      ],
+      "geography": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "source": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "quality_status": "published_hse_table_reproducing_rosstat_data",
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": {
+        "file_id": "1QWfIqleUYMAQ0W6FAslYCmU-JQ2HuEVl",
+        "url": "https://drive.google.com/file/d/1QWfIqleUYMAQ0W6FAslYCmU-JQ2HuEVl/view",
+        "repository_path": "research_data/metadata/digital_behavior/ru_digital_mobile_devices_for_internet_2023_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE",
+        "url": "https://drive.google.com/file/d/1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE/view",
+        "repository_path": "research_data/sources/digital_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:15d7qcO5gzZES0LByHreE8R252JoeQ3PT",
+      "native_dataset_id": "RU_DIG_005",
+      "title": "Цели использования интернета: 31 категория",
+      "description": "Доля недавних интернет-пользователей, пользовавшихся интернетом по указанным целям, включая просмотр видео, соцсети, банкинг и использование нейросетей.",
+      "data_file": {
+        "file_id": "15d7qcO5gzZES0LByHreE8R252JoeQ3PT",
+        "url": "https://drive.google.com/file/d/15d7qcO5gzZES0LByHreE8R252JoeQ3PT/view",
+        "path": "03_цифровое_поведение_населения/02_цифровая_активность_и_навыки/ru_digital_internet_activity_purposes_2024.csv",
+        "repository_path": "research_data/datasets/digital_behavior/ru_digital_internet_activity_purposes_2024.csv"
+      },
+      "topic": "digital_behavior",
+      "grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "population": "Лица 15+ пользовавшиеся интернетом за 3 последних месяца",
+      "denominator": "Численность пользователей интернета 15+ за последние 3 месяца, не всё население",
+      "years": [
+        2024
+      ],
+      "geography": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "source": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "quality_status": "published_hse_table_reproducing_rosstat_data",
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": {
+        "file_id": "1-Xvct04pZYm3p0Et-JIAMV2uFUdW562h",
+        "url": "https://drive.google.com/file/d/1-Xvct04pZYm3p0Et-JIAMV2uFUdW562h/view",
+        "repository_path": "research_data/metadata/digital_behavior/ru_digital_internet_activity_purposes_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE",
+        "url": "https://drive.google.com/file/d/1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE/view",
+        "repository_path": "research_data/sources/digital_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:13utWM8fk48x5zbimxQdGGUYdmPUbNRi1",
+      "native_dataset_id": "RU_DIG_006",
+      "title": "Онлайн-заказы: распространённость по местности",
+      "description": "Доли населения, заказывавшего товары и услуги онлайн за последние 12 месяцев, для страны, города, села.",
+      "data_file": {
+        "file_id": "13utWM8fk48x5zbimxQdGGUYdmPUbNRi1",
+        "url": "https://drive.google.com/file/d/13utWM8fk48x5zbimxQdGGUYdmPUbNRi1/view",
+        "path": "03_цифровое_поведение_населения/03_онлайн_покупки_и_платежи/ru_digital_online_orders_penetration_2013_2024.csv",
+        "repository_path": "research_data/datasets/digital_behavior/ru_digital_online_orders_penetration_2013_2024.csv"
+      },
+      "topic": "digital_behavior",
+      "grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "population": "Лица в возрасте 15+, до 2016 года 15–72",
+      "denominator": "Население того же типа местности, не интернет-пользователи",
+      "years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "geography": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "source": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "quality_status": "published_hse_table_reproducing_rosstat_data",
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": {
+        "file_id": "1eYwRr9J1qFJEjIxUmuq3mvpFUqgkt-tv",
+        "url": "https://drive.google.com/file/d/1eYwRr9J1qFJEjIxUmuq3mvpFUqgkt-tv/view",
+        "repository_path": "research_data/metadata/digital_behavior/ru_digital_online_orders_penetration_2013_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE",
+        "url": "https://drive.google.com/file/d/1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE/view",
+        "repository_path": "research_data/sources/digital_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:18IwJnzWDIPqarAU117cm2YoE7TLRPt4K",
+      "native_dataset_id": "RU_DIG_007",
+      "title": "Онлайн-заказы по возрасту, полу, типу поселения",
+      "description": "Разрезы онлайн-покупателей по 12 возрастным группам × 3 типам местности и полу × 3 местностям. Источник публикует эти разрезы отдельно.",
+      "data_file": {
+        "file_id": "18IwJnzWDIPqarAU117cm2YoE7TLRPt4K",
+        "url": "https://drive.google.com/file/d/18IwJnzWDIPqarAU117cm2YoE7TLRPt4K/view",
+        "path": "03_цифровое_поведение_населения/03_онлайн_покупки_и_платежи/ru_digital_online_orders_by_sex_age_settlement_2024.csv",
+        "repository_path": "research_data/datasets/digital_behavior/ru_digital_online_orders_by_sex_age_settlement_2024.csv"
+      },
+      "topic": "digital_behavior",
+      "grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "population": "Лица 15+ соответствующего пола или возраста и типа местности",
+      "denominator": "Численность соответствующей возрастной/половой группы в типе местности",
+      "years": [
+        2024
+      ],
+      "geography": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "source": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "quality_status": "published_hse_table_reproducing_rosstat_data",
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": {
+        "file_id": "1mDfRhoQAjU8oup7uZZaeabJAIEClbLTJ",
+        "url": "https://drive.google.com/file/d/1mDfRhoQAjU8oup7uZZaeabJAIEClbLTJ/view",
+        "repository_path": "research_data/metadata/digital_behavior/ru_digital_online_orders_by_sex_age_settlement_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE",
+        "url": "https://drive.google.com/file/d/1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE/view",
+        "repository_path": "research_data/sources/digital_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1zG574HJkrxLjyRdS-00bTD0IXXLesPuR",
+      "native_dataset_id": "RU_DIG_008",
+      "title": "Что покупают онлайн: физические товары, контент и услуги",
+      "description": "20 категорий онлайн-покупок с аналитическими метками физических товаров, цифрового контента, услуг и смешанных категорий.",
+      "data_file": {
+        "file_id": "1zG574HJkrxLjyRdS-00bTD0IXXLesPuR",
+        "url": "https://drive.google.com/file/d/1zG574HJkrxLjyRdS-00bTD0IXXLesPuR/view",
+        "path": "03_цифровое_поведение_населения/03_онлайн_покупки_и_платежи/ru_digital_online_purchase_categories_physical_and_digital_2024.csv",
+        "repository_path": "research_data/datasets/digital_behavior/ru_digital_online_purchase_categories_physical_and_digital_2024.csv"
+      },
+      "topic": "digital_behavior",
+      "grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "population": "Лица 15+ делавшие хотя бы один онлайн-заказ за год",
+      "denominator": "Только онлайн-покупатели 15+ за последний год (НЕ всё население)",
+      "years": [
+        2024
+      ],
+      "geography": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "source": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "quality_status": "published_hse_table_reproducing_rosstat_data",
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": {
+        "file_id": "1BwylmcK2TJdRLUyLoDBusxAG5xLinS00",
+        "url": "https://drive.google.com/file/d/1BwylmcK2TJdRLUyLoDBusxAG5xLinS00/view",
+        "repository_path": "research_data/metadata/digital_behavior/ru_digital_online_purchase_categories_physical_and_digital_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE",
+        "url": "https://drive.google.com/file/d/1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE/view",
+        "repository_path": "research_data/sources/digital_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1AlKGv6kyytqsSSq3dfRISkjji6nJzMmF",
+      "native_dataset_id": "RU_DIG_009",
+      "title": "Как оплачивают онлайн-заказы: способы платежей",
+      "description": "Доли онлайн-покупателей, использовавших 9 опубликованных способов платежей; историческая динамика.",
+      "data_file": {
+        "file_id": "1AlKGv6kyytqsSSq3dfRISkjji6nJzMmF",
+        "url": "https://drive.google.com/file/d/1AlKGv6kyytqsSSq3dfRISkjji6nJzMmF/view",
+        "path": "03_цифровое_поведение_населения/03_онлайн_покупки_и_платежи/ru_digital_online_payment_methods_2013_2024.csv",
+        "repository_path": "research_data/datasets/digital_behavior/ru_digital_online_payment_methods_2013_2024.csv"
+      },
+      "topic": "digital_behavior",
+      "grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "population": "Лица 15+ заказывавшие онлайн за последние 12 месяцев (до 2016 г. 15–72)",
+      "denominator": "Онлайн-покупатели соответствующего возрастного охвата",
+      "years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "geography": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "source": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "quality_status": "published_hse_table_reproducing_rosstat_data",
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": {
+        "file_id": "1JLr-ypa20RfGQH04ft1ihzyhr1u8WIqC",
+        "url": "https://drive.google.com/file/d/1JLr-ypa20RfGQH04ft1ihzyhr1u8WIqC/view",
+        "repository_path": "research_data/metadata/digital_behavior/ru_digital_online_payment_methods_2013_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE",
+        "url": "https://drive.google.com/file/d/1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE/view",
+        "repository_path": "research_data/sources/digital_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:10Dhiatiysd4TTWz_hzPCTstXEkoTLaf5",
+      "native_dataset_id": "RU_DIG_010",
+      "title": "Распределение цифровых навыков по возрастным группам",
+      "description": "Доли населения по семи взаимоисключающим градациям владения цифровыми навыками, 8 возрастных групп включая итог.",
+      "data_file": {
+        "file_id": "10Dhiatiysd4TTWz_hzPCTstXEkoTLaf5",
+        "url": "https://drive.google.com/file/d/10Dhiatiysd4TTWz_hzPCTstXEkoTLaf5/view",
+        "path": "03_цифровое_поведение_населения/02_цифровая_активность_и_навыки/ru_digital_skills_by_age_2024.csv",
+        "repository_path": "research_data/datasets/digital_behavior/ru_digital_skills_by_age_2024.csv"
+      },
+      "topic": "digital_behavior",
+      "grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "population": "Население 15 лет и старше в соответствующей возрастной группе",
+      "denominator": "Все лица соответствующей возрастной группы",
+      "years": [
+        2024
+      ],
+      "geography": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "source": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "quality_status": "published_hse_table_reproducing_rosstat_data",
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": {
+        "file_id": "1aMGreKeOcgAeP_UVh7hTwNGUyLCNetyd",
+        "url": "https://drive.google.com/file/d/1aMGreKeOcgAeP_UVh7hTwNGUyLCNetyd/view",
+        "repository_path": "research_data/metadata/digital_behavior/ru_digital_skills_by_age_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE",
+        "url": "https://drive.google.com/file/d/1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE/view",
+        "repository_path": "research_data/sources/digital_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1x-2zC80igUjJqly4eNQr1hokUmFCKrJ2",
+      "native_dataset_id": "ru_b2b_registered_organizations_region_sector_2024",
+      "title": "Зарегистрированные организации по 96 территориальным строкам и пяти отдельным отраслевым секциям ОКВЭД2",
+      "description": "Зарегистрированные организации по 96 территориальным строкам и пяти отдельным отраслевым секциям ОКВЭД2",
+      "data_file": {
+        "file_id": "1x-2zC80igUjJqly4eNQr1hokUmFCKrJ2",
+        "url": "https://drive.google.com/file/d/1x-2zC80igUjJqly4eNQr1hokUmFCKrJ2/view",
+        "path": "04_предприятия_и_организации_B2B/01_юридические_лица_и_география/ru_b2b_registered_organizations_region_sector_2024.csv",
+        "repository_path": "research_data/datasets/b2b/ru_b2b_registered_organizations_region_sector_2024.csv"
+      },
+      "topic": "enterprises",
+      "grain": null,
+      "unit": null,
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "RU; фактические разрезы уточнять в паспорте",
+      "source": "ROS_YEARBOOK_2025",
+      "quality_status": "verified_aggregates_official_pdf_text; independent_binary_pdf_not_archived",
+      "limitations": [
+        "Подробные знаменатели, зернистость и ограничения смотреть в индивидуальном паспорте; перечень источников нельзя считать подтверждением исходного бинарного файла"
+      ],
+      "row_count": 576,
+      "metadata_file": {
+        "file_id": "13a70dRR4DG-asVNLn1s1ta7KDULoTcKe",
+        "url": "https://drive.google.com/file/d/13a70dRR4DG-asVNLn1s1ta7KDULoTcKe/view",
+        "repository_path": "research_data/metadata/b2b/ru_b2b_registered_organizations_region_sector_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm",
+        "url": "https://drive.google.com/file/d/1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm/view",
+        "repository_path": "research_data/sources/b2b_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1FhWvPpfPJUSYJqTQ_p7RHneQskElSOvp",
+      "native_dataset_id": "ru_b2b_organization_stock_by_ownership_2000_2024",
+      "title": "Организации по формам собственности и нерегулярным контрольным годам",
+      "description": "Организации по формам собственности и нерегулярным контрольным годам",
+      "data_file": {
+        "file_id": "1FhWvPpfPJUSYJqTQ_p7RHneQskElSOvp",
+        "url": "https://drive.google.com/file/d/1FhWvPpfPJUSYJqTQ_p7RHneQskElSOvp/view",
+        "path": "04_предприятия_и_организации_B2B/01_юридические_лица_и_география/ru_b2b_organization_stock_by_ownership_2000_2024.csv",
+        "repository_path": "research_data/datasets/b2b/ru_b2b_organization_stock_by_ownership_2000_2024.csv"
+      },
+      "topic": "enterprises",
+      "grain": null,
+      "unit": null,
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "RU; фактические разрезы уточнять в паспорте",
+      "source": "ROS_YEARBOOK_2025",
+      "quality_status": "official_pdf_text_transcribed",
+      "limitations": [
+        "Подробные знаменатели, зернистость и ограничения смотреть в индивидуальном паспорте; перечень источников нельзя считать подтверждением исходного бинарного файла"
+      ],
+      "row_count": 30,
+      "metadata_file": {
+        "file_id": "1Vzonnv3teCW28smayXn8AxfxDcfLrka0",
+        "url": "https://drive.google.com/file/d/1Vzonnv3teCW28smayXn8AxfxDcfLrka0/view",
+        "repository_path": "research_data/metadata/b2b/ru_b2b_organization_stock_by_ownership_2000_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm",
+        "url": "https://drive.google.com/file/d/1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm/view",
+        "repository_path": "research_data/sources/b2b_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1IhJ5G4BYF8aF_l6HiEDhLveojUtWI9RF",
+      "native_dataset_id": "ru_b2b_small_micro_industry_employment_turnover_2024",
+      "title": "Средняя численность персонала и оборот малых (включая микро) и микро предприятий по отраслям в 2024 году",
+      "description": "Средняя численность персонала и оборот малых (включая микро) и микро предприятий по отраслям в 2024 году",
+      "data_file": {
+        "file_id": "1IhJ5G4BYF8aF_l6HiEDhLveojUtWI9RF",
+        "url": "https://drive.google.com/file/d/1IhJ5G4BYF8aF_l6HiEDhLveojUtWI9RF/view",
+        "path": "04_предприятия_и_организации_B2B/02_размер_и_экономика_МСП/ru_b2b_small_micro_industry_employment_turnover_2024.csv",
+        "repository_path": "research_data/datasets/b2b/ru_b2b_small_micro_industry_employment_turnover_2024.csv"
+      },
+      "topic": "enterprises",
+      "grain": null,
+      "unit": null,
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "RU; фактические разрезы уточнять в паспорте",
+      "source": "ROS_YEARBOOK_2025",
+      "quality_status": "official_pdf_text_transcribed",
+      "limitations": [
+        "Подробные знаменатели, зернистость и ограничения смотреть в индивидуальном паспорте; перечень источников нельзя считать подтверждением исходного бинарного файла"
+      ],
+      "row_count": 80,
+      "metadata_file": {
+        "file_id": "16toM7n9bSaSuXjUYJk_pQjTRHS195_UE",
+        "url": "https://drive.google.com/file/d/16toM7n9bSaSuXjUYJk_pQjTRHS195_UE/view",
+        "repository_path": "research_data/metadata/b2b/ru_b2b_small_micro_industry_employment_turnover_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm",
+        "url": "https://drive.google.com/file/d/1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm/view",
+        "repository_path": "research_data/sources/b2b_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1W7xKv1Sm6onRSK1UnpzC8uQVdIAaq2JI",
+      "native_dataset_id": "ru_b2b_small_medium_business_metrics_2021_2023",
+      "title": "Средняя численность, среднемесячная начисленная зарплата и оборот малого/микро/среднего бизнеса за 2021–2023 гг.",
+      "description": "Средняя численность, среднемесячная начисленная зарплата и оборот малого/микро/среднего бизнеса за 2021–2023 гг.",
+      "data_file": {
+        "file_id": "1W7xKv1Sm6onRSK1UnpzC8uQVdIAaq2JI",
+        "url": "https://drive.google.com/file/d/1W7xKv1Sm6onRSK1UnpzC8uQVdIAaq2JI/view",
+        "path": "04_предприятия_и_организации_B2B/02_размер_и_экономика_МСП/ru_b2b_small_medium_business_metrics_2021_2023.csv",
+        "repository_path": "research_data/datasets/b2b/ru_b2b_small_medium_business_metrics_2021_2023.csv"
+      },
+      "topic": "enterprises",
+      "grain": null,
+      "unit": null,
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "RU; фактические разрезы уточнять в паспорте",
+      "source": "ROS_SME_2024",
+      "quality_status": "official_pdf_text_transcribed",
+      "limitations": [
+        "Подробные знаменатели, зернистость и ограничения смотреть в индивидуальном паспорте; перечень источников нельзя считать подтверждением исходного бинарного файла"
+      ],
+      "row_count": 27,
+      "metadata_file": {
+        "file_id": "1rLbnMhLfcE6ci7-sjEBdnImNi4nUcqB2",
+        "url": "https://drive.google.com/file/d/1rLbnMhLfcE6ci7-sjEBdnImNi4nUcqB2/view",
+        "repository_path": "research_data/metadata/b2b/ru_b2b_small_medium_business_metrics_2021_2023.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm",
+        "url": "https://drive.google.com/file/d/1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm/view",
+        "repository_path": "research_data/sources/b2b_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1DlLorFly0z_QGF0xNVWPyixZedkrVlQ5",
+      "native_dataset_id": "ru_b2b_active_sole_proprietors_industry_2024",
+      "title": "Фактически действующие индивидуальные предприниматели и их выручка по отраслям в 2024 г.",
+      "description": "Фактически действующие индивидуальные предприниматели и их выручка по отраслям в 2024 г.",
+      "data_file": {
+        "file_id": "1DlLorFly0z_QGF0xNVWPyixZedkrVlQ5",
+        "url": "https://drive.google.com/file/d/1DlLorFly0z_QGF0xNVWPyixZedkrVlQ5/view",
+        "path": "04_предприятия_и_организации_B2B/03_индивидуальные_предприниматели/ru_b2b_active_sole_proprietors_industry_2024.csv",
+        "repository_path": "research_data/datasets/b2b/ru_b2b_active_sole_proprietors_industry_2024.csv"
+      },
+      "topic": "enterprises",
+      "grain": null,
+      "unit": null,
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "RU; фактические разрезы уточнять в паспорте",
+      "source": "ROS_YEARBOOK_2025",
+      "quality_status": "official_pdf_text_transcribed",
+      "limitations": [
+        "Подробные знаменатели, зернистость и ограничения смотреть в индивидуальном паспорте; перечень источников нельзя считать подтверждением исходного бинарного файла"
+      ],
+      "row_count": 44,
+      "metadata_file": {
+        "file_id": "1-Eyuva47wvdu-Ls-OySnlyCEiMeTCCuA",
+        "url": "https://drive.google.com/file/d/1-Eyuva47wvdu-Ls-OySnlyCEiMeTCCuA/view",
+        "repository_path": "research_data/metadata/b2b/ru_b2b_active_sole_proprietors_industry_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm",
+        "url": "https://drive.google.com/file/d/1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm/view",
+        "repository_path": "research_data/sources/b2b_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1z4lmHxdTNN8z96ngJzPwuL8cmFuXuOEA",
+      "native_dataset_id": "ru_b2b_digital_technology_by_employee_band_2024",
+      "title": "Использование цифровых технологий в крупных и средних организациях по группам численности работников (2024)",
+      "description": "Использование цифровых технологий в крупных и средних организациях по группам численности работников (2024)",
+      "data_file": {
+        "file_id": "1z4lmHxdTNN8z96ngJzPwuL8cmFuXuOEA",
+        "url": "https://drive.google.com/file/d/1z4lmHxdTNN8z96ngJzPwuL8cmFuXuOEA/view",
+        "path": "04_предприятия_и_организации_B2B/04_цифровизация_организаций/ru_b2b_digital_technology_by_employee_band_2024.csv",
+        "repository_path": "research_data/datasets/b2b/ru_b2b_digital_technology_by_employee_band_2024.csv"
+      },
+      "topic": "enterprises",
+      "grain": null,
+      "unit": null,
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "RU; фактические разрезы уточнять в паспорте",
+      "source": "HSE_ISEK_2026",
+      "quality_status": "official_HSE_screenshot_checked",
+      "limitations": [
+        "Подробные знаменатели, зернистость и ограничения смотреть в индивидуальном паспорте; перечень источников нельзя считать подтверждением исходного бинарного файла"
+      ],
+      "row_count": 45,
+      "metadata_file": {
+        "file_id": "1P9yABILADoXE9QYTAplm7KJ9pkNfNvg7",
+        "url": "https://drive.google.com/file/d/1P9yABILADoXE9QYTAplm7KJ9pkNfNvg7/view",
+        "repository_path": "research_data/metadata/b2b/ru_b2b_digital_technology_by_employee_band_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm",
+        "url": "https://drive.google.com/file/d/1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm/view",
+        "repository_path": "research_data/sources/b2b_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1zeJAy4kQpx1KWfd_bxjse-akDO-inOo1",
+      "native_dataset_id": "ru_b2b_enterprise_turnover_selected_industries_2022_2024",
+      "title": "Оборот организаций России в целом и отдельных отраслевых групп, 2022–2024",
+      "description": "Оборот организаций России в целом и отдельных отраслевых групп, 2022–2024",
+      "data_file": {
+        "file_id": "1zeJAy4kQpx1KWfd_bxjse-akDO-inOo1",
+        "url": "https://drive.google.com/file/d/1zeJAy4kQpx1KWfd_bxjse-akDO-inOo1/view",
+        "path": "04_предприятия_и_организации_B2B/01_юридические_лица_и_география/ru_b2b_enterprise_turnover_selected_industries_2022_2024.csv",
+        "repository_path": "research_data/datasets/b2b/ru_b2b_enterprise_turnover_selected_industries_2022_2024.csv"
+      },
+      "topic": "enterprises",
+      "grain": null,
+      "unit": null,
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "RU; фактические разрезы уточнять в паспорте",
+      "source": "ROS_YEARBOOK_2025",
+      "quality_status": "official_pdf_text_transcribed_selected_rows",
+      "limitations": [
+        "Подробные знаменатели, зернистость и ограничения смотреть в индивидуальном паспорте; перечень источников нельзя считать подтверждением исходного бинарного файла"
+      ],
+      "row_count": 12,
+      "metadata_file": {
+        "file_id": "1_xMBt2zBcu97365Ji2cvcPQ4U5jR02Xf",
+        "url": "https://drive.google.com/file/d/1_xMBt2zBcu97365Ji2cvcPQ4U5jR02Xf/view",
+        "repository_path": "research_data/metadata/b2b/ru_b2b_enterprise_turnover_selected_industries_2022_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm",
+        "url": "https://drive.google.com/file/d/1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm/view",
+        "repository_path": "research_data/sources/b2b_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1IqGEJU7XaxDDUvqSfTlRCriBTOSUgfWU",
+      "native_dataset_id": "ru_b2b_firm_birth_closure_rates_two_regions_2017_2024",
+      "title": "Регистрация и официальная ликвидация организаций на 1000 организаций в двух субъектах РФ",
+      "description": "Регистрация и официальная ликвидация организаций на 1000 организаций в двух субъектах РФ",
+      "data_file": {
+        "file_id": "1IqGEJU7XaxDDUvqSfTlRCriBTOSUgfWU",
+        "url": "https://drive.google.com/file/d/1IqGEJU7XaxDDUvqSfTlRCriBTOSUgfWU/view",
+        "path": "04_предприятия_и_организации_B2B/05_демография_бизнеса/ru_b2b_firm_birth_closure_rates_two_regions_2017_2024.csv",
+        "repository_path": "research_data/datasets/b2b/ru_b2b_firm_birth_closure_rates_two_regions_2017_2024.csv"
+      },
+      "topic": "enterprises",
+      "grain": null,
+      "unit": null,
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "RU; фактические разрезы уточнять в паспорте",
+      "source": [
+        "ROS_YAKUTIA_2024",
+        "ROS_PSKOV_2024"
+      ],
+      "quality_status": "two_official_regional_pdf_tables_transcribed_national_source_not_ingested",
+      "limitations": [
+        "Подробные знаменатели, зернистость и ограничения смотреть в индивидуальном паспорте; перечень источников нельзя считать подтверждением исходного бинарного файла"
+      ],
+      "row_count": 32,
+      "metadata_file": {
+        "file_id": "1crqaIyIfWKdxTypIQ765To9fW3UULePf",
+        "url": "https://drive.google.com/file/d/1crqaIyIfWKdxTypIQ765To9fW3UULePf/view",
+        "repository_path": "research_data/metadata/b2b/ru_b2b_firm_birth_closure_rates_two_regions_2017_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm",
+        "url": "https://drive.google.com/file/d/1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm/view",
+        "repository_path": "research_data/sources/b2b_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1ITYCYdTh5OMCbgoaWAovg9blrToflt5B",
+      "native_dataset_id": "ru_b2b_small_enterprise_digital_by_industry_2024",
+      "title": "Использование шести видов цифровых технологий обследованными малыми предприятиями по видам деятельности",
+      "description": "Использование шести видов цифровых технологий обследованными малыми предприятиями по видам деятельности",
+      "data_file": {
+        "file_id": "1ITYCYdTh5OMCbgoaWAovg9blrToflt5B",
+        "url": "https://drive.google.com/file/d/1ITYCYdTh5OMCbgoaWAovg9blrToflt5B/view",
+        "path": "04_предприятия_и_организации_B2B/04_цифровизация_организаций/ru_b2b_small_enterprise_digital_by_industry_2024.csv",
+        "repository_path": "research_data/datasets/b2b/ru_b2b_small_enterprise_digital_by_industry_2024.csv"
+      },
+      "topic": "enterprises",
+      "grain": null,
+      "unit": null,
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "RU; фактические разрезы уточнять в паспорте",
+      "source": "HSE_ISEK_2026",
+      "quality_status": "official_HSE_screenshot_checked",
+      "limitations": [
+        "Подробные знаменатели, зернистость и ограничения смотреть в индивидуальном паспорте; перечень источников нельзя считать подтверждением исходного бинарного файла"
+      ],
+      "row_count": 96,
+      "metadata_file": {
+        "file_id": "1wFHEoM_KQQibzYFwdGo7Ab53RnBkj1_b",
+        "url": "https://drive.google.com/file/d/1wFHEoM_KQQibzYFwdGo7Ab53RnBkj1_b/view",
+        "repository_path": "research_data/metadata/b2b/ru_b2b_small_enterprise_digital_by_industry_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm",
+        "url": "https://drive.google.com/file/d/1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm/view",
+        "repository_path": "research_data/sources/b2b_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:15JA8jg-FDRZacwRtxjKocByHkrQpsy_b",
+      "native_dataset_id": "ru_b2b_organizations_digital_expenditure_2019_2024",
+      "title": "Затраты организаций России на внедрение и использование цифровых технологий: внутренние, внешние, всего",
+      "description": "Затраты организаций России на внедрение и использование цифровых технологий: внутренние, внешние, всего",
+      "data_file": {
+        "file_id": "15JA8jg-FDRZacwRtxjKocByHkrQpsy_b",
+        "url": "https://drive.google.com/file/d/15JA8jg-FDRZacwRtxjKocByHkrQpsy_b/view",
+        "path": "04_предприятия_и_организации_B2B/04_цифровизация_организаций/ru_b2b_organizations_digital_expenditure_2019_2024.csv",
+        "repository_path": "research_data/datasets/b2b/ru_b2b_organizations_digital_expenditure_2019_2024.csv"
+      },
+      "topic": "enterprises",
+      "grain": null,
+      "unit": null,
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "RU; фактические разрезы уточнять в паспорте",
+      "source": "HSE_ISEK_2026",
+      "quality_status": "official_HSE_screenshot_checked",
+      "limitations": [
+        "Подробные знаменатели, зернистость и ограничения смотреть в индивидуальном паспорте; перечень источников нельзя считать подтверждением исходного бинарного файла"
+      ],
+      "row_count": 18,
+      "metadata_file": {
+        "file_id": "1k-4HItdItk8E5hexnaVOhTiz6lkIldjs",
+        "url": "https://drive.google.com/file/d/1k-4HItdItk8E5hexnaVOhTiz6lkIldjs/view",
+        "repository_path": "research_data/metadata/b2b/ru_b2b_organizations_digital_expenditure_2019_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm",
+        "url": "https://drive.google.com/file/d/1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm/view",
+        "repository_path": "research_data/sources/b2b_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:13sGmL7RGfgnY1M7ND66DtrMk3hY-T0Ec",
+      "native_dataset_id": "RU_RSC_001",
+      "title": "Структура расходов по децилям обеспеченности, 2023",
+      "description": "Доля выбранных статей расходов в потребительских расходах каждого дециля",
+      "data_file": {
+        "file_id": "13sGmL7RGfgnY1M7ND66DtrMk3hY-T0Ec",
+        "url": "https://drive.google.com/file/d/13sGmL7RGfgnY1M7ND66DtrMk3hY-T0Ec/view",
+        "path": "05_потребление_условия_жизни_время/01_потребительские_расходы/ru_household_spending_deciles_2023.csv",
+        "repository_path": "research_data/datasets/consumption/ru_household_spending_deciles_2023.csv"
+      },
+      "topic": "consumption_living_time",
+      "grain": "год × дециль × категория расходов",
+      "unit": [
+        "pct"
+      ],
+      "population": null,
+      "denominator": null,
+      "years": [
+        2023
+      ],
+      "geography": [
+        "Российская Федерация"
+      ],
+      "source": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "quality_status": "transcribed_from_official_pdf_text_layer; original_binary_not_downloaded; web_screenshot_cache_miss",
+      "limitations": [
+        "Распределение по располагаемым ресурсам, не по начисленной зарплате",
+        "Категории содержат вложенные подкатегории; не суммировать",
+        "Год 2024 в данном выпуске временно не опубликован"
+      ],
+      "row_count": 100,
+      "metadata_file": {
+        "file_id": "1B7RcpK7zb69B1jiA2uiHyp3oeN9HxmWe",
+        "url": "https://drive.google.com/file/d/1B7RcpK7zb69B1jiA2uiHyp3oeN9HxmWe/view",
+        "repository_path": "research_data/metadata/consumption/ru_household_spending_deciles_2023.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ",
+        "url": "https://drive.google.com/file/d/1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ/view",
+        "repository_path": "research_data/sources/consumption_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1HWLtTf4UFUQL6a9_BFaDFy4EZJkNCOg2",
+      "native_dataset_id": "RU_RSC_002",
+      "title": "Расходы на отдых и культурные мероприятия, 2019–2023",
+      "description": "Две базы процентов: в общих потребительских расходах и внутри расходов на отдых",
+      "data_file": {
+        "file_id": "1HWLtTf4UFUQL6a9_BFaDFy4EZJkNCOg2",
+        "url": "https://drive.google.com/file/d/1HWLtTf4UFUQL6a9_BFaDFy4EZJkNCOg2/view",
+        "path": "05_потребление_условия_жизни_время/01_потребительские_расходы/ru_household_leisure_spending_2019_2023.csv",
+        "repository_path": "research_data/datasets/consumption/ru_household_leisure_spending_2019_2023.csv"
+      },
+      "topic": "consumption_living_time",
+      "grain": "год × статья расходов × база процента",
+      "unit": [
+        "pct"
+      ],
+      "population": null,
+      "denominator": null,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "geography": [
+        "Российская Федерация"
+      ],
+      "source": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "quality_status": "transcribed_from_official_pdf_text_layer; original_binary_not_downloaded; web_screenshot_cache_miss",
+      "limitations": [
+        "Год 2024 в этом выпуске отсутствует",
+        "Некоторые категории вложены",
+        "Один набор отражает проценты, а не рублей"
+      ],
+      "row_count": 60,
+      "metadata_file": {
+        "file_id": "1uAxxnVYBdZ7BNs9ytjsqUzgY8fxDBcBt",
+        "url": "https://drive.google.com/file/d/1uAxxnVYBdZ7BNs9ytjsqUzgY8fxDBcBt/view",
+        "repository_path": "research_data/metadata/consumption/ru_household_leisure_spending_2019_2023.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ",
+        "url": "https://drive.google.com/file/d/1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ/view",
+        "repository_path": "research_data/sources/consumption_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1xzWft7TMxiAV5dsXnJ4vY6bszyeLR3zS",
+      "native_dataset_id": "RU_RSC_003",
+      "title": "Благоустройство жилищного фонда, 2019–2024",
+      "description": "Удельный вес общей площади жилья с конкретным удобством, город/село",
+      "data_file": {
+        "file_id": "1xzWft7TMxiAV5dsXnJ4vY6bszyeLR3zS",
+        "url": "https://drive.google.com/file/d/1xzWft7TMxiAV5dsXnJ4vY6bszyeLR3zS/view",
+        "path": "05_потребление_условия_жизни_время/02_условия_жизни/ru_housing_stock_amenities_2019_2024.csv",
+        "repository_path": "research_data/datasets/consumption/ru_housing_stock_amenities_2019_2024.csv"
+      },
+      "topic": "consumption_living_time",
+      "grain": "год × тип жилфонда × удобство",
+      "unit": [
+        "pct"
+      ],
+      "population": null,
+      "denominator": null,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "geography": [
+        "Российская Федерация"
+      ],
+      "source": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "quality_status": "transcribed_from_official_pdf_text_layer; original_binary_not_downloaded; web_screenshot_cache_miss",
+      "limitations": [
+        "Единица наблюдения — площадь жилищного фонда, не домохозяйства",
+        "Не суммировать доли удобств, они пересекаются",
+        "Город и село — разбиение общей площади"
+      ],
+      "row_count": 144,
+      "metadata_file": {
+        "file_id": "1Dq67mgg2SoGf1BOckUNYJdPAvu4u9Lon",
+        "url": "https://drive.google.com/file/d/1Dq67mgg2SoGf1BOckUNYJdPAvu4u9Lon/view",
+        "repository_path": "research_data/metadata/consumption/ru_housing_stock_amenities_2019_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ",
+        "url": "https://drive.google.com/file/d/1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ/view",
+        "repository_path": "research_data/sources/consumption_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1Q15dyRWFQ5jUZUR3FIFa4E9Xo4wEr3La",
+      "native_dataset_id": "RU_RSC_004",
+      "title": "Качество жилищных условий по поселению, 2024",
+      "description": "Самооценка жилья и условия проживания по четырём опубликованным географическим разрезам",
+      "data_file": {
+        "file_id": "1Q15dyRWFQ5jUZUR3FIFa4E9Xo4wEr3La",
+        "url": "https://drive.google.com/file/d/1Q15dyRWFQ5jUZUR3FIFa4E9Xo4wEr3La/view",
+        "path": "05_потребление_условия_жизни_время/02_условия_жизни/ru_housing_quality_by_settlement_2024.csv",
+        "repository_path": "research_data/datasets/consumption/ru_housing_quality_by_settlement_2024.csv"
+      },
+      "topic": "consumption_living_time",
+      "grain": "вид поселения × оценка/недостаток",
+      "unit": [
+        "pct"
+      ],
+      "population": null,
+      "denominator": null,
+      "years": [
+        2024
+      ],
+      "geography": [
+        "Российская Федерация"
+      ],
+      "source": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "quality_status": "transcribed_from_official_pdf_text_layer; original_binary_not_downloaded; web_screenshot_cache_miss",
+      "limitations": [
+        "Группа городов 1 млн+ вложена в города",
+        "Проблемы не взаимоисключающие",
+        "Самооценка ≠ объективная экспертиза жилья"
+      ],
+      "row_count": 56,
+      "metadata_file": {
+        "file_id": "1uKxWJBf9qVsslqYAlFEMwzpEqjbe3LiR",
+        "url": "https://drive.google.com/file/d/1uKxWJBf9qVsslqYAlFEMwzpEqjbe3LiR/view",
+        "repository_path": "research_data/metadata/consumption/ru_housing_quality_by_settlement_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ",
+        "url": "https://drive.google.com/file/d/1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ/view",
+        "repository_path": "research_data/sources/consumption_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1h6LZCB8bkqGmIeFTaE8yyOnHZxYJEiQ6",
+      "native_dataset_id": "RU_RSC_005",
+      "title": "Благоустройство домохозяйств по составу и ресурсам, 2024",
+      "description": "Именно доля домохозяйств (не жилищного фонда) по удобствам и группам",
+      "data_file": {
+        "file_id": "1h6LZCB8bkqGmIeFTaE8yyOnHZxYJEiQ6",
+        "url": "https://drive.google.com/file/d/1h6LZCB8bkqGmIeFTaE8yyOnHZxYJEiQ6/view",
+        "path": "05_потребление_условия_жизни_время/02_условия_жизни/ru_household_amenities_by_size_income_2024.csv",
+        "repository_path": "research_data/datasets/consumption/ru_household_amenities_by_size_income_2024.csv"
+      },
+      "topic": "consumption_living_time",
+      "grain": "группа домохозяйств × удобство",
+      "unit": [
+        "pct"
+      ],
+      "population": null,
+      "denominator": null,
+      "years": [
+        2024
+      ],
+      "geography": [
+        "Российская Федерация"
+      ],
+      "source": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "quality_status": "transcribed_from_official_pdf_text_layer; original_binary_not_downloaded; web_screenshot_cache_miss",
+      "limitations": [
+        "Группы по детям пересекаются с группами по размеру домохозяйства",
+        "Газ не входит в критерий совместного благоустройства в примечании",
+        "Группы квинтилей не позволяют получить комбинации размер × доход"
+      ],
+      "row_count": 84,
+      "metadata_file": {
+        "file_id": "1tYBrW7wMOGuemg4Wc3ZREJmPDSelLUJm",
+        "url": "https://drive.google.com/file/d/1tYBrW7wMOGuemg4Wc3ZREJmPDSelLUJm/view",
+        "repository_path": "research_data/metadata/consumption/ru_household_amenities_by_size_income_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ",
+        "url": "https://drive.google.com/file/d/1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ/view",
+        "repository_path": "research_data/sources/consumption_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1UnjQ-vvoaGDzb7w7XUgpR0xstCjlCmY_",
+      "native_dataset_id": "RU_RSC_006",
+      "title": "Удовлетворённость жильём по составу и доходам, 2024",
+      "description": "Самооценка жилищных условий: все, город, село, размер, дети, квинтили",
+      "data_file": {
+        "file_id": "1UnjQ-vvoaGDzb7w7XUgpR0xstCjlCmY_",
+        "url": "https://drive.google.com/file/d/1UnjQ-vvoaGDzb7w7XUgpR0xstCjlCmY_/view",
+        "path": "05_потребление_условия_жизни_время/02_условия_жизни/ru_housing_satisfaction_household_groups_2024.csv",
+        "repository_path": "research_data/datasets/consumption/ru_housing_satisfaction_household_groups_2024.csv"
+      },
+      "topic": "consumption_living_time",
+      "grain": "группа домохозяйств × оценка жилья",
+      "unit": [
+        "pct"
+      ],
+      "population": null,
+      "denominator": null,
+      "years": [
+        2024
+      ],
+      "geography": [
+        "Российская Федерация"
+      ],
+      "source": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "quality_status": "transcribed_from_official_pdf_text_layer; original_binary_not_downloaded; web_screenshot_cache_miss",
+      "limitations": [
+        "Самооценка условий не может быть сведена к рыночному спросу",
+        "Вычислять точные доли с суммой 100 без учёта округления нельзя"
+      ],
+      "row_count": 80,
+      "metadata_file": {
+        "file_id": "1eLpMmpp6BUuA0fcf-mDa4VlgMsXskpZd",
+        "url": "https://drive.google.com/file/d/1eLpMmpp6BUuA0fcf-mDa4VlgMsXskpZd/view",
+        "repository_path": "research_data/metadata/consumption/ru_housing_satisfaction_household_groups_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ",
+        "url": "https://drive.google.com/file/d/1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ/view",
+        "repository_path": "research_data/sources/consumption_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:10Ebx35pWHwtKHnHzTDGWmcUeJ8a0gWHf",
+      "native_dataset_id": "RU_RSC_007",
+      "title": "Жилая площадь на человека по доходным квинтилям, 2024",
+      "description": "Доля домохозяйств по диапазонам жилой площади на одного проживающего и квинтилям",
+      "data_file": {
+        "file_id": "10Ebx35pWHwtKHnHzTDGWmcUeJ8a0gWHf",
+        "url": "https://drive.google.com/file/d/10Ebx35pWHwtKHnHzTDGWmcUeJ8a0gWHf/view",
+        "path": "05_потребление_условия_жизни_время/02_условия_жизни/ru_housing_area_by_income_quintile_2024.csv",
+        "repository_path": "research_data/datasets/consumption/ru_housing_area_by_income_quintile_2024.csv"
+      },
+      "topic": "consumption_living_time",
+      "grain": "доходный квинтиль × диапазон площади",
+      "unit": [
+        "pct"
+      ],
+      "population": null,
+      "denominator": null,
+      "years": [
+        2024
+      ],
+      "geography": [
+        "Российская Федерация"
+      ],
+      "source": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "quality_status": "transcribed_from_official_pdf_text_layer; original_binary_not_downloaded; web_screenshot_cache_miss",
+      "limitations": [
+        "Сегментация по денежным доходам; не идентична располагаемым ресурсам таблицы 9.21",
+        "Исключены общежития коечного типа и другое жильё",
+        "Интервалы площади не равны точным значениям"
+      ],
+      "row_count": 40,
+      "metadata_file": {
+        "file_id": "1tkM_BD3qt3xDMinHe-WIdM8kTegiPUpK",
+        "url": "https://drive.google.com/file/d/1tkM_BD3qt3xDMinHe-WIdM8kTegiPUpK/view",
+        "repository_path": "research_data/metadata/consumption/ru_housing_area_by_income_quintile_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ",
+        "url": "https://drive.google.com/file/d/1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ/view",
+        "repository_path": "research_data/sources/consumption_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:19SFEuZ5-iZM9oIWrVwaed7oWDBA2RjHi",
+      "native_dataset_id": "RU_RSC_008",
+      "title": "Отдельные результаты обследования использования времени — Кировская область и Республика Коми, 2024",
+      "description": "Выборочные показатели буднего дня по времени занятий. В отличие от остальных наборов география РЕГИОНАЛЬНАЯ; значения не описывают РФ в целом.",
+      "data_file": {
+        "file_id": "19SFEuZ5-iZM9oIWrVwaed7oWDBA2RjHi",
+        "url": "https://drive.google.com/file/d/19SFEuZ5-iZM9oIWrVwaed7oWDBA2RjHi/view",
+        "path": "05_потребление_условия_жизни_время/03_суточный_фонд_времени/ru_regional_selected_time_use_2024.csv",
+        "repository_path": "research_data/datasets/consumption/ru_regional_selected_time_use_2024.csv"
+      },
+      "topic": "consumption_living_time",
+      "grain": "область × пол × будний день × занятие",
+      "unit": [
+        "min",
+        "pct"
+      ],
+      "population": null,
+      "denominator": null,
+      "years": [
+        2024
+      ],
+      "geography": [
+        "Кировская область",
+        "Республика Коми"
+      ],
+      "source": null,
+      "quality_status": "official_web_snippets_transcription_only; full article not downloaded",
+      "limitations": [
+        "Не является общероссийской оценкой",
+        "Неполный набор видов деятельности: не проверять суммарное время против 1440 мин",
+        "Проценты от суточного времени и минуты являются разными метриками",
+        "Источник регионального уровня",
+        "Оценки Коми отмечены в публикации для буднего дня"
+      ],
+      "row_count": 14,
+      "metadata_file": {
+        "file_id": "1z3liyg51hoSrfalq4G78U1pDKM0XtbwH",
+        "url": "https://drive.google.com/file/d/1z3liyg51hoSrfalq4G78U1pDKM0XtbwH/view",
+        "repository_path": "research_data/metadata/consumption/ru_regional_selected_time_use_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ",
+        "url": "https://drive.google.com/file/d/1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ/view",
+        "repository_path": "research_data/sources/consumption_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1v5oeWG84o4jZlEU0YOoXfdUW7AxibaSN",
+      "native_dataset_id": "RU_RSC_009",
+      "title": "Общероссийские сравнительные показатели использования времени по полу, 2024",
+      "description": "Только показатели среднего по России, непосредственно опубликованные в региональных пресс-релизах Маристата. Мужчины: доли суточного фонда времени; женщины: минуты за будний день. Не образует полного суточного баланса.",
+      "data_file": {
+        "file_id": "1v5oeWG84o4jZlEU0YOoXfdUW7AxibaSN",
+        "url": "https://drive.google.com/file/d/1v5oeWG84o4jZlEU0YOoXfdUW7AxibaSN/view",
+        "path": "05_потребление_условия_жизни_время/03_суточный_фонд_времени/ru_national_gender_selected_time_use_2024.csv",
+        "repository_path": "research_data/datasets/consumption/ru_national_gender_selected_time_use_2024.csv"
+      },
+      "topic": "consumption_living_time",
+      "grain": "пол × вид занятия, отдельные опубликованные показатели",
+      "unit": [
+        "pct",
+        "min"
+      ],
+      "population": null,
+      "denominator": null,
+      "years": [
+        2024
+      ],
+      "geography": [
+        "Российская Федерация"
+      ],
+      "source": null,
+      "quality_status": "official_regional_rosstat_publications_including_national_comparators; original_binary_not_saved; web_screen_not_available",
+      "limitations": [
+        "Не все занятия; не складывать до 24 часов",
+        "Мужские доли не сопоставимы напрямую с женскими минутами, разные определения периода",
+        "Культура и досуг — подмножество свободного времени мужчин",
+        "Сумма 250+152 =402, но публикация даёт 401 для агрегата (округление); исходные числа сохраняются без исправления",
+        "Год обследования 2024; дата публикации 2026",
+        "Возраст 15+"
+      ],
+      "row_count": 10,
+      "metadata_file": {
+        "file_id": "1cS44XO2posd87uevF1U0kJHPC7AmX6zw",
+        "url": "https://drive.google.com/file/d/1cS44XO2posd87uevF1U0kJHPC7AmX6zw/view",
+        "repository_path": "research_data/metadata/consumption/ru_national_gender_selected_time_use_2024.metadata.json"
+      },
+      "source_catalog": {
+        "file_id": "1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ",
+        "url": "https://drive.google.com/file/d/1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ/view",
+        "repository_path": "research_data/sources/consumption_datasets_catalog.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1ZbLK2vAtUy3gExMXClrenRksDejrT4dA",
+      "native_dataset_id": "RU-POP-AGE-SEX-2024-ROS-001",
+      "title": "ru_population_age_sex_2024_rosstat_verified.csv",
+      "description": "Росстат. Социальное положение и уровень жизни населения России. 2025. С.29, таблица 3.4.",
+      "data_file": {
+        "file_id": "1ZbLK2vAtUy3gExMXClrenRksDejrT4dA",
+        "url": "https://drive.google.com/file/d/1ZbLK2vAtUy3gExMXClrenRksDejrT4dA/view",
+        "path": "01_демография/01_численность_пол_возраст/ru_population_age_sex_2024_rosstat_verified.csv",
+        "repository_path": "research_data/datasets/demography/ru_population_age_sex_2024_rosstat_verified.csv"
+      },
+      "topic": "demography",
+      "grain": null,
+      "unit": "persons",
+      "population": null,
+      "denominator": null,
+      "years": "2024-01-01",
+      "geography": "RU; details in source manifest",
+      "source": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "quality_status": null,
+      "limitations": [
+        "Не содержит разбивки по регионам или городскому/сельскому населению.",
+        "Нельзя точно вычислить произвольные возрастные интервалы, пересекающие группу 5–6, 7–9 или иную агрегированную группу.",
+        "Данные относятся к 1 января 2024 года, не к 2025 или 2026 году.",
+        "Возрастные группы описывают людей, а не домохозяйства или платежеспособных пользователей."
+      ],
+      "row_count": null,
+      "metadata_file": null,
+      "source_catalog": {
+        "file_id": "1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG",
+        "url": "https://drive.google.com/file/d/1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG/view",
+        "repository_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1xyfrhstL9pXanv-MkBnm0KOjFfpdX3Px",
+      "native_dataset_id": "RU-FAMILY-UNITS-U18-VPN2020-ROS-009",
+      "title": "ru_family_units_children_under18_vpn2020_rosstat.csv",
+      "description": "Росстат. Женщины и мужчины России. 2022. С. 28, табл. 1.17.",
+      "data_file": {
+        "file_id": "1xyfrhstL9pXanv-MkBnm0KOjFfpdX3Px",
+        "url": "https://drive.google.com/file/d/1xyfrhstL9pXanv-MkBnm0KOjFfpdX3Px/view",
+        "path": "01_демография/03_домохозяйства_и_семьи/ru_family_units_children_under18_vpn2020_rosstat.csv",
+        "repository_path": "research_data/datasets/demography/ru_family_units_children_under18_vpn2020_rosstat.csv"
+      },
+      "topic": "demography",
+      "grain": null,
+      "unit": "thousand family units",
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "RU; details in source manifest",
+      "source": "https://rosstat.gov.ru/storage/mediabank/Wom-Man%202022.pdf",
+      "quality_status": null,
+      "limitations": [
+        "Данные переписи ВПН-2020, не текущего 2024/2025 года.",
+        "Числа в тысячах семейных ячеек с округлением до десятых: могут давать расхождение итогов 0,1 тыс.",
+        "Семейная ячейка не равна домохозяйству; нельзя суммировать с числом домохозяйств."
+      ],
+      "row_count": null,
+      "metadata_file": null,
+      "source_catalog": {
+        "file_id": "1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG",
+        "url": "https://drive.google.com/file/d/1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG/view",
+        "repository_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1kScqDQhXJFoCtjJitTQ_Tal993RkCa0Z",
+      "native_dataset_id": "RU-VPN2020-TAB02",
+      "title": "ru_vpn2020_tab02_households_by_size_geography_settlement.csv",
+      "description": null,
+      "data_file": {
+        "file_id": "1kScqDQhXJFoCtjJitTQ_Tal993RkCa0Z",
+        "url": "https://drive.google.com/file/d/1kScqDQhXJFoCtjJitTQ_Tal993RkCa0Z/view",
+        "path": "01_демография/02_регионы_город_село/ru_vpn2020_tab02_households_by_size_geography_settlement.csv",
+        "repository_path": "research_data/datasets/demography/ru_vpn2020_tab02_households_by_size_geography_settlement.csv"
+      },
+      "topic": "demography",
+      "grain": null,
+      "unit": "число домохозяйств, лиц; средний размер",
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "Россия, округа, регионы; городское/сельское население",
+      "source": "https://rosstat.gov.ru/vpn/2020/Tom8_Chislo_i_sostav_domohozyajstv",
+      "quality_status": null,
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": null,
+      "source_catalog": {
+        "file_id": "1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG",
+        "url": "https://drive.google.com/file/d/1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG/view",
+        "repository_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1v5LLDrOuSRGcopOwze_kZzTr1sTiG5_J",
+      "native_dataset_id": "RU-VPN2020-TAB04",
+      "title": "ru_vpn2020_tab04_households_children_structure_by_region.csv",
+      "description": null,
+      "data_file": {
+        "file_id": "1v5LLDrOuSRGcopOwze_kZzTr1sTiG5_J",
+        "url": "https://drive.google.com/file/d/1v5LLDrOuSRGcopOwze_kZzTr1sTiG5_J/view",
+        "path": "01_демография/03_домохозяйства_и_семьи/ru_vpn2020_tab04_households_children_structure_by_region.csv",
+        "repository_path": null,
+        "repository_parts": [
+          "research_data/datasets/demography/parts/ru_vpn2020_tab04_households_children_structure_by_region.part_01.csv",
+          "research_data/datasets/demography/parts/ru_vpn2020_tab04_households_children_structure_by_region.part_02.csv",
+          "research_data/datasets/demography/parts/ru_vpn2020_tab04_households_children_structure_by_region.part_03.csv",
+          "research_data/datasets/demography/parts/ru_vpn2020_tab04_households_children_structure_by_region.part_04.csv",
+          "research_data/datasets/demography/parts/ru_vpn2020_tab04_households_children_structure_by_region.part_05.csv",
+          "research_data/datasets/demography/parts/ru_vpn2020_tab04_households_children_structure_by_region.part_06.csv",
+          "research_data/datasets/demography/parts/ru_vpn2020_tab04_households_children_structure_by_region.part_07.csv",
+          "research_data/datasets/demography/parts/ru_vpn2020_tab04_households_children_structure_by_region.part_08.csv"
+        ],
+        "assemble_to": "research_data/datasets/demography/ru_vpn2020_tab04_households_children_structure_by_region.csv",
+        "assemble_command": "python research_data/tools/reconstruct_large_csv.py",
+        "original_sha256": "b12866833a7a9b4f31f44c6490ad87012226d8b856fc871ce5dead628f4d663a",
+        "format_note": "Original 4,535,353-byte CSV is partitioned into eight header-bearing UTF-8 CSVs; reconstruct with tool to obtain byte-identical source."
+      },
+      "topic": "demography",
+      "grain": null,
+      "unit": "домохозяйства и лица",
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "округа и регионы; город/село отсутствует",
+      "source": "https://rosstat.gov.ru/vpn/2020/Tom8_Chislo_i_sostav_domohozyajstv",
+      "quality_status": null,
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": null,
+      "source_catalog": {
+        "file_id": "1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG",
+        "url": "https://drive.google.com/file/d/1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG/view",
+        "repository_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1khs3RsECgopSC7v9bfPiQ3VOmYfM40pf",
+      "native_dataset_id": "RU-VPN2020-TAB10",
+      "title": "ru_vpn2020_tab10_family_units_by_region.csv",
+      "description": null,
+      "data_file": {
+        "file_id": "1khs3RsECgopSC7v9bfPiQ3VOmYfM40pf",
+        "url": "https://drive.google.com/file/d/1khs3RsECgopSC7v9bfPiQ3VOmYfM40pf/view",
+        "path": "01_демография/03_домохозяйства_и_семьи/ru_vpn2020_tab10_family_units_by_region.csv",
+        "repository_path": "research_data/datasets/demography/ru_vpn2020_tab10_family_units_by_region.csv"
+      },
+      "topic": "demography",
+      "grain": null,
+      "unit": "семейные ячейки и лица",
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "округа и регионы",
+      "source": "https://rosstat.gov.ru/vpn/2020/Tom8_Chislo_i_sostav_domohozyajstv",
+      "quality_status": null,
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": null,
+      "source_catalog": {
+        "file_id": "1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG",
+        "url": "https://drive.google.com/file/d/1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG/view",
+        "repository_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1CeIHC27AGQQyPI_814ymKFXBC6dZ-Nbw",
+      "native_dataset_id": "RU-VPN2020-TAB12",
+      "title": "ru_vpn2020_tab12_family_units_by_region.csv",
+      "description": null,
+      "data_file": {
+        "file_id": "1CeIHC27AGQQyPI_814ymKFXBC6dZ-Nbw",
+        "url": "https://drive.google.com/file/d/1CeIHC27AGQQyPI_814ymKFXBC6dZ-Nbw/view",
+        "path": "01_демография/03_домохозяйства_и_семьи/ru_vpn2020_tab12_family_units_by_region.csv",
+        "repository_path": "research_data/datasets/demography/ru_vpn2020_tab12_family_units_by_region.csv"
+      },
+      "topic": "demography",
+      "grain": null,
+      "unit": "семейные ячейки и лица",
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "округа и регионы",
+      "source": "https://rosstat.gov.ru/vpn/2020/Tom8_Chislo_i_sostav_domohozyajstv",
+      "quality_status": null,
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": null,
+      "source_catalog": {
+        "file_id": "1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG",
+        "url": "https://drive.google.com/file/d/1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG/view",
+        "repository_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1aROUU7cba9hIOMRdfGe-6EaFGkXVLR_5",
+      "native_dataset_id": "RU-VPN2020-TAB13",
+      "title": "ru_vpn2020_tab13_family_units_by_child_age_threshold.csv",
+      "description": null,
+      "data_file": {
+        "file_id": "1aROUU7cba9hIOMRdfGe-6EaFGkXVLR_5",
+        "url": "https://drive.google.com/file/d/1aROUU7cba9hIOMRdfGe-6EaFGkXVLR_5/view",
+        "path": "01_демография/03_домохозяйства_и_семьи/ru_vpn2020_tab13_family_units_by_child_age_threshold.csv",
+        "repository_path": "research_data/datasets/demography/ru_vpn2020_tab13_family_units_by_child_age_threshold.csv"
+      },
+      "topic": "demography",
+      "grain": null,
+      "unit": "семейные ячейки и лица",
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "Россия, город/село",
+      "source": "https://rosstat.gov.ru/vpn/2020/Tom8_Chislo_i_sostav_domohozyajstv",
+      "quality_status": null,
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": null,
+      "source_catalog": {
+        "file_id": "1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG",
+        "url": "https://drive.google.com/file/d/1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG/view",
+        "repository_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1YfTfWIng98riS372cd2Mx5OqJYuHhWbF",
+      "native_dataset_id": "RU-VPN2020-TERRITORY-DIMENSION",
+      "title": "ru_vpn2020_territory_dimension.csv",
+      "description": null,
+      "data_file": {
+        "file_id": "1YfTfWIng98riS372cd2Mx5OqJYuHhWbF",
+        "url": "https://drive.google.com/file/d/1YfTfWIng98riS372cd2Mx5OqJYuHhWbF/view",
+        "path": "00_каталог_данных/ru_vpn2020_territory_dimension.csv",
+        "repository_path": "research_data/datasets/demography/ru_vpn2020_territory_dimension.csv"
+      },
+      "topic": "demography",
+      "grain": null,
+      "unit": null,
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "RU; details in source manifest",
+      "source": null,
+      "quality_status": null,
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": null,
+      "source_catalog": {
+        "file_id": "1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG",
+        "url": "https://drive.google.com/file/d/1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG/view",
+        "repository_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:15XuYoruXTeijZseOgQ9sLs6Wt6fAHs_9",
+      "native_dataset_id": "RU-VPN2020-REGION-PROFILE",
+      "title": "ru_vpn2020_region_profile.csv",
+      "description": null,
+      "data_file": {
+        "file_id": "15XuYoruXTeijZseOgQ9sLs6Wt6fAHs_9",
+        "url": "https://drive.google.com/file/d/15XuYoruXTeijZseOgQ9sLs6Wt6fAHs_9/view",
+        "path": "00_каталог_данных/ru_vpn2020_region_profile.csv",
+        "repository_path": "research_data/datasets/demography/ru_vpn2020_region_profile.csv"
+      },
+      "topic": "demography",
+      "grain": null,
+      "unit": null,
+      "population": null,
+      "denominator": null,
+      "years": null,
+      "geography": "RU; details in source manifest",
+      "source": null,
+      "quality_status": null,
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": null,
+      "source_catalog": {
+        "file_id": "1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG",
+        "url": "https://drive.google.com/file/d/1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG/view",
+        "repository_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:10mMMRitkBNKUW3ffS9IEtqCwWXBZad49",
+      "native_dataset_id": "RUE-20261117-001",
+      "title": "Росстат. Регионы России. Социально-экономические показатели. 2025; табл. 4.6, с. 192-193",
+      "description": null,
+      "data_file": {
+        "file_id": "10mMMRitkBNKUW3ffS9IEtqCwWXBZad49",
+        "url": "https://drive.google.com/file/d/10mMMRitkBNKUW3ffS9IEtqCwWXBZad49/view",
+        "path": "02_социально_экономические_данные/03_заработная_плата/ru_mean_monthly_wage_regions_2023_2024_rosstat2025.csv",
+        "repository_path": "research_data/datasets/socioeconomic/ru_mean_monthly_wage_regions_2023_2024_rosstat2025.csv"
+      },
+      "topic": "socioeconomics",
+      "grain": "regional_annual_mean_wage",
+      "unit": "ruble per worker per month",
+      "population": null,
+      "denominator": null,
+      "years": "2023-2024",
+      "geography": null,
+      "source": "https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf",
+      "quality_status": "source-manifest-v0.2; primary binary not archived",
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": null,
+      "source_catalog": {
+        "file_id": "1OjUobt8EFXPReT2sPO7OCSyh0GhAW9aA",
+        "url": "https://drive.google.com/file/d/1OjUobt8EFXPReT2sPO7OCSyh0GhAW9aA/view",
+        "repository_path": "research_data/sources/socioeconomic_source_manifest_v0_2.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1j-7DjUpz2mtGJ7r5jLcsoZe08pg6TkKi",
+      "native_dataset_id": "RUE-20261117-002",
+      "title": "Росстат. Труд и занятость в России. 2025; табл. 3.7, с. 92",
+      "description": null,
+      "data_file": {
+        "file_id": "1j-7DjUpz2mtGJ7r5jLcsoZe08pg6TkKi",
+        "url": "https://drive.google.com/file/d/1j-7DjUpz2mtGJ7r5jLcsoZe08pg6TkKi/view",
+        "path": "02_социально_экономические_данные/02_отрасли_и_профессии/ru_employed_by_industry_2020_2024_rosstat2025.csv",
+        "repository_path": "research_data/datasets/socioeconomic/ru_employed_by_industry_2020_2024_rosstat2025.csv"
+      },
+      "topic": "socioeconomics",
+      "grain": "national_employed_main_industry",
+      "unit": "thousand employed persons",
+      "population": null,
+      "denominator": null,
+      "years": "2020-2024",
+      "geography": null,
+      "source": "https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf",
+      "quality_status": "source-manifest-v0.2; primary binary not archived",
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": null,
+      "source_catalog": {
+        "file_id": "1OjUobt8EFXPReT2sPO7OCSyh0GhAW9aA",
+        "url": "https://drive.google.com/file/d/1OjUobt8EFXPReT2sPO7OCSyh0GhAW9aA/view",
+        "repository_path": "research_data/sources/socioeconomic_source_manifest_v0_2.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:1lczK9QszpQ6YB5gXGUSXcoX2DV1_wGeM",
+      "native_dataset_id": "RUE-20261117-003",
+      "title": "Росстат. Социальное положение и уровень жизни населения России. 2025; табл. 8.11, с. 185",
+      "description": null,
+      "data_file": {
+        "file_id": "1lczK9QszpQ6YB5gXGUSXcoX2DV1_wGeM",
+        "url": "https://drive.google.com/file/d/1lczK9QszpQ6YB5gXGUSXcoX2DV1_wGeM/view",
+        "path": "02_социально_экономические_данные/04_доходы_и_расходы/ru_household_consumption_by_category_2019_2023_rosstat2025.csv",
+        "repository_path": "research_data/datasets/socioeconomic/ru_household_consumption_by_category_2019_2023_rosstat2025.csv"
+      },
+      "topic": "socioeconomics",
+      "grain": "household_consumption_expense",
+      "unit": "ruble per household member per month",
+      "population": null,
+      "denominator": null,
+      "years": "2019-2023",
+      "geography": null,
+      "source": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "quality_status": "source-manifest-v0.2; primary binary not archived",
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": null,
+      "source_catalog": {
+        "file_id": "1OjUobt8EFXPReT2sPO7OCSyh0GhAW9aA",
+        "url": "https://drive.google.com/file/d/1OjUobt8EFXPReT2sPO7OCSyh0GhAW9aA/view",
+        "repository_path": "research_data/sources/socioeconomic_source_manifest_v0_2.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:19n8OBFqGtPNu3EGkFrRBA9qoK3ozVt9_",
+      "native_dataset_id": "RUE-20261117-004",
+      "title": "Росстат. Регионы России. Социально-экономические показатели. 2025; табл. 4.7, с. 194",
+      "description": null,
+      "data_file": {
+        "file_id": "19n8OBFqGtPNu3EGkFrRBA9qoK3ozVt9_",
+        "url": "https://drive.google.com/file/d/19n8OBFqGtPNu3EGkFrRBA9qoK3ozVt9_/view",
+        "path": "02_социально_экономические_данные/03_заработная_плата/ru_national_median_wage_april_survey_rosstat2025.csv",
+        "repository_path": "research_data/datasets/socioeconomic/ru_national_median_wage_april_survey_rosstat2025.csv"
+      },
+      "topic": "socioeconomics",
+      "grain": "national_april_median_wage",
+      "unit": "ruble per worker",
+      "population": null,
+      "denominator": null,
+      "years": "selected odd years 2017-2025",
+      "geography": null,
+      "source": "https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf",
+      "quality_status": "source-manifest-v0.2; primary binary not archived",
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": null,
+      "source_catalog": {
+        "file_id": "1OjUobt8EFXPReT2sPO7OCSyh0GhAW9aA",
+        "url": "https://drive.google.com/file/d/1OjUobt8EFXPReT2sPO7OCSyh0GhAW9aA/view",
+        "repository_path": "research_data/sources/socioeconomic_source_manifest_v0_2.json"
+      }
+    },
+    {
+      "dataset_id": "DRIVE:10MykAgcTzhmCHKEObNBq0faHHbyBDatu",
+      "native_dataset_id": "RUE-20261117-005",
+      "title": "Сопоставление с имеющимся справочником ВПН-2020",
+      "description": null,
+      "data_file": {
+        "file_id": "10MykAgcTzhmCHKEObNBq0faHHbyBDatu",
+        "url": "https://drive.google.com/file/d/10MykAgcTzhmCHKEObNBq0faHHbyBDatu/view",
+        "path": "02_социально_экономические_данные/05_исходники_и_метаданные/ru_wage_geography_vpn2020_crosswalk.csv",
+        "repository_path": "research_data/datasets/socioeconomic/ru_wage_geography_vpn2020_crosswalk.csv"
+      },
+      "topic": "socioeconomics",
+      "grain": "crosswalk",
+      "unit": "geography",
+      "population": null,
+      "denominator": null,
+      "years": "2020-vs-2024",
+      "geography": null,
+      "source": "",
+      "quality_status": "source-manifest-v0.2; primary binary not archived",
+      "limitations": [],
+      "row_count": null,
+      "metadata_file": null,
+      "source_catalog": {
+        "file_id": "1OjUobt8EFXPReT2sPO7OCSyh0GhAW9aA",
+        "url": "https://drive.google.com/file/d/1OjUobt8EFXPReT2sPO7OCSyh0GhAW9aA/view",
+        "repository_path": "research_data/sources/socioeconomic_source_manifest_v0_2.json"
+      }
+    }
+  ],
+  "subcatalogs": [
+    {
+      "name": "digital",
+      "id": "1J99ff3Ac2TMxyxb2tV3xtYfbtX6bhLpE",
+      "repository_path": "research_data/sources/digital_datasets_catalog.json"
+    },
+    {
+      "name": "b2b",
+      "id": "1rig7FD4h6umnvh8GNdz6DjYtV2SeGFXm",
+      "repository_path": "research_data/sources/b2b_datasets_catalog.json"
+    },
+    {
+      "name": "consumption_living_time",
+      "id": "1ahgPJFqA21WzjjIOA9MSvORfRigJtklZ",
+      "repository_path": "research_data/sources/consumption_datasets_catalog.json"
+    },
+    {
+      "name": "demography",
+      "id": "1t4EnHahF4A2ToEYJt4ylK8_YHYGZM_dG",
+      "repository_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+    },
+    {
+      "name": "socioeconomics",
+      "id": "1OjUobt8EFXPReT2sPO7OCSyh0GhAW9aA",
+      "repository_path": "research_data/sources/socioeconomic_source_manifest_v0_2.json"
+    },
+    {
+      "name": "external_sources",
+      "id": "1bdGvkx6eh3YF3VSJtTlojxrTBkOnl8Eg",
+      "repository_path": "research_data/sources/internet_sources_catalog.json"
+    }
+  ],
+  "metadata_interpretation": "A null means undocumented in the inspected catalog, not zero/not applicable. Follow source passports and inspect original data before computations. Do not infer compatibility of datasets from titles alone.",
+  "safety": {
+    "do_not_auto_share": true,
+    "no_credentials": true,
+    "license_rules": "Follow external catalog restrictions",
+    "mediascope_numeric_data": "not_collected"
+  },
+  "staleness_policy": "Check Google Drive ID availability and current source versions; snapshot is from 2026-11-18",
+  "github_copy": {
+    "repository": "Allishich/Agent_Allish",
+    "directory": "research_data",
+    "mode": "self_contained_data_package",
+    "target_branch": "main_via_reviewed_PR",
+    "as_of": "2026-11-19",
+    "dataset_records": 43,
+    "individual_metadata_records": 29,
+    "large_dataset_partitioned": "RU-VPN2020-TAB04",
+    "original_drive_metadata_retained": true,
+    "warning": "GitHub paths are relative to repository root. Drive ID/link is historical provenance; a local GitHub copy does not require Drive access."
+  }
+}

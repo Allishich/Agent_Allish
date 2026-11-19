@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "RU_RSC_009",
+  "filename": "ru_national_gender_selected_time_use_2024.csv",
+  "title": "Общероссийские сравнительные показатели использования времени по полу, 2024",
+  "description": "Только показатели среднего по России, непосредственно опубликованные в региональных пресс-релизах Маристата. Мужчины: доли суточного фонда времени; женщины: минуты за будний день. Не образует полного суточного баланса.",
+  "records": 10,
+  "years": [
+    2024
+  ],
+  "territories": [
+    "Российская Федерация"
+  ],
+  "unit_values": [
+    "pct",
+    "min"
+  ],
+  "source_id": [
+    "RSC-07",
+    "RSC-08"
+  ],
+  "source_urls": [
+    "https://12.rosstat.gov.ru/storage/mediabank/%D0%9F%D1%80%D0%B5%D1%81%D1%81-%D1%80%D0%B5%D0%BB%D0%B8%D0%B7_%D0%9E%D0%B4%D0%B8%D0%BD%20%D0%B4%D0%B5%D0%BD%D1%8C%20%D0%BC%D1%83%D0%B6%D1%87%D0%B8%D0%BD%D1%8B.pdf",
+    "https://12.rosstat.gov.ru/storage/mediabank/%D0%9E%D0%B4%D0%B8%D0%BD%20%D0%B4%D0%B5%D0%BD%D1%8C%20%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D1%8B.pdf"
+  ],
+  "source_status": "official_regional_rosstat_publications_including_national_comparators; original_binary_not_saved; web_screen_not_available",
+  "grain": "пол × вид занятия, отдельные опубликованные показатели",
+  "limitations": [
+    "Не все занятия; не складывать до 24 часов",
+    "Мужские доли не сопоставимы напрямую с женскими минутами, разные определения периода",
+    "Культура и досуг — подмножество свободного времени мужчин",
+    "Сумма 250+152 =402, но публикация даёт 401 для агрегата (округление); исходные числа сохраняются без исправления",
+    "Год обследования 2024; дата публикации 2026",
+    "Возраст 15+"
+  ],
+  "quality_checks": [
+    "10_finite_numeric_rows",
+    "pct_within_0_100",
+    "unit_and_denominator_explicit"
+  ],
+  "sha256": "486cfcebfc22e7fc1846eb4770c7da0d40328b5a5e6bcc6aca153bc9505d14b5",
+  "encoding": "UTF-8 BOM",
+  "delimiter": ",",
+  "web_access_date": "2026-11-17",
+  "columns": {
+    "year": "Точное определение см. в полях строки и README",
+    "territory": "Точное определение см. в полях строки и README",
+    "territory_level": "Точное определение см. в полях строки и README",
+    "population_group": "Точное определение см. в полях строки и README",
+    "dimension": "Точное определение см. в полях строки и README",
+    "category": "Точное определение см. в полях строки и README",
+    "value": "Точное определение см. в полях строки и README",
+    "unit": "Точное определение см. в полях строки и README",
+    "denominator": "Точное определение см. в полях строки и README",
+    "source_id": "Точное определение см. в полях строки и README",
+    "source_table": "Точное определение см. в полях строки и README",
+    "source_page": "Точное определение см. в полях строки и README",
+    "source_url": "Точное определение см. в полях строки и README",
+    "note": "Точное определение см. в полях строки и README"
+  }
+}

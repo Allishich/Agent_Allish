@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "ru_b2b_organizations_digital_expenditure_2019_2024",
+  "file_name": "ru_b2b_organizations_digital_expenditure_2019_2024.csv",
+  "created_on": "2026-11-17",
+  "project": "Рыночный агент — B2B Россия",
+  "country": "RU",
+  "scope": "only_Russian_Federation_and_published_region_rows",
+  "data_description": "Затраты организаций России на внедрение и использование цифровых технологий: внутренние, внешние, всего",
+  "rows": 18,
+  "sha256_csv": "fa0068ff0418ce32460e8e4b26fd7ea71e342e65fe5a49e5872d8e98db66e756",
+  "fields": [
+    "year",
+    "spending_type",
+    "metric",
+    "value",
+    "unit",
+    "population_covered",
+    "geography",
+    "source_id",
+    "source_table",
+    "source_page",
+    "source_url"
+  ],
+  "field_definitions": {
+    "year": {
+      "data_type": "integer",
+      "description": "Год наблюдения, а не дата загрузки"
+    },
+    "spending_type": {
+      "data_type": "string",
+      "description": "Состав расходов: внутренние / внешние / всего (не суммировать три группы одновременно)"
+    },
+    "metric": {
+      "data_type": "string",
+      "description": "Наименование статистического показателя с определением в паспорте"
+    },
+    "value": {
+      "data_type": "number",
+      "description": "Опубликованное числовое значение, без модельных оценок"
+    },
+    "unit": {
+      "data_type": "string",
+      "description": "Точная единица измерения, не пересчитывать без указания масштаба"
+    },
+    "population_covered": {
+      "data_type": "string",
+      "description": "Измерение или метаданные, буквальное значение по опубликованной строке"
+    },
+    "geography": {
+      "data_type": "string",
+      "description": "Российская Федерация (если нет подробного разреза)"
+    },
+    "source_id": {
+      "data_type": "string",
+      "description": "Постоянный ID конкретной официальной таблицы"
+    },
+    "source_table": {
+      "data_type": "string",
+      "description": "Номер таблицы в публикации"
+    },
+    "source_page": {
+      "data_type": "string",
+      "description": "Номер страницы печатного издания"
+    },
+    "source_url": {
+      "data_type": "string",
+      "description": "URL официальной публикации или первичного издателя"
+    }
+  },
+  "row_grain": "год × вид затрат",
+  "observation_population": "Организации России, включая малые предприятия",
+  "denominator_definition": "Миллиарды рублей текущего года, округлено до млрд",
+  "primary_key": [
+    "year",
+    "spending_type"
+  ],
+  "source_ids": [
+    "HSE_ISEK_2026"
+  ],
+  "source_table": "2.2",
+  "source_printed_pages": "31",
+  "source_urls": [
+    "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf"
+  ],
+  "source_organization": [
+    "Национальный исследовательский университет «Высшая школа экономики» (ИСИЭЗ), по данным Росстата"
+  ],
+  "processing": "Manual tabular transcription from official publishers’ indexed PDF text; HSE pages 13.1,13.31,2.2 independently visually checked via PDF screenshot; original binary PDF not deposited to Drive.",
+  "verification_status": "official_HSE_screenshot_checked",
+  "source_value_type": "billion_rub_rounded",
+  "analytic_use_cases": [
+    "Динамика затрат на корпоративную цифровизацию",
+    "Внешний рынок услуг как неполный прокси объёма спроса"
+  ],
+  "limitations": [
+    "Сумма внешних и внутренних затрат уже включена в показатель «всего»: их не прибавлять к нему",
+    "Показатель не равен объёму продаж на рынке B2B ПО или SaaS",
+    "Показатели в номинальных рублях (без дефлирования)",
+    "Внутренние затраты включают, в том числе, собственные работы организаций — не все расходы являются платежом сторонним поставщикам"
+  ],
+  "prohibited_inferences": [
+    "Do not treat registered organizations as operating enterprises",
+    "Do not sum nested size classes, sector subclasses or geographic aggregates",
+    "Do not cross-join independent marginals to invent organization counts in unknown intersections",
+    "Do not infer customers, market demand, purchases or corporate budgets solely from registry stock"
+  ],
+  "missing_value_policy": "No zero imputation; values absent in the publication are not generated.",
+  "update_policy": "Update after new official publication and source reconciliation; keep prior file + manifest version and test results.",
+  "licensing_status": "Official openly published statistical table; check provider conditions before redistribution"
+}

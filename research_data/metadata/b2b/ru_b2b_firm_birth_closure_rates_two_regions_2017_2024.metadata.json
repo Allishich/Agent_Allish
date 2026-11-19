@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "ru_b2b_firm_birth_closure_rates_two_regions_2017_2024",
+  "file_name": "ru_b2b_firm_birth_closure_rates_two_regions_2017_2024.csv",
+  "created_on": "2026-11-17",
+  "project": "Рыночный агент — B2B Россия",
+  "country": "RU",
+  "scope": "only_Russian_Federation_and_published_region_rows",
+  "data_description": "Регистрация и официальная ликвидация организаций на 1000 организаций в двух субъектах РФ",
+  "rows": 32,
+  "sha256_csv": "869d2d80338ca42956e683674da562abbf7669dffa4275199e44e411c9a45832",
+  "fields": [
+    "year",
+    "territory",
+    "territory_type",
+    "metric",
+    "value",
+    "unit",
+    "population_definition",
+    "source_id",
+    "source_table",
+    "source_page",
+    "source_url"
+  ],
+  "field_definitions": {
+    "year": {
+      "data_type": "integer",
+      "description": "Год наблюдения, а не дата загрузки"
+    },
+    "territory": {
+      "data_type": "string",
+      "description": "Точное наименование территориальной строки из официального источника"
+    },
+    "territory_type": {
+      "data_type": "string",
+      "description": "country/district/territory либо региональная строка"
+    },
+    "metric": {
+      "data_type": "string",
+      "description": "Наименование статистического показателя с определением в паспорте"
+    },
+    "value": {
+      "data_type": "number",
+      "description": "Опубликованное числовое значение, без модельных оценок"
+    },
+    "unit": {
+      "data_type": "string",
+      "description": "Точная единица измерения, не пересчитывать без указания масштаба"
+    },
+    "population_definition": {
+      "data_type": "string",
+      "description": "Кого учитывает показатель"
+    },
+    "source_id": {
+      "data_type": "string",
+      "description": "Постоянный ID конкретной официальной таблицы"
+    },
+    "source_table": {
+      "data_type": "string",
+      "description": "Номер таблицы в публикации"
+    },
+    "source_page": {
+      "data_type": "string",
+      "description": "Номер страницы печатного издания"
+    },
+    "source_url": {
+      "data_type": "string",
+      "description": "URL официальной публикации или первичного издателя"
+    }
+  },
+  "row_grain": "один из двух регионов × год (2017–2024) × тип события",
+  "observation_population": "Зарегистрированные организации регионов, кроме филиалов, представительств и обособленных подразделений",
+  "denominator_definition": "Число регистраций / ликвидаций в год на 1000 организаций (статистический коэффициент)",
+  "primary_key": [
+    "year",
+    "territory",
+    "metric"
+  ],
+  "source_ids": [
+    "ROS_YAKUTIA_2024",
+    "ROS_PSKOV_2024"
+  ],
+  "source_table": "«Коэффициенты демографии организаций»; «Показатели демографии организаций по видам деятельности», строка «Всего»",
+  "source_printed_pages": "1–2",
+  "source_urls": [
+    "https://14.rosstat.gov.ru/storage/mediabank/%D0%9A%D0%9E%D0%AD%D0%A4%D0%A4%D0%98%D0%A6%D0%98%D0%95%D0%9D%D0%A2%D0%AB%20%D0%94%D0%95%D0%9C%D0%9E%D0%93%D0%A0%D0%90%D0%A4%D0%98%D0%98%20%D0%9E%D0%A0%D0%93%D0%90%D0%9D%D0%98%D0%97%D0%90%D0%A6%D0%98%D0%99%202024.pdf",
+    "https://60.rosstat.gov.ru/storage/mediabank/OSP250210_1.pdf"
+  ],
+  "source_organization": [
+    "Территориальный орган Росстата по Республике Саха (Якутия)",
+    "Территориальный орган Росстата по Псковской области"
+  ],
+  "processing": "Manual tabular transcription from official publishers’ indexed PDF text; HSE pages 13.1,13.31,2.2 independently visually checked via PDF screenshot; original binary PDF not deposited to Drive.",
+  "verification_status": "two_official_regional_pdf_tables_transcribed_national_source_not_ingested",
+  "source_value_type": "events_per_1000_organizations",
+  "analytic_use_cases": [
+    "Региональные примеры динамики рождения и закрытия компаний",
+    "Методологическая заготовка для национального массива"
+  ],
+  "limitations": [
+    "Только Якутия и Псковская область; НЕ национальный ряд, не репрезентативная выборка России",
+    "Коэффициенты нельзя умножать на число зарегистрированных организаций на конец года для получения точного числа событий без правильного среднегодового знаменателя",
+    "Дефис / отсутствующая запись не преобразовывать в ноль; датасет содержит только опубликованные строки «Всего»"
+  ],
+  "prohibited_inferences": [
+    "Do not treat registered organizations as operating enterprises",
+    "Do not sum nested size classes, sector subclasses or geographic aggregates",
+    "Do not cross-join independent marginals to invent organization counts in unknown intersections",
+    "Do not infer customers, market demand, purchases or corporate budgets solely from registry stock"
+  ],
+  "missing_value_policy": "No zero imputation; values absent in the publication are not generated.",
+  "update_policy": "Update after new official publication and source reconciliation; keep prior file + manifest version and test results.",
+  "licensing_status": "Official openly published statistical table; check provider conditions before redistribution"
+}

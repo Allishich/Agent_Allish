@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "RU_DIG_010",
+  "title_ru": "Распределение цифровых навыков по возрастным группам",
+  "data_filename": "ru_digital_skills_by_age_2024.csv",
+  "description_ru": "Доли населения по семи взаимоисключающим градациям владения цифровыми навыками, 8 возрастных групп включая итог.",
+  "data_grain": "одна строка — один показатель × год × тип разреза × категория",
+  "unit": "percent",
+  "value_column": "value_pct",
+  "geographic_coverage": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+  "population_universe_ru": "Население 15 лет и старше в соответствующей возрастной группе",
+  "denominator_rule_ru": "Все лица соответствующей возрастной группы",
+  "reference_years": [
+    2024
+  ],
+  "time_coverage_ru": "2024",
+  "dimensions": [
+    "year",
+    "territory",
+    "dimension",
+    "segment",
+    "metric_code"
+  ],
+  "measurement_window_ru": "Интегральная шкала навыков по методологии Евростата, расчёты ИСИЭЗ НИУ ВШЭ по данным Росстата.",
+  "publisher": "Институт статистических исследований и экономики знаний НИУ ВШЭ",
+  "underlying_data_owner": "Росстат, если не оговорено иное в таблице HSE",
+  "source_id": "HSE_DIGITAL_2026",
+  "source_publication_ru": "Индикаторы цифровой экономики: 2026. Статистический сборник. ИСИЭЗ НИУ ВШЭ. 2026. DOI 10.17323/978-5-7598-3047-4.",
+  "official_source_document_url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+  "original_rosstat_dataset_catalog_url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-five",
+  "source_tables_pages": [
+    {
+      "table": "10.9",
+      "printed_page": 165
+    }
+  ],
+  "ingest_method": "аккуратная структурированная транскрипция опубликованных таблиц/графиков PDF с визуальной сверкой страниц, без автоматического скачивания исходной таблицы Росстата",
+  "provenance_level": "published_hse_table_reproducing_rosstat_data",
+  "original_binary_status": "внешний PDF доступен по постоянной ссылке; оригинальные бинарные CSV Росстата на диск не выгружались",
+  "record_count": 56,
+  "row_column_names": [
+    "year",
+    "territory",
+    "dimension",
+    "segment",
+    "metric_code",
+    "metric_label_ru",
+    "value_pct",
+    "denominator_ru",
+    "measurement_window",
+    "source_id",
+    "source_table",
+    "source_page",
+    "source_url",
+    "note"
+  ],
+  "csv_encoding": "UTF-8 with BOM",
+  "csv_delimiter": ",",
+  "sha256": "3ff2c84eaf615f866b6a01960bc4d963ed1e13c224daacd617680b7d5e20d170",
+  "limits_and_avoid_ru": [
+    "Шкала обновлена в 2021 году; старые ряды не сопоставлять без поправки методики.",
+    "Возрастные группы здесь шире, чем в таблице 15.3 об онлайн-покупках.",
+    "Значение 0.02% для 75+ выше базового взято с сноской, не округлять до 0.0.",
+    "Неиспользование интернета и отсутствие цифровых навыков — разные категории."
+  ],
+  "qa_checks_ru": [
+    "Проверка суммы семи долей на 100% с округлением"
+  ],
+  "files_are_derived": "yes, transcription",
+  "classification": "digital_skills",
+  "additional_metadata": {},
+  "compiled_date": "2026-11-17",
+  "license_note": "Для первоисточника сохраняется ссылка и DOI; не заявляется право на свободное распространение оригинального PDF"
+}

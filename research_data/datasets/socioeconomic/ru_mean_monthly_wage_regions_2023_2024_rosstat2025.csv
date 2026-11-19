@@ -1,0 +1,193 @@
+﻿year,geography_source,geography_normalized,geography_type,partition_additive,value_rub_month_gross_mean,period,source_id,source_table,source_url,data_status
+2023,Российская Федерация,Российская Федерация,country,no,74854,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Российская Федерация,Российская Федерация,country,no,89069,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Центральный федеральный округ,Центральный федеральный округ,district,no,94239,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Центральный федеральный округ,Центральный федеральный округ,district,no,112225,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Белгородская область,Белгородская область,region,yes,54495,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Белгородская область,Белгородская область,region,yes,65822,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Брянская область,Брянская область,region,yes,48080,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Брянская область,Брянская область,region,yes,58487,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Владимирская область,Владимирская область,region,yes,53286,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Владимирская область,Владимирская область,region,yes,64721,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Воронежская область,Воронежская область,region,yes,53332,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Воронежская область,Воронежская область,region,yes,63353,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Ивановская область,Ивановская область,region,yes,41929,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Ивановская область,Ивановская область,region,yes,49723,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Калужская область,Калужская область,region,yes,61588,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Калужская область,Калужская область,region,yes,74197,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Костромская область,Костромская область,region,yes,46730,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Костромская область,Костромская область,region,yes,56898,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Курская область,Курская область,region,yes,53624,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Курская область,Курская область,region,yes,65127,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Липецкая область,Липецкая область,region,yes,54044,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Липецкая область,Липецкая область,region,yes,67750,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Московская область,Московская область,region,yes,83195,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Московская область,Московская область,region,yes,99205,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Орловская область,Орловская область,region,yes,47382,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Орловская область,Орловская область,region,yes,56134,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Рязанская область,Рязанская область,region,yes,53270,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Рязанская область,Рязанская область,region,yes,64455,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Смоленская область,Смоленская область,region,yes,49185,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Смоленская область,Смоленская область,region,yes,60415,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Тамбовская область,Тамбовская область,region,yes,45742,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Тамбовская область,Тамбовская область,region,yes,55168,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Тверская область,Тверская область,region,yes,53778,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Тверская область,Тверская область,region,yes,64706,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Тульская область,Тульская область,region,yes,60464,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Тульская область,Тульская область,region,yes,73868,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Ярославская область,Ярославская область,region,yes,55536,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Ярославская область,Ярославская область,region,yes,66006,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,г. Москва,г. Москва,region,yes,138882,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,г. Москва,г. Москва,region,yes,162572,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Северо-Западный федеральный округ,Северо-Западный федеральный округ,district,no,81424,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Северо-Западный федеральный округ,Северо-Западный федеральный округ,district,no,94802,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Карелия,Республика Карелия,region,yes,64779,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Карелия,Республика Карелия,region,yes,74210,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Коми,Республика Коми,region,yes,77601,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Коми,Республика Коми,region,yes,88854,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Архангельская область,Архангельская область,overlap,no,76368,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Архангельская область,Архангельская область,overlap,no,86404,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Ненецкий автономный округ,Ненецкий автономный округ,region,yes,119386,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Ненецкий автономный округ,Ненецкий автономный округ,region,yes,135206,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Архангельская область без автономного округа,Архангельская область без автономного округа,component,yes,72540,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Архангельская область без автономного округа,Архангельская область без автономного округа,component,yes,82026,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Вологодская область,Вологодская область,region,yes,58939,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Вологодская область,Вологодская область,region,yes,71493,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Калининградская область,Калининградская область,region,yes,54739,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Калининградская область,Калининградская область,region,yes,66608,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Ленинградская область,Ленинградская область,region,yes,68105,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Ленинградская область,Ленинградская область,region,yes,82026,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Мурманская область,Мурманская область,region,yes,98818,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Мурманская область,Мурманская область,region,yes,114277,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Новгородская область,Новгородская область,region,yes,53188,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Новгородская область,Новгородская область,region,yes,62975,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Псковская область,Псковская область,region,yes,44853,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Псковская область,Псковская область,region,yes,54986,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,г. Санкт-Петербург,г. Санкт-Петербург,region,yes,96232,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,г. Санкт-Петербург,г. Санкт-Петербург,region,yes,110473,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Южный федеральный округ,Южный федеральный округ,district,no,53432,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Южный федеральный округ,Южный федеральный округ,district,no,63870,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Адыгея,Республика Адыгея,region,yes,46431,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Адыгея,Республика Адыгея,region,yes,56301,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Калмыкия,Республика Калмыкия,region,yes,42151,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Калмыкия,Республика Калмыкия,region,yes,49162,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Крым,Республика Крым,region,yes,47325,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Крым,Республика Крым,region,yes,55310,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Краснодарский край,Краснодарский край,region,yes,58256,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Краснодарский край,Краснодарский край,region,yes,70410,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Астраханская область,Астраханская область,region,yes,53964,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Астраханская область,Астраханская область,region,yes,62551,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Волгоградская область,Волгоградская область,region,yes,51833,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Волгоградская область,Волгоградская область,region,yes,61254,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Ростовская область,Ростовская область,region,yes,52100,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Ростовская область,Ростовская область,region,yes,62482,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,г. Севастополь,г. Севастополь,region,yes,47638,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,г. Севастополь,г. Севастополь,region,yes,56942,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Северо-Кавказский федеральный округ,Северо-Кавказский федеральный округ,district,no,42091,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Северо-Кавказский федеральный округ,Северо-Кавказский федеральный округ,district,no,49460,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Дагестан,Республика Дагестан,region,yes,39054,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Дагестан,Республика Дагестан,region,yes,44639,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Ингушетия,Республика Ингушетия,region,yes,35825,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Ингушетия,Республика Ингушетия,region,yes,40588,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Кабардино-Балкарская Республика,Кабардино-Балкарская Республика,region,yes,39988,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Кабардино-Балкарская Республика,Кабардино-Балкарская Республика,region,yes,46507,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Карачаево-Черкесская Республика,Карачаево-Черкесская Республика,region,yes,40388,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Карачаево-Черкесская Республика,Карачаево-Черкесская Республика,region,yes,48489,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Северная Осетия – Алания,Республика Северная Осетия - Алания,region,yes,41059,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Северная Осетия – Алания,Республика Северная Осетия - Алания,region,yes,48163,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Чеченская Республика,Чеченская Республика,region,yes,37589,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Чеченская Республика,Чеченская Республика,region,yes,41840,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Ставропольский край,Ставропольский край,region,yes,47054,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Ставропольский край,Ставропольский край,region,yes,57183,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Приволжский федеральный округ,Приволжский федеральный округ,district,no,55724,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Приволжский федеральный округ,Приволжский федеральный округ,district,no,67589,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Башкортостан,Республика Башкортостан,region,yes,56974,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Башкортостан,Республика Башкортостан,region,yes,67579,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Марий Эл,Республика Марий Эл,region,yes,48997,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Марий Эл,Республика Марий Эл,region,yes,60998,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Мордовия,Республика Мордовия,region,yes,46406,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Мордовия,Республика Мордовия,region,yes,57133,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Татарстан,Республика Татарстан,region,yes,61894,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Татарстан,Республика Татарстан,region,yes,75764,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Удмуртская Республика,Удмуртская Республика,region,yes,53721,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Удмуртская Республика,Удмуртская Республика,region,yes,67561,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Чувашская Республика,Чувашская Республика,region,yes,50263,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Чувашская Республика,Чувашская Республика,region,yes,60844,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Пермский край,Пермский край,region,yes,62393,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Пермский край,Пермский край,region,yes,74845,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Кировская область,Кировская область,region,yes,48258,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Кировская область,Кировская область,region,yes,58255,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Нижегородская область,Нижегородская область,region,yes,56526,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Нижегородская область,Нижегородская область,region,yes,69546,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Оренбургская область,Оренбургская область,region,yes,53119,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Оренбургская область,Оренбургская область,region,yes,64059,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Пензенская область,Пензенская область,region,yes,48167,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Пензенская область,Пензенская область,region,yes,57468,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Самарская область,Самарская область,region,yes,58063,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Самарская область,Самарская область,region,yes,70393,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Саратовская область,Саратовская область,region,yes,49995,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Саратовская область,Саратовская область,region,yes,58626,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Ульяновская область,Ульяновская область,region,yes,48890,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Ульяновская область,Ульяновская область,region,yes,59743,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Уральский федеральный округ,Уральский федеральный округ,district,no,77889,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Уральский федеральный округ,Уральский федеральный округ,district,no,92104,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Курганская область,Курганская область,region,yes,50938,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Курганская область,Курганская область,region,yes,63209,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Свердловская область,Свердловская область,region,yes,64997,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Свердловская область,Свердловская область,region,yes,79079,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Тюменская область,Тюменская область,overlap,no,105981,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Тюменская область,Тюменская область,overlap,no,121907,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Ханты-Мансийский автономный округ – Югра,Ханты-Мансийский автономный округ - Югра,region,yes,108148,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Ханты-Мансийский автономный округ – Югра,Ханты-Мансийский автономный округ - Югра,region,yes,124744,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Ямало-Ненецкий автономный округ,Ямало-Ненецкий автономный округ,region,yes,145050,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Ямало-Ненецкий автономный округ,Ямало-Ненецкий автономный округ,region,yes,163879,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Тюменская область без автономных округов,Тюменская область без автономных округов,component,yes,71184,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Тюменская область без автономных округов,Тюменская область без автономных округов,component,yes,84331,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Челябинская область,Челябинская область,region,yes,58424,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Челябинская область,Челябинская область,region,yes,70946,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Сибирский федеральный округ,Сибирский федеральный округ,district,no,66423,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Сибирский федеральный округ,Сибирский федеральный округ,district,no,78219,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Алтай,Республика Алтай,region,yes,52450,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Алтай,Республика Алтай,region,yes,63529,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Тыва,Республика Тыва,region,yes,57793,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Тыва,Республика Тыва,region,yes,67541,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Хакасия,Республика Хакасия,region,yes,62015,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Хакасия,Республика Хакасия,region,yes,71616,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Алтайский край,Алтайский край,region,yes,46137,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Алтайский край,Алтайский край,region,yes,55281,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Красноярский край,Красноярский край,region,yes,81056,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Красноярский край,Красноярский край,region,yes,95026,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Иркутская область,Иркутская область,region,yes,74257,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Иркутская область,Иркутская область,region,yes,87154,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Кемеровская область,Кемеровская область - Кузбасс,region,yes,67239,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Кемеровская область,Кемеровская область - Кузбасс,region,yes,78202,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Новосибирская область,Новосибирская область,region,yes,64189,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Новосибирская область,Новосибирская область,region,yes,76770,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Омская область,Омская область,region,yes,55227,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Омская область,Омская область,region,yes,65404,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Томская область,Томская область,region,yes,67744,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Томская область,Томская область,region,yes,78524,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Дальневосточный федеральный округ,Дальневосточный федеральный округ,district,no,85449,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Дальневосточный федеральный округ,Дальневосточный федеральный округ,district,no,100619,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Бурятия,Республика Бурятия,region,yes,61565,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Бурятия,Республика Бурятия,region,yes,72926,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Республика Саха (Якутия),Республика Саха (Якутия),region,yes,110230,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Республика Саха (Якутия),Республика Саха (Якутия),region,yes,126868,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Забайкальский край,Забайкальский край,region,yes,69830,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Забайкальский край,Забайкальский край,region,yes,85190,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Камчатский край,Камчатский край,region,yes,119563,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Камчатский край,Камчатский край,region,yes,132710,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Приморский край,Приморский край,region,yes,73960,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Приморский край,Приморский край,region,yes,88920,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Хабаровский край,Хабаровский край,region,yes,75227,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Хабаровский край,Хабаровский край,region,yes,90296,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Амурская область,Амурская область,region,yes,72999,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Амурская область,Амурская область,region,yes,87040,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Магаданская область,Магаданская область,region,yes,134646,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Магаданская область,Магаданская область,region,yes,156881,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Сахалинская область,Сахалинская область,region,yes,114361,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Сахалинская область,Сахалинская область,region,yes,130360,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Еврейская автономная область,Еврейская автономная область,region,yes,65815,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Еврейская автономная область,Еврейская автономная область,region,yes,78795,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2023,Чукотский автономный округ,Чукотский автономный округ,region,yes,159071,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription
+2024,Чукотский автономный округ,Чукотский автономный округ,region,yes,188561,annual,ROS-RG-2025-T4.6,4.6,https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf,direct_pdf_table_transcription

@@ -1,0 +1,81 @@
+﻿year,industry_code,industry_label,industry_is_subset,size_scope,metric,value,unit,geography,source_id,source_table,source_page,source_url
+2024,TOTAL,Всего,no,small_including_micro,average_headcount,10894.1,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,TOTAL,Всего,no,small_including_micro,turnover,78636.5,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,TOTAL,Всего,no,micro_subset_small,average_headcount,5482.2,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,TOTAL,Всего,no,micro_subset_small,turnover,37213.1,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,A,"Сельское хозяйство, лесное хозяйство, рыболовство",no,small_including_micro,average_headcount,364.8,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,A,"Сельское хозяйство, лесное хозяйство, рыболовство",no,small_including_micro,turnover,1747.2,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,A,"Сельское хозяйство, лесное хозяйство, рыболовство",no,micro_subset_small,average_headcount,103.7,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,A,"Сельское хозяйство, лесное хозяйство, рыболовство",no,micro_subset_small,turnover,528.1,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,B,Добыча полезных ископаемых,no,small_including_micro,average_headcount,74.1,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,B,Добыча полезных ископаемых,no,small_including_micro,turnover,522.9,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,B,Добыча полезных ископаемых,no,micro_subset_small,average_headcount,30.1,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,B,Добыча полезных ископаемых,no,micro_subset_small,turnover,196.5,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,C,Обрабатывающие производства,no,small_including_micro,average_headcount,1847.8,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,C,Обрабатывающие производства,no,small_including_micro,turnover,12699.0,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,C,Обрабатывающие производства,no,micro_subset_small,average_headcount,722.0,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,C,Обрабатывающие производства,no,micro_subset_small,turnover,4813.1,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,D,"Электроэнергия, газ, пар",no,small_including_micro,average_headcount,94.6,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,D,"Электроэнергия, газ, пар",no,small_including_micro,turnover,454.4,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,D,"Электроэнергия, газ, пар",no,micro_subset_small,average_headcount,35.8,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,D,"Электроэнергия, газ, пар",no,micro_subset_small,turnover,182.8,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,E,"Водоснабжение, отходы",no,small_including_micro,average_headcount,104.0,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,E,"Водоснабжение, отходы",no,small_including_micro,turnover,683.2,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,E,"Водоснабжение, отходы",no,micro_subset_small,average_headcount,42.4,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,E,"Водоснабжение, отходы",no,micro_subset_small,turnover,302.1,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,F,Строительство,no,small_including_micro,average_headcount,1308.3,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,F,Строительство,no,small_including_micro,turnover,8995.4,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,F,Строительство,no,micro_subset_small,average_headcount,740.5,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,F,Строительство,no,micro_subset_small,turnover,5112.8,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,G,Торговля,no,small_including_micro,average_headcount,2345.2,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,G,Торговля,no,small_including_micro,turnover,33459.3,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,G,Торговля,no,micro_subset_small,average_headcount,1315.7,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,G,Торговля,no,micro_subset_small,turnover,15355.5,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,H,Транспортировка и хранение,no,small_including_micro,average_headcount,720.0,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,H,Транспортировка и хранение,no,small_including_micro,turnover,5248.9,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,H,Транспортировка и хранение,no,micro_subset_small,average_headcount,352.2,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,H,Транспортировка и хранение,no,micro_subset_small,turnover,2720.2,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,I,Гостиницы и общественное питание,no,small_including_micro,average_headcount,465.2,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,I,Гостиницы и общественное питание,no,small_including_micro,turnover,1828.0,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,I,Гостиницы и общественное питание,no,micro_subset_small,average_headcount,230.2,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,I,Гостиницы и общественное питание,no,micro_subset_small,turnover,991.2,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,J,Информация и связь,no,small_including_micro,average_headcount,524.8,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,J,Информация и связь,no,small_including_micro,turnover,2503.7,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,J,Информация и связь,no,micro_subset_small,average_headcount,255.6,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,J,Информация и связь,no,micro_subset_small,turnover,1051.4,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,J61,Телекоммуникации (подмножество J),yes,small_including_micro,average_headcount,50.3,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,J61,Телекоммуникации (подмножество J),yes,small_including_micro,turnover,259.2,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,J61,Телекоммуникации (подмножество J),yes,micro_subset_small,average_headcount,21.4,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,J61,Телекоммуникации (подмножество J),yes,micro_subset_small,turnover,111.4,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,L,Недвижимость,no,small_including_micro,average_headcount,807.0,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,L,Недвижимость,no,small_including_micro,turnover,3087.5,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,L,Недвижимость,no,micro_subset_small,average_headcount,459.3,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,L,Недвижимость,no,micro_subset_small,turnover,1874.1,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,M,"Профессиональная, научная и техническая деятельность",no,small_including_micro,average_headcount,792.3,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,M,"Профессиональная, научная и техническая деятельность",no,small_including_micro,turnover,3342.1,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,M,"Профессиональная, научная и техническая деятельность",no,micro_subset_small,average_headcount,484.0,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,M,"Профессиональная, научная и техническая деятельность",no,micro_subset_small,turnover,1827.3,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,M72,НИОКР (подмножество M),yes,small_including_micro,average_headcount,96.0,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,M72,НИОКР (подмножество M),yes,small_including_micro,turnover,447.7,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,M72,НИОКР (подмножество M),yes,micro_subset_small,average_headcount,48.0,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,M72,НИОКР (подмножество M),yes,micro_subset_small,turnover,198.1,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,N,Административная деятельность и вспомогательные услуги,no,small_including_micro,average_headcount,684.5,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,N,Административная деятельность и вспомогательные услуги,no,small_including_micro,turnover,1996.3,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,N,Административная деятельность и вспомогательные услуги,no,micro_subset_small,average_headcount,294.1,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,N,Административная деятельность и вспомогательные услуги,no,micro_subset_small,turnover,1130.9,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,N79,Туристические агентства (подмножество N),yes,small_including_micro,average_headcount,49.0,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,N79,Туристические агентства (подмножество N),yes,small_including_micro,turnover,220.0,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,N79,Туристические агентства (подмножество N),yes,micro_subset_small,average_headcount,37.6,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,N79,Туристические агентства (подмножество N),yes,micro_subset_small,turnover,167.3,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,P,Образование,no,small_including_micro,average_headcount,26.6,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,P,Образование,no,small_including_micro,turnover,66.9,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,P,Образование,no,micro_subset_small,average_headcount,20.0,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,P,Образование,no,micro_subset_small,turnover,49.1,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,Q,Здравоохранение и социальные услуги,no,small_including_micro,average_headcount,472.8,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,Q,Здравоохранение и социальные услуги,no,small_including_micro,turnover,1266.5,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,Q,Здравоохранение и социальные услуги,no,micro_subset_small,average_headcount,240.9,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,Q,Здравоохранение и социальные услуги,no,micro_subset_small,turnover,611.8,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,R,"Культура, спорт, досуг",no,small_including_micro,average_headcount,75.3,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,R,"Культура, спорт, досуг",no,small_including_micro,turnover,390.3,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,R,"Культура, спорт, досуг",no,micro_subset_small,average_headcount,45.0,thousand_persons,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,R,"Культура, спорт, досуг",no,micro_subset_small,turnover,255.5,billion_rub_nominal,Российская Федерация,B2B-RU-003,15.17,349,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf

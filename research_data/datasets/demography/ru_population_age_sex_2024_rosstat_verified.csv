@@ -1,0 +1,25 @@
+﻿страна;дата_наблюдения;группа_возраста;возраст_от_лет;возраст_до_лет;население_чел;мужчины_чел;женщины_чел;источник_id;исходная_таблица;страница;url_источника
+Россия;2024-01-01;0;0;0;1261279;650025;611254;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;1;1;1;1302176;668910;633266;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;2;2;2;1391640;716309;675331;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;3;3;3;1427251;734740;692511;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;4;4;4;1481921;762553;719368;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;5–6;5;6;3295806;1697845;1597961;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;7–9;7;9;5778072;2971702;2806370;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;10–14;10;14;9184672;4724008;4460664;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;15–17;15;17;4836180;2481852;2354328;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;18–19;18;19;3006916;1536367;1470549;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;20–24;20;24;7439208;3850048;3589160;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;25–29;25;29;7382923;3749371;3633552;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;30–34;30;34;10112624;5022282;5090342;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;35–39;35;39;12786223;6291538;6494685;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;40–44;40;44;11744077;5683625;6060452;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;45–49;45;49;10483185;4977371;5505814;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;50–54;50;54;9390261;4412102;4978159;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;55–59;55;59;8700007;3938721;4761286;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;60–64;60;64;10152116;4336949;5815167;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;65–69;65;69;9233543;3666166;5567377;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;70–74;70;74;7146224;2583920;4562304;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;75–79;75;79;3757256;1237562;2519694;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;80–84;80;84;2548615;681465;1867150;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+Россия;2024-01-01;85+;85;;2308614;541922;1766692;ROS-001;Росстат 2025 / таблица 3.4;29;https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf

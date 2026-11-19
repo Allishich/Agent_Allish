@@ -1,0 +1,184 @@
+{
+  "schema_version": "0.1.0",
+  "as_of": "2026-11-17",
+  "project_id": "market-agent-russia",
+  "scope": "12 ресурсов; аудит официальных сайтов, интерфейсов, документации и ограниченной публичной проверки",
+  "environment_constraint": "HTTP GET из локального контейнера не удался из-за отсутствия DNS/сетевого доступа; это ограничение среды проверки, не сбой источника. Веб-инструмент проверил отдельные страницы и два машиночитаемых ответа.",
+  "all_integrations_implemented": false,
+  "tests": [
+    {
+      "source_id": "RU_SRC_001",
+      "name": "Росстат — открытые данные",
+      "docs": "официальная страница прочитана",
+      "endpoint_test": "не проводился",
+      "data_test": "не проводился",
+      "evidence_urls": [
+        "https://rosstat.gov.ru/opendata/",
+        "https://rosstat.gov.ru/opendata?page=1"
+      ],
+      "integrated": false,
+      "reviewed_at": "2026-11-17"
+    },
+    {
+      "source_id": "RU_SRC_002",
+      "name": "ЕМИСС — федеральная статистика",
+      "docs": "официальное описание Росстата найдено",
+      "endpoint_test": "портал не проверен реальным JSON-запросом",
+      "data_test": "не проводился",
+      "evidence_urls": [
+        "https://rosstat.gov.ru/emiss/",
+        "https://rosstat.gov.ru/folder/13390"
+      ],
+      "integrated": false,
+      "reviewed_at": "2026-11-17"
+    },
+    {
+      "source_id": "RU_SRC_003",
+      "name": "ФНС — Единый реестр субъектов МСП",
+      "docs": "официальная страница разработчиков и статистики проверена",
+      "endpoint_test": "не проводился",
+      "data_test": "не проводился",
+      "evidence_urls": [
+        "https://rmsp.nalog.ru/statistics.html",
+        "https://rmsp.nalog.ru/developers.html",
+        "https://www.nalog.gov.ru/opendata/"
+      ],
+      "integrated": false,
+      "reviewed_at": "2026-11-17"
+    },
+    {
+      "source_id": "RU_SRC_004",
+      "name": "Банк России — сервис статистических данных",
+      "docs": "официальная документация и живой JSON Swagger открыты веб-инструментом",
+      "endpoint_test": "GET /publications из веб-инструмента недоступен; успешный ответ сервиса не подтверждён",
+      "data_test": "не проводился",
+      "evidence_urls": [
+        "https://www.cbr.ru/statistics/data-service/APIdocumentation/",
+        "https://www.cbr.ru/dataservice/swagger",
+        "https://www.cbr.ru/statistics/data-service/APIdocumentation/examples/"
+      ],
+      "integrated": false,
+      "reviewed_at": "2026-11-17"
+    },
+    {
+      "source_id": "RU_SRC_005",
+      "name": "НИУ ВШЭ / ИСИЭЗ — Индикаторы цифровой экономики",
+      "docs": "официальная страница серии сборников проверена",
+      "endpoint_test": "API не установлен",
+      "data_test": "сведения в этом аудите не выгружались",
+      "evidence_urls": [
+        "https://issek.hse.ru/dep_infoob",
+        "https://issek.hse.ru/news/1122444011.html"
+      ],
+      "integrated": false,
+      "reviewed_at": "2026-11-17"
+    },
+    {
+      "source_id": "RU_SRC_006",
+      "name": "Яндекс Вордстат / Yandex Search API",
+      "docs": "официальный переход на Search API, документация и MCP анонс проверены",
+      "endpoint_test": "нет API-ключа, запрос не проводился",
+      "data_test": "не проводился",
+      "evidence_urls": [
+        "https://yandex.ru/support2/wordstat/ru/content/api-wordstat",
+        "https://aistudio.yandex.ru/ru/docs/search-api/concepts/wordstat",
+        "https://yandex.cloud/ru/blog/digest-july-2026"
+      ],
+      "integrated": false,
+      "reviewed_at": "2026-11-17"
+    },
+    {
+      "source_id": "RU_SRC_007",
+      "name": "ЕИС — закупки",
+      "docs": "официальное уведомление ЕИС об ЕСИА/СОИ найдено",
+      "endpoint_test": "не проводился, не было допуска",
+      "data_test": "не проводился",
+      "evidence_urls": [
+        "https://zakupki.gov.ru/",
+        "https://t.me/s/gis_eiszakupki/2053"
+      ],
+      "integrated": false,
+      "reviewed_at": "2026-11-17"
+    },
+    {
+      "source_id": "RU_SRC_008",
+      "name": "HeadHunter — вакансии и рынок труда",
+      "docs": "официальная OpenAPI и документация вакансий найдены",
+      "endpoint_test": "GET https://api.hh.ru/areas открылся веб-инструментом как application/json",
+      "data_test": "только справочник, поисковая выдача не тестировалась",
+      "evidence_urls": [
+        "https://api.hh.ru/openapi/redoc",
+        "https://github.com/hhru/api/blob/master/docs/vacancies.md",
+        "https://api.hh.ru/areas"
+      ],
+      "integrated": false,
+      "reviewed_at": "2026-11-17"
+    },
+    {
+      "source_id": "RU_SRC_009",
+      "name": "RuStore — каталог Android-приложений",
+      "docs": "официальная документация отзывов и публичная карточка приложения проверены",
+      "endpoint_test": "нет токена; не проводился",
+      "data_test": "не проводился",
+      "evidence_urls": [
+        "https://www.rustore.ru/help/work-with-rustore-api/api-feedback-process/get-feedback",
+        "https://www.rustore.ru/help/developers/publishing-and-verifying-apps/responses-to-reviews",
+        "https://www.rustore.ru/catalog/app/ru.yandex.searchplugin"
+      ],
+      "integrated": false,
+      "reviewed_at": "2026-11-17"
+    },
+    {
+      "source_id": "RU_SRC_010",
+      "name": "2ГИС — поиск компаний и мест",
+      "docs": "официальные REST, MCP и демо-ключ документированы",
+      "endpoint_test": "нет ключа; не проводился",
+      "data_test": "не проводился",
+      "evidence_urls": [
+        "https://docs.2gis.com/api/search/places/overview",
+        "https://docs.2gis.com/platform-manager/demo-key",
+        "https://docs.2gis.com/api/ai/mcp-server/cloud"
+      ],
+      "integrated": false,
+      "reviewed_at": "2026-11-17"
+    },
+    {
+      "source_id": "RU_SRC_011",
+      "name": "Mediascope — аудитории и бренды",
+      "docs": "публичные рейтинги и официальный API-клиент подтверждены, архитектура двух режимов ранее согласована",
+      "endpoint_test": "нет лицензии и credentials; не проводился",
+      "data_test": "статистические выгрузки в этой проверке не создавались",
+      "evidence_urls": [
+        "https://mediascope.net/data/",
+        "https://mediascope.net/data/interpretation/",
+        "https://mediascope.net/services/media/brandpulse/",
+        "https://github.com/MEDIASCOPE-JSC/mediascope-api-lib",
+        "https://mediascope.net/copyright/"
+      ],
+      "integrated": false,
+      "reviewed_at": "2026-11-17"
+    },
+    {
+      "source_id": "RU_SRC_012",
+      "name": "Data Insight — отраслевые исследования",
+      "docs": "публичный каталог и пример исследования проверены",
+      "endpoint_test": "API не установлен; не проводился",
+      "data_test": "не проводился",
+      "evidence_urls": [
+        "https://datainsight.ru/research",
+        "https://datainsight.ru/DI_eCommerce_2026"
+      ],
+      "integrated": false,
+      "reviewed_at": "2026-11-17"
+    }
+  ],
+  "follow_up_checks": [
+    "Проверить живой GET /publications Банка России из выбранного агентного раннера.",
+    "Подтвердить реальный доступ и quotas Wordstat API Yandex Search API, включая ограничение по данным после 07.10.2026.",
+    "Получить тестовый демо-ключ 2ГИС только через безопасный канал и проверить его MCP и Places API.",
+    "Проверить авторизованный способ работы СОИ ЕИС и условия подключения, не используя старый FTP.",
+    "Проверить API поиска вакансий HH в имеющемся правовом режиме; справочник территорий не доказывает доступ к вакансиям.",
+    "Уточнить отсутствие или наличие публичного API ЕМИСС у оператора, не выдумывать endpoint.",
+    "Завершить QA из первичных Rosstat XLSX/CSV для ранее собранных данных."
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "ru_b2b_small_micro_industry_employment_turnover_2024",
+  "file_name": "ru_b2b_small_micro_industry_employment_turnover_2024.csv",
+  "created_on": "2026-11-17",
+  "project": "Рыночный агент — B2B Россия",
+  "country": "RU",
+  "scope": "only_Russian_Federation_and_published_region_rows",
+  "data_description": "Средняя численность персонала и оборот малых (включая микро) и микро предприятий по отраслям в 2024 году",
+  "rows": 80,
+  "sha256_csv": "6aa95d1f86a143c4fd35e307f4e72de0bed1f72599252e0c443ebf0c7a9ba380",
+  "fields": [
+    "year",
+    "industry_code",
+    "industry_label",
+    "industry_is_subset",
+    "size_scope",
+    "metric",
+    "value",
+    "unit",
+    "geography",
+    "source_id",
+    "source_table",
+    "source_page",
+    "source_url"
+  ],
+  "field_definitions": {
+    "year": {
+      "data_type": "integer",
+      "description": "Год наблюдения, а не дата загрузки"
+    },
+    "industry_code": {
+      "data_type": "string",
+      "description": "Буквенная секция ОКВЭД2 или код вложенной группы (напр. J61), TOTAL = всего"
+    },
+    "industry_label": {
+      "data_type": "string",
+      "description": "Измерение или метаданные, буквальное значение по опубликованной строке"
+    },
+    "industry_is_subset": {
+      "data_type": "string",
+      "description": "yes означает вложенную подгруппу (не складывать с родительской)"
+    },
+    "size_scope": {
+      "data_type": "string",
+      "description": "small_including_micro / micro_subset_small / medium; микро вложено в малые"
+    },
+    "metric": {
+      "data_type": "string",
+      "description": "Наименование статистического показателя с определением в паспорте"
+    },
+    "value": {
+      "data_type": "number",
+      "description": "Опубликованное числовое значение, без модельных оценок"
+    },
+    "unit": {
+      "data_type": "string",
+      "description": "Точная единица измерения, не пересчитывать без указания масштаба"
+    },
+    "geography": {
+      "data_type": "string",
+      "description": "Российская Федерация (если нет подробного разреза)"
+    },
+    "source_id": {
+      "data_type": "string",
+      "description": "Постоянный ID конкретной официальной таблицы"
+    },
+    "source_table": {
+      "data_type": "string",
+      "description": "Номер таблицы в публикации"
+    },
+    "source_page": {
+      "data_type": "string",
+      "description": "Номер страницы печатного издания"
+    },
+    "source_url": {
+      "data_type": "string",
+      "description": "URL официальной публикации или первичного издателя"
+    }
+  },
+  "row_grain": "отраслевая группа × small_including_micro/micro_subset_small × показатель × год",
+  "observation_population": "Малые предприятия, включая микропредприятия, по методике Росстата; ИП не складывать и не включать самовольно",
+  "denominator_definition": "Показатели экономического объёма, НЕ число предприятий",
+  "primary_key": [
+    "year",
+    "industry_code",
+    "size_scope",
+    "metric"
+  ],
+  "source_ids": [
+    "ROS_YEARBOOK_2025"
+  ],
+  "source_table": "15.17",
+  "source_printed_pages": "349",
+  "source_urls": [
+    "https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf"
+  ],
+  "source_organization": [
+    "Федеральная служба государственной статистики (Росстат)"
+  ],
+  "processing": "Manual tabular transcription from official publishers’ indexed PDF text; HSE pages 13.1,13.31,2.2 independently visually checked via PDF screenshot; original binary PDF not deposited to Drive.",
+  "verification_status": "official_pdf_text_transcribed",
+  "source_value_type": "float",
+  "analytic_use_cases": [
+    "Оценка масштаба малого бизнеса по отраслям",
+    "Ориентиры кадровой и финансовой ёмкости"
+  ],
+  "limitations": [
+    "Микро является подмножеством малых — сложение ведёт к двойному счёту",
+    "J61,M72,N79 являются вложенными подотраслями и не суммируются с J,M,N",
+    "Средняя численность работников включает внешних совместителей и договоры ГПХ согласно сноске",
+    "Оборот в фактически действовавших (номинальных) ценах, млрд руб.",
+    "Отдельные виды деятельности в опубликованном фрагменте отсутствуют — не использовать суммирование строк вместо TOTAL"
+  ],
+  "prohibited_inferences": [
+    "Do not treat registered organizations as operating enterprises",
+    "Do not sum nested size classes, sector subclasses or geographic aggregates",
+    "Do not cross-join independent marginals to invent organization counts in unknown intersections",
+    "Do not infer customers, market demand, purchases or corporate budgets solely from registry stock"
+  ],
+  "missing_value_policy": "No zero imputation; values absent in the publication are not generated.",
+  "update_policy": "Update after new official publication and source reconciliation; keep prior file + manifest version and test results.",
+  "licensing_status": "Official openly published statistical table; check provider conditions before redistribution"
+}

@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0",
+  "project_id": "market-agent-russia",
+  "collection_date": "2026-11-17",
+  "source_preference": "Росстат (только официальные публикации)",
+  "sources": {
+    "RSC-01": {
+      "publisher": "Росстат",
+      "title": "Социальное положение и уровень жизни населения России. 2025",
+      "url": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "format": "Официальная публикация PDF, текст таблиц в веб-индексе",
+      "verification": "transcribed_from_official_pdf_text_layer; original_binary_not_downloaded; web_screenshot_cache_miss"
+    },
+    "RSC-02": {
+      "publisher": "Кировстат (территориальный орган Росстата)",
+      "title": "Публикация об итогах использования суточного фонда времени, Кировская область, 2024",
+      "url": "https://43.rosstat.gov.ru/news_resp/document/273520",
+      "format": "Официальная новость с результатами обследования",
+      "verification": "transcribed_from_official_search_result; full_article_download_failed"
+    },
+    "RSC-03": {
+      "publisher": "Комистат (территориальный орган Росстата)",
+      "title": "Как расходуют время мужчины и женщины — итоги наблюдения 2024",
+      "url": "https://11.rosstat.gov.ru/news/document/274205",
+      "format": "Официальная новость с результатами обследования",
+      "verification": "transcribed_from_official_search_result; full_article_download_failed"
+    },
+    "RSC-04": {
+      "publisher": "Росстат",
+      "title": "Доходы, расходы и потребление домашних хозяйств 2024 — статистический бюллетень",
+      "url": "https://rosstat.gov.ru/compendium/document/13271",
+      "format": "RAR",
+      "verification": "identified; RAR not downloaded and not included in numeric CSV; published 2026-10-28"
+    },
+    "RSC-05": {
+      "publisher": "Росстат",
+      "title": "Итоги Комплексного наблюдения условий жизни населения 2024",
+      "url": "https://rosstat.gov.ru/itog_inspect",
+      "format": "ZIP/HTML tables",
+      "verification": "identified; originals not downloaded; data available through S PDF for selected tables"
+    },
+    "RSC-06": {
+      "publisher": "Росстат",
+      "title": "Использование суточного фонда времени населением 2024",
+      "url": "https://rosstat.gov.ru/itog_inspect",
+      "format": "Published statistical tables",
+      "verification": "identified, but full national table download blocked"
+    },
+    "RSC-07": {
+      "publisher": "Маристат (территориальный орган Росстата)",
+      "title": "Один день мужчины, пресс-релиз 20 февраля 2026",
+      "url": "https://12.rosstat.gov.ru/storage/mediabank/%D0%9F%D1%80%D0%B5%D1%81%D1%81-%D1%80%D0%B5%D0%BB%D0%B8%D0%B7_%D0%9E%D0%B4%D0%B8%D0%BD%20%D0%B4%D0%B5%D0%BD%D1%8C%20%D0%BC%D1%83%D0%B6%D1%87%D0%B8%D0%BD%D1%8B.pdf",
+      "format": "PDF text searchable",
+      "verification": "read official PDF text, screenshot not enabled; exact nationwide comparators transcribed; binary not archived"
+    },
+    "RSC-08": {
+      "publisher": "Маристат (территориальный орган Росстата)",
+      "title": "Один день женщины, пресс-релиз 6 марта 2026",
+      "url": "https://12.rosstat.gov.ru/storage/mediabank/%D0%9E%D0%B4%D0%B8%D0%BD%20%D0%B4%D0%B5%D0%BD%D1%8C%20%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D1%8B.pdf",
+      "format": "PDF text searchable",
+      "verification": "read official PDF text, screenshot not enabled; exact nationwide comparators transcribed; binary not archived"
+    }
+  },
+  "data_files": [
+    {
+      "dataset_id": "RU_RSC_001",
+      "filename": "ru_household_spending_deciles_2023.csv",
+      "records": 100,
+      "title": "Структура расходов по децилям обеспеченности, 2023",
+      "source_ids": "RSC-01"
+    },
+    {
+      "dataset_id": "RU_RSC_002",
+      "filename": "ru_household_leisure_spending_2019_2023.csv",
+      "records": 60,
+      "title": "Расходы на отдых и культурные мероприятия, 2019–2023",
+      "source_ids": "RSC-01"
+    },
+    {
+      "dataset_id": "RU_RSC_003",
+      "filename": "ru_housing_stock_amenities_2019_2024.csv",
+      "records": 144,
+      "title": "Благоустройство жилищного фонда, 2019–2024",
+      "source_ids": "RSC-01"
+    },
+    {
+      "dataset_id": "RU_RSC_004",
+      "filename": "ru_housing_quality_by_settlement_2024.csv",
+      "records": 56,
+      "title": "Качество жилищных условий по поселению, 2024",
+      "source_ids": "RSC-01"
+    },
+    {
+      "dataset_id": "RU_RSC_005",
+      "filename": "ru_household_amenities_by_size_income_2024.csv",
+      "records": 84,
+      "title": "Благоустройство домохозяйств по составу и ресурсам, 2024",
+      "source_ids": "RSC-01"
+    },
+    {
+      "dataset_id": "RU_RSC_006",
+      "filename": "ru_housing_satisfaction_household_groups_2024.csv",
+      "records": 80,
+      "title": "Удовлетворённость жильём по составу и доходам, 2024",
+      "source_ids": "RSC-01"
+    },
+    {
+      "dataset_id": "RU_RSC_007",
+      "filename": "ru_housing_area_by_income_quintile_2024.csv",
+      "records": 40,
+      "title": "Жилая площадь на человека по доходным квинтилям, 2024",
+      "source_ids": "RSC-01"
+    },
+    {
+      "dataset_id": "RU_RSC_008",
+      "filename": "ru_regional_selected_time_use_2024.csv",
+      "records": 14,
+      "title": "Отдельные результаты обследования использования времени — Кировская область и Республика Коми, 2024",
+      "source_ids": [
+        "RSC-02",
+        "RSC-03"
+      ]
+    },
+    {
+      "dataset_id": "RU_RSC_009",
+      "filename": "ru_national_gender_selected_time_use_2024.csv",
+      "records": 10,
+      "title": "Общероссийские сравнительные показатели использования времени по полу, 2024",
+      "source_ids": [
+        "RSC-07",
+        "RSC-08"
+      ]
+    }
+  ],
+  "limitations_summary": [
+    "Числа перенесены из официального PDF-текстового слоя и региональных официальных новостей; исходный бинарный оригинал Росстата не доступен через текущую среду. Веб-скриншоты PDF предприняты, но возвращали Cache miss.",
+    "Новейший отдельный бюллетень 2024 доступен как RAR на официальной странице, но исходный архив пока не получен; не представлять его статистику как импортированную.",
+    "Восемь CSV включают national (7) и regional (1), не смешивать.",
+    "В некоторых файлах категории вложены, суммы отдельных строк некорректны.",
+    "Нельзя складывать проценты с разными знаменателями либо переводить их в числа домохозяйств без совместимой базы.",
+    "Источник 8.11 расходы в руб./мес. уже существует в предшествующей базе, повторно не импортирован.",
+    "Данные 2024-2025 не означают ситуацию 2026 без обновления.",
+    "В отдельном RU_RSC_009 дополнительно национальные сравнительные показатели из региональных публикаций Маристата; агрегат рабочее+домашнее время женщин дан как 401 мин, хотя округлённые компоненты дают 402; сохранены оба как в первоисточнике."
+  ]
+}

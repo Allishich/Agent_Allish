@@ -1,0 +1,873 @@
+{
+  "schema_version": "1.0",
+  "project": "Рыночный агент",
+  "section": "цифровое поведение населения России",
+  "as_of": "2026-11-17",
+  "producer": "Data sources workstream",
+  "dataset_count": 10,
+  "datasets": [
+    {
+      "schema_version": "1.0.0",
+      "dataset_id": "RU_DIG_001",
+      "title_ru": "Доступ домохозяйств к интернету по годам и типу местности",
+      "data_filename": "ru_digital_household_internet_access_2010_2024.csv",
+      "description_ru": "Доля российских домохозяйств с доступом к интернету, включая широкополосный доступ и доступ с персонального компьютера.",
+      "data_grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "value_column": "value_pct",
+      "geographic_coverage": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "population_universe_ru": "Домохозяйства, не отдельные физические лица",
+      "denominator_rule_ru": "Все домохозяйства в России или соответствующей местности",
+      "reference_years": [
+        2010,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "time_coverage_ru": "2010; 2013–2024; разрез город/село 2023–2024",
+      "dimensions": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code"
+      ],
+      "measurement_window_ru": "Доля домохозяйств, в которых есть указанный тип доступа.",
+      "publisher": "Институт статистических исследований и экономики знаний НИУ ВШЭ",
+      "underlying_data_owner": "Росстат, если не оговорено иное в таблице HSE",
+      "source_id": "HSE_DIGITAL_2026",
+      "source_publication_ru": "Индикаторы цифровой экономики: 2026. Статистический сборник. ИСИЭЗ НИУ ВШЭ. 2026. DOI 10.17323/978-5-7598-3047-4.",
+      "official_source_document_url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "original_rosstat_dataset_catalog_url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-five",
+      "source_tables_pages": [
+        {
+          "table": "11.1",
+          "printed_page": 172
+        },
+        {
+          "table": "11.2",
+          "printed_page": 173
+        }
+      ],
+      "ingest_method": "аккуратная структурированная транскрипция опубликованных таблиц/графиков PDF с визуальной сверкой страниц, без автоматического скачивания исходной таблицы Росстата",
+      "provenance_level": "published_hse_table_reproducing_rosstat_data",
+      "original_binary_status": "внешний PDF доступен по постоянной ссылке; оригинальные бинарные CSV Росстата на диск не выгружались",
+      "record_count": 39,
+      "row_column_names": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code",
+        "metric_label_ru",
+        "value_pct",
+        "denominator_ru",
+        "measurement_window",
+        "source_id",
+        "source_table",
+        "source_page",
+        "source_url",
+        "note"
+      ],
+      "csv_encoding": "UTF-8 with BOM",
+      "csv_delimiter": ",",
+      "sha256": "3ad76c6ce34aa78f8457507fc16939db027e90991809bf77b15855bbee2e2f97",
+      "limits_and_avoid_ru": [
+        "Не путать домашний доступ и использование интернета отдельными людьми; виды доступа пересекаются.",
+        "2011 и 2012 отсутствуют на графике.",
+        "Невозможно выделить отдельно родителей/детей или регионы по этой таблице."
+      ],
+      "qa_checks_ru": [
+        "4 повторяющихся национальных значений из табл. 11.2 сверены и исключены",
+        "Широкополосный доступ не превышает доступ к интернету"
+      ],
+      "files_are_derived": "yes, transcription",
+      "classification": "internet_access",
+      "additional_metadata": {},
+      "compiled_date": "2026-11-17",
+      "license_note": "Для первоисточника сохраняется ссылка и DOI; не заявляется право на свободное распространение оригинального PDF"
+    },
+    {
+      "schema_version": "1.0.0",
+      "dataset_id": "RU_DIG_002",
+      "title_ru": "Использование интернета населением: когда-либо, за 3 месяца, ежедневно",
+      "data_filename": "ru_digital_individual_internet_usage_2013_2024.csv",
+      "description_ru": "Национальные временные ряды распространённости интернета у населения России.",
+      "data_grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "value_column": "value_pct",
+      "geographic_coverage": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "population_universe_ru": "Лица возраста 15 лет и старше, до 2016 включительно — 15–72 года",
+      "denominator_rule_ru": "Общая численность населения соответствующего возрастного охвата; не пользователи интернета",
+      "reference_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "time_coverage_ru": "2013–2024",
+      "dimensions": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code"
+      ],
+      "measurement_window_ru": "Когда-либо, последние 3 месяца и почти каждый день — три разные характеристики.",
+      "publisher": "Институт статистических исследований и экономики знаний НИУ ВШЭ",
+      "underlying_data_owner": "Росстат, если не оговорено иное в таблице HSE",
+      "source_id": "HSE_DIGITAL_2026",
+      "source_publication_ru": "Индикаторы цифровой экономики: 2026. Статистический сборник. ИСИЭЗ НИУ ВШЭ. 2026. DOI 10.17323/978-5-7598-3047-4.",
+      "official_source_document_url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "original_rosstat_dataset_catalog_url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-five",
+      "source_tables_pages": [
+        {
+          "table": "11.6",
+          "printed_page": 177
+        }
+      ],
+      "ingest_method": "аккуратная структурированная транскрипция опубликованных таблиц/графиков PDF с визуальной сверкой страниц, без автоматического скачивания исходной таблицы Росстата",
+      "provenance_level": "published_hse_table_reproducing_rosstat_data",
+      "original_binary_status": "внешний PDF доступен по постоянной ссылке; оригинальные бинарные CSV Росстата на диск не выгружались",
+      "record_count": 36,
+      "row_column_names": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code",
+        "metric_label_ru",
+        "value_pct",
+        "denominator_ru",
+        "measurement_window",
+        "source_id",
+        "source_table",
+        "source_page",
+        "source_url",
+        "note"
+      ],
+      "csv_encoding": "UTF-8 with BOM",
+      "csv_delimiter": ",",
+      "sha256": "5b9ea6fe27cd3a509c23cc45986f614459fd43a744af976812f9d7f4b1130a83",
+      "limits_and_avoid_ru": [
+        "Изменение возрастной рамки в 2017 г. (с 15–72 лет на 15+) означает методологический разрыв.",
+        "Ряд не содержит детальной региональной/возрастной структуры.",
+        "Ежедневно не равно регулярно платят."
+      ],
+      "qa_checks_ru": [
+        "Для каждого года daily <= last_3m <= ever"
+      ],
+      "files_are_derived": "yes, transcription",
+      "classification": "internet_use",
+      "additional_metadata": {},
+      "compiled_date": "2026-11-17",
+      "license_note": "Для первоисточника сохраняется ссылка и DOI; не заявляется право на свободное распространение оригинального PDF"
+    },
+    {
+      "schema_version": "1.0.0",
+      "dataset_id": "RU_DIG_003",
+      "title_ru": "Частота интернета у городского и сельского населения",
+      "data_filename": "ru_digital_internet_frequency_by_settlement_2023_2024.csv",
+      "description_ru": "Распределение населения России 15+ по регулярности пользования интернетом, включая никогда не пользовавшихся.",
+      "data_grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "value_column": "value_pct",
+      "geographic_coverage": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "population_universe_ru": "Лица возраста 15 лет и старше",
+      "denominator_rule_ru": "Население соответствующего типа местности",
+      "reference_years": [
+        2023,
+        2024
+      ],
+      "time_coverage_ru": "2023–2024",
+      "dimensions": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code"
+      ],
+      "measurement_window_ru": "В отличие от накопительных показателей в таблице 11.6, здесь категории взаимоисключающие.",
+      "publisher": "Институт статистических исследований и экономики знаний НИУ ВШЭ",
+      "underlying_data_owner": "Росстат, если не оговорено иное в таблице HSE",
+      "source_id": "HSE_DIGITAL_2026",
+      "source_publication_ru": "Индикаторы цифровой экономики: 2026. Статистический сборник. ИСИЭЗ НИУ ВШЭ. 2026. DOI 10.17323/978-5-7598-3047-4.",
+      "official_source_document_url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "original_rosstat_dataset_catalog_url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-five",
+      "source_tables_pages": [
+        {
+          "table": "11.7",
+          "printed_page": 178
+        }
+      ],
+      "ingest_method": "аккуратная структурированная транскрипция опубликованных таблиц/графиков PDF с визуальной сверкой страниц, без автоматического скачивания исходной таблицы Росстата",
+      "provenance_level": "published_hse_table_reproducing_rosstat_data",
+      "original_binary_status": "внешний PDF доступен по постоянной ссылке; оригинальные бинарные CSV Росстата на диск не выгружались",
+      "record_count": 36,
+      "row_column_names": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code",
+        "metric_label_ru",
+        "value_pct",
+        "denominator_ru",
+        "measurement_window",
+        "source_id",
+        "source_table",
+        "source_page",
+        "source_url",
+        "note"
+      ],
+      "csv_encoding": "UTF-8 with BOM",
+      "csv_delimiter": ",",
+      "sha256": "0d1d4b846c87d887697ee265742bf6d5bb51f31135b73af396c0dbded518b1e4",
+      "limits_and_avoid_ru": [
+        "Не сравнивать напрямую абсолютные количества лиц; в таблице проценты.",
+        "Сумма колонок отклоняется от 100 из-за округления."
+      ],
+      "qa_checks_ru": [
+        "Проверка суммы в пределах 0.2 п.п.",
+        "Национальное 84.6% в 2024 сверено с таблицей 11.6"
+      ],
+      "files_are_derived": "yes, transcription",
+      "classification": "internet_use",
+      "additional_metadata": {},
+      "compiled_date": "2026-11-17",
+      "license_note": "Для первоисточника сохраняется ссылка и DOI; не заявляется право на свободное распространение оригинального PDF"
+    },
+    {
+      "schema_version": "1.0.0",
+      "dataset_id": "RU_DIG_004",
+      "title_ru": "Устройства выхода в интернет: сотовая связь и Wi-Fi",
+      "data_filename": "ru_digital_mobile_devices_for_internet_2023_2024.csv",
+      "description_ru": "Использование смартфонов, планшетов и ноутбуков для выхода в интернет по типам связи.",
+      "data_grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "value_column": "value_pct",
+      "geographic_coverage": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "population_universe_ru": "Лица возраста 15 лет и старше",
+      "denominator_rule_ru": "Все население 15 лет и старше",
+      "reference_years": [
+        2023,
+        2024
+      ],
+      "time_coverage_ru": "2023–2024",
+      "dimensions": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code"
+      ],
+      "measurement_window_ru": "Доля людей, использовавших устройство для доступа через конкретный тип сети.",
+      "publisher": "Институт статистических исследований и экономики знаний НИУ ВШЭ",
+      "underlying_data_owner": "Росстат, если не оговорено иное в таблице HSE",
+      "source_id": "HSE_DIGITAL_2026",
+      "source_publication_ru": "Индикаторы цифровой экономики: 2026. Статистический сборник. ИСИЭЗ НИУ ВШЭ. 2026. DOI 10.17323/978-5-7598-3047-4.",
+      "official_source_document_url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "original_rosstat_dataset_catalog_url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-five",
+      "source_tables_pages": [
+        {
+          "table": "11.10",
+          "printed_page": 181
+        }
+      ],
+      "ingest_method": "аккуратная структурированная транскрипция опубликованных таблиц/графиков PDF с визуальной сверкой страниц, без автоматического скачивания исходной таблицы Росстата",
+      "provenance_level": "published_hse_table_reproducing_rosstat_data",
+      "original_binary_status": "внешний PDF доступен по постоянной ссылке; оригинальные бинарные CSV Росстата на диск не выгружались",
+      "record_count": 12,
+      "row_column_names": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code",
+        "metric_label_ru",
+        "value_pct",
+        "denominator_ru",
+        "measurement_window",
+        "source_id",
+        "source_table",
+        "source_page",
+        "source_url",
+        "note"
+      ],
+      "csv_encoding": "UTF-8 with BOM",
+      "csv_delimiter": ",",
+      "sha256": "11777c9a902c35e2cbabc514e9f0dae692fe5f6b16fd114274885a3eca906085",
+      "limits_and_avoid_ru": [
+        "Не считать владением устройством (ownership).",
+        "Доступ через Wi-Fi и сотовую связь перекрывается."
+      ],
+      "qa_checks_ru": [
+        "0 <= доля <= 100 по всем ячейкам"
+      ],
+      "files_are_derived": "yes, transcription",
+      "classification": "devices",
+      "additional_metadata": {},
+      "compiled_date": "2026-11-17",
+      "license_note": "Для первоисточника сохраняется ссылка и DOI; не заявляется право на свободное распространение оригинального PDF"
+    },
+    {
+      "schema_version": "1.0.0",
+      "dataset_id": "RU_DIG_005",
+      "title_ru": "Цели использования интернета: 31 категория",
+      "data_filename": "ru_digital_internet_activity_purposes_2024.csv",
+      "description_ru": "Доля недавних интернет-пользователей, пользовавшихся интернетом по указанным целям, включая просмотр видео, соцсети, банкинг и использование нейросетей.",
+      "data_grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "value_column": "value_pct",
+      "geographic_coverage": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "population_universe_ru": "Лица 15+ пользовавшиеся интернетом за 3 последних месяца",
+      "denominator_rule_ru": "Численность пользователей интернета 15+ за последние 3 месяца, не всё население",
+      "reference_years": [
+        2024
+      ],
+      "time_coverage_ru": "2024",
+      "dimensions": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code"
+      ],
+      "measurement_window_ru": "Пользовались для указанной цели в ходе обследования; множественный выбор.",
+      "publisher": "Институт статистических исследований и экономики знаний НИУ ВШЭ",
+      "underlying_data_owner": "Росстат, если не оговорено иное в таблице HSE",
+      "source_id": "HSE_DIGITAL_2026",
+      "source_publication_ru": "Индикаторы цифровой экономики: 2026. Статистический сборник. ИСИЭЗ НИУ ВШЭ. 2026. DOI 10.17323/978-5-7598-3047-4.",
+      "official_source_document_url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "original_rosstat_dataset_catalog_url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-five",
+      "source_tables_pages": [
+        {
+          "table": "11.11",
+          "printed_page": 182
+        }
+      ],
+      "ingest_method": "аккуратная структурированная транскрипция опубликованных таблиц/графиков PDF с визуальной сверкой страниц, без автоматического скачивания исходной таблицы Росстата",
+      "provenance_level": "published_hse_table_reproducing_rosstat_data",
+      "original_binary_status": "внешний PDF доступен по постоянной ссылке; оригинальные бинарные CSV Росстата на диск не выгружались",
+      "record_count": 31,
+      "row_column_names": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code",
+        "metric_label_ru",
+        "value_pct",
+        "denominator_ru",
+        "measurement_window",
+        "source_id",
+        "source_table",
+        "source_page",
+        "source_url",
+        "note"
+      ],
+      "csv_encoding": "UTF-8 with BOM",
+      "csv_delimiter": ",",
+      "sha256": "880b35fe77e95b52e51595aeb9a105225af41ea44fdbc927158cafc911d8afcd",
+      "limits_and_avoid_ru": [
+        "Нельзя трактовать 48.1% просмотра видео как долю платных подписчиков.",
+        "Нельзя суммировать по целям.",
+        "Доля интернет-пользователей, а не всего населения."
+      ],
+      "qa_checks_ru": [
+        "31 цель, все значения 0..100, порядок графика сохранён"
+      ],
+      "files_are_derived": "yes, transcription",
+      "classification": "internet_purposes",
+      "additional_metadata": {},
+      "compiled_date": "2026-11-17",
+      "license_note": "Для первоисточника сохраняется ссылка и DOI; не заявляется право на свободное распространение оригинального PDF"
+    },
+    {
+      "schema_version": "1.0.0",
+      "dataset_id": "RU_DIG_006",
+      "title_ru": "Онлайн-заказы: распространённость по местности",
+      "data_filename": "ru_digital_online_orders_penetration_2013_2024.csv",
+      "description_ru": "Доли населения, заказывавшего товары и услуги онлайн за последние 12 месяцев, для страны, города, села.",
+      "data_grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "value_column": "value_pct",
+      "geographic_coverage": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "population_universe_ru": "Лица в возрасте 15+, до 2016 года 15–72",
+      "denominator_rule_ru": "Население того же типа местности, не интернет-пользователи",
+      "reference_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "time_coverage_ru": "2013–2024",
+      "dimensions": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code"
+      ],
+      "measurement_window_ru": "Любой заказ товаров или услуг в течение последнего года.",
+      "publisher": "Институт статистических исследований и экономики знаний НИУ ВШЭ",
+      "underlying_data_owner": "Росстат, если не оговорено иное в таблице HSE",
+      "source_id": "HSE_DIGITAL_2026",
+      "source_publication_ru": "Индикаторы цифровой экономики: 2026. Статистический сборник. ИСИЭЗ НИУ ВШЭ. 2026. DOI 10.17323/978-5-7598-3047-4.",
+      "official_source_document_url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "original_rosstat_dataset_catalog_url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-five",
+      "source_tables_pages": [
+        {
+          "table": "15.1",
+          "printed_page": 254
+        }
+      ],
+      "ingest_method": "аккуратная структурированная транскрипция опубликованных таблиц/графиков PDF с визуальной сверкой страниц, без автоматического скачивания исходной таблицы Росстата",
+      "provenance_level": "published_hse_table_reproducing_rosstat_data",
+      "original_binary_status": "внешний PDF доступен по постоянной ссылке; оригинальные бинарные CSV Росстата на диск не выгружались",
+      "record_count": 36,
+      "row_column_names": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code",
+        "metric_label_ru",
+        "value_pct",
+        "denominator_ru",
+        "measurement_window",
+        "source_id",
+        "source_table",
+        "source_page",
+        "source_url",
+        "note"
+      ],
+      "csv_encoding": "UTF-8 with BOM",
+      "csv_delimiter": ",",
+      "sha256": "91694755b31ac4b00f92e3f6a27bc642385c6a62bc5d12cfdc46cf540fa4efb0",
+      "limits_and_avoid_ru": [
+        "Не использовать как денежный размер e-commerce.",
+        "Показатель 67.2% за 2024 относится ко всему населению 15+, 73.7% в другом ряду имеет знаменатель пользователи интернета за год.",
+        "Возрастной охват до 2016 года другой."
+      ],
+      "qa_checks_ru": [
+        "Для всех 12 лет сельская <= общая <= городская",
+        "2024: 67.2/70.3/58.0 сверены с графиком"
+      ],
+      "files_are_derived": "yes, transcription",
+      "classification": "ecommerce_penetration",
+      "additional_metadata": {},
+      "compiled_date": "2026-11-17",
+      "license_note": "Для первоисточника сохраняется ссылка и DOI; не заявляется право на свободное распространение оригинального PDF"
+    },
+    {
+      "schema_version": "1.0.0",
+      "dataset_id": "RU_DIG_007",
+      "title_ru": "Онлайн-заказы по возрасту, полу, типу поселения",
+      "data_filename": "ru_digital_online_orders_by_sex_age_settlement_2024.csv",
+      "description_ru": "Разрезы онлайн-покупателей по 12 возрастным группам × 3 типам местности и полу × 3 местностям. Источник публикует эти разрезы отдельно.",
+      "data_grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "value_column": "value_pct",
+      "geographic_coverage": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "population_universe_ru": "Лица 15+ соответствующего пола или возраста и типа местности",
+      "denominator_rule_ru": "Численность соответствующей возрастной/половой группы в типе местности",
+      "reference_years": [
+        2024
+      ],
+      "time_coverage_ru": "2024",
+      "dimensions": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code"
+      ],
+      "measurement_window_ru": "Онлайн-заказы за последний год.",
+      "publisher": "Институт статистических исследований и экономики знаний НИУ ВШЭ",
+      "underlying_data_owner": "Росстат, если не оговорено иное в таблице HSE",
+      "source_id": "HSE_DIGITAL_2026",
+      "source_publication_ru": "Индикаторы цифровой экономики: 2026. Статистический сборник. ИСИЭЗ НИУ ВШЭ. 2026. DOI 10.17323/978-5-7598-3047-4.",
+      "official_source_document_url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "original_rosstat_dataset_catalog_url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-five",
+      "source_tables_pages": [
+        {
+          "table": "15.2",
+          "printed_page": 254
+        },
+        {
+          "table": "15.3",
+          "printed_page": 255
+        }
+      ],
+      "ingest_method": "аккуратная структурированная транскрипция опубликованных таблиц/графиков PDF с визуальной сверкой страниц, без автоматического скачивания исходной таблицы Росстата",
+      "provenance_level": "published_hse_table_reproducing_rosstat_data",
+      "original_binary_status": "внешний PDF доступен по постоянной ссылке; оригинальные бинарные CSV Росстата на диск не выгружались",
+      "record_count": 42,
+      "row_column_names": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code",
+        "metric_label_ru",
+        "value_pct",
+        "denominator_ru",
+        "measurement_window",
+        "source_id",
+        "source_table",
+        "source_page",
+        "source_url",
+        "note"
+      ],
+      "csv_encoding": "UTF-8 with BOM",
+      "csv_delimiter": ",",
+      "sha256": "089b0017d8f98326760718aaed4f74ae38b2aed56c637a85602cc8e4da4306c2",
+      "limits_and_avoid_ru": [
+        "Нет совместного среза возраст × пол × тип местности; разрезы возраст×местность и пол×местность не должны искусственно перемножаться.",
+        "Отсутствуют пользователи младше 15 лет.",
+        "Для расчёта числа клиентов нужны сопоставимые возрастные численности с теми же границами и годом."
+      ],
+      "qa_checks_ru": [
+        "42 строки: 36 возрастных и 6 половых",
+        "Во всех 12 группах возрастной показатель rural<=all<=urban"
+      ],
+      "files_are_derived": "yes, transcription",
+      "classification": "ecommerce_segments",
+      "additional_metadata": {},
+      "compiled_date": "2026-11-17",
+      "license_note": "Для первоисточника сохраняется ссылка и DOI; не заявляется право на свободное распространение оригинального PDF"
+    },
+    {
+      "schema_version": "1.0.0",
+      "dataset_id": "RU_DIG_008",
+      "title_ru": "Что покупают онлайн: физические товары, контент и услуги",
+      "data_filename": "ru_digital_online_purchase_categories_physical_and_digital_2024.csv",
+      "description_ru": "20 категорий онлайн-покупок с аналитическими метками физических товаров, цифрового контента, услуг и смешанных категорий.",
+      "data_grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "value_column": "value_pct",
+      "geographic_coverage": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "population_universe_ru": "Лица 15+ делавшие хотя бы один онлайн-заказ за год",
+      "denominator_rule_ru": "Только онлайн-покупатели 15+ за последний год (НЕ всё население)",
+      "reference_years": [
+        2024
+      ],
+      "time_coverage_ru": "2024",
+      "dimensions": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code"
+      ],
+      "measurement_window_ru": "Доля покупавших категорию в числе всех онлайн-покупателей за год.",
+      "publisher": "Институт статистических исследований и экономики знаний НИУ ВШЭ",
+      "underlying_data_owner": "Росстат, если не оговорено иное в таблице HSE",
+      "source_id": "HSE_DIGITAL_2026",
+      "source_publication_ru": "Индикаторы цифровой экономики: 2026. Статистический сборник. ИСИЭЗ НИУ ВШЭ. 2026. DOI 10.17323/978-5-7598-3047-4.",
+      "official_source_document_url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "original_rosstat_dataset_catalog_url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-five",
+      "source_tables_pages": [
+        {
+          "table": "15.5",
+          "printed_page": 257
+        }
+      ],
+      "ingest_method": "аккуратная структурированная транскрипция опубликованных таблиц/графиков PDF с визуальной сверкой страниц, без автоматического скачивания исходной таблицы Росстата",
+      "provenance_level": "published_hse_table_reproducing_rosstat_data",
+      "original_binary_status": "внешний PDF доступен по постоянной ссылке; оригинальные бинарные CSV Росстата на диск не выгружались",
+      "record_count": 20,
+      "row_column_names": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code",
+        "metric_label_ru",
+        "value_pct",
+        "denominator_ru",
+        "measurement_window",
+        "source_id",
+        "source_table",
+        "source_page",
+        "source_url",
+        "note"
+      ],
+      "csv_encoding": "UTF-8 with BOM",
+      "csv_delimiter": ",",
+      "sha256": "d82fd7fb8954e436a3d1aaa23b533213310377510956a854735addc5c0149ba8",
+      "limits_and_avoid_ru": [
+        "Категории пересекаются, их нельзя суммировать.",
+        "Фильмы, музыка и игры в этой таблице означают заказы по категории, НЕ обязательно подписки.",
+        "Книги/газеты включают как бумажные, так и электронные носители.",
+        "Типы категорий — аналитическая классификация нашей базы, не официальная классификация Росстата/ВШЭ."
+      ],
+      "qa_checks_ru": [
+        "20 опубликованных показателей перенесены с таблицы 15.5; все 0..100"
+      ],
+      "files_are_derived": "yes, transcription",
+      "classification": "physical_and_digital_purchases",
+      "additional_metadata": {
+        "type_tag_column": "segment second part after |",
+        "category_tags_created_by": "Market Agent data workflow; labels from original source preserved"
+      },
+      "compiled_date": "2026-11-17",
+      "license_note": "Для первоисточника сохраняется ссылка и DOI; не заявляется право на свободное распространение оригинального PDF"
+    },
+    {
+      "schema_version": "1.0.0",
+      "dataset_id": "RU_DIG_009",
+      "title_ru": "Как оплачивают онлайн-заказы: способы платежей",
+      "data_filename": "ru_digital_online_payment_methods_2013_2024.csv",
+      "description_ru": "Доли онлайн-покупателей, использовавших 9 опубликованных способов платежей; историческая динамика.",
+      "data_grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "value_column": "value_pct",
+      "geographic_coverage": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "population_universe_ru": "Лица 15+ заказывавшие онлайн за последние 12 месяцев (до 2016 г. 15–72)",
+      "denominator_rule_ru": "Онлайн-покупатели соответствующего возрастного охвата",
+      "reference_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "time_coverage_ru": "2013–2024",
+      "dimensions": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code"
+      ],
+      "measurement_window_ru": "Способы оплаты онлайн-заказов, множественный выбор.",
+      "publisher": "Институт статистических исследований и экономики знаний НИУ ВШЭ",
+      "underlying_data_owner": "Росстат, если не оговорено иное в таблице HSE",
+      "source_id": "HSE_DIGITAL_2026",
+      "source_publication_ru": "Индикаторы цифровой экономики: 2026. Статистический сборник. ИСИЭЗ НИУ ВШЭ. 2026. DOI 10.17323/978-5-7598-3047-4.",
+      "official_source_document_url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "original_rosstat_dataset_catalog_url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-five",
+      "source_tables_pages": [
+        {
+          "table": "15.7",
+          "printed_page": 259
+        }
+      ],
+      "ingest_method": "аккуратная структурированная транскрипция опубликованных таблиц/графиков PDF с визуальной сверкой страниц, без автоматического скачивания исходной таблицы Росстата",
+      "provenance_level": "published_hse_table_reproducing_rosstat_data",
+      "original_binary_status": "внешний PDF доступен по постоянной ссылке; оригинальные бинарные CSV Росстата на диск не выгружались",
+      "record_count": 108,
+      "row_column_names": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code",
+        "metric_label_ru",
+        "value_pct",
+        "denominator_ru",
+        "measurement_window",
+        "source_id",
+        "source_table",
+        "source_page",
+        "source_url",
+        "note"
+      ],
+      "csv_encoding": "UTF-8 with BOM",
+      "csv_delimiter": ",",
+      "sha256": "bfee4fa80f5f17fdc94ca87177c1e88424a808c30bcae60af604e97ef3607afb",
+      "limits_and_avoid_ru": [
+        "Суммы процентов по способам могут быть больше 100.",
+        "Пропуски … до 2021 года для онлайн-сервисов и СБП не приравнивать нулю.",
+        "До 2016 года возраст 15–72 лет.",
+        "Значения «С помощью банковской карты» могут включать разные способы оплат и определения во времени."
+      ],
+      "qa_checks_ru": [
+        "Всего 108 ячеек, из них 16 не опубликованы",
+        "2024 банковские карты 87.5%, СБП/QR 38.2% сверены"
+      ],
+      "files_are_derived": "yes, transcription",
+      "classification": "payments",
+      "additional_metadata": {},
+      "compiled_date": "2026-11-17",
+      "license_note": "Для первоисточника сохраняется ссылка и DOI; не заявляется право на свободное распространение оригинального PDF"
+    },
+    {
+      "schema_version": "1.0.0",
+      "dataset_id": "RU_DIG_010",
+      "title_ru": "Распределение цифровых навыков по возрастным группам",
+      "data_filename": "ru_digital_skills_by_age_2024.csv",
+      "description_ru": "Доли населения по семи взаимоисключающим градациям владения цифровыми навыками, 8 возрастных групп включая итог.",
+      "data_grain": "одна строка — один показатель × год × тип разреза × категория",
+      "unit": "percent",
+      "value_column": "value_pct",
+      "geographic_coverage": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+      "population_universe_ru": "Население 15 лет и старше в соответствующей возрастной группе",
+      "denominator_rule_ru": "Все лица соответствующей возрастной группы",
+      "reference_years": [
+        2024
+      ],
+      "time_coverage_ru": "2024",
+      "dimensions": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code"
+      ],
+      "measurement_window_ru": "Интегральная шкала навыков по методологии Евростата, расчёты ИСИЭЗ НИУ ВШЭ по данным Росстата.",
+      "publisher": "Институт статистических исследований и экономики знаний НИУ ВШЭ",
+      "underlying_data_owner": "Росстат, если не оговорено иное в таблице HSE",
+      "source_id": "HSE_DIGITAL_2026",
+      "source_publication_ru": "Индикаторы цифровой экономики: 2026. Статистический сборник. ИСИЭЗ НИУ ВШЭ. 2026. DOI 10.17323/978-5-7598-3047-4.",
+      "official_source_document_url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "original_rosstat_dataset_catalog_url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-five",
+      "source_tables_pages": [
+        {
+          "table": "10.9",
+          "printed_page": 165
+        }
+      ],
+      "ingest_method": "аккуратная структурированная транскрипция опубликованных таблиц/графиков PDF с визуальной сверкой страниц, без автоматического скачивания исходной таблицы Росстата",
+      "provenance_level": "published_hse_table_reproducing_rosstat_data",
+      "original_binary_status": "внешний PDF доступен по постоянной ссылке; оригинальные бинарные CSV Росстата на диск не выгружались",
+      "record_count": 56,
+      "row_column_names": [
+        "year",
+        "territory",
+        "dimension",
+        "segment",
+        "metric_code",
+        "metric_label_ru",
+        "value_pct",
+        "denominator_ru",
+        "measurement_window",
+        "source_id",
+        "source_table",
+        "source_page",
+        "source_url",
+        "note"
+      ],
+      "csv_encoding": "UTF-8 with BOM",
+      "csv_delimiter": ",",
+      "sha256": "3ff2c84eaf615f866b6a01960bc4d963ed1e13c224daacd617680b7d5e20d170",
+      "limits_and_avoid_ru": [
+        "Шкала обновлена в 2021 году; старые ряды не сопоставлять без поправки методики.",
+        "Возрастные группы здесь шире, чем в таблице 15.3 об онлайн-покупках.",
+        "Значение 0.02% для 75+ выше базового взято с сноской, не округлять до 0.0.",
+        "Неиспользование интернета и отсутствие цифровых навыков — разные категории."
+      ],
+      "qa_checks_ru": [
+        "Проверка суммы семи долей на 100% с округлением"
+      ],
+      "files_are_derived": "yes, transcription",
+      "classification": "digital_skills",
+      "additional_metadata": {},
+      "compiled_date": "2026-11-17",
+      "license_note": "Для первоисточника сохраняется ссылка и DOI; не заявляется право на свободное распространение оригинального PDF"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "HSE_DIGITAL_2026",
+      "organization": "ИСИЭЗ НИУ ВШЭ",
+      "title": "Индикаторы цифровой экономики: 2026",
+      "data_years_covered": "2010–2024 depending on table",
+      "url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "publication_year": 2026,
+      "format": "PDF",
+      "status": "tables_transcribed_qa",
+      "nature": "HSE publication, mainly reproduces/derives Rosstat data; see source notes for each table",
+      "geography": "Russia, HSE explicitly excludes 4 new regions in statistical data",
+      "source_note": "DOI 10.17323/978-5-7598-3047-4. 304 printed pages. Source table number and PDF page are in each record."
+    },
+    {
+      "source_id": "ROSSTAT_IKT_2025",
+      "organization": "Росстат",
+      "title": "Использование населением ИКТ и сетей, 2025 год",
+      "data_years_covered": "2025",
+      "url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-five",
+      "publication_year": 2026,
+      "format": "CSV (linked through Rosstat opendata)",
+      "status": "identified_not_downloaded",
+      "nature": "primary official dataset",
+      "geography": "Russia, per methodology of survey",
+      "source_note": "Rosstat website metadata indexed. Direct downloadable CSV could not be obtained. NO values from this CSV used. Further work: download data and structure CSV, inspect questionnaire and sample universe."
+    },
+    {
+      "source_id": "ROSSTAT_IKT_2024",
+      "organization": "Росстат",
+      "title": "Использование населением ИКТ и сетей, 2024 год",
+      "data_years_covered": "2024",
+      "url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-four",
+      "publication_year": 2025,
+      "format": "CSV (linked through Rosstat opendata)",
+      "status": "identified_not_downloaded",
+      "nature": "primary official dataset",
+      "geography": "Russia",
+      "source_note": "No direct CSV copy was retrieved; HSE 2026 data have been processed with table-level provenance."
+    },
+    {
+      "source_id": "HSE_DIGITAL_BOOK_SERIES",
+      "organization": "ИСИЭЗ НИУ ВШЭ",
+      "title": "Статистические сборники Индикаторы цифровой экономики, серия",
+      "data_years_covered": "multiple",
+      "url": "https://www.hse.ru/primarydata/iio",
+      "publication_year": 2026,
+      "format": "HTML publication index",
+      "status": "verified_catalog",
+      "nature": "official publication catalog",
+      "geography": "Russia",
+      "source_note": "Use edition-specific links and edition year; different releases may revise values."
+    },
+    {
+      "source_id": "HSE_NEWS_DIGITAL_2026",
+      "organization": "ИСИЭЗ НИУ ВШЭ",
+      "title": "Цифровая экономика: 2026 – обзор ключевых показателей",
+      "data_years_covered": "2024 primarily",
+      "url": "https://issek.hse.ru/news/1110990925.html",
+      "publication_year": 2026,
+      "format": "HTML",
+      "status": "verified_context_not_loaded_as_dataset",
+      "nature": "publisher press note",
+      "geography": "Russia",
+      "source_note": "Includes youth/children coverage with different sampling frame; do not mix with adult Rosstat 15+ survey without specific denominator."
+    }
+  ],
+  "source_nature": "Russian official statistics republished in an HSE analytical compendium; NOT downloaded Rosstat microdata",
+  "collection_method": "structured transcription from HSE 2026 published tables with screenshot verification; URLs to original"
+}

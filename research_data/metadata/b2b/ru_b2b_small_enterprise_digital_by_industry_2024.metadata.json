@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "ru_b2b_small_enterprise_digital_by_industry_2024",
+  "file_name": "ru_b2b_small_enterprise_digital_by_industry_2024.csv",
+  "created_on": "2026-11-17",
+  "project": "Рыночный агент — B2B Россия",
+  "country": "RU",
+  "scope": "only_Russian_Federation_and_published_region_rows",
+  "data_description": "Использование шести видов цифровых технологий обследованными малыми предприятиями по видам деятельности",
+  "rows": 96,
+  "sha256_csv": "7f1c06f46b6d8ff65c18248f66b211aed9bcd034c77b5315d46217e9ebf14105",
+  "fields": [
+    "year",
+    "industry_code",
+    "industry_label",
+    "technology_id",
+    "technology_name",
+    "survey_population",
+    "metric",
+    "value",
+    "unit",
+    "geography",
+    "source_id",
+    "source_table",
+    "source_page",
+    "source_url"
+  ],
+  "field_definitions": {
+    "year": {
+      "data_type": "integer",
+      "description": "Год наблюдения, а не дата загрузки"
+    },
+    "industry_code": {
+      "data_type": "string",
+      "description": "Буквенная секция ОКВЭД2 или код вложенной группы (напр. J61), TOTAL = всего"
+    },
+    "industry_label": {
+      "data_type": "string",
+      "description": "Измерение или метаданные, буквальное значение по опубликованной строке"
+    },
+    "technology_id": {
+      "data_type": "string",
+      "description": "Измерение или метаданные, буквальное значение по опубликованной строке"
+    },
+    "technology_name": {
+      "data_type": "string",
+      "description": "Измерение или метаданные, буквальное значение по опубликованной строке"
+    },
+    "survey_population": {
+      "data_type": "string",
+      "description": "Обследованная статистическая совокупность, не все компании РФ"
+    },
+    "metric": {
+      "data_type": "string",
+      "description": "Наименование статистического показателя с определением в паспорте"
+    },
+    "value": {
+      "data_type": "number",
+      "description": "Опубликованное числовое значение, без модельных оценок"
+    },
+    "unit": {
+      "data_type": "string",
+      "description": "Точная единица измерения, не пересчитывать без указания масштаба"
+    },
+    "geography": {
+      "data_type": "string",
+      "description": "Российская Федерация (если нет подробного разреза)"
+    },
+    "source_id": {
+      "data_type": "string",
+      "description": "Постоянный ID конкретной официальной таблицы"
+    },
+    "source_table": {
+      "data_type": "string",
+      "description": "Номер таблицы в публикации"
+    },
+    "source_page": {
+      "data_type": "string",
+      "description": "Номер страницы печатного издания"
+    },
+    "source_url": {
+      "data_type": "string",
+      "description": "URL официальной публикации или первичного издателя"
+    }
+  },
+  "row_grain": "отрасль × цифровая технология × год 2024",
+  "observation_population": "Обследованные малые предприятия соответствующего вида экономической деятельности",
+  "denominator_definition": "Проценты от обследованных малых предприятий соответствующей отрасли",
+  "primary_key": [
+    "year",
+    "industry_code",
+    "technology_id"
+  ],
+  "source_ids": [
+    "HSE_ISEK_2026"
+  ],
+  "source_table": "13.31",
+  "source_printed_pages": "234",
+  "source_urls": [
+    "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf"
+  ],
+  "source_organization": [
+    "Национальный исследовательский университет «Высшая школа экономики» (ИСИЭЗ), по данным Росстата"
+  ],
+  "processing": "Manual tabular transcription from official publishers’ indexed PDF text; HSE pages 13.1,13.31,2.2 independently visually checked via PDF screenshot; original binary PDF not deposited to Drive.",
+  "verification_status": "official_HSE_screenshot_checked",
+  "source_value_type": "percent",
+  "analytic_use_cases": [
+    "Оценка зрелости малого B2B по ОКВЭД2",
+    "Сравнение облачных технологий/ИИ и платформ"
+  ],
+  "limitations": [
+    "Не приравнивать к корпоративным показателям крупных/средних организаций из таблицы 13.1",
+    "Отрасли представлены только теми категориями, которые есть в опубликованной таблице",
+    "Разные цифровые технологии могут одновременно использоваться одним предприятием; проценты не суммировать",
+    "Не преобразовывать опубликованные доли в число предприятий без совместного знаменателя для той же совокупности"
+  ],
+  "prohibited_inferences": [
+    "Do not treat registered organizations as operating enterprises",
+    "Do not sum nested size classes, sector subclasses or geographic aggregates",
+    "Do not cross-join independent marginals to invent organization counts in unknown intersections",
+    "Do not infer customers, market demand, purchases or corporate budgets solely from registry stock"
+  ],
+  "missing_value_policy": "No zero imputation; values absent in the publication are not generated.",
+  "update_policy": "Update after new official publication and source reconciliation; keep prior file + manifest version and test results.",
+  "licensing_status": "Official openly published statistical table; check provider conditions before redistribution"
+}

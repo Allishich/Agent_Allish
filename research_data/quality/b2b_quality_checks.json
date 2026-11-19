@@ -1,0 +1,1213 @@
+{
+  "schema_version": "1.0",
+  "checks": [
+    {
+      "id": "QA-digital-spending-2019",
+      "status": "passed",
+      "details": {
+        "year": 2019,
+        "external": 578,
+        "internal": 2164,
+        "total": 2742
+      }
+    },
+    {
+      "id": "QA-digital-spending-2020",
+      "status": "passed",
+      "details": {
+        "year": 2020,
+        "external": 831,
+        "internal": 2051,
+        "total": 2882
+      }
+    },
+    {
+      "id": "QA-digital-spending-2021",
+      "status": "passed",
+      "details": {
+        "year": 2021,
+        "external": 961,
+        "internal": 2836,
+        "total": 3797
+      }
+    },
+    {
+      "id": "QA-digital-spending-2022",
+      "status": "passed",
+      "details": {
+        "year": 2022,
+        "external": 1154,
+        "internal": 3017,
+        "total": 4171
+      }
+    },
+    {
+      "id": "QA-digital-spending-2023",
+      "status": "passed",
+      "details": {
+        "year": 2023,
+        "external": 1464,
+        "internal": 3153,
+        "total": 4617
+      }
+    },
+    {
+      "id": "QA-digital-spending-2024",
+      "status": "passed",
+      "details": {
+        "year": 2024,
+        "external": 1828,
+        "internal": 4087,
+        "total": 5915
+      }
+    },
+    {
+      "id": "QA-region-national-districts-TOTAL",
+      "status": "passed",
+      "details": {
+        "expected_country": 3271669,
+        "district_sum": 3271669
+      }
+    },
+    {
+      "id": "QA-TOTAL-Центральный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 1167523,
+        "components_sum": 1167523,
+        "district": "Центральный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-TOTAL-Северо-Западный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 386861,
+        "components_sum": 386861,
+        "district": "Северо-Западный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-TOTAL-Южный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 265058,
+        "components_sum": 265058,
+        "district": "Южный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-TOTAL-Северо-Кавказский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 104884,
+        "components_sum": 104884,
+        "district": "Северо-Кавказский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-TOTAL-Приволжский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 564498,
+        "components_sum": 564498,
+        "district": "Приволжский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-TOTAL-Уральский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 267371,
+        "components_sum": 267371,
+        "district": "Уральский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-TOTAL-Сибирский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 337570,
+        "components_sum": 337570,
+        "district": "Сибирский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-TOTAL-Дальневосточный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 177904,
+        "components_sum": 177904,
+        "district": "Дальневосточный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-region-national-districts-A",
+      "status": "passed",
+      "details": {
+        "expected_country": 84590,
+        "district_sum": 84590
+      }
+    },
+    {
+      "id": "QA-A-Центральный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 19595,
+        "components_sum": 19595,
+        "district": "Центральный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-A-Северо-Западный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 6994,
+        "components_sum": 6994,
+        "district": "Северо-Западный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-A-Южный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 9477,
+        "components_sum": 9477,
+        "district": "Южный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-A-Северо-Кавказский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 8250,
+        "components_sum": 8250,
+        "district": "Северо-Кавказский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-A-Приволжский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 15289,
+        "components_sum": 15289,
+        "district": "Приволжский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-A-Уральский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 5558,
+        "components_sum": 5558,
+        "district": "Уральский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-A-Сибирский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 10730,
+        "components_sum": 10730,
+        "district": "Сибирский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-A-Дальневосточный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 8697,
+        "components_sum": 8697,
+        "district": "Дальневосточный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-region-national-districts-B",
+      "status": "passed",
+      "details": {
+        "expected_country": 17657,
+        "district_sum": 17657
+      }
+    },
+    {
+      "id": "QA-B-Центральный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 3077,
+        "components_sum": 3077,
+        "district": "Центральный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-B-Северо-Западный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 1382,
+        "components_sum": 1382,
+        "district": "Северо-Западный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-B-Южный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 1123,
+        "components_sum": 1123,
+        "district": "Южный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-B-Северо-Кавказский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 636,
+        "components_sum": 636,
+        "district": "Северо-Кавказский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-B-Приволжский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 2869,
+        "components_sum": 2869,
+        "district": "Приволжский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-B-Уральский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 1846,
+        "components_sum": 1846,
+        "district": "Уральский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-B-Сибирский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 2301,
+        "components_sum": 2301,
+        "district": "Сибирский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-B-Дальневосточный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 4423,
+        "components_sum": 4423,
+        "district": "Дальневосточный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-region-national-districts-C",
+      "status": "passed",
+      "details": {
+        "expected_country": 257794,
+        "district_sum": 257794
+      }
+    },
+    {
+      "id": "QA-C-Центральный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 90400,
+        "components_sum": 90400,
+        "district": "Центральный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-C-Северо-Западный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 32490,
+        "components_sum": 32490,
+        "district": "Северо-Западный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-C-Южный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 18161,
+        "components_sum": 18161,
+        "district": "Южный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-C-Северо-Кавказский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 6835,
+        "components_sum": 6835,
+        "district": "Северо-Кавказский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-C-Приволжский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 50551,
+        "components_sum": 50551,
+        "district": "Приволжский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-C-Уральский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 23312,
+        "components_sum": 23312,
+        "district": "Уральский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-C-Сибирский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 26767,
+        "components_sum": 26767,
+        "district": "Сибирский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-C-Дальневосточный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 9278,
+        "components_sum": 9278,
+        "district": "Дальневосточный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-region-national-districts-F",
+      "status": "passed",
+      "details": {
+        "expected_country": 389787,
+        "district_sum": 389787
+      }
+    },
+    {
+      "id": "QA-F-Центральный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 145475,
+        "components_sum": 145475,
+        "district": "Центральный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-F-Северо-Западный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 46271,
+        "components_sum": 46271,
+        "district": "Северо-Западный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-F-Южный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 28628,
+        "components_sum": 28628,
+        "district": "Южный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-F-Северо-Кавказский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 13400,
+        "components_sum": 13400,
+        "district": "Северо-Кавказский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-F-Приволжский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 67249,
+        "components_sum": 67249,
+        "district": "Приволжский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-F-Уральский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 32559,
+        "components_sum": 32559,
+        "district": "Уральский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-F-Сибирский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 36150,
+        "components_sum": 36150,
+        "district": "Сибирский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-F-Дальневосточный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 20055,
+        "components_sum": 20055,
+        "district": "Дальневосточный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-region-national-districts-G",
+      "status": "passed",
+      "details": {
+        "expected_country": 806254,
+        "district_sum": 806254
+      }
+    },
+    {
+      "id": "QA-G-Центральный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 317753,
+        "components_sum": 317753,
+        "district": "Центральный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-G-Северо-Западный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 91520,
+        "components_sum": 91520,
+        "district": "Северо-Западный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-G-Южный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 57896,
+        "components_sum": 57896,
+        "district": "Южный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-G-Северо-Кавказский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 20000,
+        "components_sum": 20000,
+        "district": "Северо-Кавказский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-G-Приволжский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 130496,
+        "components_sum": 130496,
+        "district": "Приволжский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-G-Уральский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 69344,
+        "components_sum": 69344,
+        "district": "Уральский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-G-Сибирский федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 81488,
+        "components_sum": 81488,
+        "district": "Сибирский федеральный округ"
+      }
+    },
+    {
+      "id": "QA-G-Дальневосточный федеральный округ",
+      "status": "passed",
+      "details": {
+        "published": 37757,
+        "components_sum": 37757,
+        "district": "Дальневосточный федеральный округ"
+      }
+    },
+    {
+      "id": "QA-region-nested-Архангельская область-TOTAL",
+      "status": "passed",
+      "details": {
+        "parent": 17606,
+        "child_sum": 17606
+      }
+    },
+    {
+      "id": "QA-region-nested-Архангельская область-A",
+      "status": "passed",
+      "details": {
+        "parent": 544,
+        "child_sum": 544
+      }
+    },
+    {
+      "id": "QA-region-nested-Архангельская область-B",
+      "status": "passed",
+      "details": {
+        "parent": 82,
+        "child_sum": 82
+      }
+    },
+    {
+      "id": "QA-region-nested-Архангельская область-C",
+      "status": "passed",
+      "details": {
+        "parent": 1073,
+        "child_sum": 1073
+      }
+    },
+    {
+      "id": "QA-region-nested-Архангельская область-F",
+      "status": "passed",
+      "details": {
+        "parent": 1799,
+        "child_sum": 1799
+      }
+    },
+    {
+      "id": "QA-region-nested-Архангельская область-G",
+      "status": "passed",
+      "details": {
+        "parent": 2815,
+        "child_sum": 2815
+      }
+    },
+    {
+      "id": "QA-region-nested-Тюменская область-TOTAL",
+      "status": "passed",
+      "details": {
+        "parent": 71669,
+        "child_sum": 71669
+      }
+    },
+    {
+      "id": "QA-region-nested-Тюменская область-A",
+      "status": "passed",
+      "details": {
+        "parent": 1806,
+        "child_sum": 1806
+      }
+    },
+    {
+      "id": "QA-region-nested-Тюменская область-B",
+      "status": "passed",
+      "details": {
+        "parent": 890,
+        "child_sum": 890
+      }
+    },
+    {
+      "id": "QA-region-nested-Тюменская область-C",
+      "status": "passed",
+      "details": {
+        "parent": 4398,
+        "child_sum": 4398
+      }
+    },
+    {
+      "id": "QA-region-nested-Тюменская область-F",
+      "status": "passed",
+      "details": {
+        "parent": 10540,
+        "child_sum": 10540
+      }
+    },
+    {
+      "id": "QA-region-nested-Тюменская область-G",
+      "status": "passed",
+      "details": {
+        "parent": 14317,
+        "child_sum": 14317
+      }
+    },
+    {
+      "id": "QA-national-85-components-TOTAL",
+      "status": "passed",
+      "details": {
+        "component_count": 85,
+        "sum": 3271669,
+        "country": 3271669
+      }
+    },
+    {
+      "id": "QA-national-85-components-A",
+      "status": "passed",
+      "details": {
+        "component_count": 85,
+        "sum": 84590,
+        "country": 84590
+      }
+    },
+    {
+      "id": "QA-national-85-components-B",
+      "status": "passed",
+      "details": {
+        "component_count": 85,
+        "sum": 17657,
+        "country": 17657
+      }
+    },
+    {
+      "id": "QA-national-85-components-C",
+      "status": "passed",
+      "details": {
+        "component_count": 85,
+        "sum": 257794,
+        "country": 257794
+      }
+    },
+    {
+      "id": "QA-national-85-components-F",
+      "status": "passed",
+      "details": {
+        "component_count": 85,
+        "sum": 389787,
+        "country": 389787
+      }
+    },
+    {
+      "id": "QA-national-85-components-G",
+      "status": "passed",
+      "details": {
+        "component_count": 85,
+        "sum": 806254,
+        "country": 806254
+      }
+    },
+    {
+      "id": "QA-micro-small-TOTAL",
+      "status": "passed",
+      "details": {
+        "small_workers": "10894.1",
+        "micro_workers": "5482.2",
+        "small_turnover": "78636.5",
+        "micro_turnover": "37213.1"
+      }
+    },
+    {
+      "id": "QA-micro-small-A",
+      "status": "passed",
+      "details": {
+        "small_workers": "364.8",
+        "micro_workers": "103.7",
+        "small_turnover": "1747.2",
+        "micro_turnover": "528.1"
+      }
+    },
+    {
+      "id": "QA-micro-small-B",
+      "status": "passed",
+      "details": {
+        "small_workers": "74.1",
+        "micro_workers": "30.1",
+        "small_turnover": "522.9",
+        "micro_turnover": "196.5"
+      }
+    },
+    {
+      "id": "QA-micro-small-C",
+      "status": "passed",
+      "details": {
+        "small_workers": "1847.8",
+        "micro_workers": "722.0",
+        "small_turnover": "12699.0",
+        "micro_turnover": "4813.1"
+      }
+    },
+    {
+      "id": "QA-micro-small-D",
+      "status": "passed",
+      "details": {
+        "small_workers": "94.6",
+        "micro_workers": "35.8",
+        "small_turnover": "454.4",
+        "micro_turnover": "182.8"
+      }
+    },
+    {
+      "id": "QA-micro-small-E",
+      "status": "passed",
+      "details": {
+        "small_workers": "104.0",
+        "micro_workers": "42.4",
+        "small_turnover": "683.2",
+        "micro_turnover": "302.1"
+      }
+    },
+    {
+      "id": "QA-micro-small-F",
+      "status": "passed",
+      "details": {
+        "small_workers": "1308.3",
+        "micro_workers": "740.5",
+        "small_turnover": "8995.4",
+        "micro_turnover": "5112.8"
+      }
+    },
+    {
+      "id": "QA-micro-small-G",
+      "status": "passed",
+      "details": {
+        "small_workers": "2345.2",
+        "micro_workers": "1315.7",
+        "small_turnover": "33459.3",
+        "micro_turnover": "15355.5"
+      }
+    },
+    {
+      "id": "QA-micro-small-H",
+      "status": "passed",
+      "details": {
+        "small_workers": "720.0",
+        "micro_workers": "352.2",
+        "small_turnover": "5248.9",
+        "micro_turnover": "2720.2"
+      }
+    },
+    {
+      "id": "QA-micro-small-I",
+      "status": "passed",
+      "details": {
+        "small_workers": "465.2",
+        "micro_workers": "230.2",
+        "small_turnover": "1828.0",
+        "micro_turnover": "991.2"
+      }
+    },
+    {
+      "id": "QA-micro-small-J",
+      "status": "passed",
+      "details": {
+        "small_workers": "524.8",
+        "micro_workers": "255.6",
+        "small_turnover": "2503.7",
+        "micro_turnover": "1051.4"
+      }
+    },
+    {
+      "id": "QA-micro-small-J61",
+      "status": "passed",
+      "details": {
+        "small_workers": "50.3",
+        "micro_workers": "21.4",
+        "small_turnover": "259.2",
+        "micro_turnover": "111.4"
+      }
+    },
+    {
+      "id": "QA-micro-small-L",
+      "status": "passed",
+      "details": {
+        "small_workers": "807.0",
+        "micro_workers": "459.3",
+        "small_turnover": "3087.5",
+        "micro_turnover": "1874.1"
+      }
+    },
+    {
+      "id": "QA-micro-small-M",
+      "status": "passed",
+      "details": {
+        "small_workers": "792.3",
+        "micro_workers": "484.0",
+        "small_turnover": "3342.1",
+        "micro_turnover": "1827.3"
+      }
+    },
+    {
+      "id": "QA-micro-small-M72",
+      "status": "passed",
+      "details": {
+        "small_workers": "96.0",
+        "micro_workers": "48.0",
+        "small_turnover": "447.7",
+        "micro_turnover": "198.1"
+      }
+    },
+    {
+      "id": "QA-micro-small-N",
+      "status": "passed",
+      "details": {
+        "small_workers": "684.5",
+        "micro_workers": "294.1",
+        "small_turnover": "1996.3",
+        "micro_turnover": "1130.9"
+      }
+    },
+    {
+      "id": "QA-micro-small-N79",
+      "status": "passed",
+      "details": {
+        "small_workers": "49.0",
+        "micro_workers": "37.6",
+        "small_turnover": "220.0",
+        "micro_turnover": "167.3"
+      }
+    },
+    {
+      "id": "QA-micro-small-P",
+      "status": "passed",
+      "details": {
+        "small_workers": "26.6",
+        "micro_workers": "20.0",
+        "small_turnover": "66.9",
+        "micro_turnover": "49.1"
+      }
+    },
+    {
+      "id": "QA-micro-small-Q",
+      "status": "passed",
+      "details": {
+        "small_workers": "472.8",
+        "micro_workers": "240.9",
+        "small_turnover": "1266.5",
+        "micro_turnover": "611.8"
+      }
+    },
+    {
+      "id": "QA-micro-small-R",
+      "status": "passed",
+      "details": {
+        "small_workers": "75.3",
+        "micro_workers": "45.0",
+        "small_turnover": "390.3",
+        "micro_turnover": "255.5"
+      }
+    },
+    {
+      "id": "QA-tech-fixed_broadband",
+      "status": "passed",
+      "details": {
+        "values": [
+          96.3,
+          94.9,
+          92.5,
+          65.1,
+          69.8
+        ]
+      }
+    },
+    {
+      "id": "QA-tech-mobile_broadband",
+      "status": "passed",
+      "details": {
+        "values": [
+          62.5,
+          54.3,
+          47.2,
+          28.1,
+          32.1
+        ]
+      }
+    },
+    {
+      "id": "QA-tech-internet_of_things",
+      "status": "passed",
+      "details": {
+        "values": [
+          26.3,
+          20.2,
+          15.8,
+          6.7,
+          8.7
+        ]
+      }
+    },
+    {
+      "id": "QA-tech-rfid",
+      "status": "passed",
+      "details": {
+        "values": [
+          38.8,
+          27.9,
+          20.7,
+          5.8,
+          9.1
+        ]
+      }
+    },
+    {
+      "id": "QA-tech-digital_platforms",
+      "status": "passed",
+      "details": {
+        "values": [
+          44.2,
+          38.2,
+          34.7,
+          18.7,
+          21.8
+        ]
+      }
+    },
+    {
+      "id": "QA-tech-cloud_services",
+      "status": "passed",
+      "details": {
+        "values": [
+          33.7,
+          31.8,
+          29.4,
+          17.3,
+          19.5
+        ]
+      }
+    },
+    {
+      "id": "QA-tech-big_data",
+      "status": "passed",
+      "details": {
+        "values": [
+          19.5,
+          15.4,
+          13.3,
+          7.3,
+          8.6
+        ]
+      }
+    },
+    {
+      "id": "QA-tech-business_intelligence",
+      "status": "passed",
+      "details": {
+        "values": [
+          13.3,
+          9.4,
+          7.6,
+          4.5,
+          5.3
+        ]
+      }
+    },
+    {
+      "id": "QA-tech-artificial_intelligence",
+      "status": "passed",
+      "details": {
+        "values": [
+          14.9,
+          8.3,
+          6.0,
+          4.1,
+          4.8
+        ]
+      }
+    },
+    {
+      "id": "QA-unique-ru_b2b_registered_organizations_region_sector_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 576,
+        "distinct_keys": 576,
+        "keys": [
+          "year",
+          "territory",
+          "okved_section"
+        ]
+      }
+    },
+    {
+      "id": "QA-finite-numbers-ru_b2b_registered_organizations_region_sector_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 576
+      }
+    },
+    {
+      "id": "QA-unique-ru_b2b_organization_stock_by_ownership_2000_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 30,
+        "distinct_keys": 30,
+        "keys": [
+          "year",
+          "ownership_type"
+        ]
+      }
+    },
+    {
+      "id": "QA-finite-numbers-ru_b2b_organization_stock_by_ownership_2000_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 30
+      }
+    },
+    {
+      "id": "QA-unique-ru_b2b_small_micro_industry_employment_turnover_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 80,
+        "distinct_keys": 80,
+        "keys": [
+          "year",
+          "industry_code",
+          "size_scope",
+          "metric"
+        ]
+      }
+    },
+    {
+      "id": "QA-finite-numbers-ru_b2b_small_micro_industry_employment_turnover_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 80
+      }
+    },
+    {
+      "id": "QA-unique-ru_b2b_small_medium_business_metrics_2021_2023.csv",
+      "status": "passed",
+      "details": {
+        "rows": 27,
+        "distinct_keys": 27,
+        "keys": [
+          "year",
+          "size_scope",
+          "metric"
+        ]
+      }
+    },
+    {
+      "id": "QA-finite-numbers-ru_b2b_small_medium_business_metrics_2021_2023.csv",
+      "status": "passed",
+      "details": {
+        "rows": 27
+      }
+    },
+    {
+      "id": "QA-unique-ru_b2b_active_sole_proprietors_industry_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 44,
+        "distinct_keys": 44,
+        "keys": [
+          "year",
+          "industry_code",
+          "metric"
+        ]
+      }
+    },
+    {
+      "id": "QA-finite-numbers-ru_b2b_active_sole_proprietors_industry_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 44
+      }
+    },
+    {
+      "id": "QA-unique-ru_b2b_digital_technology_by_employee_band_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 45,
+        "distinct_keys": 45,
+        "keys": [
+          "year",
+          "technology_id",
+          "employee_band"
+        ]
+      }
+    },
+    {
+      "id": "QA-finite-numbers-ru_b2b_digital_technology_by_employee_band_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 45
+      }
+    },
+    {
+      "id": "QA-unique-ru_b2b_enterprise_turnover_selected_industries_2022_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 12,
+        "distinct_keys": 12,
+        "keys": [
+          "year",
+          "industry_code"
+        ]
+      }
+    },
+    {
+      "id": "QA-finite-numbers-ru_b2b_enterprise_turnover_selected_industries_2022_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 12
+      }
+    },
+    {
+      "id": "QA-unique-ru_b2b_firm_birth_closure_rates_two_regions_2017_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 32,
+        "distinct_keys": 32,
+        "keys": [
+          "year",
+          "territory",
+          "metric"
+        ]
+      }
+    },
+    {
+      "id": "QA-finite-numbers-ru_b2b_firm_birth_closure_rates_two_regions_2017_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 32
+      }
+    },
+    {
+      "id": "QA-unique-ru_b2b_small_enterprise_digital_by_industry_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 96,
+        "distinct_keys": 96,
+        "keys": [
+          "year",
+          "industry_code",
+          "technology_id"
+        ]
+      }
+    },
+    {
+      "id": "QA-finite-numbers-ru_b2b_small_enterprise_digital_by_industry_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 96
+      }
+    },
+    {
+      "id": "QA-unique-ru_b2b_organizations_digital_expenditure_2019_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 18,
+        "distinct_keys": 18,
+        "keys": [
+          "year",
+          "spending_type"
+        ]
+      }
+    },
+    {
+      "id": "QA-finite-numbers-ru_b2b_organizations_digital_expenditure_2019_2024.csv",
+      "status": "passed",
+      "details": {
+        "rows": 18
+      }
+    }
+  ],
+  "summary": {
+    "passed": 127
+  }
+}

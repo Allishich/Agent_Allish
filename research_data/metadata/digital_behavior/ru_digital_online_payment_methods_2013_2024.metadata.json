@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "RU_DIG_009",
+  "title_ru": "Как оплачивают онлайн-заказы: способы платежей",
+  "data_filename": "ru_digital_online_payment_methods_2013_2024.csv",
+  "description_ru": "Доли онлайн-покупателей, использовавших 9 опубликованных способов платежей; историческая динамика.",
+  "data_grain": "одна строка — один показатель × год × тип разреза × категория",
+  "unit": "percent",
+  "value_column": "value_pct",
+  "geographic_coverage": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+  "population_universe_ru": "Лица 15+ заказывавшие онлайн за последние 12 месяцев (до 2016 г. 15–72)",
+  "denominator_rule_ru": "Онлайн-покупатели соответствующего возрастного охвата",
+  "reference_years": [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "time_coverage_ru": "2013–2024",
+  "dimensions": [
+    "year",
+    "territory",
+    "dimension",
+    "segment",
+    "metric_code"
+  ],
+  "measurement_window_ru": "Способы оплаты онлайн-заказов, множественный выбор.",
+  "publisher": "Институт статистических исследований и экономики знаний НИУ ВШЭ",
+  "underlying_data_owner": "Росстат, если не оговорено иное в таблице HSE",
+  "source_id": "HSE_DIGITAL_2026",
+  "source_publication_ru": "Индикаторы цифровой экономики: 2026. Статистический сборник. ИСИЭЗ НИУ ВШЭ. 2026. DOI 10.17323/978-5-7598-3047-4.",
+  "official_source_document_url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+  "original_rosstat_dataset_catalog_url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-five",
+  "source_tables_pages": [
+    {
+      "table": "15.7",
+      "printed_page": 259
+    }
+  ],
+  "ingest_method": "аккуратная структурированная транскрипция опубликованных таблиц/графиков PDF с визуальной сверкой страниц, без автоматического скачивания исходной таблицы Росстата",
+  "provenance_level": "published_hse_table_reproducing_rosstat_data",
+  "original_binary_status": "внешний PDF доступен по постоянной ссылке; оригинальные бинарные CSV Росстата на диск не выгружались",
+  "record_count": 108,
+  "row_column_names": [
+    "year",
+    "territory",
+    "dimension",
+    "segment",
+    "metric_code",
+    "metric_label_ru",
+    "value_pct",
+    "denominator_ru",
+    "measurement_window",
+    "source_id",
+    "source_table",
+    "source_page",
+    "source_url",
+    "note"
+  ],
+  "csv_encoding": "UTF-8 with BOM",
+  "csv_delimiter": ",",
+  "sha256": "bfee4fa80f5f17fdc94ca87177c1e88424a808c30bcae60af604e97ef3607afb",
+  "limits_and_avoid_ru": [
+    "Суммы процентов по способам могут быть больше 100.",
+    "Пропуски … до 2021 года для онлайн-сервисов и СБП не приравнивать нулю.",
+    "До 2016 года возраст 15–72 лет.",
+    "Значения «С помощью банковской карты» могут включать разные способы оплат и определения во времени."
+  ],
+  "qa_checks_ru": [
+    "Всего 108 ячеек, из них 16 не опубликованы",
+    "2024 банковские карты 87.5%, СБП/QR 38.2% сверены"
+  ],
+  "files_are_derived": "yes, transcription",
+  "classification": "payments",
+  "additional_metadata": {},
+  "compiled_date": "2026-11-17",
+  "license_note": "Для первоисточника сохраняется ссылка и DOI; не заявляется право на свободное распространение оригинального PDF"
+}

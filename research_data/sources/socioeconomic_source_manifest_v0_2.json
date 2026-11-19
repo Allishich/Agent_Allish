@@ -1,0 +1,140 @@
+{
+  "version": "0.2",
+  "as_of_date": "2026-11-17",
+  "scope": "Russia only",
+  "source_format": "official publisher PDFs read through indexed text; binary originals NOT downloaded; exact tables and page references preserved",
+  "dataset_register": [
+    {
+      "id": "RUE-20261117-001",
+      "filename": "ru_mean_monthly_wage_regions_2023_2024_rosstat2025.csv",
+      "title": "Росстат. Регионы России. Социально-экономические показатели. 2025; табл. 4.6, с. 192-193",
+      "grain": "regional_annual_mean_wage",
+      "unit": "ruble per worker per month",
+      "period": "2023-2024",
+      "source_url": "https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf",
+      "number_of_data_rows": 192,
+      "sha256": "78c3431d1e73663582508f97a284679c3ae078c1c87983d386664df946077174",
+      "status": "pdf_text_transcribed_crosschecked",
+      "original_pdf_archived": false,
+      "origin_kind": "rosstat_official_pdf_text",
+      "checked_on": "2026-11-17",
+      "drive_file_id": "10mMMRitkBNKUW3ffS9IEtqCwWXBZad49",
+      "drive_url": "https://drive.google.com/file/d/10mMMRitkBNKUW3ffS9IEtqCwWXBZad49/view"
+    },
+    {
+      "id": "RUE-20261117-002",
+      "filename": "ru_employed_by_industry_2020_2024_rosstat2025.csv",
+      "title": "Росстат. Труд и занятость в России. 2025; табл. 3.7, с. 92",
+      "grain": "national_employed_main_industry",
+      "unit": "thousand employed persons",
+      "period": "2020-2024",
+      "source_url": "https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf",
+      "number_of_data_rows": 105,
+      "sha256": "955baadc405fd51eb5e283ffb62b947d08faf59745afe237d58f62b200df6197",
+      "status": "pdf_text_transcribed_crosschecked",
+      "original_pdf_archived": false,
+      "origin_kind": "rosstat_official_pdf_text",
+      "checked_on": "2026-11-17",
+      "drive_file_id": "1j-7DjUpz2mtGJ7r5jLcsoZe08pg6TkKi",
+      "drive_url": "https://drive.google.com/file/d/1j-7DjUpz2mtGJ7r5jLcsoZe08pg6TkKi/view"
+    },
+    {
+      "id": "RUE-20261117-003",
+      "filename": "ru_household_consumption_by_category_2019_2023_rosstat2025.csv",
+      "title": "Росстат. Социальное положение и уровень жизни населения России. 2025; табл. 8.11, с. 185",
+      "grain": "household_consumption_expense",
+      "unit": "ruble per household member per month",
+      "period": "2019-2023",
+      "source_url": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "number_of_data_rows": 65,
+      "sha256": "d1e72a07e9d7ff23b852aa1be90a0db1c05b7afbcee513cc7c8c989b8bcb4104",
+      "status": "pdf_text_transcribed_crosschecked",
+      "original_pdf_archived": false,
+      "origin_kind": "rosstat_official_pdf_text",
+      "checked_on": "2026-11-17",
+      "drive_file_id": "1lczK9QszpQ6YB5gXGUSXcoX2DV1_wGeM",
+      "drive_url": "https://drive.google.com/file/d/1lczK9QszpQ6YB5gXGUSXcoX2DV1_wGeM/view"
+    },
+    {
+      "id": "RUE-20261117-004",
+      "filename": "ru_national_median_wage_april_survey_rosstat2025.csv",
+      "title": "Росстат. Регионы России. Социально-экономические показатели. 2025; табл. 4.7, с. 194",
+      "grain": "national_april_median_wage",
+      "unit": "ruble per worker",
+      "period": "selected odd years 2017-2025",
+      "source_url": "https://rosstat.gov.ru/storage/mediabank/Region_Pokaz_2025.pdf",
+      "number_of_data_rows": 5,
+      "sha256": "e63d90f7ed2ddbe66d1ff61f4386526b2014743f6b131c5063f172f39c7dc674",
+      "status": "pdf_text_transcribed_crosschecked",
+      "original_pdf_archived": false,
+      "origin_kind": "rosstat_official_pdf_text",
+      "checked_on": "2026-11-17",
+      "drive_file_id": "19n8OBFqGtPNu3EGkFrRBA9qoK3ozVt9_",
+      "drive_url": "https://drive.google.com/file/d/19n8OBFqGtPNu3EGkFrRBA9qoK3ozVt9_/view"
+    },
+    {
+      "id": "RUE-20261117-005",
+      "filename": "ru_wage_geography_vpn2020_crosswalk.csv",
+      "title": "Сопоставление с имеющимся справочником ВПН-2020",
+      "grain": "crosswalk",
+      "unit": "geography",
+      "period": "2020-vs-2024",
+      "source_url": "",
+      "number_of_data_rows": 96,
+      "sha256": "cb165304321e24e7700a642ac62c9cabb4c1433eef80ff54e3d219d0c71c1e5d",
+      "status": "pdf_text_transcribed_crosschecked",
+      "original_pdf_archived": false,
+      "origin_kind": "derived_join",
+      "checked_on": "2026-11-17",
+      "drive_file_id": "10MykAgcTzhmCHKEObNBq0faHHbyBDatu",
+      "drive_url": "https://drive.google.com/file/d/10MykAgcTzhmCHKEObNBq0faHHbyBDatu/view"
+    }
+  ],
+  "quality_results": {
+    "wage_geography_n": 96,
+    "wage_rows": 192,
+    "matched_to_vpn2020": 96,
+    "region_partition_yes": 85,
+    "wage_mean_2023_rub": 74854,
+    "wage_mean_2024_rub": 89069,
+    "wage_mean_2023_prior_secondary_rub": 73709,
+    "wage_conflict_2023_rub": 1145,
+    "employed_2024_thousand": 73267,
+    "household_consumer_spending_2023_rub_person_month": 25987.5,
+    "household_expense_category_sum_equal_total_all_years_2019_2023": true,
+    "employment_sector_small_undistributed_remainder_thousand": {
+      "2020": 67,
+      "2021": 64,
+      "2022": 61,
+      "2023": 72,
+      "2024": 64
+    },
+    "median_april_2025_national_rub": 73871
+  },
+  "limitations": [
+    "Таблица занятых 3.7 — среднегодовая численность занятых по основному виду экономической деятельности, не единовременное обследование рабочей силы; значения могут различаться с общим 74,190 тыс. в другом статистическом ряду.",
+    "Опубликованные крупные отрасли не полностью исчерпывают общую численность; не распределять остаток пропорционально и не прибавлять вложенные НИОКР.",
+    "Таблица 4.6 — номинальная начисленная средняя заработная плата по организациям, не медиана, не зарплата на руки; 2024 — последний год в этой таблице.",
+    "Таблица 4.7 — апрельская выборочная медиана без малого предпринимательства, несопоставима напрямую со средней годовой.",
+    "В таблицах 4.6 и ВПН-2020 есть двойные территориальные итоги: Архангельская и Тюменская области как целые, их части и автономные округа. Не складывать агрегат и компоненты.",
+    "В таблице 8.11 с 2021 года категория «связь» заменена более широкой «информация и коммуникация»: не рассчитывать несопоставимый прирост по категории.",
+    "Росстат не публикует в сборнике 2025 данные о потребительских расходах домашних хозяйств за 2024 год (примечание к таблице 8.11). Оставлена последняя 2023.",
+    "Публикации доступны как PDF-текст; бинарные официальные XLSX/RAR не удалось скачать, поэтому запись о сверке относится к официальной PDF-таблице, а не к исходному XLSX.",
+    "Показатели по регионам несопоставимы с расходами домохозяйств по членам домохозяйств как одна аналитическая единица."
+  ],
+  "originals_requested": [
+    {
+      "url": "https://rosstat.gov.ru/folder/210/document/47652",
+      "format": "RAR with 2025 regional XLSX",
+      "status": "not downloaded (direct network access unavailable)"
+    },
+    {
+      "url": "https://rosstat.gov.ru/folder/210/document/13210",
+      "format": "RAR with labor regional XLSX",
+      "status": "not downloaded"
+    }
+  ],
+  "workbook_file_id": "1CoJNhlnZWEazoA8u43wne7LY6HHo8zVX",
+  "workbook_url": "https://docs.google.com/spreadsheets/d/1CoJNhlnZWEazoA8u43wne7LY6HHo8zVX/edit",
+  "manifest_drive_id": "1OjUobt8EFXPReT2sPO7OCSyh0GhAW9aA"
+}

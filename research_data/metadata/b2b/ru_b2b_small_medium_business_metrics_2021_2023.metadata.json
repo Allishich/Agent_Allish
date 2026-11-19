@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "ru_b2b_small_medium_business_metrics_2021_2023",
+  "file_name": "ru_b2b_small_medium_business_metrics_2021_2023.csv",
+  "created_on": "2026-11-17",
+  "project": "Рыночный агент — B2B Россия",
+  "country": "RU",
+  "scope": "only_Russian_Federation_and_published_region_rows",
+  "data_description": "Средняя численность, среднемесячная начисленная зарплата и оборот малого/микро/среднего бизнеса за 2021–2023 гг.",
+  "rows": 27,
+  "sha256_csv": "60e66ea7fd48824c368efa11755b9a7da9780cfb2ecedab5d3253ed12e9be13c",
+  "fields": [
+    "year",
+    "size_scope",
+    "metric",
+    "value",
+    "unit",
+    "geography",
+    "industry",
+    "source_id",
+    "source_table",
+    "source_page",
+    "source_url"
+  ],
+  "field_definitions": {
+    "year": {
+      "data_type": "integer",
+      "description": "Год наблюдения, а не дата загрузки"
+    },
+    "size_scope": {
+      "data_type": "string",
+      "description": "small_including_micro / micro_subset_small / medium; микро вложено в малые"
+    },
+    "metric": {
+      "data_type": "string",
+      "description": "Наименование статистического показателя с определением в паспорте"
+    },
+    "value": {
+      "data_type": "number",
+      "description": "Опубликованное числовое значение, без модельных оценок"
+    },
+    "unit": {
+      "data_type": "string",
+      "description": "Точная единица измерения, не пересчитывать без указания масштаба"
+    },
+    "geography": {
+      "data_type": "string",
+      "description": "Российская Федерация (если нет подробного разреза)"
+    },
+    "industry": {
+      "data_type": "string",
+      "description": "Измерение или метаданные, буквальное значение по опубликованной строке"
+    },
+    "source_id": {
+      "data_type": "string",
+      "description": "Постоянный ID конкретной официальной таблицы"
+    },
+    "source_table": {
+      "data_type": "string",
+      "description": "Номер таблицы в публикации"
+    },
+    "source_page": {
+      "data_type": "string",
+      "description": "Номер страницы печатного издания"
+    },
+    "source_url": {
+      "data_type": "string",
+      "description": "URL официальной публикации или первичного издателя"
+    }
+  },
+  "row_grain": "год × размерная категория × показатель (Россия)",
+  "observation_population": "Юридические лица: малые, микропредприятия и средние предприятия",
+  "denominator_definition": "Три самостоятельные экономические метрики, каждая со своей единицей измерения",
+  "primary_key": [
+    "year",
+    "size_scope",
+    "metric"
+  ],
+  "source_ids": [
+    "ROS_SME_2024"
+  ],
+  "source_table": "1.1",
+  "source_printed_pages": "10",
+  "source_urls": [
+    "https://rosstat.gov.ru/storage/mediabank/Mal_pred_2024.pdf"
+  ],
+  "source_organization": [
+    "Федеральная служба государственной статистики (Росстат)"
+  ],
+  "processing": "Manual tabular transcription from official publishers’ indexed PDF text; HSE pages 13.1,13.31,2.2 independently visually checked via PDF screenshot; original binary PDF not deposited to Drive.",
+  "verification_status": "official_pdf_text_transcribed",
+  "source_value_type": "float",
+  "analytic_use_cases": [
+    "Сравнение размеров бизнеса и динамики его экономики"
+  ],
+  "limitations": [
+    "Микро входит в малые; не прибавлять микро повторно",
+    "Доход предприятия, оборот и заработная плата не являются эквивалентными показателями",
+    "Нет количества организаций по категориям из этого датасета",
+    "Изменения в номинальном обороте/зарплате не являются показателем реального роста"
+  ],
+  "prohibited_inferences": [
+    "Do not treat registered organizations as operating enterprises",
+    "Do not sum nested size classes, sector subclasses or geographic aggregates",
+    "Do not cross-join independent marginals to invent organization counts in unknown intersections",
+    "Do not infer customers, market demand, purchases or corporate budgets solely from registry stock"
+  ],
+  "missing_value_policy": "No zero imputation; values absent in the publication are not generated.",
+  "update_policy": "Update after new official publication and source reconciliation; keep prior file + manifest version and test results.",
+  "licensing_status": "Official openly published statistical table; check provider conditions before redistribution"
+}
