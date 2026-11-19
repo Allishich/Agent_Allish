@@ -1,0 +1,544 @@
+{
+  "schema_version": "1.0",
+  "datasets": {
+    "RU_RSC_001": {
+      "schema_version": "1.0",
+      "dataset_id": "RU_RSC_001",
+      "filename": "ru_household_spending_deciles_2023.csv",
+      "title": "Структура расходов по децилям обеспеченности, 2023",
+      "description": "Доля выбранных статей расходов в потребительских расходах каждого дециля",
+      "records": 100,
+      "years": [
+        2023
+      ],
+      "territories": [
+        "Российская Федерация"
+      ],
+      "unit_values": [
+        "pct"
+      ],
+      "source_id": "RSC-01",
+      "publisher": "Росстат",
+      "exact_source_title": "Социальное положение и уровень жизни населения России. 2025",
+      "source_url": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "table": "8.10",
+      "printed_page": "183-184",
+      "collection_method": "Ручная транскрипция видимого текстового представления таблицы официальной публикации; независимая проверка исходного PDF/XLSX ещё не выполнена",
+      "grain": "год × дециль × категория расходов",
+      "columns": {
+        "year": "год наблюдения",
+        "territory": "территория, явно указанная в публикации",
+        "territory_level": "country или region",
+        "population_group": "группа / выборка / городская или сельская совокупность",
+        "dimension": "ось сегментации или семейство показателей",
+        "category": "конкретный показатель",
+        "value": "значение без символа процента и единиц",
+        "unit": "pct — процент; min — минуты; прочие единицы — при наличии",
+        "denominator": "определение знаменателя, соответствующее исходной таблице",
+        "source_id": "ключ источника в sources_register.json",
+        "source_table": "номер таблицы или название статьи",
+        "source_page": "печатная страница, если имеется",
+        "source_url": "постоянная ссылка на публикацию",
+        "note": "дополнительные ограничения, не должна использоваться для вывода о другом сегменте"
+      },
+      "missing_policy": "Пропуски не заменяются нулём; в данном файле только опубликованные значения",
+      "source_status": "transcribed_from_official_pdf_text_layer; original_binary_not_downloaded; web_screenshot_cache_miss",
+      "limitations": [
+        "Распределение по располагаемым ресурсам, не по начисленной зарплате",
+        "Категории содержат вложенные подкатегории; не суммировать",
+        "Год 2024 в данном выпуске временно не опубликован"
+      ],
+      "quality_checks": [],
+      "sha256": "b096432e12a18d199829488832cd2c264d10d822226616e942c111765eea3243",
+      "encoding": "UTF-8 BOM",
+      "delimiter": ",",
+      "web_access_date": "2026-11-17",
+      "drive_file_id": "13sGmL7RGfgnY1M7ND66DtrMk3hY-T0Ec",
+      "drive_url": "https://drive.google.com/file/d/13sGmL7RGfgnY1M7ND66DtrMk3hY-T0Ec/view",
+      "metadata_file_id": "1B7RcpK7zb69B1jiA2uiHyp3oeN9HxmWe",
+      "metadata_url": "https://drive.google.com/file/d/1B7RcpK7zb69B1jiA2uiHyp3oeN9HxmWe/view"
+    },
+    "RU_RSC_002": {
+      "schema_version": "1.0",
+      "dataset_id": "RU_RSC_002",
+      "filename": "ru_household_leisure_spending_2019_2023.csv",
+      "title": "Расходы на отдых и культурные мероприятия, 2019–2023",
+      "description": "Две базы процентов: в общих потребительских расходах и внутри расходов на отдых",
+      "records": 60,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "territories": [
+        "Российская Федерация"
+      ],
+      "unit_values": [
+        "pct"
+      ],
+      "source_id": "RSC-01",
+      "publisher": "Росстат",
+      "exact_source_title": "Социальное положение и уровень жизни населения России. 2025",
+      "source_url": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "table": "12.10",
+      "printed_page": "244",
+      "collection_method": "Ручная транскрипция видимого текстового представления таблицы официальной публикации; независимая проверка исходного PDF/XLSX ещё не выполнена",
+      "grain": "год × статья расходов × база процента",
+      "columns": {
+        "year": "год наблюдения",
+        "territory": "территория, явно указанная в публикации",
+        "territory_level": "country или region",
+        "population_group": "группа / выборка / городская или сельская совокупность",
+        "dimension": "ось сегментации или семейство показателей",
+        "category": "конкретный показатель",
+        "value": "значение без символа процента и единиц",
+        "unit": "pct — процент; min — минуты; прочие единицы — при наличии",
+        "denominator": "определение знаменателя, соответствующее исходной таблице",
+        "source_id": "ключ источника в sources_register.json",
+        "source_table": "номер таблицы или название статьи",
+        "source_page": "печатная страница, если имеется",
+        "source_url": "постоянная ссылка на публикацию",
+        "note": "дополнительные ограничения, не должна использоваться для вывода о другом сегменте"
+      },
+      "missing_policy": "Пропуски не заменяются нулём; в данном файле только опубликованные значения",
+      "source_status": "transcribed_from_official_pdf_text_layer; original_binary_not_downloaded; web_screenshot_cache_miss",
+      "limitations": [
+        "Год 2024 в этом выпуске отсутствует",
+        "Некоторые категории вложены",
+        "Один набор отражает проценты, а не рублей"
+      ],
+      "quality_checks": [],
+      "sha256": "6205c37a5b643f0b11b9faea988718b3666ca5f2ec99d3a99b8170dcc6a52629",
+      "encoding": "UTF-8 BOM",
+      "delimiter": ",",
+      "web_access_date": "2026-11-17",
+      "drive_file_id": "1HWLtTf4UFUQL6a9_BFaDFy4EZJkNCOg2",
+      "drive_url": "https://drive.google.com/file/d/1HWLtTf4UFUQL6a9_BFaDFy4EZJkNCOg2/view",
+      "metadata_file_id": "1uAxxnVYBdZ7BNs9ytjsqUzgY8fxDBcBt",
+      "metadata_url": "https://drive.google.com/file/d/1uAxxnVYBdZ7BNs9ytjsqUzgY8fxDBcBt/view"
+    },
+    "RU_RSC_003": {
+      "schema_version": "1.0",
+      "dataset_id": "RU_RSC_003",
+      "filename": "ru_housing_stock_amenities_2019_2024.csv",
+      "title": "Благоустройство жилищного фонда, 2019–2024",
+      "description": "Удельный вес общей площади жилья с конкретным удобством, город/село",
+      "records": 144,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "territories": [
+        "Российская Федерация"
+      ],
+      "unit_values": [
+        "pct"
+      ],
+      "source_id": "RSC-01",
+      "publisher": "Росстат",
+      "exact_source_title": "Социальное положение и уровень жизни населения России. 2025",
+      "source_url": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "table": "9.15",
+      "printed_page": "197",
+      "collection_method": "Ручная транскрипция видимого текстового представления таблицы официальной публикации; независимая проверка исходного PDF/XLSX ещё не выполнена",
+      "grain": "год × тип жилфонда × удобство",
+      "columns": {
+        "year": "год наблюдения",
+        "territory": "территория, явно указанная в публикации",
+        "territory_level": "country или region",
+        "population_group": "группа / выборка / городская или сельская совокупность",
+        "dimension": "ось сегментации или семейство показателей",
+        "category": "конкретный показатель",
+        "value": "значение без символа процента и единиц",
+        "unit": "pct — процент; min — минуты; прочие единицы — при наличии",
+        "denominator": "определение знаменателя, соответствующее исходной таблице",
+        "source_id": "ключ источника в sources_register.json",
+        "source_table": "номер таблицы или название статьи",
+        "source_page": "печатная страница, если имеется",
+        "source_url": "постоянная ссылка на публикацию",
+        "note": "дополнительные ограничения, не должна использоваться для вывода о другом сегменте"
+      },
+      "missing_policy": "Пропуски не заменяются нулём; в данном файле только опубликованные значения",
+      "source_status": "transcribed_from_official_pdf_text_layer; original_binary_not_downloaded; web_screenshot_cache_miss",
+      "limitations": [
+        "Единица наблюдения — площадь жилищного фонда, не домохозяйства",
+        "Не суммировать доли удобств, они пересекаются",
+        "Город и село — разбиение общей площади"
+      ],
+      "quality_checks": [],
+      "sha256": "962c107738a58cf795856958fa6357cab7ae1cb5ad69a79cc44735cf4611947f",
+      "encoding": "UTF-8 BOM",
+      "delimiter": ",",
+      "web_access_date": "2026-11-17",
+      "drive_file_id": "1xzWft7TMxiAV5dsXnJ4vY6bszyeLR3zS",
+      "drive_url": "https://drive.google.com/file/d/1xzWft7TMxiAV5dsXnJ4vY6bszyeLR3zS/view",
+      "metadata_file_id": "1Dq67mgg2SoGf1BOckUNYJdPAvu4u9Lon",
+      "metadata_url": "https://drive.google.com/file/d/1Dq67mgg2SoGf1BOckUNYJdPAvu4u9Lon/view"
+    },
+    "RU_RSC_004": {
+      "schema_version": "1.0",
+      "dataset_id": "RU_RSC_004",
+      "filename": "ru_housing_quality_by_settlement_2024.csv",
+      "title": "Качество жилищных условий по поселению, 2024",
+      "description": "Самооценка жилья и условия проживания по четырём опубликованным географическим разрезам",
+      "records": 56,
+      "years": [
+        2024
+      ],
+      "territories": [
+        "Российская Федерация"
+      ],
+      "unit_values": [
+        "pct"
+      ],
+      "source_id": "RSC-01",
+      "publisher": "Росстат",
+      "exact_source_title": "Социальное положение и уровень жизни населения России. 2025",
+      "source_url": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "table": "9.14",
+      "printed_page": "197",
+      "collection_method": "Ручная транскрипция видимого текстового представления таблицы официальной публикации; независимая проверка исходного PDF/XLSX ещё не выполнена",
+      "grain": "вид поселения × оценка/недостаток",
+      "columns": {
+        "year": "год наблюдения",
+        "territory": "территория, явно указанная в публикации",
+        "territory_level": "country или region",
+        "population_group": "группа / выборка / городская или сельская совокупность",
+        "dimension": "ось сегментации или семейство показателей",
+        "category": "конкретный показатель",
+        "value": "значение без символа процента и единиц",
+        "unit": "pct — процент; min — минуты; прочие единицы — при наличии",
+        "denominator": "определение знаменателя, соответствующее исходной таблице",
+        "source_id": "ключ источника в sources_register.json",
+        "source_table": "номер таблицы или название статьи",
+        "source_page": "печатная страница, если имеется",
+        "source_url": "постоянная ссылка на публикацию",
+        "note": "дополнительные ограничения, не должна использоваться для вывода о другом сегменте"
+      },
+      "missing_policy": "Пропуски не заменяются нулём; в данном файле только опубликованные значения",
+      "source_status": "transcribed_from_official_pdf_text_layer; original_binary_not_downloaded; web_screenshot_cache_miss",
+      "limitations": [
+        "Группа городов 1 млн+ вложена в города",
+        "Проблемы не взаимоисключающие",
+        "Самооценка ≠ объективная экспертиза жилья"
+      ],
+      "quality_checks": [],
+      "sha256": "1e987c4d9522234845b07d5c383cebb25c60ffda573f289cfd2f408cd91f6947",
+      "encoding": "UTF-8 BOM",
+      "delimiter": ",",
+      "web_access_date": "2026-11-17",
+      "drive_file_id": "1Q15dyRWFQ5jUZUR3FIFa4E9Xo4wEr3La",
+      "drive_url": "https://drive.google.com/file/d/1Q15dyRWFQ5jUZUR3FIFa4E9Xo4wEr3La/view",
+      "metadata_file_id": "1uKxWJBf9qVsslqYAlFEMwzpEqjbe3LiR",
+      "metadata_url": "https://drive.google.com/file/d/1uKxWJBf9qVsslqYAlFEMwzpEqjbe3LiR/view"
+    },
+    "RU_RSC_005": {
+      "schema_version": "1.0",
+      "dataset_id": "RU_RSC_005",
+      "filename": "ru_household_amenities_by_size_income_2024.csv",
+      "title": "Благоустройство домохозяйств по составу и ресурсам, 2024",
+      "description": "Именно доля домохозяйств (не жилищного фонда) по удобствам и группам",
+      "records": 84,
+      "years": [
+        2024
+      ],
+      "territories": [
+        "Российская Федерация"
+      ],
+      "unit_values": [
+        "pct"
+      ],
+      "source_id": "RSC-01",
+      "publisher": "Росстат",
+      "exact_source_title": "Социальное положение и уровень жизни населения России. 2025",
+      "source_url": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "table": "9.16",
+      "printed_page": "198",
+      "collection_method": "Ручная транскрипция видимого текстового представления таблицы официальной публикации; независимая проверка исходного PDF/XLSX ещё не выполнена",
+      "grain": "группа домохозяйств × удобство",
+      "columns": {
+        "year": "год наблюдения",
+        "territory": "территория, явно указанная в публикации",
+        "territory_level": "country или region",
+        "population_group": "группа / выборка / городская или сельская совокупность",
+        "dimension": "ось сегментации или семейство показателей",
+        "category": "конкретный показатель",
+        "value": "значение без символа процента и единиц",
+        "unit": "pct — процент; min — минуты; прочие единицы — при наличии",
+        "denominator": "определение знаменателя, соответствующее исходной таблице",
+        "source_id": "ключ источника в sources_register.json",
+        "source_table": "номер таблицы или название статьи",
+        "source_page": "печатная страница, если имеется",
+        "source_url": "постоянная ссылка на публикацию",
+        "note": "дополнительные ограничения, не должна использоваться для вывода о другом сегменте"
+      },
+      "missing_policy": "Пропуски не заменяются нулём; в данном файле только опубликованные значения",
+      "source_status": "transcribed_from_official_pdf_text_layer; original_binary_not_downloaded; web_screenshot_cache_miss",
+      "limitations": [
+        "Группы по детям пересекаются с группами по размеру домохозяйства",
+        "Газ не входит в критерий совместного благоустройства в примечании",
+        "Группы квинтилей не позволяют получить комбинации размер × доход"
+      ],
+      "quality_checks": [],
+      "sha256": "c40c627e78aa356d92ea6a17f381265edeb208f067328a8b0422ab7ce141c3bc",
+      "encoding": "UTF-8 BOM",
+      "delimiter": ",",
+      "web_access_date": "2026-11-17",
+      "drive_file_id": "1h6LZCB8bkqGmIeFTaE8yyOnHZxYJEiQ6",
+      "drive_url": "https://drive.google.com/file/d/1h6LZCB8bkqGmIeFTaE8yyOnHZxYJEiQ6/view",
+      "metadata_file_id": "1tYBrW7wMOGuemg4Wc3ZREJmPDSelLUJm",
+      "metadata_url": "https://drive.google.com/file/d/1tYBrW7wMOGuemg4Wc3ZREJmPDSelLUJm/view"
+    },
+    "RU_RSC_006": {
+      "schema_version": "1.0",
+      "dataset_id": "RU_RSC_006",
+      "filename": "ru_housing_satisfaction_household_groups_2024.csv",
+      "title": "Удовлетворённость жильём по составу и доходам, 2024",
+      "description": "Самооценка жилищных условий: все, город, село, размер, дети, квинтили",
+      "records": 80,
+      "years": [
+        2024
+      ],
+      "territories": [
+        "Российская Федерация"
+      ],
+      "unit_values": [
+        "pct"
+      ],
+      "source_id": "RSC-01",
+      "publisher": "Росстат",
+      "exact_source_title": "Социальное положение и уровень жизни населения России. 2025",
+      "source_url": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "table": "9.21",
+      "printed_page": "200",
+      "collection_method": "Ручная транскрипция видимого текстового представления таблицы официальной публикации; независимая проверка исходного PDF/XLSX ещё не выполнена",
+      "grain": "группа домохозяйств × оценка жилья",
+      "columns": {
+        "year": "год наблюдения",
+        "territory": "территория, явно указанная в публикации",
+        "territory_level": "country или region",
+        "population_group": "группа / выборка / городская или сельская совокупность",
+        "dimension": "ось сегментации или семейство показателей",
+        "category": "конкретный показатель",
+        "value": "значение без символа процента и единиц",
+        "unit": "pct — процент; min — минуты; прочие единицы — при наличии",
+        "denominator": "определение знаменателя, соответствующее исходной таблице",
+        "source_id": "ключ источника в sources_register.json",
+        "source_table": "номер таблицы или название статьи",
+        "source_page": "печатная страница, если имеется",
+        "source_url": "постоянная ссылка на публикацию",
+        "note": "дополнительные ограничения, не должна использоваться для вывода о другом сегменте"
+      },
+      "missing_policy": "Пропуски не заменяются нулём; в данном файле только опубликованные значения",
+      "source_status": "transcribed_from_official_pdf_text_layer; original_binary_not_downloaded; web_screenshot_cache_miss",
+      "limitations": [
+        "Самооценка условий не может быть сведена к рыночному спросу",
+        "Вычислять точные доли с суммой 100 без учёта округления нельзя"
+      ],
+      "quality_checks": [
+        "sum_five_grades_approx_100"
+      ],
+      "sha256": "c01818b7c9b31384ba799b44112410e340ce00d635fa99c166f75f407a3bab34",
+      "encoding": "UTF-8 BOM",
+      "delimiter": ",",
+      "web_access_date": "2026-11-17",
+      "drive_file_id": "1UnjQ-vvoaGDzb7w7XUgpR0xstCjlCmY_",
+      "drive_url": "https://drive.google.com/file/d/1UnjQ-vvoaGDzb7w7XUgpR0xstCjlCmY_/view",
+      "metadata_file_id": "1eLpMmpp6BUuA0fcf-mDa4VlgMsXskpZd",
+      "metadata_url": "https://drive.google.com/file/d/1eLpMmpp6BUuA0fcf-mDa4VlgMsXskpZd/view"
+    },
+    "RU_RSC_007": {
+      "schema_version": "1.0",
+      "dataset_id": "RU_RSC_007",
+      "filename": "ru_housing_area_by_income_quintile_2024.csv",
+      "title": "Жилая площадь на человека по доходным квинтилям, 2024",
+      "description": "Доля домохозяйств по диапазонам жилой площади на одного проживающего и квинтилям",
+      "records": 40,
+      "years": [
+        2024
+      ],
+      "territories": [
+        "Российская Федерация"
+      ],
+      "unit_values": [
+        "pct"
+      ],
+      "source_id": "RSC-01",
+      "publisher": "Росстат",
+      "exact_source_title": "Социальное положение и уровень жизни населения России. 2025",
+      "source_url": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "table": "9.23",
+      "printed_page": "201",
+      "collection_method": "Ручная транскрипция видимого текстового представления таблицы официальной публикации; независимая проверка исходного PDF/XLSX ещё не выполнена",
+      "grain": "доходный квинтиль × диапазон площади",
+      "columns": {
+        "year": "год наблюдения",
+        "territory": "территория, явно указанная в публикации",
+        "territory_level": "country или region",
+        "population_group": "группа / выборка / городская или сельская совокупность",
+        "dimension": "ось сегментации или семейство показателей",
+        "category": "конкретный показатель",
+        "value": "значение без символа процента и единиц",
+        "unit": "pct — процент; min — минуты; прочие единицы — при наличии",
+        "denominator": "определение знаменателя, соответствующее исходной таблице",
+        "source_id": "ключ источника в sources_register.json",
+        "source_table": "номер таблицы или название статьи",
+        "source_page": "печатная страница, если имеется",
+        "source_url": "постоянная ссылка на публикацию",
+        "note": "дополнительные ограничения, не должна использоваться для вывода о другом сегменте"
+      },
+      "missing_policy": "Пропуски не заменяются нулём; в данном файле только опубликованные значения",
+      "source_status": "transcribed_from_official_pdf_text_layer; original_binary_not_downloaded; web_screenshot_cache_miss",
+      "limitations": [
+        "Сегментация по денежным доходам; не идентична располагаемым ресурсам таблицы 9.21",
+        "Исключены общежития коечного типа и другое жильё",
+        "Интервалы площади не равны точным значениям"
+      ],
+      "quality_checks": [],
+      "sha256": "20aa3b6bdca593b2c08ae3c72122c2521376ecae417e6a702e732f8b82a445bb",
+      "encoding": "UTF-8 BOM",
+      "delimiter": ",",
+      "web_access_date": "2026-11-17",
+      "drive_file_id": "10Ebx35pWHwtKHnHzTDGWmcUeJ8a0gWHf",
+      "drive_url": "https://drive.google.com/file/d/10Ebx35pWHwtKHnHzTDGWmcUeJ8a0gWHf/view",
+      "metadata_file_id": "1tkM_BD3qt3xDMinHe-WIdM8kTegiPUpK",
+      "metadata_url": "https://drive.google.com/file/d/1tkM_BD3qt3xDMinHe-WIdM8kTegiPUpK/view"
+    },
+    "RU_RSC_008": {
+      "schema_version": "1.0",
+      "dataset_id": "RU_RSC_008",
+      "filename": "ru_regional_selected_time_use_2024.csv",
+      "title": "Отдельные результаты обследования использования времени — Кировская область и Республика Коми, 2024",
+      "description": "Выборочные показатели буднего дня по времени занятий. В отличие от остальных наборов география РЕГИОНАЛЬНАЯ; значения не описывают РФ в целом.",
+      "records": 14,
+      "years": [
+        2024
+      ],
+      "territories": [
+        "Кировская область",
+        "Республика Коми"
+      ],
+      "unit_values": [
+        "min",
+        "pct"
+      ],
+      "source_id": [
+        "RSC-02",
+        "RSC-03"
+      ],
+      "source_urls": [
+        "https://43.rosstat.gov.ru/news_resp/document/273520",
+        "https://11.rosstat.gov.ru/news/document/274205"
+      ],
+      "source_status": "official_web_snippets_transcription_only; full article not downloaded",
+      "grain": "область × пол × будний день × занятие",
+      "limitations": [
+        "Не является общероссийской оценкой",
+        "Неполный набор видов деятельности: не проверять суммарное время против 1440 мин",
+        "Проценты от суточного времени и минуты являются разными метриками",
+        "Источник регионального уровня",
+        "Оценки Коми отмечены в публикации для буднего дня"
+      ],
+      "quality_checks": [
+        "nonnegative_times",
+        "pct_0_100"
+      ],
+      "sha256": "4a5838d75ab5deb3d3d59662816f93ec6358021386547bc162fb36b9f9fb2534",
+      "encoding": "UTF-8 BOM",
+      "delimiter": ",",
+      "web_access_date": "2026-11-17",
+      "columns": {
+        "year": "См. README с общей схемой таблиц",
+        "territory": "См. README с общей схемой таблиц",
+        "territory_level": "См. README с общей схемой таблиц",
+        "population_group": "См. README с общей схемой таблиц",
+        "dimension": "См. README с общей схемой таблиц",
+        "category": "См. README с общей схемой таблиц",
+        "value": "См. README с общей схемой таблиц",
+        "unit": "См. README с общей схемой таблиц",
+        "denominator": "См. README с общей схемой таблиц",
+        "source_id": "См. README с общей схемой таблиц",
+        "source_table": "См. README с общей схемой таблиц",
+        "source_page": "См. README с общей схемой таблиц",
+        "source_url": "См. README с общей схемой таблиц",
+        "note": "См. README с общей схемой таблиц"
+      },
+      "missing_policy": "не опубликованные занятия не создавались",
+      "drive_file_id": "19SFEuZ5-iZM9oIWrVwaed7oWDBA2RjHi",
+      "drive_url": "https://drive.google.com/file/d/19SFEuZ5-iZM9oIWrVwaed7oWDBA2RjHi/view",
+      "metadata_file_id": "1z3liyg51hoSrfalq4G78U1pDKM0XtbwH",
+      "metadata_url": "https://drive.google.com/file/d/1z3liyg51hoSrfalq4G78U1pDKM0XtbwH/view"
+    },
+    "RU_RSC_009": {
+      "schema_version": "1.0",
+      "dataset_id": "RU_RSC_009",
+      "filename": "ru_national_gender_selected_time_use_2024.csv",
+      "title": "Общероссийские сравнительные показатели использования времени по полу, 2024",
+      "description": "Только показатели среднего по России, непосредственно опубликованные в региональных пресс-релизах Маристата. Мужчины: доли суточного фонда времени; женщины: минуты за будний день. Не образует полного суточного баланса.",
+      "records": 10,
+      "years": [
+        2024
+      ],
+      "territories": [
+        "Российская Федерация"
+      ],
+      "unit_values": [
+        "pct",
+        "min"
+      ],
+      "source_id": [
+        "RSC-07",
+        "RSC-08"
+      ],
+      "source_urls": [
+        "https://12.rosstat.gov.ru/storage/mediabank/%D0%9F%D1%80%D0%B5%D1%81%D1%81-%D1%80%D0%B5%D0%BB%D0%B8%D0%B7_%D0%9E%D0%B4%D0%B8%D0%BD%20%D0%B4%D0%B5%D0%BD%D1%8C%20%D0%BC%D1%83%D0%B6%D1%87%D0%B8%D0%BD%D1%8B.pdf",
+        "https://12.rosstat.gov.ru/storage/mediabank/%D0%9E%D0%B4%D0%B8%D0%BD%20%D0%B4%D0%B5%D0%BD%D1%8C%20%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D1%8B.pdf"
+      ],
+      "source_status": "official_regional_rosstat_publications_including_national_comparators; original_binary_not_saved; web_screen_not_available",
+      "grain": "пол × вид занятия, отдельные опубликованные показатели",
+      "limitations": [
+        "Не все занятия; не складывать до 24 часов",
+        "Мужские доли не сопоставимы напрямую с женскими минутами, разные определения периода",
+        "Культура и досуг — подмножество свободного времени мужчин",
+        "Сумма 250+152 =402, но публикация даёт 401 для агрегата (округление); исходные числа сохраняются без исправления",
+        "Год обследования 2024; дата публикации 2026",
+        "Возраст 15+"
+      ],
+      "quality_checks": [
+        "10_finite_numeric_rows",
+        "pct_within_0_100",
+        "unit_and_denominator_explicit"
+      ],
+      "sha256": "486cfcebfc22e7fc1846eb4770c7da0d40328b5a5e6bcc6aca153bc9505d14b5",
+      "encoding": "UTF-8 BOM",
+      "delimiter": ",",
+      "web_access_date": "2026-11-17",
+      "columns": {
+        "year": "Точное определение см. в полях строки и README",
+        "territory": "Точное определение см. в полях строки и README",
+        "territory_level": "Точное определение см. в полях строки и README",
+        "population_group": "Точное определение см. в полях строки и README",
+        "dimension": "Точное определение см. в полях строки и README",
+        "category": "Точное определение см. в полях строки и README",
+        "value": "Точное определение см. в полях строки и README",
+        "unit": "Точное определение см. в полях строки и README",
+        "denominator": "Точное определение см. в полях строки и README",
+        "source_id": "Точное определение см. в полях строки и README",
+        "source_table": "Точное определение см. в полях строки и README",
+        "source_page": "Точное определение см. в полях строки и README",
+        "source_url": "Точное определение см. в полях строки и README",
+        "note": "Точное определение см. в полях строки и README"
+      },
+      "drive_file_id": "1v5oeWG84o4jZlEU0YOoXfdUW7AxibaSN",
+      "drive_url": "https://drive.google.com/file/d/1v5oeWG84o4jZlEU0YOoXfdUW7AxibaSN/view",
+      "metadata_file_id": "1cS44XO2posd87uevF1U0kJHPC7AmX6zw",
+      "metadata_url": "https://drive.google.com/file/d/1cS44XO2posd87uevF1U0kJHPC7AmX6zw/view"
+    }
+  }
+}
