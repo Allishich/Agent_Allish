@@ -1,0 +1,883 @@
+﻿check,geography,observed,expected,difference,status
+tab02_total_minus_oneperson_equals_tab04_2plus,Алтайский край,609585,609585,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Амурская область,207067,207067,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Архангельская область,286423,286423,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Архангельская область без автономного округа,275254,275254,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Астраханская область,241758,241758,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Белгородская область,423838,423838,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Брянская область,312489,312489,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Владимирская область,366884,366884,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Волгоградская область,680332,680332,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Вологодская область,315625,315625,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Воронежская область,628675,628675,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Дальневосточный федеральный округ,2094973,2094973,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Еврейская автономная область,40676,40676,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Забайкальский край,270383,270383,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Ивановская область,256101,256101,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Иркутская область,632762,632762,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Кабардино-Балкарская Республика,201075,201075,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Калининградская область,275435,275435,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Калужская область,275615,275615,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Камчатский край,77545,77545,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Карачаево-Черкесская Республика,102712,102712,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Кемеровская область - Кузбасс,713172,713172,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Кировская область,327462,327462,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Костромская область,165338,165338,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Краснодарский край,1571592,1571592,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Красноярский край,768714,768714,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Курганская область,216493,216493,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Курская область,296967,296967,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Ленинградская область,507653,507653,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Липецкая область,308164,308164,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Магаданская область,36122,36122,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Московская область,2118351,2118351,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Мурманская область,185378,185378,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Ненецкий автономный округ,11169,11169,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Нижегородская область,863873,863873,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Новгородская область,160414,160414,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Новосибирская область,751119,751119,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Омская область,508436,508436,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Оренбургская область,516667,516667,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Орловская область,193598,193598,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Пензенская область,353846,353846,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Пермский край,697608,697608,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Приволжский федеральный округ,7940628,7940628,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Приморский край,481875,481875,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Псковская область,163235,163235,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Адыгея,125214,125214,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Алтай,56308,56308,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Башкортостан,1119018,1119018,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Бурятия,257500,257500,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Дагестан,664268,664268,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Ингушетия,80994,80994,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Калмыкия,67024,67024,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Карелия,150398,150398,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Коми,203652,203652,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Крым,497042,497042,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Марий Эл,185119,185119,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Мордовия,213633,213633,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Саха (Якутия),250391,250391,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Северная Осетия - Алания,156568,156568,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Татарстан,1082480,1082480,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Тыва,78054,78054,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Республика Хакасия,145356,145356,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Ростовская область,1132082,1132082,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Рязанская область,300508,300508,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Самарская область,859446,859446,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Саратовская область,660389,660389,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Сахалинская область,123556,123556,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Свердловская область,1153383,1153383,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Северо-Западный федеральный округ,3661377,3661377,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Северо-Кавказский федеральный округ,2240692,2240692,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Сибирский федеральный округ,4547147,4547147,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Смоленская область,238798,238798,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Ставропольский край,776902,776902,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Тамбовская область,266917,266917,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Тверская область,332639,332639,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Томская область,283641,283641,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Тульская область,389003,389003,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Тюменская область,1015222,1015222,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Тюменская область без автономных округов,431214,431214,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Удмуртская Республика,405940,405940,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Ульяновская область,328060,328060,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Уральский федеральный округ,3303268,3303268,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Хабаровский край,337196,337196,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Ханты-Мансийский автономный округ - Югра,451399,451399,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Центральный федеральный округ,10197735,10197735,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Челябинская область,918170,918170,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Чеченская Республика,258173,258173,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Чувашская Республика,327087,327087,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Чукотский автономный округ,12662,12662,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Южный федеральный округ,4446207,4446207,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Ямало-Ненецкий автономный округ,132609,132609,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,Ярославская область,329779,329779,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,г. Москва,2994071,2994071,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,г. Санкт-Петербург,1413164,1413164,0,pass
+tab02_total_minus_oneperson_equals_tab04_2plus,г. Севастополь,131163,131163,0,pass
+under35_family_units_le_total,Алтайский край,80318,569153,-488835,pass
+under35_family_units_le_total,Амурская область,36943,197698,-160755,pass
+under35_family_units_le_total,Архангельская область,35427,265689,-230262,pass
+under35_family_units_le_total,Архангельская область без автономного округа,33655,255606,-221951,pass
+under35_family_units_le_total,Астраханская область,38654,227789,-189135,pass
+under35_family_units_le_total,Белгородская область,53599,384376,-330777,pass
+under35_family_units_le_total,Брянская область,42069,295396,-253327,pass
+under35_family_units_le_total,Владимирская область,45294,341468,-296174,pass
+under35_family_units_le_total,Волгоградская область,85379,605500,-520121,pass
+under35_family_units_le_total,Вологодская область,39445,284492,-245047,pass
+under35_family_units_le_total,Воронежская область,89755,594480,-504725,pass
+under35_family_units_le_total,Дальневосточный федеральный округ,328168,1870879,-1542711,pass
+under35_family_units_le_total,Еврейская автономная область,7203,38449,-31246,pass
+under35_family_units_le_total,Забайкальский край,46736,239306,-192570,pass
+under35_family_units_le_total,Ивановская область,31544,236370,-204826,pass
+under35_family_units_le_total,Иркутская область,97978,565206,-467228,pass
+under35_family_units_le_total,Кабардино-Балкарская Республика,36934,227746,-190812,pass
+under35_family_units_le_total,Калининградская область,37631,260637,-223006,pass
+under35_family_units_le_total,Калужская область,39438,260366,-220928,pass
+under35_family_units_le_total,Камчатский край,12071,71021,-58950,pass
+under35_family_units_le_total,Карачаево-Черкесская Республика,17036,111510,-94474,pass
+under35_family_units_le_total,Кемеровская область - Кузбасс,105084,671486,-566402,pass
+under35_family_units_le_total,Кировская область,37881,304420,-266539,pass
+under35_family_units_le_total,Костромская область,19136,150312,-131176,pass
+under35_family_units_le_total,Краснодарский край,230198,1513725,-1283527,pass
+under35_family_units_le_total,Красноярский край,115816,714962,-599146,pass
+under35_family_units_le_total,Курганская область,27191,204674,-177483,pass
+under35_family_units_le_total,Курская область,37130,274103,-236973,pass
+under35_family_units_le_total,Ленинградская область,67047,465257,-398210,pass
+under35_family_units_le_total,Липецкая область,40430,281788,-241358,pass
+under35_family_units_le_total,Магаданская область,5498,32404,-26906,pass
+under35_family_units_le_total,Московская область,270079,1891828,-1621749,pass
+under35_family_units_le_total,Мурманская область,25858,163629,-137771,pass
+under35_family_units_le_total,Ненецкий автономный округ,1772,10083,-8311,pass
+under35_family_units_le_total,Нижегородская область,108474,770317,-661843,pass
+under35_family_units_le_total,Новгородская область,17514,138028,-120514,pass
+under35_family_units_le_total,Новосибирская область,95952,665531,-569579,pass
+under35_family_units_le_total,Омская область,67883,478860,-410977,pass
+under35_family_units_le_total,Оренбургская область,76800,497487,-420687,pass
+under35_family_units_le_total,Орловская область,26624,186579,-159955,pass
+under35_family_units_le_total,Пензенская область,45474,333437,-287963,pass
+under35_family_units_le_total,Пермский край,99656,652893,-553237,pass
+under35_family_units_le_total,Приволжский федеральный округ,1097346,7460916,-6363570,pass
+under35_family_units_le_total,Приморский край,55895,402264,-346369,pass
+under35_family_units_le_total,Псковская область,20883,151557,-130674,pass
+under35_family_units_le_total,Республика Адыгея,19896,122634,-102738,pass
+under35_family_units_le_total,Республика Алтай,10321,54460,-44139,pass
+under35_family_units_le_total,Республика Башкортостан,165966,1083294,-917328,pass
+under35_family_units_le_total,Республика Бурятия,45294,243968,-198674,pass
+under35_family_units_le_total,Республика Дагестан,168170,758403,-590233,pass
+under35_family_units_le_total,Республика Ингушетия,17424,94163,-76739,pass
+under35_family_units_le_total,Республика Калмыкия,10760,67343,-56583,pass
+under35_family_units_le_total,Республика Карелия,16985,132825,-115840,pass
+under35_family_units_le_total,Республика Коми,23766,162623,-138857,pass
+under35_family_units_le_total,Республика Крым,70621,498069,-427448,pass
+under35_family_units_le_total,Республика Марий Эл,26477,176063,-149586,pass
+under35_family_units_le_total,Республика Мордовия,27468,207410,-179942,pass
+under35_family_units_le_total,Республика Саха (Якутия),47592,219174,-171582,pass
+under35_family_units_le_total,Республика Северная Осетия - Алания,21891,156288,-134397,pass
+under35_family_units_le_total,Республика Татарстан,162616,1045742,-883126,pass
+under35_family_units_le_total,Республика Тыва,21825,77852,-56027,pass
+under35_family_units_le_total,Республика Хакасия,20910,125154,-104244,pass
+under35_family_units_le_total,Ростовская область,161272,1089834,-928562,pass
+under35_family_units_le_total,Рязанская область,33281,260735,-227454,pass
+under35_family_units_le_total,Самарская область,109386,802720,-693334,pass
+under35_family_units_le_total,Саратовская область,92272,618442,-526170,pass
+under35_family_units_le_total,Сахалинская область,17902,114116,-96214,pass
+under35_family_units_le_total,Свердловская область,165634,1077503,-911869,pass
+under35_family_units_le_total,Северо-Западный федеральный округ,431400,3280827,-2849427,pass
+under35_family_units_le_total,Северо-Кавказский федеральный округ,458201,2431985,-1973784,pass
+under35_family_units_le_total,Сибирский федеральный округ,654240,4167125,-3512885,pass
+under35_family_units_le_total,Смоленская область,28013,217407,-189394,pass
+under35_family_units_le_total,Ставропольский край,124365,770063,-645698,pass
+under35_family_units_le_total,Тамбовская область,33299,253053,-219754,pass
+under35_family_units_le_total,Тверская область,37010,302625,-265615,pass
+under35_family_units_le_total,Томская область,38153,244461,-206308,pass
+under35_family_units_le_total,Тульская область,48644,359616,-310972,pass
+under35_family_units_le_total,Тюменская область,159859,913137,-753278,pass
+under35_family_units_le_total,Тюменская область без автономных округов,70033,410180,-340147,pass
+under35_family_units_le_total,Удмуртская Республика,52298,353253,-300955,pass
+under35_family_units_le_total,Ульяновская область,47279,310467,-263188,pass
+under35_family_units_le_total,Уральский федеральный округ,479646,3041128,-2561482,pass
+under35_family_units_le_total,Хабаровский край,50555,300128,-249573,pass
+under35_family_units_le_total,Ханты-Мансийский автономный округ - Югра,67559,386283,-318724,pass
+under35_family_units_le_total,Центральный федеральный округ,1192211,8970992,-7778781,pass
+under35_family_units_le_total,Челябинская область,126962,845814,-718852,pass
+under35_family_units_le_total,Чеченская Республика,72381,313812,-241431,pass
+under35_family_units_le_total,Чувашская Республика,45299,304971,-259672,pass
+under35_family_units_le_total,Чукотский автономный округ,2479,12351,-9872,pass
+under35_family_units_le_total,Южный федеральный округ,634441,4242152,-3607711,pass
+under35_family_units_le_total,Ямало-Ненецкий автономный округ,22267,116674,-94407,pass
+under35_family_units_le_total,Ярославская область,39311,299186,-259875,pass
+under35_family_units_le_total,г. Москва,277555,2381304,-2103749,pass
+under35_family_units_le_total,г. Санкт-Петербург,146844,1256090,-1109246,pass
+under35_family_units_le_total,г. Севастополь,17661,117258,-99597,pass
+tab13_age_threshold_count_sum,total_lt18,15532802,15532802,0,pass
+tab13_age_threshold_count_sum,total_lt17,14980962,14980962,0,pass
+tab13_age_threshold_count_sum,total_lt16,14354500,14354500,0,pass
+tab13_age_threshold_count_sum,total_lt15,13732504,13732504,0,pass
+tab13_age_threshold_count_sum,total_lt7,7145144,7145144,0,pass
+tab13_age_threshold_count_sum,total_lt3,2908553,2908553,0,pass
+tab13_age_threshold_count_sum,urban_lt18,11342907,11342907,0,pass
+tab13_age_threshold_count_sum,urban_lt17,10936035,10936035,0,pass
+tab13_age_threshold_count_sum,urban_lt16,10464278,10464278,0,pass
+tab13_age_threshold_count_sum,urban_lt15,9997100,9997100,0,pass
+tab13_age_threshold_count_sum,urban_lt7,5193512,5193512,0,pass
+tab13_age_threshold_count_sum,urban_lt3,2074155,2074155,0,pass
+tab13_age_threshold_count_sum,rural_lt18,4189895,4189895,0,pass
+tab13_age_threshold_count_sum,rural_lt17,4044927,4044927,0,pass
+tab13_age_threshold_count_sum,rural_lt16,3890222,3890222,0,pass
+tab13_age_threshold_count_sum,rural_lt15,3735404,3735404,0,pass
+tab13_age_threshold_count_sum,rural_lt7,1951632,1951632,0,pass
+tab13_age_threshold_count_sum,rural_lt3,834398,834398,0,pass
+tab13_national_equals_urban_plus_rural,lt18,15532802,15532802,0,pass
+tab13_national_equals_urban_plus_rural,lt17,14980962,14980962,0,pass
+tab13_national_equals_urban_plus_rural,lt16,14354500,14354500,0,pass
+tab13_national_equals_urban_plus_rural,lt15,13732504,13732504,0,pass
+tab13_national_equals_urban_plus_rural,lt7,7145144,7145144,0,pass
+tab13_national_equals_urban_plus_rural,lt3,2908553,2908553,0,pass
+tab13_national_equals_urban_plus_rural,lt1,897492,897492,0,pass
+tab10_sum_couple_mother_father_u18_across_disjoint_regions_vs_tab13_national,Россия,15532802,15532802,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Алтайский край,242601,242601,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Амурская область,93588,93588,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Архангельская область,118758,118758,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Архангельская область без автономного округа,113544,113544,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Астраханская область,107713,107713,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Белгородская область,157642,157642,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Брянская область,118664,118664,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Владимирская область,136704,136704,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Волгоградская область,220792,220792,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Вологодская область,130297,130297,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Воронежская область,230826,230826,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Дальневосточный федеральный округ,896406,896406,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Еврейская автономная область,18099,18099,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Забайкальский край,122521,122521,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Ивановская область,97097,97097,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Иркутская область,270549,270549,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Кабардино-Балкарская Республика,100402,100402,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Калининградская область,112396,112396,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Калужская область,111392,111392,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Камчатский край,35705,35705,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Карачаево-Черкесская Республика,50275,50275,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Кемеровская область - Кузбасс,290567,290567,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Кировская область,123827,123827,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Костромская область,65274,65274,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Краснодарский край,634503,634503,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Красноярский край,319241,319241,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Курганская область,83628,83628,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Курская область,108085,108085,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Ленинградская область,188107,188107,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Липецкая область,113957,113957,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Магаданская область,16006,16006,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Московская область,778109,778109,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Мурманская область,78627,78627,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Ненецкий автономный округ,5214,5214,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Нижегородская область,317600,317600,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Новгородская область,57153,57153,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Новосибирская область,280596,280596,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Омская область,203157,203157,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Оренбургская область,220164,220164,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Орловская область,73737,73737,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Пензенская область,133646,133646,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Пермский край,297987,297987,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Приволжский федеральный округ,3187413,3187413,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Приморский край,165426,165426,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Псковская область,60790,60790,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Адыгея,55464,55464,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Алтай,29870,29870,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Башкортостан,471895,471895,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Бурятия,128383,128383,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Дагестан,410903,410903,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Ингушетия,47797,47797,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Калмыкия,32089,32089,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Карелия,57398,57398,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Коми,77775,77775,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Крым,208441,208441,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Марий Эл,78765,78765,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Мордовия,82286,82286,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Саха (Якутия),121996,121996,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Северная Осетия - Алания,66340,66340,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Татарстан,473661,473661,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Тыва,49700,49700,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Республика Хакасия,61566,61566,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Ростовская область,431185,431185,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Рязанская область,100457,100457,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Самарская область,323443,323443,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Саратовская область,242401,242401,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Сахалинская область,50600,50600,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Свердловская область,482223,482223,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Северо-Западный федеральный округ,1391177,1391177,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Северо-Кавказский федеральный округ,1173562,1173562,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Сибирский федеральный округ,1859422,1859422,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Смоленская область,85556,85556,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Ставропольский край,320006,320006,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Тамбовская область,92645,92645,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Тверская область,111814,111814,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Томская область,111575,111575,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Тульская область,141173,141173,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Тюменская область,476682,476682,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Тюменская область без автономных округов,201924,201924,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Удмуртская Республика,160392,160392,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Ульяновская область,123248,123248,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Уральский федеральный округ,1398397,1398397,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Хабаровский край,137231,137231,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Ханты-Мансийский автономный округ - Югра,207909,207909,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Центральный федеральный округ,3587093,3587093,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Челябинская область,355864,355864,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Чеченская Республика,177839,177839,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Чувашская Республика,138098,138098,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Чукотский автономный округ,6851,6851,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Южный федеральный округ,1737743,1737743,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Ямало-Ненецкий автономный округ,66849,66849,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,Ярославская область,129535,129535,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,г. Москва,934426,934426,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,г. Санкт-Петербург,509876,509876,0,pass
+tab04_u18_equals_sum_1_2_3plus_children,г. Севастополь,47556,47556,0,pass
+tab10_u18_by_child_count,Алтайский край / Супружеские пары с детьми,167612,167612,0,pass
+tab10_u18_by_child_count,Алтайский край / Матери с детьми,68731,68731,0,pass
+tab10_u18_by_child_count,Алтайский край / Отцы с детьми,8625,8625,0,pass
+tab10_u18_by_child_count,Амурская область / Супружеские пары с детьми,61513,61513,0,pass
+tab10_u18_by_child_count,Амурская область / Матери с детьми,29562,29562,0,pass
+tab10_u18_by_child_count,Амурская область / Отцы с детьми,3739,3739,0,pass
+tab10_u18_by_child_count,Архангельская область / Супружеские пары с детьми,71689,71689,0,pass
+tab10_u18_by_child_count,Архангельская область / Матери с детьми,40221,40221,0,pass
+tab10_u18_by_child_count,Архангельская область / Отцы с детьми,8131,8131,0,pass
+tab10_u18_by_child_count,Архангельская область без автономного округа / Супружеские пары с детьми,68328,68328,0,pass
+tab10_u18_by_child_count,Архангельская область без автономного округа / Матери с детьми,38480,38480,0,pass
+tab10_u18_by_child_count,Архангельская область без автономного округа / Отцы с детьми,7934,7934,0,pass
+tab10_u18_by_child_count,Астраханская область / Супружеские пары с детьми,65184,65184,0,pass
+tab10_u18_by_child_count,Астраханская область / Матери с детьми,38007,38007,0,pass
+tab10_u18_by_child_count,Астраханская область / Отцы с детьми,7972,7972,0,pass
+tab10_u18_by_child_count,Белгородская область / Супружеские пары с детьми,93756,93756,0,pass
+tab10_u18_by_child_count,Белгородская область / Матери с детьми,54314,54314,0,pass
+tab10_u18_by_child_count,Белгородская область / Отцы с детьми,13061,13061,0,pass
+tab10_u18_by_child_count,Брянская область / Супружеские пары с детьми,70234,70234,0,pass
+tab10_u18_by_child_count,Брянская область / Матери с детьми,45207,45207,0,pass
+tab10_u18_by_child_count,Брянская область / Отцы с детьми,6574,6574,0,pass
+tab10_u18_by_child_count,Владимирская область / Супружеские пары с детьми,78420,78420,0,pass
+tab10_u18_by_child_count,Владимирская область / Матери с детьми,48569,48569,0,pass
+tab10_u18_by_child_count,Владимирская область / Отцы с детьми,11157,11157,0,pass
+tab10_u18_by_child_count,Волгоградская область / Супружеские пары с детьми,132255,132255,0,pass
+tab10_u18_by_child_count,Волгоградская область / Матери с детьми,71332,71332,0,pass
+tab10_u18_by_child_count,Волгоградская область / Отцы с детьми,19249,19249,0,pass
+tab10_u18_by_child_count,Вологодская область / Супружеские пары с детьми,76230,76230,0,pass
+tab10_u18_by_child_count,Вологодская область / Матери с детьми,45343,45343,0,pass
+tab10_u18_by_child_count,Вологодская область / Отцы с детьми,10053,10053,0,pass
+tab10_u18_by_child_count,Воронежская область / Супружеские пары с детьми,142931,142931,0,pass
+tab10_u18_by_child_count,Воронежская область / Матери с детьми,74755,74755,0,pass
+tab10_u18_by_child_count,Воронежская область / Отцы с детьми,16123,16123,0,pass
+tab10_u18_by_child_count,Дальневосточный федеральный округ / Супружеские пары с детьми,556312,556312,0,pass
+tab10_u18_by_child_count,Дальневосточный федеральный округ / Матери с детьми,307199,307199,0,pass
+tab10_u18_by_child_count,Дальневосточный федеральный округ / Отцы с детьми,48957,48957,0,pass
+tab10_u18_by_child_count,Еврейская автономная область / Супружеские пары с детьми,11391,11391,0,pass
+tab10_u18_by_child_count,Еврейская автономная область / Матери с детьми,6076,6076,0,pass
+tab10_u18_by_child_count,Еврейская автономная область / Отцы с детьми,901,901,0,pass
+tab10_u18_by_child_count,Забайкальский край / Супружеские пары с детьми,79897,79897,0,pass
+tab10_u18_by_child_count,Забайкальский край / Матери с детьми,39865,39865,0,pass
+tab10_u18_by_child_count,Забайкальский край / Отцы с детьми,5210,5210,0,pass
+tab10_u18_by_child_count,Ивановская область / Супружеские пары с детьми,58069,58069,0,pass
+tab10_u18_by_child_count,Ивановская область / Матери с детьми,33590,33590,0,pass
+tab10_u18_by_child_count,Ивановская область / Отцы с детьми,6538,6538,0,pass
+tab10_u18_by_child_count,Иркутская область / Супружеские пары с детьми,169023,169023,0,pass
+tab10_u18_by_child_count,Иркутская область / Матери с детьми,92859,92859,0,pass
+tab10_u18_by_child_count,Иркутская область / Отцы с детьми,13580,13580,0,pass
+tab10_u18_by_child_count,Кабардино-Балкарская Республика / Супружеские пары с детьми,78676,78676,0,pass
+tab10_u18_by_child_count,Кабардино-Балкарская Республика / Матери с детьми,22840,22840,0,pass
+tab10_u18_by_child_count,Кабардино-Балкарская Республика / Отцы с детьми,4440,4440,0,pass
+tab10_u18_by_child_count,Калининградская область / Супружеские пары с детьми,68645,68645,0,pass
+tab10_u18_by_child_count,Калининградская область / Матери с детьми,37387,37387,0,pass
+tab10_u18_by_child_count,Калининградская область / Отцы с детьми,8253,8253,0,pass
+tab10_u18_by_child_count,Калужская область / Супружеские пары с детьми,60699,60699,0,pass
+tab10_u18_by_child_count,Калужская область / Матери с детьми,40742,40742,0,pass
+tab10_u18_by_child_count,Калужская область / Отцы с детьми,12825,12825,0,pass
+tab10_u18_by_child_count,Камчатский край / Супружеские пары с детьми,21291,21291,0,pass
+tab10_u18_by_child_count,Камчатский край / Матери с детьми,12766,12766,0,pass
+tab10_u18_by_child_count,Камчатский край / Отцы с детьми,2079,2079,0,pass
+tab10_u18_by_child_count,Карачаево-Черкесская Республика / Супружеские пары с детьми,34664,34664,0,pass
+tab10_u18_by_child_count,Карачаево-Черкесская Республика / Матери с детьми,15486,15486,0,pass
+tab10_u18_by_child_count,Карачаево-Черкесская Республика / Отцы с детьми,3351,3351,0,pass
+tab10_u18_by_child_count,Кемеровская область - Кузбасс / Супружеские пары с детьми,187618,187618,0,pass
+tab10_u18_by_child_count,Кемеровская область - Кузбасс / Матери с детьми,93200,93200,0,pass
+tab10_u18_by_child_count,Кемеровская область - Кузбасс / Отцы с детьми,13155,13155,0,pass
+tab10_u18_by_child_count,Кировская область / Супружеские пары с детьми,85360,85360,0,pass
+tab10_u18_by_child_count,Кировская область / Матери с детьми,34506,34506,0,pass
+tab10_u18_by_child_count,Кировская область / Отцы с детьми,4759,4759,0,pass
+tab10_u18_by_child_count,Костромская область / Супружеские пары с детьми,42698,42698,0,pass
+tab10_u18_by_child_count,Костромская область / Матери с детьми,19373,19373,0,pass
+tab10_u18_by_child_count,Костромская область / Отцы с детьми,3770,3770,0,pass
+tab10_u18_by_child_count,Краснодарский край / Супружеские пары с детьми,421100,421100,0,pass
+tab10_u18_by_child_count,Краснодарский край / Матери с детьми,184321,184321,0,pass
+tab10_u18_by_child_count,Краснодарский край / Отцы с детьми,37103,37103,0,pass
+tab10_u18_by_child_count,Красноярский край / Супружеские пары с детьми,210796,210796,0,pass
+tab10_u18_by_child_count,Красноярский край / Матери с детьми,97218,97218,0,pass
+tab10_u18_by_child_count,Красноярский край / Отцы с детьми,14911,14911,0,pass
+tab10_u18_by_child_count,Курганская область / Супружеские пары с детьми,57069,57069,0,pass
+tab10_u18_by_child_count,Курганская область / Матери с детьми,24308,24308,0,pass
+tab10_u18_by_child_count,Курганская область / Отцы с детьми,2925,2925,0,pass
+tab10_u18_by_child_count,Курская область / Супружеские пары с детьми,66816,66816,0,pass
+tab10_u18_by_child_count,Курская область / Матери с детьми,37186,37186,0,pass
+tab10_u18_by_child_count,Курская область / Отцы с детьми,5793,5793,0,pass
+tab10_u18_by_child_count,Ленинградская область / Супружеские пары с детьми,106378,106378,0,pass
+tab10_u18_by_child_count,Ленинградская область / Матери с детьми,64998,64998,0,pass
+tab10_u18_by_child_count,Ленинградская область / Отцы с детьми,20178,20178,0,pass
+tab10_u18_by_child_count,Липецкая область / Супружеские пары с детьми,70505,70505,0,pass
+tab10_u18_by_child_count,Липецкая область / Матери с детьми,39439,39439,0,pass
+tab10_u18_by_child_count,Липецкая область / Отцы с детьми,6982,6982,0,pass
+tab10_u18_by_child_count,Магаданская область / Супружеские пары с детьми,9005,9005,0,pass
+tab10_u18_by_child_count,Магаданская область / Матери с детьми,6240,6240,0,pass
+tab10_u18_by_child_count,Магаданская область / Отцы с детьми,883,883,0,pass
+tab10_u18_by_child_count,Московская область / Супружеские пары с детьми,470136,470136,0,pass
+tab10_u18_by_child_count,Московская область / Матери с детьми,236703,236703,0,pass
+tab10_u18_by_child_count,Московская область / Отцы с детьми,83739,83739,0,pass
+tab10_u18_by_child_count,Мурманская область / Супружеские пары с детьми,51095,51095,0,pass
+tab10_u18_by_child_count,Мурманская область / Матери с детьми,23566,23566,0,pass
+tab10_u18_by_child_count,Мурманская область / Отцы с детьми,4343,4343,0,pass
+tab10_u18_by_child_count,Ненецкий автономный округ / Супружеские пары с детьми,3361,3361,0,pass
+tab10_u18_by_child_count,Ненецкий автономный округ / Матери с детьми,1741,1741,0,pass
+tab10_u18_by_child_count,Нижегородская область / Супружеские пары с детьми,199678,199678,0,pass
+tab10_u18_by_child_count,Нижегородская область / Матери с детьми,99417,99417,0,pass
+tab10_u18_by_child_count,Нижегородская область / Отцы с детьми,22096,22096,0,pass
+tab10_u18_by_child_count,Новгородская область / Супружеские пары с детьми,34072,34072,0,pass
+tab10_u18_by_child_count,Новгородская область / Матери с детьми,19910,19910,0,pass
+tab10_u18_by_child_count,Новгородская область / Отцы с детьми,3836,3836,0,pass
+tab10_u18_by_child_count,Новосибирская область / Супружеские пары с детьми,184500,184500,0,pass
+tab10_u18_by_child_count,Новосибирская область / Матери с детьми,86264,86264,0,pass
+tab10_u18_by_child_count,Новосибирская область / Отцы с детьми,13109,13109,0,pass
+tab10_u18_by_child_count,Омская область / Супружеские пары с детьми,135267,135267,0,pass
+tab10_u18_by_child_count,Омская область / Матери с детьми,62810,62810,0,pass
+tab10_u18_by_child_count,Омская область / Отцы с детьми,7894,7894,0,pass
+tab10_u18_by_child_count,Оренбургская область / Супружеские пары с детьми,151568,151568,0,pass
+tab10_u18_by_child_count,Оренбургская область / Матери с детьми,62804,62804,0,pass
+tab10_u18_by_child_count,Оренбургская область / Отцы с детьми,8648,8648,0,pass
+tab10_u18_by_child_count,Орловская область / Супружеские пары с детьми,44230,44230,0,pass
+tab10_u18_by_child_count,Орловская область / Матери с детьми,26860,26860,0,pass
+tab10_u18_by_child_count,Орловская область / Отцы с детьми,4389,4389,0,pass
+tab10_u18_by_child_count,Пензенская область / Супружеские пары с детьми,88679,88679,0,pass
+tab10_u18_by_child_count,Пензенская область / Матери с детьми,39843,39843,0,pass
+tab10_u18_by_child_count,Пензенская область / Отцы с детьми,6975,6975,0,pass
+tab10_u18_by_child_count,Пермский край / Супружеские пары с детьми,187897,187897,0,pass
+tab10_u18_by_child_count,Пермский край / Матери с детьми,96743,96743,0,pass
+tab10_u18_by_child_count,Пермский край / Отцы с детьми,17276,17276,0,pass
+tab10_u18_by_child_count,Приволжский федеральный округ / Супружеские пары с детьми,2035739,2035739,0,pass
+tab10_u18_by_child_count,Приволжский федеральный округ / Матери с детьми,994896,994896,0,pass
+tab10_u18_by_child_count,Приволжский федеральный округ / Отцы с детьми,200471,200471,0,pass
+tab10_u18_by_child_count,Приморский край / Супружеские пары с детьми,99778,99778,0,pass
+tab10_u18_by_child_count,Приморский край / Матери с детьми,56511,56511,0,pass
+tab10_u18_by_child_count,Приморский край / Отцы с детьми,11037,11037,0,pass
+tab10_u18_by_child_count,Псковская область / Супружеские пары с детьми,35827,35827,0,pass
+tab10_u18_by_child_count,Псковская область / Матери с детьми,21558,21558,0,pass
+tab10_u18_by_child_count,Псковская область / Отцы с детьми,4243,4243,0,pass
+tab10_u18_by_child_count,Республика Адыгея / Супружеские пары с детьми,39181,39181,0,pass
+tab10_u18_by_child_count,Республика Адыгея / Матери с детьми,15213,15213,0,pass
+tab10_u18_by_child_count,Республика Адыгея / Отцы с детьми,2228,2228,0,pass
+tab10_u18_by_child_count,Республика Алтай / Супружеские пары с детьми,21332,21332,0,pass
+tab10_u18_by_child_count,Республика Алтай / Матери с детьми,8388,8388,0,pass
+tab10_u18_by_child_count,Республика Алтай / Отцы с детьми,831,831,0,pass
+tab10_u18_by_child_count,Республика Башкортостан / Супружеские пары с детьми,315297,315297,0,pass
+tab10_u18_by_child_count,Республика Башкортостан / Матери с детьми,136733,136733,0,pass
+tab10_u18_by_child_count,Республика Башкортостан / Отцы с детьми,27062,27062,0,pass
+tab10_u18_by_child_count,Республика Бурятия / Супружеские пары с детьми,82955,82955,0,pass
+tab10_u18_by_child_count,Республика Бурятия / Матери с детьми,43249,43249,0,pass
+tab10_u18_by_child_count,Республика Бурятия / Отцы с детьми,5241,5241,0,pass
+tab10_u18_by_child_count,Республика Дагестан / Супружеские пары с детьми,351954,351954,0,pass
+tab10_u18_by_child_count,Республика Дагестан / Матери с детьми,68187,68187,0,pass
+tab10_u18_by_child_count,Республика Дагестан / Отцы с детьми,22628,22628,0,pass
+tab10_u18_by_child_count,Республика Ингушетия / Супружеские пары с детьми,42191,42191,0,pass
+tab10_u18_by_child_count,Республика Ингушетия / Матери с детьми,5573,5573,0,pass
+tab10_u18_by_child_count,Республика Ингушетия / Отцы с детьми,2936,2936,0,pass
+tab10_u18_by_child_count,Республика Калмыкия / Супружеские пары с детьми,18992,18992,0,pass
+tab10_u18_by_child_count,Республика Калмыкия / Матери с детьми,12688,12688,0,pass
+tab10_u18_by_child_count,Республика Калмыкия / Отцы с детьми,1680,1680,0,pass
+tab10_u18_by_child_count,Республика Карелия / Супружеские пары с детьми,37198,37198,0,pass
+tab10_u18_by_child_count,Республика Карелия / Матери с детьми,17721,17721,0,pass
+tab10_u18_by_child_count,Республика Карелия / Отцы с детьми,2921,2921,0,pass
+tab10_u18_by_child_count,Республика Коми / Супружеские пары с детьми,50222,50222,0,pass
+tab10_u18_by_child_count,Республика Коми / Матери с детьми,24950,24950,0,pass
+tab10_u18_by_child_count,Республика Коми / Отцы с детьми,3366,3366,0,pass
+tab10_u18_by_child_count,Республика Крым / Супружеские пары с детьми,130036,130036,0,pass
+tab10_u18_by_child_count,Республика Крым / Матери с детьми,72254,72254,0,pass
+tab10_u18_by_child_count,Республика Крым / Отцы с детьми,12755,12755,0,pass
+tab10_u18_by_child_count,Республика Марий Эл / Супружеские пары с детьми,48700,48700,0,pass
+tab10_u18_by_child_count,Республика Марий Эл / Матери с детьми,26178,26178,0,pass
+tab10_u18_by_child_count,Республика Марий Эл / Отцы с детьми,5126,5126,0,pass
+tab10_u18_by_child_count,Республика Мордовия / Супружеские пары с детьми,48680,48680,0,pass
+tab10_u18_by_child_count,Республика Мордовия / Матери с детьми,28217,28217,0,pass
+tab10_u18_by_child_count,Республика Мордовия / Отцы с детьми,7083,7083,0,pass
+tab10_u18_by_child_count,Республика Саха (Якутия) / Супружеские пары с детьми,79185,79185,0,pass
+tab10_u18_by_child_count,Республика Саха (Якутия) / Матери с детьми,40850,40850,0,pass
+tab10_u18_by_child_count,Республика Саха (Якутия) / Отцы с детьми,5699,5699,0,pass
+tab10_u18_by_child_count,Республика Северная Осетия - Алания / Супружеские пары с детьми,41776,41776,0,pass
+tab10_u18_by_child_count,Республика Северная Осетия - Алания / Матери с детьми,22818,22818,0,pass
+tab10_u18_by_child_count,Республика Северная Осетия - Алания / Отцы с детьми,5691,5691,0,pass
+tab10_u18_by_child_count,Республика Татарстан / Супружеские пары с детьми,294014,294014,0,pass
+tab10_u18_by_child_count,Республика Татарстан / Матери с детьми,150518,150518,0,pass
+tab10_u18_by_child_count,Республика Татарстан / Отцы с детьми,37188,37188,0,pass
+tab10_u18_by_child_count,Республика Тыва / Супружеские пары с детьми,32793,32793,0,pass
+tab10_u18_by_child_count,Республика Тыва / Матери с детьми,17947,17947,0,pass
+tab10_u18_by_child_count,Республика Тыва / Отцы с детьми,2147,2147,0,pass
+tab10_u18_by_child_count,Республика Хакасия / Супружеские пары с детьми,39617,39617,0,pass
+tab10_u18_by_child_count,Республика Хакасия / Матери с детьми,20243,20243,0,pass
+tab10_u18_by_child_count,Республика Хакасия / Отцы с детьми,2747,2747,0,pass
+tab10_u18_by_child_count,Ростовская область / Супружеские пары с детьми,278384,278384,0,pass
+tab10_u18_by_child_count,Ростовская область / Матери с детьми,136854,136854,0,pass
+tab10_u18_by_child_count,Ростовская область / Отцы с детьми,23913,23913,0,pass
+tab10_u18_by_child_count,Рязанская область / Супружеские пары с детьми,56904,56904,0,pass
+tab10_u18_by_child_count,Рязанская область / Матери с детьми,37284,37284,0,pass
+tab10_u18_by_child_count,Рязанская область / Отцы с детьми,8827,8827,0,pass
+tab10_u18_by_child_count,Самарская область / Супружеские пары с детьми,189577,189577,0,pass
+tab10_u18_by_child_count,Самарская область / Матери с детьми,110836,110836,0,pass
+tab10_u18_by_child_count,Самарская область / Отцы с детьми,26427,26427,0,pass
+tab10_u18_by_child_count,Саратовская область / Супружеские пары с детьми,148176,148176,0,pass
+tab10_u18_by_child_count,Саратовская область / Матери с детьми,80747,80747,0,pass
+tab10_u18_by_child_count,Саратовская область / Отцы с детьми,17012,17012,0,pass
+tab10_u18_by_child_count,Сахалинская область / Супружеские пары с детьми,28405,28405,0,pass
+tab10_u18_by_child_count,Сахалинская область / Матери с детьми,19607,19607,0,pass
+tab10_u18_by_child_count,Сахалинская область / Отцы с детьми,3306,3306,0,pass
+tab10_u18_by_child_count,Свердловская область / Супружеские пары с детьми,300663,300663,0,pass
+tab10_u18_by_child_count,Свердловская область / Матери с детьми,157782,157782,0,pass
+tab10_u18_by_child_count,Свердловская область / Отцы с детьми,27153,27153,0,pass
+tab10_u18_by_child_count,Северо-Западный федеральный округ / Супружеские пары с детьми,783931,783931,0,pass
+tab10_u18_by_child_count,Северо-Западный федеральный округ / Матери с детьми,486847,486847,0,pass
+tab10_u18_by_child_count,Северо-Западный федеральный округ / Отцы с детьми,142075,142075,0,pass
+tab10_u18_by_child_count,Северо-Кавказский федеральный округ / Супружеские пары с детьми,922272,922272,0,pass
+tab10_u18_by_child_count,Северо-Кавказский федеральный округ / Матери с детьми,256535,256535,0,pass
+tab10_u18_by_child_count,Северо-Кавказский федеральный округ / Отцы с детьми,71523,71523,0,pass
+tab10_u18_by_child_count,Сибирский федеральный округ / Супружеские пары с детьми,1220418,1220418,0,pass
+tab10_u18_by_child_count,Сибирский федеральный округ / Матери с детьми,583856,583856,0,pass
+tab10_u18_by_child_count,Сибирский федеральный округ / Отцы с детьми,82060,82060,0,pass
+tab10_u18_by_child_count,Смоленская область / Супружеские пары с детьми,47912,47912,0,pass
+tab10_u18_by_child_count,Смоленская область / Матери с детьми,33029,33029,0,pass
+tab10_u18_by_child_count,Смоленская область / Отцы с детьми,5894,5894,0,pass
+tab10_u18_by_child_count,Ставропольский край / Супружеские пары с детьми,220790,220790,0,pass
+tab10_u18_by_child_count,Ставропольский край / Матери с детьми,91477,91477,0,pass
+tab10_u18_by_child_count,Ставропольский край / Отцы с детьми,13691,13691,0,pass
+tab10_u18_by_child_count,Тамбовская область / Супружеские пары с детьми,57566,57566,0,pass
+tab10_u18_by_child_count,Тамбовская область / Матери с детьми,30270,30270,0,pass
+tab10_u18_by_child_count,Тамбовская область / Отцы с детьми,6633,6633,0,pass
+tab10_u18_by_child_count,Тверская область / Супружеские пары с детьми,68082,68082,0,pass
+tab10_u18_by_child_count,Тверская область / Матери с детьми,38279,38279,0,pass
+tab10_u18_by_child_count,Тверская область / Отцы с детьми,7122,7122,0,pass
+tab10_u18_by_child_count,Томская область / Супружеские пары с детьми,71860,71860,0,pass
+tab10_u18_by_child_count,Томская область / Матери с детьми,36196,36196,0,pass
+tab10_u18_by_child_count,Томская область / Отцы с детьми,5061,5061,0,pass
+tab10_u18_by_child_count,Тульская область / Супружеские пары с детьми,71937,71937,0,pass
+tab10_u18_by_child_count,Тульская область / Матери с детьми,58097,58097,0,pass
+tab10_u18_by_child_count,Тульская область / Отцы с детьми,13779,13779,0,pass
+tab10_u18_by_child_count,Тюменская область / Супружеские пары с детьми,311284,311284,0,pass
+tab10_u18_by_child_count,Тюменская область / Матери с детьми,145597,145597,0,pass
+tab10_u18_by_child_count,Тюменская область / Отцы с детьми,26905,26905,0,pass
+tab10_u18_by_child_count,Тюменская область без автономных округов / Супружеские пары с детьми,122959,122959,0,pass
+tab10_u18_by_child_count,Тюменская область без автономных округов / Матери с детьми,68640,68640,0,pass
+tab10_u18_by_child_count,Тюменская область без автономных округов / Отцы с детьми,13791,13791,0,pass
+tab10_u18_by_child_count,Удмуртская Республика / Супружеские пары с детьми,110930,110930,0,pass
+tab10_u18_by_child_count,Удмуртская Республика / Матери с детьми,44920,44920,0,pass
+tab10_u18_by_child_count,Удмуртская Республика / Отцы с детьми,6613,6613,0,pass
+tab10_u18_by_child_count,Ульяновская область / Супружеские пары с детьми,81244,81244,0,pass
+tab10_u18_by_child_count,Ульяновская область / Матери с детьми,36948,36948,0,pass
+tab10_u18_by_child_count,Ульяновская область / Отцы с детьми,6252,6252,0,pass
+tab10_u18_by_child_count,Уральский федеральный округ / Супружеские пары с детьми,901356,901356,0,pass
+tab10_u18_by_child_count,Уральский федеральный округ / Матери с детьми,436187,436187,0,pass
+tab10_u18_by_child_count,Уральский федеральный округ / Отцы с детьми,74750,74750,0,pass
+tab10_u18_by_child_count,Хабаровский край / Супружеские пары с детьми,78674,78674,0,pass
+tab10_u18_by_child_count,Хабаровский край / Матери с детьми,50024,50024,0,pass
+tab10_u18_by_child_count,Хабаровский край / Отцы с детьми,10498,10498,0,pass
+tab10_u18_by_child_count,Ханты-Мансийский автономный округ - Югра / Супружеские пары с детьми,141894,141894,0,pass
+tab10_u18_by_child_count,Ханты-Мансийский автономный округ - Югра / Матери с детьми,58837,58837,0,pass
+tab10_u18_by_child_count,Ханты-Мансийский автономный округ - Югра / Отцы с детьми,9950,9950,0,pass
+tab10_u18_by_child_count,Центральный федеральный округ / Супружеские пары с детьми,2013761,2013761,0,pass
+tab10_u18_by_child_count,Центральный федеральный округ / Матери с детьми,1243840,1243840,0,pass
+tab10_u18_by_child_count,Центральный федеральный округ / Отцы с детьми,400606,400606,0,pass
+tab10_u18_by_child_count,Челябинская область / Супружеские пары с детьми,232340,232340,0,pass
+tab10_u18_by_child_count,Челябинская область / Матери с детьми,108500,108500,0,pass
+tab10_u18_by_child_count,Челябинская область / Отцы с детьми,17767,17767,0,pass
+tab10_u18_by_child_count,Чеченская Республика / Супружеские пары с детьми,152221,152221,0,pass
+tab10_u18_by_child_count,Чеченская Республика / Матери с детьми,30154,30154,0,pass
+tab10_u18_by_child_count,Чеченская Республика / Отцы с детьми,18786,18786,0,pass
+tab10_u18_by_child_count,Чувашская Республика / Супружеские пары с детьми,85939,85939,0,pass
+tab10_u18_by_child_count,Чувашская Республика / Матери с детьми,46486,46486,0,pass
+tab10_u18_by_child_count,Чувашская Республика / Отцы с детьми,7954,7954,0,pass
+tab10_u18_by_child_count,Чукотский автономный округ / Супружеские пары с детьми,4218,4218,0,pass
+tab10_u18_by_child_count,Чукотский автономный округ / Матери с детьми,2449,2449,0,pass
+tab10_u18_by_child_count,Чукотский автономный округ / Отцы с детьми,364,364,0,pass
+tab10_u18_by_child_count,Южный федеральный округ / Супружеские пары с детьми,1116703,1116703,0,pass
+tab10_u18_by_child_count,Южный федеральный округ / Матери с детьми,544670,544670,0,pass
+tab10_u18_by_child_count,Южный федеральный округ / Отцы с детьми,107838,107838,0,pass
+tab10_u18_by_child_count,Ямало-Ненецкий автономный округ / Супружеские пары с детьми,46431,46431,0,pass
+tab10_u18_by_child_count,Ямало-Ненецкий автономный округ / Матери с детьми,18120,18120,0,pass
+tab10_u18_by_child_count,Ямало-Ненецкий автономный округ / Отцы с детьми,3164,3164,0,pass
+tab10_u18_by_child_count,Ярославская область / Супружеские пары с детьми,73739,73739,0,pass
+tab10_u18_by_child_count,Ярославская область / Матери с детьми,46026,46026,0,pass
+tab10_u18_by_child_count,Ярославская область / Отцы с детьми,11408,11408,0,pass
+tab10_u18_by_child_count,г. Москва / Супружеские пары с детьми,439127,439127,0,pass
+tab10_u18_by_child_count,г. Москва / Матери с детьми,344117,344117,0,pass
+tab10_u18_by_child_count,г. Москва / Отцы с детьми,175992,175992,0,pass
+tab10_u18_by_child_count,г. Санкт-Петербург / Супружеские пары с детьми,252575,252575,0,pass
+tab10_u18_by_child_count,г. Санкт-Петербург / Матери с детьми,191193,191193,0,pass
+tab10_u18_by_child_count,г. Санкт-Петербург / Отцы с детьми,76751,76751,0,pass
+tab10_u18_by_child_count,г. Севастополь / Супружеские пары с детьми,31571,31571,0,pass
+tab10_u18_by_child_count,г. Севастополь / Матери с детьми,14001,14001,0,pass
+tab10_u18_by_child_count,г. Севастополь / Отцы с детьми,2938,2938,0,pass
+tab12_u18_by_child_count,Алтайский край / Супружеские пары с детьми,39745,39745,0,pass
+tab12_u18_by_child_count,Алтайский край / Матери с детьми,23410,23410,0,pass
+tab12_u18_by_child_count,Алтайский край / Отцы с детьми,2241,2241,0,pass
+tab12_u18_by_child_count,Амурская область / Супружеские пары с детьми,16547,16547,0,pass
+tab12_u18_by_child_count,Амурская область / Матери с детьми,11652,11652,0,pass
+tab12_u18_by_child_count,Амурская область / Отцы с детьми,1118,1118,0,pass
+tab12_u18_by_child_count,Архангельская область / Супружеские пары с детьми,15350,15350,0,pass
+tab12_u18_by_child_count,Архангельская область / Матери с детьми,13121,13121,0,pass
+tab12_u18_by_child_count,Архангельская область без автономного округа / Супружеские пары с детьми,14532,14532,0,pass
+tab12_u18_by_child_count,Архангельская область без автономного округа / Матери с детьми,12453,12453,0,pass
+tab12_u18_by_child_count,Астраханская область / Супружеские пары с детьми,16125,16125,0,pass
+tab12_u18_by_child_count,Астраханская область / Матери с детьми,14429,14429,0,pass
+tab12_u18_by_child_count,Астраханская область / Отцы с детьми,2863,2863,0,pass
+tab12_u18_by_child_count,Белгородская область / Супружеские пары с детьми,21418,21418,0,pass
+tab12_u18_by_child_count,Белгородская область / Матери с детьми,20614,20614,0,pass
+tab12_u18_by_child_count,Белгородская область / Отцы с детьми,4098,4098,0,pass
+tab12_u18_by_child_count,Брянская область / Супружеские пары с детьми,16267,16267,0,pass
+tab12_u18_by_child_count,Брянская область / Матери с детьми,17596,17596,0,pass
+tab12_u18_by_child_count,Брянская область / Отцы с детьми,1982,1982,0,pass
+tab12_u18_by_child_count,Владимирская область / Супружеские пары с детьми,17754,17754,0,pass
+tab12_u18_by_child_count,Владимирская область / Матери с детьми,17062,17062,0,pass
+tab12_u18_by_child_count,Владимирская область / Отцы с детьми,3041,3041,0,pass
+tab12_u18_by_child_count,Волгоградская область / Супружеские пары с детьми,32751,32751,0,pass
+tab12_u18_by_child_count,Волгоградская область / Матери с детьми,26681,26681,0,pass
+tab12_u18_by_child_count,Волгоградская область / Отцы с детьми,6260,6260,0,pass
+tab12_u18_by_child_count,Вологодская область / Супружеские пары с детьми,16441,16441,0,pass
+tab12_u18_by_child_count,Вологодская область / Матери с детьми,15137,15137,0,pass
+tab12_u18_by_child_count,Вологодская область / Отцы с детьми,2810,2810,0,pass
+tab12_u18_by_child_count,Воронежская область / Супружеские пары с детьми,36901,36901,0,pass
+tab12_u18_by_child_count,Воронежская область / Матери с детьми,28831,28831,0,pass
+tab12_u18_by_child_count,Воронежская область / Отцы с детьми,5028,5028,0,pass
+tab12_u18_by_child_count,Дальневосточный федеральный округ / Супружеские пары с детьми,144222,144222,0,pass
+tab12_u18_by_child_count,Дальневосточный федеральный округ / Матери с детьми,117224,117224,0,pass
+tab12_u18_by_child_count,Дальневосточный федеральный округ / Отцы с детьми,13757,13757,0,pass
+tab12_u18_by_child_count,Еврейская автономная область / Супружеские пары с детьми,3171,3171,0,pass
+tab12_u18_by_child_count,Еврейская автономная область / Матери с детьми,2567,2567,0,pass
+tab12_u18_by_child_count,Забайкальский край / Супружеские пары с детьми,22845,22845,0,pass
+tab12_u18_by_child_count,Забайкальский край / Матери с детьми,16772,16772,0,pass
+tab12_u18_by_child_count,Забайкальский край / Отцы с детьми,1596,1596,0,pass
+tab12_u18_by_child_count,Ивановская область / Супружеские пары с детьми,13324,13324,0,pass
+tab12_u18_by_child_count,Ивановская область / Матери с детьми,11504,11504,0,pass
+tab12_u18_by_child_count,Ивановская область / Отцы с детьми,1800,1800,0,pass
+tab12_u18_by_child_count,Иркутская область / Супружеские пары с детьми,44679,44679,0,pass
+tab12_u18_by_child_count,Иркутская область / Матери с детьми,34618,34618,0,pass
+tab12_u18_by_child_count,Иркутская область / Отцы с детьми,3907,3907,0,pass
+tab12_u18_by_child_count,Кабардино-Балкарская Республика / Супружеские пары с детьми,21126,21126,0,pass
+tab12_u18_by_child_count,Кабардино-Балкарская Республика / Матери с детьми,8823,8823,0,pass
+tab12_u18_by_child_count,Кабардино-Балкарская Республика / Отцы с детьми,1414,1414,0,pass
+tab12_u18_by_child_count,Калининградская область / Супружеские пары с детьми,14916,14916,0,pass
+tab12_u18_by_child_count,Калининградская область / Матери с детьми,12693,12693,0,pass
+tab12_u18_by_child_count,Калининградская область / Отцы с детьми,2097,2097,0,pass
+tab12_u18_by_child_count,Калужская область / Супружеские пары с детьми,13709,13709,0,pass
+tab12_u18_by_child_count,Калужская область / Матери с детьми,15090,15090,0,pass
+tab12_u18_by_child_count,Калужская область / Отцы с детьми,4234,4234,0,pass
+tab12_u18_by_child_count,Камчатский край / Супружеские пары с детьми,4864,4864,0,pass
+tab12_u18_by_child_count,Камчатский край / Матери с детьми,4615,4615,0,pass
+tab12_u18_by_child_count,Карачаево-Черкесская Республика / Супружеские пары с детьми,8347,8347,0,pass
+tab12_u18_by_child_count,Карачаево-Черкесская Республика / Матери с детьми,5611,5611,0,pass
+tab12_u18_by_child_count,Карачаево-Черкесская Республика / Отцы с детьми,909,909,0,pass
+tab12_u18_by_child_count,Кемеровская область - Кузбасс / Супружеские пары с детьми,48567,48567,0,pass
+tab12_u18_by_child_count,Кемеровская область - Кузбасс / Матери с детьми,32775,32775,0,pass
+tab12_u18_by_child_count,Кемеровская область - Кузбасс / Отцы с детьми,3339,3339,0,pass
+tab12_u18_by_child_count,Кировская область / Супружеские пары с детьми,18778,18778,0,pass
+tab12_u18_by_child_count,Кировская область / Матери с детьми,10867,10867,0,pass
+tab12_u18_by_child_count,Кировская область / Отцы с детьми,1255,1255,0,pass
+tab12_u18_by_child_count,Костромская область / Супружеские пары с детьми,9204,9204,0,pass
+tab12_u18_by_child_count,Костромская область / Матери с детьми,6225,6225,0,pass
+tab12_u18_by_child_count,Костромская область / Отцы с детьми,1000,1000,0,pass
+tab12_u18_by_child_count,Краснодарский край / Супружеские пары с детьми,101138,101138,0,pass
+tab12_u18_by_child_count,Краснодарский край / Матери с детьми,66564,66564,0,pass
+tab12_u18_by_child_count,Краснодарский край / Отцы с детьми,12181,12181,0,pass
+tab12_u18_by_child_count,Красноярский край / Супружеские пары с детьми,52311,52311,0,pass
+tab12_u18_by_child_count,Красноярский край / Матери с детьми,34953,34953,0,pass
+tab12_u18_by_child_count,Красноярский край / Отцы с детьми,3962,3962,0,pass
+tab12_u18_by_child_count,Курганская область / Супружеские пары с детьми,13834,13834,0,pass
+tab12_u18_by_child_count,Курганская область / Матери с детьми,7886,7886,0,pass
+tab12_u18_by_child_count,Курская область / Супружеские пары с детьми,15969,15969,0,pass
+tab12_u18_by_child_count,Курская область / Матери с детьми,14242,14242,0,pass
+tab12_u18_by_child_count,Курская область / Отцы с детьми,1579,1579,0,pass
+tab12_u18_by_child_count,Ленинградская область / Супружеские пары с детьми,24421,24421,0,pass
+tab12_u18_by_child_count,Ленинградская область / Матери с детьми,22492,22492,0,pass
+tab12_u18_by_child_count,Ленинградская область / Отцы с детьми,5330,5330,0,pass
+tab12_u18_by_child_count,Липецкая область / Супружеские пары с детьми,16527,16527,0,pass
+tab12_u18_by_child_count,Липецкая область / Матери с детьми,15366,15366,0,pass
+tab12_u18_by_child_count,Липецкая область / Отцы с детьми,1978,1978,0,pass
+tab12_u18_by_child_count,Магаданская область / Супружеские пары с детьми,1915,1915,0,pass
+tab12_u18_by_child_count,Магаданская область / Матери с детьми,2236,2236,0,pass
+tab12_u18_by_child_count,Московская область / Супружеские пары с детьми,104823,104823,0,pass
+tab12_u18_by_child_count,Московская область / Матери с детьми,78033,78033,0,pass
+tab12_u18_by_child_count,Московская область / Отцы с детьми,21148,21148,0,pass
+tab12_u18_by_child_count,Мурманская область / Супружеские пары с детьми,12508,12508,0,pass
+tab12_u18_by_child_count,Мурманская область / Матери с детьми,7300,7300,0,pass
+tab12_u18_by_child_count,Мурманская область / Отцы с детьми,1053,1053,0,pass
+tab12_u18_by_child_count,Ненецкий автономный округ / Супружеские пары с детьми,818,818,0,pass
+tab12_u18_by_child_count,Ненецкий автономный округ / Матери с детьми,668,668,0,pass
+tab12_u18_by_child_count,Нижегородская область / Супружеские пары с детьми,47460,47460,0,pass
+tab12_u18_by_child_count,Нижегородская область / Матери с детьми,34342,34342,0,pass
+tab12_u18_by_child_count,Нижегородская область / Отцы с детьми,6465,6465,0,pass
+tab12_u18_by_child_count,Новгородская область / Супружеские пары с детьми,7538,7538,0,pass
+tab12_u18_by_child_count,Новгородская область / Матери с детьми,6559,6559,0,pass
+tab12_u18_by_child_count,Новосибирская область / Супружеские пары с детьми,41963,41963,0,pass
+tab12_u18_by_child_count,Новосибирская область / Матери с детьми,27941,27941,0,pass
+tab12_u18_by_child_count,Новосибирская область / Отцы с детьми,3285,3285,0,pass
+tab12_u18_by_child_count,Омская область / Супружеские пары с детьми,31397,31397,0,pass
+tab12_u18_by_child_count,Омская область / Матери с детьми,22091,22091,0,pass
+tab12_u18_by_child_count,Омская область / Отцы с детьми,2013,2013,0,pass
+tab12_u18_by_child_count,Оренбургская область / Супружеские пары с детьми,38444,38444,0,pass
+tab12_u18_by_child_count,Оренбургская область / Матери с детьми,22996,22996,0,pass
+tab12_u18_by_child_count,Оренбургская область / Отцы с детьми,2462,2462,0,pass
+tab12_u18_by_child_count,Орловская область / Супружеские пары с детьми,10568,10568,0,pass
+tab12_u18_by_child_count,Орловская область / Матери с детьми,10461,10461,0,pass
+tab12_u18_by_child_count,Пензенская область / Супружеские пары с детьми,22377,22377,0,pass
+tab12_u18_by_child_count,Пензенская область / Матери с детьми,14335,14335,0,pass
+tab12_u18_by_child_count,Пензенская область / Отцы с детьми,2025,2025,0,pass
+tab12_u18_by_child_count,Пермский край / Супружеские пары с детьми,44327,44327,0,pass
+tab12_u18_by_child_count,Пермский край / Матери с детьми,32867,32867,0,pass
+tab12_u18_by_child_count,Пермский край / Отцы с детьми,4971,4971,0,pass
+tab12_u18_by_child_count,Приволжский федеральный округ / Супружеские пары с детьми,496975,496975,0,pass
+tab12_u18_by_child_count,Приволжский федеральный округ / Матери с детьми,351367,351367,0,pass
+tab12_u18_by_child_count,Приволжский федеральный округ / Отцы с детьми,61935,61935,0,pass
+tab12_u18_by_child_count,Приморский край / Супружеские пары с детьми,22260,22260,0,pass
+tab12_u18_by_child_count,Приморский край / Матери с детьми,19481,19481,0,pass
+tab12_u18_by_child_count,Приморский край / Отцы с детьми,2575,2575,0,pass
+tab12_u18_by_child_count,Псковская область / Супружеские пары с детьми,8648,8648,0,pass
+tab12_u18_by_child_count,Псковская область / Матери с детьми,7522,7522,0,pass
+tab12_u18_by_child_count,Псковская область / Отцы с детьми,1335,1335,0,pass
+tab12_u18_by_child_count,Республика Адыгея / Супружеские пары с детьми,10287,10287,0,pass
+tab12_u18_by_child_count,Республика Адыгея / Матери с детьми,5314,5314,0,pass
+tab12_u18_by_child_count,Республика Алтай / Супружеские пары с детьми,5684,5684,0,pass
+tab12_u18_by_child_count,Республика Алтай / Матери с детьми,3153,3153,0,pass
+tab12_u18_by_child_count,Республика Башкортостан / Супружеские пары с детьми,79589,79589,0,pass
+tab12_u18_by_child_count,Республика Башкортостан / Матери с детьми,49281,49281,0,pass
+tab12_u18_by_child_count,Республика Башкортостан / Отцы с детьми,7622,7622,0,pass
+tab12_u18_by_child_count,Республика Бурятия / Супружеские пары с детьми,22133,22133,0,pass
+tab12_u18_by_child_count,Республика Бурятия / Матери с детьми,16652,16652,0,pass
+tab12_u18_by_child_count,Республика Бурятия / Отцы с детьми,1519,1519,0,pass
+tab12_u18_by_child_count,Республика Дагестан / Супружеские пары с детьми,104525,104525,0,pass
+tab12_u18_by_child_count,Республика Дагестан / Матери с детьми,28760,28760,0,pass
+tab12_u18_by_child_count,Республика Дагестан / Отцы с детьми,8305,8305,0,pass
+tab12_u18_by_child_count,Республика Ингушетия / Супружеские пары с детьми,10115,10115,0,pass
+tab12_u18_by_child_count,Республика Ингушетия / Матери с детьми,1829,1829,0,pass
+tab12_u18_by_child_count,Республика Ингушетия / Отцы с детьми,1004,1004,0,pass
+tab12_u18_by_child_count,Республика Калмыкия / Супружеские пары с детьми,4727,4727,0,pass
+tab12_u18_by_child_count,Республика Калмыкия / Матери с детьми,4766,4766,0,pass
+tab12_u18_by_child_count,Республика Карелия / Супружеские пары с детьми,7745,7745,0,pass
+tab12_u18_by_child_count,Республика Карелия / Матери с детьми,5439,5439,0,pass
+tab12_u18_by_child_count,Республика Коми / Супружеские пары с детьми,11347,11347,0,pass
+tab12_u18_by_child_count,Республика Коми / Матери с детьми,8222,8222,0,pass
+tab12_u18_by_child_count,Республика Коми / Отцы с детьми,857,857,0,pass
+tab12_u18_by_child_count,Республика Крым / Супружеские пары с детьми,30756,30756,0,pass
+tab12_u18_by_child_count,Республика Крым / Матери с детьми,24723,24723,0,pass
+tab12_u18_by_child_count,Республика Крым / Отцы с детьми,3684,3684,0,pass
+tab12_u18_by_child_count,Республика Марий Эл / Супружеские пары с детьми,11958,11958,0,pass
+tab12_u18_by_child_count,Республика Марий Эл / Матери с детьми,9647,9647,0,pass
+tab12_u18_by_child_count,Республика Марий Эл / Отцы с детьми,1779,1779,0,pass
+tab12_u18_by_child_count,Республика Мордовия / Супружеские пары с детьми,11442,11442,0,pass
+tab12_u18_by_child_count,Республика Мордовия / Матери с детьми,10654,10654,0,pass
+tab12_u18_by_child_count,Республика Мордовия / Отцы с детьми,2237,2237,0,pass
+tab12_u18_by_child_count,Республика Саха (Якутия) / Супружеские пары с детьми,23368,23368,0,pass
+tab12_u18_by_child_count,Республика Саха (Якутия) / Матери с детьми,17086,17086,0,pass
+tab12_u18_by_child_count,Республика Саха (Якутия) / Отцы с детьми,1975,1975,0,pass
+tab12_u18_by_child_count,Республика Северная Осетия - Алания / Супружеские пары с детьми,9145,9145,0,pass
+tab12_u18_by_child_count,Республика Северная Осетия - Алания / Матери с детьми,8113,8113,0,pass
+tab12_u18_by_child_count,Республика Северная Осетия - Алания / Отцы с детьми,1449,1449,0,pass
+tab12_u18_by_child_count,Республика Татарстан / Супружеские пары с детьми,71458,71458,0,pass
+tab12_u18_by_child_count,Республика Татарстан / Матери с детьми,51862,51862,0,pass
+tab12_u18_by_child_count,Республика Татарстан / Отцы с детьми,13283,13283,0,pass
+tab12_u18_by_child_count,Республика Тыва / Супружеские пары с детьми,10852,10852,0,pass
+tab12_u18_by_child_count,Республика Тыва / Матери с детьми,8536,8536,0,pass
+tab12_u18_by_child_count,Республика Тыва / Отцы с детьми,948,948,0,pass
+tab12_u18_by_child_count,Республика Хакасия / Супружеские пары с детьми,9742,9742,0,pass
+tab12_u18_by_child_count,Республика Хакасия / Матери с детьми,7221,7221,0,pass
+tab12_u18_by_child_count,Республика Хакасия / Отцы с детьми,760,760,0,pass
+tab12_u18_by_child_count,Ростовская область / Супружеские пары с детьми,69573,69573,0,pass
+tab12_u18_by_child_count,Ростовская область / Матери с детьми,52001,52001,0,pass
+tab12_u18_by_child_count,Ростовская область / Отцы с детьми,7413,7413,0,pass
+tab12_u18_by_child_count,Рязанская область / Супружеские пары с детьми,12337,12337,0,pass
+tab12_u18_by_child_count,Рязанская область / Матери с детьми,13748,13748,0,pass
+tab12_u18_by_child_count,Рязанская область / Отцы с детьми,2480,2480,0,pass
+tab12_u18_by_child_count,Самарская область / Супружеские пары с детьми,42579,42579,0,pass
+tab12_u18_by_child_count,Самарская область / Матери с детьми,36171,36171,0,pass
+tab12_u18_by_child_count,Самарская область / Отцы с детьми,7793,7793,0,pass
+tab12_u18_by_child_count,Саратовская область / Супружеские пары с детьми,37918,37918,0,pass
+tab12_u18_by_child_count,Саратовская область / Матери с детьми,31985,31985,0,pass
+tab12_u18_by_child_count,Саратовская область / Отцы с детьми,5708,5708,0,pass
+tab12_u18_by_child_count,Сахалинская область / Супружеские пары с детьми,6683,6683,0,pass
+tab12_u18_by_child_count,Сахалинская область / Матери с детьми,7184,7184,0,pass
+tab12_u18_by_child_count,Свердловская область / Супружеские пары с детьми,71198,71198,0,pass
+tab12_u18_by_child_count,Свердловская область / Матери с детьми,51603,51603,0,pass
+tab12_u18_by_child_count,Свердловская область / Отцы с детьми,6958,6958,0,pass
+tab12_u18_by_child_count,Северо-Западный федеральный округ / Супружеские пары с детьми,162700,162700,0,pass
+tab12_u18_by_child_count,Северо-Западный федеральный округ / Матери с детьми,150634,150634,0,pass
+tab12_u18_by_child_count,Северо-Западный федеральный округ / Отцы с детьми,33340,33340,0,pass
+tab12_u18_by_child_count,Северо-Кавказский федеральный округ / Супружеские пары с детьми,257408,257408,0,pass
+tab12_u18_by_child_count,Северо-Кавказский федеральный округ / Матери с детьми,100151,100151,0,pass
+tab12_u18_by_child_count,Северо-Кавказский федеральный округ / Отцы с детьми,24425,24425,0,pass
+tab12_u18_by_child_count,Сибирский федеральный округ / Супружеские пары с детьми,301449,301449,0,pass
+tab12_u18_by_child_count,Сибирский федеральный округ / Матери с детьми,206824,206824,0,pass
+tab12_u18_by_child_count,Сибирский федеральный округ / Отцы с детьми,21943,21943,0,pass
+tab12_u18_by_child_count,Смоленская область / Супружеские пары с детьми,10460,10460,0,pass
+tab12_u18_by_child_count,Смоленская область / Матери с детьми,11886,11886,0,pass
+tab12_u18_by_child_count,Смоленская область / Отцы с детьми,1567,1567,0,pass
+tab12_u18_by_child_count,Ставропольский край / Супружеские пары с детьми,60598,60598,0,pass
+tab12_u18_by_child_count,Ставропольский край / Матери с детьми,35092,35092,0,pass
+tab12_u18_by_child_count,Ставропольский край / Отцы с детьми,3795,3795,0,pass
+tab12_u18_by_child_count,Тамбовская область / Супружеские пары с детьми,14193,14193,0,pass
+tab12_u18_by_child_count,Тамбовская область / Матери с детьми,11855,11855,0,pass
+tab12_u18_by_child_count,Тамбовская область / Отцы с детьми,2245,2245,0,pass
+tab12_u18_by_child_count,Тверская область / Супружеские пары с детьми,15127,15127,0,pass
+tab12_u18_by_child_count,Тверская область / Матери с детьми,13203,13203,0,pass
+tab12_u18_by_child_count,Тверская область / Отцы с детьми,1863,1863,0,pass
+tab12_u18_by_child_count,Томская область / Супружеские пары с детьми,16509,16509,0,pass
+tab12_u18_by_child_count,Томская область / Матери с детьми,12126,12126,0,pass
+tab12_u18_by_child_count,Тульская область / Супружеские пары с детьми,16095,16095,0,pass
+tab12_u18_by_child_count,Тульская область / Матери с детьми,21479,21479,0,pass
+tab12_u18_by_child_count,Тульская область / Отцы с детьми,3864,3864,0,pass
+tab12_u18_by_child_count,Тюменская область / Супружеские пары с детьми,73585,73585,0,pass
+tab12_u18_by_child_count,Тюменская область / Матери с детьми,52133,52133,0,pass
+tab12_u18_by_child_count,Тюменская область / Отцы с детьми,8295,8295,0,pass
+tab12_u18_by_child_count,Тюменская область без автономных округов / Супружеские пары с детьми,29474,29474,0,pass
+tab12_u18_by_child_count,Тюменская область без автономных округов / Матери с детьми,24976,24976,0,pass
+tab12_u18_by_child_count,Тюменская область без автономных округов / Отцы с детьми,4517,4517,0,pass
+tab12_u18_by_child_count,Удмуртская Республика / Супружеские пары с детьми,27453,27453,0,pass
+tab12_u18_by_child_count,Удмуртская Республика / Матери с детьми,14523,14523,0,pass
+tab12_u18_by_child_count,Удмуртская Республика / Отцы с детьми,1809,1809,0,pass
+tab12_u18_by_child_count,Ульяновская область / Супружеские пары с детьми,21829,21829,0,pass
+tab12_u18_by_child_count,Ульяновская область / Матери с детьми,14959,14959,0,pass
+tab12_u18_by_child_count,Ульяновская область / Отцы с детьми,1988,1988,0,pass
+tab12_u18_by_child_count,Уральский федеральный округ / Супружеские пары с детьми,217151,217151,0,pass
+tab12_u18_by_child_count,Уральский федеральный округ / Матери с детьми,148864,148864,0,pass
+tab12_u18_by_child_count,Уральский федеральный округ / Отцы с детьми,20715,20715,0,pass
+tab12_u18_by_child_count,Хабаровский край / Супружеские пары с детьми,19477,19477,0,pass
+tab12_u18_by_child_count,Хабаровский край / Матери с детьми,17943,17943,0,pass
+tab12_u18_by_child_count,Хабаровский край / Отцы с детьми,3057,3057,0,pass
+tab12_u18_by_child_count,Ханты-Мансийский автономный округ - Югра / Супружеские пары с детьми,33223,33223,0,pass
+tab12_u18_by_child_count,Ханты-Мансийский автономный округ - Югра / Матери с детьми,20665,20665,0,pass
+tab12_u18_by_child_count,Ханты-Мансийский автономный округ - Югра / Отцы с детьми,2830,2830,0,pass
+tab12_u18_by_child_count,Центральный федеральный округ / Супружеские пары с детьми,437938,437938,0,pass
+tab12_u18_by_child_count,Центральный федеральный округ / Матери с детьми,418037,418037,0,pass
+tab12_u18_by_child_count,Центральный федеральный округ / Отцы с детьми,100364,100364,0,pass
+tab12_u18_by_child_count,Челябинская область / Супружеские пары с детьми,58534,58534,0,pass
+tab12_u18_by_child_count,Челябинская область / Матери с детьми,37242,37242,0,pass
+tab12_u18_by_child_count,Челябинская область / Отцы с детьми,4781,4781,0,pass
+tab12_u18_by_child_count,Чеченская Республика / Супружеские пары с детьми,43552,43552,0,pass
+tab12_u18_by_child_count,Чеченская Республика / Матери с детьми,11923,11923,0,pass
+tab12_u18_by_child_count,Чеченская Республика / Отцы с детьми,7549,7549,0,pass
+tab12_u18_by_child_count,Чувашская Республика / Супружеские пары с детьми,21363,21363,0,pass
+tab12_u18_by_child_count,Чувашская Республика / Матери с детьми,16878,16878,0,pass
+tab12_u18_by_child_count,Чувашская Республика / Отцы с детьми,2538,2538,0,pass
+tab12_u18_by_child_count,Чукотский автономный округ / Супружеские пары с детьми,959,959,0,pass
+tab12_u18_by_child_count,Чукотский автономный округ / Матери с детьми,1036,1036,0,pass
+tab12_u18_by_child_count,Южный федеральный округ / Супружеские пары с детьми,272692,272692,0,pass
+tab12_u18_by_child_count,Южный федеральный округ / Матери с детьми,199100,199100,0,pass
+tab12_u18_by_child_count,Южный федеральный округ / Отцы с детьми,34165,34165,0,pass
+tab12_u18_by_child_count,Ямало-Ненецкий автономный округ / Супружеские пары с детьми,10888,10888,0,pass
+tab12_u18_by_child_count,Ямало-Ненецкий автономный округ / Матери с детьми,6492,6492,0,pass
+tab12_u18_by_child_count,Ямало-Ненецкий автономный округ / Отцы с детьми,948,948,0,pass
+tab12_u18_by_child_count,Ярославская область / Супружеские пары с детьми,15515,15515,0,pass
+tab12_u18_by_child_count,Ярославская область / Матери с детьми,14690,14690,0,pass
+tab12_u18_by_child_count,Ярославская область / Отцы с детьми,2877,2877,0,pass
+tab12_u18_by_child_count,г. Москва / Супружеские пары с детьми,77747,77747,0,pass
+tab12_u18_by_child_count,г. Москва / Матери с детьми,96152,96152,0,pass
+tab12_u18_by_child_count,г. Москва / Отцы с детьми,38244,38244,0,pass
+tab12_u18_by_child_count,г. Санкт-Петербург / Супружеские пары с детьми,43786,43786,0,pass
+tab12_u18_by_child_count,г. Санкт-Петербург / Матери с детьми,52149,52149,0,pass
+tab12_u18_by_child_count,г. Санкт-Петербург / Отцы с детьми,16236,16236,0,pass
+tab12_u18_by_child_count,г. Севастополь / Супружеские пары с детьми,7335,7335,0,pass
+tab12_u18_by_child_count,г. Севастополь / Матери с детьми,4622,4622,0,pass
+tab12_u18_by_child_count,г. Севастополь / Отцы с детьми,790,790,0,pass
+tab02_disjoint_regional_sum_private_households,Российская Федерация,66061419,66061419,0,pass
+tab02_disjoint_regional_sum_people_in_private_households,Российская Федерация,146148111,146148111,0,pass
+tab02_district_disjoint_sum_private_households,Центральный федеральный округ,19117780,19117780,0,pass
+tab02_district_disjoint_sum_people_in_private_households,Центральный федеральный округ,40060671,40060671,0,pass
+tab02_district_disjoint_sum_private_households,Северо-Западный федеральный округ,6636541,6636541,0,pass
+tab02_district_disjoint_sum_people_in_private_households,Северо-Западный федеральный округ,13773096,13773096,0,pass
+tab02_district_disjoint_sum_private_households,Южный федеральный округ,7267728,7267728,0,pass
+tab02_district_disjoint_sum_people_in_private_households,Южный федеральный округ,16637266,16637266,0,pass
+tab02_district_disjoint_sum_private_households,Северо-Кавказский федеральный округ,3037477,3037477,0,pass
+tab02_district_disjoint_sum_people_in_private_households,Северо-Кавказский федеральный округ,10128113,10128113,0,pass
+tab02_district_disjoint_sum_private_households,Приволжский федеральный округ,13061419,13061419,0,pass
+tab02_district_disjoint_sum_people_in_private_households,Приволжский федеральный округ,28760628,28760628,0,pass
+tab02_district_disjoint_sum_private_households,Уральский федеральный округ,5714748,5714748,0,pass
+tab02_district_disjoint_sum_people_in_private_households,Уральский федеральный округ,12217735,12217735,0,pass
+tab02_district_disjoint_sum_private_households,Сибирский федеральный округ,7668470,7668470,0,pass
+tab02_district_disjoint_sum_people_in_private_households,Сибирский федеральный округ,16681280,16681280,0,pass
+tab02_district_disjoint_sum_private_households,Дальневосточный федеральный округ,3557256,3557256,0,pass
+tab02_district_disjoint_sum_people_in_private_households,Дальневосточный федеральный округ,7889322,7889322,0,pass
