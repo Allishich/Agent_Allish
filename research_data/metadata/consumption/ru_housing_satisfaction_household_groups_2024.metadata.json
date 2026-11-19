@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "RU_RSC_006",
+  "filename": "ru_housing_satisfaction_household_groups_2024.csv",
+  "title": "Удовлетворённость жильём по составу и доходам, 2024",
+  "description": "Самооценка жилищных условий: все, город, село, размер, дети, квинтили",
+  "records": 80,
+  "years": [
+    2024
+  ],
+  "territories": [
+    "Российская Федерация"
+  ],
+  "unit_values": [
+    "pct"
+  ],
+  "source_id": "RSC-01",
+  "publisher": "Росстат",
+  "exact_source_title": "Социальное положение и уровень жизни населения России. 2025",
+  "source_url": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+  "table": "9.21",
+  "printed_page": "200",
+  "collection_method": "Ручная транскрипция видимого текстового представления таблицы официальной публикации; независимая проверка исходного PDF/XLSX ещё не выполнена",
+  "grain": "группа домохозяйств × оценка жилья",
+  "columns": {
+    "year": "год наблюдения",
+    "territory": "территория, явно указанная в публикации",
+    "territory_level": "country или region",
+    "population_group": "группа / выборка / городская или сельская совокупность",
+    "dimension": "ось сегментации или семейство показателей",
+    "category": "конкретный показатель",
+    "value": "значение без символа процента и единиц",
+    "unit": "pct — процент; min — минуты; прочие единицы — при наличии",
+    "denominator": "определение знаменателя, соответствующее исходной таблице",
+    "source_id": "ключ источника в sources_register.json",
+    "source_table": "номер таблицы или название статьи",
+    "source_page": "печатная страница, если имеется",
+    "source_url": "постоянная ссылка на публикацию",
+    "note": "дополнительные ограничения, не должна использоваться для вывода о другом сегменте"
+  },
+  "missing_policy": "Пропуски не заменяются нулём; в данном файле только опубликованные значения",
+  "source_status": "transcribed_from_official_pdf_text_layer; original_binary_not_downloaded; web_screenshot_cache_miss",
+  "limitations": [
+    "Самооценка условий не может быть сведена к рыночному спросу",
+    "Вычислять точные доли с суммой 100 без учёта округления нельзя"
+  ],
+  "quality_checks": [
+    "sum_five_grades_approx_100"
+  ],
+  "sha256": "c01818b7c9b31384ba799b44112410e340ce00d635fa99c166f75f407a3bab34",
+  "encoding": "UTF-8 BOM",
+  "delimiter": ",",
+  "web_access_date": "2026-11-17"
+}
