@@ -1,0 +1,287 @@
+{
+  "version": "0.3",
+  "created_utc_date": "2026-11-17",
+  "scope": {
+    "country": "RU",
+    "territory_label": "Российская Федерация",
+    "comparison_warning": "Росстат: данные в сборнике 2025 обычно приводятся без статистики по ДНР, ЛНР, Запорожской и Херсонской областям."
+  },
+  "sources": [
+    {
+      "source_id": "ROS-001",
+      "title": "Численность по полу и возрасту на 01.01.2024",
+      "organization": "Росстат",
+      "published": "2025",
+      "observed": "2024-01-01",
+      "geography": "РФ",
+      "format": "PDF, таблица 3.4",
+      "status": "числа извлечены и сверены по суммам",
+      "url": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "notes": "Сборник «Социальное положение и уровень жизни населения России. 2025», стр. 29; возраст 5–6 и далее группы, не однолетние; 2025 возрастные значения временно не публикуются."
+    },
+    {
+      "source_id": "ROS-002",
+      "title": "Бюллетень: Численность населения РФ по полу и возрасту на 1 января 2024 года",
+      "organization": "Росстат",
+      "published": "2024-07-30",
+      "observed": "2024-01-01",
+      "geography": "РФ и субъекты, город/село",
+      "format": "RAR",
+      "status": "оригинал не загружен; пользователь сообщает об отсутствии архива на странице Росстата",
+      "url": "https://rosstat.gov.ru/compendium/document/13284",
+      "notes": "Предпочтительный подробный первоисточник для однолетних возрастов в региональном разрезе. Для текущей версии сохранена только сводная общероссийская возрастная структура 01.01.2024 из ROS-001."
+    },
+    {
+      "source_id": "ROS-003",
+      "title": "Численность по полу и возрасту на 01.01.2022 (пересчёт по ВПН-2020)",
+      "organization": "Росстат",
+      "published": "2023-10-23",
+      "observed": "2022-01-01",
+      "geography": "РФ и субъекты",
+      "format": "XLSX",
+      "status": "источник найден, оригинал пока не загружен",
+      "url": "https://rosstat.gov.ru/folder/12781",
+      "notes": "Региональная детализация и однолетние возраста — после проверки файла."
+    },
+    {
+      "source_id": "ROS-004",
+      "title": "ВПН-2020 том 8: таблица 2, частные домохозяйства по размеру",
+      "organization": "Росстат",
+      "published": "2022-12-31",
+      "observed": "ВПН-2020",
+      "geography": "РФ и субъекты",
+      "format": "XLSX",
+      "status": "исходный XLSX загружен пользователем на Google Drive; таблица обработана и проверена",
+      "url": "https://rosstat.gov.ru/vpn/2020/Tom8_Chislo_i_sostav_domohozyajstv",
+      "notes": "Не считать число домохозяйств численностью семейных ячеек.",
+      "original_filename": "Tom8_tab2_VPN-2020.xlsx",
+      "original_sha256": "4387185d76d99a6fc66984f05ffa7fa002c8ccc8896460d1e716c22910656bb6",
+      "original_size_bytes": 39760
+    },
+    {
+      "source_id": "ROS-005",
+      "title": "ВПН-2020 том 8: таблица 4, домохозяйства с детьми до 18 по субъектам",
+      "organization": "Росстат",
+      "published": "2022-12-31",
+      "observed": "ВПН-2020",
+      "geography": "РФ и субъекты",
+      "format": "XLSX",
+      "status": "исходный XLSX загружен пользователем на Google Drive; таблица обработана и проверена",
+      "url": "https://rosstat.gov.ru/vpn/2020/Tom8_Chislo_i_sostav_domohozyajstv",
+      "notes": "Тип, размер домохозяйства, количество детей; требуется сверка метаданных.",
+      "original_filename": "Tom8_tab4_VPN-2020.xlsx",
+      "original_sha256": "3882f340e0eece54ff719f2ed845ddb2d68479b9a803af59daa2ee0d29ffaba5",
+      "original_size_bytes": 752274
+    },
+    {
+      "source_id": "ROS-006",
+      "title": "ВПН-2020 том 8: таблица 10, семейные ячейки с детьми по субъектам",
+      "organization": "Росстат",
+      "published": "2022-12-31",
+      "observed": "ВПН-2020",
+      "geography": "РФ и субъекты",
+      "format": "XLSX",
+      "status": "исходный XLSX загружен пользователем на Google Drive; таблица обработана и проверена",
+      "url": "https://rosstat.gov.ru/vpn/2020/Tom8_Chislo_i_sostav_domohozyajstv",
+      "notes": "Единица счёта — семейная ячейка, не частное домохозяйство.",
+      "original_filename": "Tom8_tab10_VPN-2020.xlsx",
+      "original_sha256": "9564d14be6fb98e533ce66de6f23c74b5f99c72c362d8ee44bef42a7d1de2bde",
+      "original_size_bytes": 197776
+    },
+    {
+      "source_id": "ROS-007",
+      "title": "ВПН-2020 том 8: таблица 12, семейные ячейки со взрослыми моложе 35",
+      "organization": "Росстат",
+      "published": "2022-12-31",
+      "observed": "ВПН-2020",
+      "geography": "РФ и субъекты",
+      "format": "XLSX",
+      "status": "исходный XLSX загружен пользователем на Google Drive; таблица обработана и проверена",
+      "url": "https://rosstat.gov.ru/vpn/2020/Tom8_Chislo_i_sostav_domohozyajstv",
+      "notes": "Возраст взрослых моложе 35 лет, в выборке семейные ячейки.",
+      "original_filename": "Tom8_tab12_VPN-2020.xlsx",
+      "original_sha256": "1d8d661c541e156800513909d7590d3278502ac7cff2c58a03f28a07e7bf178f",
+      "original_size_bytes": 184511
+    },
+    {
+      "source_id": "ROS-008",
+      "title": "ВПН-2020 том 8: таблица 13, семейные ячейки по возрасту детей",
+      "organization": "Росстат",
+      "published": "2022-12-31",
+      "observed": "ВПН-2020",
+      "geography": "РФ",
+      "format": "XLSX",
+      "status": "исходный XLSX загружен пользователем на Google Drive; таблица обработана и проверена",
+      "url": "https://rosstat.gov.ru/vpn/2020/Tom8_Chislo_i_sostav_domohozyajstv",
+      "notes": "Группы возраста детей; таблица не обязательно содержит комбинации для субъектов.",
+      "original_filename": "Tom8_tab13_VPN-2020.xlsx",
+      "original_sha256": "1b4f47fd73c7aa2beeedcfbc571aed410d417544e1f249d44cf54ac9de926b09",
+      "original_size_bytes": 22430
+    },
+    {
+      "source_id": "ROS-009",
+      "title": "Женщины и мужчины России. 2022: табл. 1.17 семейные ячейки с детьми",
+      "organization": "Росстат",
+      "published": "2022",
+      "observed": "ВПН-2020",
+      "geography": "РФ",
+      "format": "PDF, стр. 28",
+      "status": "числа извлечены и сверены с округлением",
+      "url": "https://rosstat.gov.ru/storage/mediabank/Wom-Man%202022.pdf",
+      "notes": "Тыс. семейных ячеек, по числу детей младше 18 и типу ячейки."
+    }
+  ],
+  "next_priority": [
+    "ROS-002: получить официальный RAR с однолетними возрастами, регионом, городом/селом на 2024 год.",
+    "ROS-005: получить XLSX с домохозяйствами с детьми до 18 по субъектам.",
+    "ROS-006: получить XLSX с семейными ячейками с детьми по субъектам.",
+    "ROS-008: получить XLSX с семейными ячейками по возрасту детей."
+  ],
+  "datasets": [
+    {
+      "id": "RU-POP-AGE-SEX-2024-ROS-001",
+      "file": "ru_population_age_sex_2024_rosstat_verified.csv",
+      "unit": "persons",
+      "observed_at": "2024-01-01",
+      "demographic_coverage": "all ages, both sexes; national total",
+      "age_granularity": "0,1,2,3,4 as single years; then mixed age bands; 85+ open end",
+      "source": "ROS-001",
+      "source_url": "https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf",
+      "source_citation": "Росстат. Социальное положение и уровень жизни населения России. 2025. С.29, таблица 3.4.",
+      "source_storage_status": "external PDF linked, original PDF binary not archived",
+      "extraction_method": "official table numbers manually transcribed from accessible indexed PDF text; row and column cross-checks",
+      "rows": 24,
+      "sha256": "ee3c9a3db1ba2468ce6b2387a4104511ae356d2738b2616ffa1aebe2b6b6ef03",
+      "validation": {
+        "reported_total": 146150789,
+        "sum_age_bands": 146150789,
+        "reported_male": 67917353,
+        "sum_age_bands_male": 67917353,
+        "reported_female": 78233436,
+        "sum_age_bands_female": 78233436,
+        "all_rows_total_equals_male_plus_female": true,
+        "difference": 0
+      },
+      "limitations": [
+        "Не содержит разбивки по регионам или городскому/сельскому населению.",
+        "Нельзя точно вычислить произвольные возрастные интервалы, пересекающие группу 5–6, 7–9 или иную агрегированную группу.",
+        "Данные относятся к 1 января 2024 года, не к 2025 или 2026 году.",
+        "Возрастные группы описывают людей, а не домохозяйства или платежеспособных пользователей."
+      ],
+      "related_workbook": "ru_demography_russia_first_verified_datasets_2024_and_vpn2020.xlsx"
+    },
+    {
+      "id": "RU-FAMILY-UNITS-U18-VPN2020-ROS-009",
+      "file": "ru_family_units_children_under18_vpn2020_rosstat.csv",
+      "unit": "thousand family units",
+      "reference_period": "ВПН-2020",
+      "source": "ROS-009",
+      "source_url": "https://rosstat.gov.ru/storage/mediabank/Wom-Man%202022.pdf",
+      "source_citation": "Росстат. Женщины и мужчины России. 2022. С. 28, табл. 1.17.",
+      "source_storage_status": "external PDF linked, original PDF binary not archived",
+      "extraction_method": "official table numbers manually transcribed from indexed PDF text; cross-checks with rounding tolerance",
+      "rows": 20,
+      "sha256": "6171c61f1e88f2f1cd4481e86ba4b0de78e3348fa6a690272c9c38d12930eacc",
+      "validation": {
+        "total_reported_thousand": 15532.8,
+        "sum_by_family_type_thousand": 15532.8,
+        "sum_by_child_count_thousand": 15532.9,
+        "discrepancy_by_child_count_thousand": 0.1,
+        "rounding_tolerance_thousand": 0.1
+      },
+      "limitations": [
+        "Данные переписи ВПН-2020, не текущего 2024/2025 года.",
+        "Числа в тысячах семейных ячеек с округлением до десятых: могут давать расхождение итогов 0,1 тыс.",
+        "Семейная ячейка не равна домохозяйству; нельзя суммировать с числом домохозяйств."
+      ]
+    },
+    {
+      "id": "RU-VPN2020-TAB02",
+      "file": "ru_vpn2020_tab02_households_by_size_geography_settlement.csv",
+      "raw_file": "Tom8_tab2_VPN-2020.xlsx",
+      "reference_period": "ВПН-2020",
+      "source": "ROS-004",
+      "source_url": "https://rosstat.gov.ru/vpn/2020/Tom8_Chislo_i_sostav_domohozyajstv",
+      "unit": "число домохозяйств, лиц; средний размер",
+      "geography": "Россия, округа, регионы; городское/сельское население",
+      "rows": 284,
+      "sha256": "05772b3f5b7a9a918d056e195fb298456e7da073926c3285d40576e43344eb2d",
+      "checks": "see ru_vpn2020_quality_checks.csv",
+      "status": "normalized_from_user_uploaded_official_workbook"
+    },
+    {
+      "id": "RU-VPN2020-TAB04",
+      "file": "ru_vpn2020_tab04_households_children_structure_by_region.csv",
+      "raw_file": "Tom8_tab4_VPN-2020.xlsx",
+      "reference_period": "ВПН-2020",
+      "source": "ROS-005",
+      "source_url": "https://rosstat.gov.ru/vpn/2020/Tom8_Chislo_i_sostav_domohozyajstv",
+      "unit": "домохозяйства и лица",
+      "geography": "округа и регионы; город/село отсутствует",
+      "rows": 9120,
+      "sha256": "b12866833a7a9b4f31f44c6490ad87012226d8b856fc871ce5dead628f4d663a",
+      "checks": "see ru_vpn2020_quality_checks.csv",
+      "status": "normalized_from_user_uploaded_official_workbook"
+    },
+    {
+      "id": "RU-VPN2020-TAB10",
+      "file": "ru_vpn2020_tab10_family_units_by_region.csv",
+      "raw_file": "Tom8_tab10_VPN-2020.xlsx",
+      "reference_period": "ВПН-2020",
+      "source": "ROS-006",
+      "source_url": "https://rosstat.gov.ru/vpn/2020/Tom8_Chislo_i_sostav_domohozyajstv",
+      "unit": "семейные ячейки и лица",
+      "geography": "округа и регионы",
+      "rows": 2470,
+      "sha256": "d69a5791dd7788d746b7394fc588f62d4371e3e0925b215b578a18648b932f2b",
+      "checks": "see ru_vpn2020_quality_checks.csv",
+      "status": "normalized_from_user_uploaded_official_workbook"
+    },
+    {
+      "id": "RU-VPN2020-TAB12",
+      "file": "ru_vpn2020_tab12_family_units_by_region.csv",
+      "raw_file": "Tom8_tab12_VPN-2020.xlsx",
+      "reference_period": "ВПН-2020",
+      "source": "ROS-007",
+      "source_url": "https://rosstat.gov.ru/vpn/2020/Tom8_Chislo_i_sostav_domohozyajstv",
+      "unit": "семейные ячейки и лица",
+      "geography": "округа и регионы",
+      "rows": 2470,
+      "sha256": "4a07e22003aad99086fa79f3c6677331f5cbf82e3e444f056e1db46edc0efd11",
+      "checks": "see ru_vpn2020_quality_checks.csv",
+      "status": "normalized_from_user_uploaded_official_workbook"
+    },
+    {
+      "id": "RU-VPN2020-TAB13",
+      "file": "ru_vpn2020_tab13_family_units_by_child_age_threshold.csv",
+      "raw_file": "Tom8_tab13_VPN-2020.xlsx",
+      "reference_period": "ВПН-2020",
+      "source": "ROS-008",
+      "source_url": "https://rosstat.gov.ru/vpn/2020/Tom8_Chislo_i_sostav_domohozyajstv",
+      "unit": "семейные ячейки и лица",
+      "geography": "Россия, город/село",
+      "rows": 129,
+      "sha256": "0d6043ed93b7cd69315003c3cba3bfc2f00144ff54b91bdb682024eca2ce8d8f",
+      "checks": "see ru_vpn2020_quality_checks.csv",
+      "status": "normalized_from_user_uploaded_official_workbook"
+    },
+    {
+      "id": "RU-VPN2020-TERRITORY-DIMENSION",
+      "file": "ru_vpn2020_territory_dimension.csv",
+      "rows": 96,
+      "sha256": "85c8c7dc6cfe48f46fbcd6642782cf71e0c14ed0a191d4b3639979181921733d"
+    },
+    {
+      "id": "RU-VPN2020-REGION-PROFILE",
+      "file": "ru_vpn2020_region_profile.csv",
+      "rows": 96,
+      "sha256": "2e54e9ee7094c8743b9a4045ec225ca312f203368d3b8622e9d3da7307b2519f"
+    }
+  ],
+  "qa": {
+    "pass": 882,
+    "fail": 0,
+    "report": "ru_vpn2020_data_quality_report.md",
+    "check_file": "ru_vpn2020_quality_checks.csv"
+  }
+}
