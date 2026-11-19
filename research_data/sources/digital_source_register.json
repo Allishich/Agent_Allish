@@ -1,0 +1,67 @@
+[
+  {
+    "source_id": "HSE_DIGITAL_2026",
+    "organization": "ИСИЭЗ НИУ ВШЭ",
+    "title": "Индикаторы цифровой экономики: 2026",
+    "data_years_covered": "2010–2024 depending on table",
+    "url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+    "publication_year": 2026,
+    "format": "PDF",
+    "status": "tables_transcribed_qa",
+    "nature": "HSE publication, mainly reproduces/derives Rosstat data; see source notes for each table",
+    "geography": "Russia, HSE explicitly excludes 4 new regions in statistical data",
+    "source_note": "DOI 10.17323/978-5-7598-3047-4. 304 printed pages. Source table number and PDF page are in each record."
+  },
+  {
+    "source_id": "ROSSTAT_IKT_2025",
+    "organization": "Росстат",
+    "title": "Использование населением ИКТ и сетей, 2025 год",
+    "data_years_covered": "2025",
+    "url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-five",
+    "publication_year": 2026,
+    "format": "CSV (linked through Rosstat opendata)",
+    "status": "identified_not_downloaded",
+    "nature": "primary official dataset",
+    "geography": "Russia, per methodology of survey",
+    "source_note": "Rosstat website metadata indexed. Direct downloadable CSV could not be obtained. NO values from this CSV used. Further work: download data and structure CSV, inspect questionnaire and sample universe."
+  },
+  {
+    "source_id": "ROSSTAT_IKT_2024",
+    "organization": "Росстат",
+    "title": "Использование населением ИКТ и сетей, 2024 год",
+    "data_years_covered": "2024",
+    "url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-four",
+    "publication_year": 2025,
+    "format": "CSV (linked through Rosstat opendata)",
+    "status": "identified_not_downloaded",
+    "nature": "primary official dataset",
+    "geography": "Russia",
+    "source_note": "No direct CSV copy was retrieved; HSE 2026 data have been processed with table-level provenance."
+  },
+  {
+    "source_id": "HSE_DIGITAL_BOOK_SERIES",
+    "organization": "ИСИЭЗ НИУ ВШЭ",
+    "title": "Статистические сборники Индикаторы цифровой экономики, серия",
+    "data_years_covered": "multiple",
+    "url": "https://www.hse.ru/primarydata/iio",
+    "publication_year": 2026,
+    "format": "HTML publication index",
+    "status": "verified_catalog",
+    "nature": "official publication catalog",
+    "geography": "Russia",
+    "source_note": "Use edition-specific links and edition year; different releases may revise values."
+  },
+  {
+    "source_id": "HSE_NEWS_DIGITAL_2026",
+    "organization": "ИСИЭЗ НИУ ВШЭ",
+    "title": "Цифровая экономика: 2026 – обзор ключевых показателей",
+    "data_years_covered": "2024 primarily",
+    "url": "https://issek.hse.ru/news/1110990925.html",
+    "publication_year": 2026,
+    "format": "HTML",
+    "status": "verified_context_not_loaded_as_dataset",
+    "nature": "publisher press note",
+    "geography": "Russia",
+    "source_note": "Includes youth/children coverage with different sampling frame; do not mix with adult Rosstat 15+ survey without specific denominator."
+  }
+]
