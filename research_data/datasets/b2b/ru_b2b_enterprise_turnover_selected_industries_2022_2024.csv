@@ -1,0 +1,13 @@
+﻿year,industry_code,industry_label,metric,value,unit,geography,source_id,source_table,source_page,source_url
+2022,TOTAL,Всего,turnover_of_organizations,291216.6,billion_rub_nominal,Российская Федерация,B2B-RU-007,15.4,322-323,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2023,TOTAL,Всего,turnover_of_organizations,319578.6,billion_rub_nominal,Российская Федерация,B2B-RU-007,15.4,322-323,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,TOTAL,Всего,turnover_of_organizations,370697.4,billion_rub_nominal,Российская Федерация,B2B-RU-007,15.4,322-323,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2022,A,"Сельское хозяйство, лесное хозяйство, рыболовство",turnover_of_organizations,4995.5,billion_rub_nominal,Российская Федерация,B2B-RU-007,15.4,322-323,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2023,A,"Сельское хозяйство, лесное хозяйство, рыболовство",turnover_of_organizations,5550.7,billion_rub_nominal,Российская Федерация,B2B-RU-007,15.4,322-323,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,A,"Сельское хозяйство, лесное хозяйство, рыболовство",turnover_of_organizations,6253.6,billion_rub_nominal,Российская Федерация,B2B-RU-007,15.4,322-323,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2022,B,Добыча полезных ископаемых,turnover_of_organizations,28599.6,billion_rub_nominal,Российская Федерация,B2B-RU-007,15.4,322-323,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2023,B,Добыча полезных ископаемых,turnover_of_organizations,29087.4,billion_rub_nominal,Российская Федерация,B2B-RU-007,15.4,322-323,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,B,Добыча полезных ископаемых,turnover_of_organizations,33668.4,billion_rub_nominal,Российская Федерация,B2B-RU-007,15.4,322-323,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2022,C,Обрабатывающие производства,turnover_of_organizations,69606.7,billion_rub_nominal,Российская Федерация,B2B-RU-007,15.4,322-323,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2023,C,Обрабатывающие производства,turnover_of_organizations,79586.4,billion_rub_nominal,Российская Федерация,B2B-RU-007,15.4,322-323,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
+2024,C,Обрабатывающие производства,turnover_of_organizations,94804.0,billion_rub_nominal,Российская Федерация,B2B-RU-007,15.4,322-323,https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf
