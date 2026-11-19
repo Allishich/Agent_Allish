@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "RU_DIG_005",
+  "title_ru": "Цели использования интернета: 31 категория",
+  "data_filename": "ru_digital_internet_activity_purposes_2024.csv",
+  "description_ru": "Доля недавних интернет-пользователей, пользовавшихся интернетом по указанным целям, включая просмотр видео, соцсети, банкинг и использование нейросетей.",
+  "data_grain": "одна строка — один показатель × год × тип разреза × категория",
+  "unit": "percent",
+  "value_column": "value_pct",
+  "geographic_coverage": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+  "population_universe_ru": "Лица 15+ пользовавшиеся интернетом за 3 последних месяца",
+  "denominator_rule_ru": "Численность пользователей интернета 15+ за последние 3 месяца, не всё население",
+  "reference_years": [
+    2024
+  ],
+  "time_coverage_ru": "2024",
+  "dimensions": [
+    "year",
+    "territory",
+    "dimension",
+    "segment",
+    "metric_code"
+  ],
+  "measurement_window_ru": "Пользовались для указанной цели в ходе обследования; множественный выбор.",
+  "publisher": "Институт статистических исследований и экономики знаний НИУ ВШЭ",
+  "underlying_data_owner": "Росстат, если не оговорено иное в таблице HSE",
+  "source_id": "HSE_DIGITAL_2026",
+  "source_publication_ru": "Индикаторы цифровой экономики: 2026. Статистический сборник. ИСИЭЗ НИУ ВШЭ. 2026. DOI 10.17323/978-5-7598-3047-4.",
+  "official_source_document_url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+  "original_rosstat_dataset_catalog_url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-five",
+  "source_tables_pages": [
+    {
+      "table": "11.11",
+      "printed_page": 182
+    }
+  ],
+  "ingest_method": "аккуратная структурированная транскрипция опубликованных таблиц/графиков PDF с визуальной сверкой страниц, без автоматического скачивания исходной таблицы Росстата",
+  "provenance_level": "published_hse_table_reproducing_rosstat_data",
+  "original_binary_status": "внешний PDF доступен по постоянной ссылке; оригинальные бинарные CSV Росстата на диск не выгружались",
+  "record_count": 31,
+  "row_column_names": [
+    "year",
+    "territory",
+    "dimension",
+    "segment",
+    "metric_code",
+    "metric_label_ru",
+    "value_pct",
+    "denominator_ru",
+    "measurement_window",
+    "source_id",
+    "source_table",
+    "source_page",
+    "source_url",
+    "note"
+  ],
+  "csv_encoding": "UTF-8 with BOM",
+  "csv_delimiter": ",",
+  "sha256": "880b35fe77e95b52e51595aeb9a105225af41ea44fdbc927158cafc911d8afcd",
+  "limits_and_avoid_ru": [
+    "Нельзя трактовать 48.1% просмотра видео как долю платных подписчиков.",
+    "Нельзя суммировать по целям.",
+    "Доля интернет-пользователей, а не всего населения."
+  ],
+  "qa_checks_ru": [
+    "31 цель, все значения 0..100, порядок графика сохранён"
+  ],
+  "files_are_derived": "yes, transcription",
+  "classification": "internet_purposes",
+  "additional_metadata": {},
+  "compiled_date": "2026-11-17",
+  "license_note": "Для первоисточника сохраняется ссылка и DOI; не заявляется право на свободное распространение оригинального PDF"
+}
