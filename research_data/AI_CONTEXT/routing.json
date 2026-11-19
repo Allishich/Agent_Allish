@@ -1,0 +1,743 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-18",
+  "routes": [
+    {
+      "intent_id": "population_age_sex",
+      "user_questions": "Население, возрастные когорты, пол",
+      "dataset_topic": "demography",
+      "candidate_dataset_ids": [
+        "DRIVE:1ZbLK2vAtUy3gExMXClrenRksDejrT4dA",
+        "DRIVE:1aROUU7cba9hIOMRdfGe-6EaFGkXVLR_5"
+      ],
+      "candidate_links": [
+        "https://drive.google.com/file/d/1ZbLK2vAtUy3gExMXClrenRksDejrT4dA/view",
+        "https://drive.google.com/file/d/1aROUU7cba9hIOMRdfGe-6EaFGkXVLR_5/view"
+      ],
+      "interpretation_warnings": [
+        "ВПН-2020 и оценки населения разных дат не объединять"
+      ],
+      "suggested_external_sources": [
+        "Росстат/ЕМИСС"
+      ],
+      "route_note": "Candidate hints, not automatic evidence. Verify the source passport, grain, geography and period before use.",
+      "candidate_repository_files": [
+        {
+          "dataset_id": "DRIVE:1ZbLK2vAtUy3gExMXClrenRksDejrT4dA",
+          "path": "research_data/datasets/demography/ru_population_age_sex_2024_rosstat_verified.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": null,
+          "source_catalog_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+        },
+        {
+          "dataset_id": "DRIVE:1aROUU7cba9hIOMRdfGe-6EaFGkXVLR_5",
+          "path": "research_data/datasets/demography/ru_vpn2020_tab13_family_units_by_child_age_threshold.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": null,
+          "source_catalog_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+        }
+      ]
+    },
+    {
+      "intent_id": "households_families",
+      "user_questions": "Домохозяйства, семья, дети",
+      "dataset_topic": "demography",
+      "candidate_dataset_ids": [
+        "DRIVE:1xyfrhstL9pXanv-MkBnm0KOjFfpdX3Px",
+        "DRIVE:1kScqDQhXJFoCtjJitTQ_Tal993RkCa0Z",
+        "DRIVE:1v5LLDrOuSRGcopOwze_kZzTr1sTiG5_J",
+        "DRIVE:1khs3RsECgopSC7v9bfPiQ3VOmYfM40pf",
+        "DRIVE:1CeIHC27AGQQyPI_814ymKFXBC6dZ-Nbw",
+        "DRIVE:1aROUU7cba9hIOMRdfGe-6EaFGkXVLR_5",
+        "DRIVE:1YfTfWIng98riS372cd2Mx5OqJYuHhWbF",
+        "DRIVE:15XuYoruXTeijZseOgQ9sLs6Wt6fAHs_9"
+      ],
+      "candidate_links": [
+        "https://drive.google.com/file/d/1xyfrhstL9pXanv-MkBnm0KOjFfpdX3Px/view",
+        "https://drive.google.com/file/d/1kScqDQhXJFoCtjJitTQ_Tal993RkCa0Z/view",
+        "https://drive.google.com/file/d/1v5LLDrOuSRGcopOwze_kZzTr1sTiG5_J/view",
+        "https://drive.google.com/file/d/1khs3RsECgopSC7v9bfPiQ3VOmYfM40pf/view",
+        "https://drive.google.com/file/d/1CeIHC27AGQQyPI_814ymKFXBC6dZ-Nbw/view"
+      ],
+      "interpretation_warnings": [
+        "Домохозяйство != семейная ячейка != ребенок"
+      ],
+      "suggested_external_sources": [
+        "Росстат"
+      ],
+      "route_note": "Candidate hints, not automatic evidence. Verify the source passport, grain, geography and period before use.",
+      "candidate_repository_files": [
+        {
+          "dataset_id": "DRIVE:1xyfrhstL9pXanv-MkBnm0KOjFfpdX3Px",
+          "path": "research_data/datasets/demography/ru_family_units_children_under18_vpn2020_rosstat.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": null,
+          "source_catalog_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+        },
+        {
+          "dataset_id": "DRIVE:1kScqDQhXJFoCtjJitTQ_Tal993RkCa0Z",
+          "path": "research_data/datasets/demography/ru_vpn2020_tab02_households_by_size_geography_settlement.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": null,
+          "source_catalog_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+        },
+        {
+          "dataset_id": "DRIVE:1v5LLDrOuSRGcopOwze_kZzTr1sTiG5_J",
+          "path": null,
+          "parts": [
+            "research_data/datasets/demography/parts/ru_vpn2020_tab04_households_children_structure_by_region.part_01.csv",
+            "research_data/datasets/demography/parts/ru_vpn2020_tab04_households_children_structure_by_region.part_02.csv",
+            "research_data/datasets/demography/parts/ru_vpn2020_tab04_households_children_structure_by_region.part_03.csv",
+            "research_data/datasets/demography/parts/ru_vpn2020_tab04_households_children_structure_by_region.part_04.csv",
+            "research_data/datasets/demography/parts/ru_vpn2020_tab04_households_children_structure_by_region.part_05.csv",
+            "research_data/datasets/demography/parts/ru_vpn2020_tab04_households_children_structure_by_region.part_06.csv",
+            "research_data/datasets/demography/parts/ru_vpn2020_tab04_households_children_structure_by_region.part_07.csv",
+            "research_data/datasets/demography/parts/ru_vpn2020_tab04_households_children_structure_by_region.part_08.csv"
+          ],
+          "assemble_to": "research_data/datasets/demography/ru_vpn2020_tab04_households_children_structure_by_region.csv",
+          "metadata_path": null,
+          "source_catalog_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+        },
+        {
+          "dataset_id": "DRIVE:1khs3RsECgopSC7v9bfPiQ3VOmYfM40pf",
+          "path": "research_data/datasets/demography/ru_vpn2020_tab10_family_units_by_region.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": null,
+          "source_catalog_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+        },
+        {
+          "dataset_id": "DRIVE:1CeIHC27AGQQyPI_814ymKFXBC6dZ-Nbw",
+          "path": "research_data/datasets/demography/ru_vpn2020_tab12_family_units_by_region.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": null,
+          "source_catalog_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+        },
+        {
+          "dataset_id": "DRIVE:1aROUU7cba9hIOMRdfGe-6EaFGkXVLR_5",
+          "path": "research_data/datasets/demography/ru_vpn2020_tab13_family_units_by_child_age_threshold.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": null,
+          "source_catalog_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+        },
+        {
+          "dataset_id": "DRIVE:1YfTfWIng98riS372cd2Mx5OqJYuHhWbF",
+          "path": "research_data/datasets/demography/ru_vpn2020_territory_dimension.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": null,
+          "source_catalog_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+        },
+        {
+          "dataset_id": "DRIVE:15XuYoruXTeijZseOgQ9sLs6Wt6fAHs_9",
+          "path": "research_data/datasets/demography/ru_vpn2020_region_profile.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": null,
+          "source_catalog_path": "research_data/sources/demography_sources_manifest_v0_3.json"
+        }
+      ]
+    },
+    {
+      "intent_id": "income_wages_employment",
+      "user_questions": "Доходы, зарплата, занятость, платежеспособность",
+      "dataset_topic": "socioeconomics",
+      "candidate_dataset_ids": [
+        "DRIVE:10mMMRitkBNKUW3ffS9IEtqCwWXBZad49",
+        "DRIVE:19n8OBFqGtPNu3EGkFrRBA9qoK3ozVt9_",
+        "DRIVE:10MykAgcTzhmCHKEObNBq0faHHbyBDatu"
+      ],
+      "candidate_links": [
+        "https://drive.google.com/file/d/10mMMRitkBNKUW3ffS9IEtqCwWXBZad49/view",
+        "https://drive.google.com/file/d/19n8OBFqGtPNu3EGkFrRBA9qoK3ozVt9_/view",
+        "https://drive.google.com/file/d/10MykAgcTzhmCHKEObNBq0faHHbyBDatu/view"
+      ],
+      "interpretation_warnings": [
+        "Средняя зарплата != медиана; расходы != готовность платить"
+      ],
+      "suggested_external_sources": [
+        "Росстат/ЕМИСС"
+      ],
+      "route_note": "Candidate hints, not automatic evidence. Verify the source passport, grain, geography and period before use.",
+      "candidate_repository_files": [
+        {
+          "dataset_id": "DRIVE:10mMMRitkBNKUW3ffS9IEtqCwWXBZad49",
+          "path": "research_data/datasets/socioeconomic/ru_mean_monthly_wage_regions_2023_2024_rosstat2025.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": null,
+          "source_catalog_path": "research_data/sources/socioeconomic_source_manifest_v0_2.json"
+        },
+        {
+          "dataset_id": "DRIVE:19n8OBFqGtPNu3EGkFrRBA9qoK3ozVt9_",
+          "path": "research_data/datasets/socioeconomic/ru_national_median_wage_april_survey_rosstat2025.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": null,
+          "source_catalog_path": "research_data/sources/socioeconomic_source_manifest_v0_2.json"
+        },
+        {
+          "dataset_id": "DRIVE:10MykAgcTzhmCHKEObNBq0faHHbyBDatu",
+          "path": "research_data/datasets/socioeconomic/ru_wage_geography_vpn2020_crosswalk.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": null,
+          "source_catalog_path": "research_data/sources/socioeconomic_source_manifest_v0_2.json"
+        }
+      ]
+    },
+    {
+      "intent_id": "digital_adoption",
+      "user_questions": "Доступ к интернету, цифровое поведение, устройства, навыки",
+      "dataset_topic": "digital_behavior",
+      "candidate_dataset_ids": [
+        "DRIVE:1ROHPhKgCXomav-3BeppVQS-Vx48MlphH",
+        "DRIVE:1gjYBPIqzyki5TtkJMP2yndps-kPYP2Gk",
+        "DRIVE:1zMP1C852B9CTPmskEfsuyZ1Qqsdbc5Gh",
+        "DRIVE:1W2X5JX8AqWgSZ9AA3hwqlc1XeUcA0kQf",
+        "DRIVE:15d7qcO5gzZES0LByHreE8R252JoeQ3PT",
+        "DRIVE:13utWM8fk48x5zbimxQdGGUYdmPUbNRi1",
+        "DRIVE:18IwJnzWDIPqarAU117cm2YoE7TLRPt4K",
+        "DRIVE:1zG574HJkrxLjyRdS-00bTD0IXXLesPuR",
+        "DRIVE:1AlKGv6kyytqsSSq3dfRISkjji6nJzMmF",
+        "DRIVE:10Dhiatiysd4TTWz_hzPCTstXEkoTLaf5"
+      ],
+      "candidate_links": [
+        "https://drive.google.com/file/d/1ROHPhKgCXomav-3BeppVQS-Vx48MlphH/view",
+        "https://drive.google.com/file/d/1gjYBPIqzyki5TtkJMP2yndps-kPYP2Gk/view",
+        "https://drive.google.com/file/d/1zMP1C852B9CTPmskEfsuyZ1Qqsdbc5Gh/view",
+        "https://drive.google.com/file/d/1W2X5JX8AqWgSZ9AA3hwqlc1XeUcA0kQf/view",
+        "https://drive.google.com/file/d/15d7qcO5gzZES0LByHreE8R252JoeQ3PT/view"
+      ],
+      "interpretation_warnings": [
+        "Статистика 15+ не описывает детей младше 15"
+      ],
+      "suggested_external_sources": [
+        "НИУ ВШЭ/Росстат"
+      ],
+      "route_note": "Candidate hints, not automatic evidence. Verify the source passport, grain, geography and period before use.",
+      "candidate_repository_files": [
+        {
+          "dataset_id": "DRIVE:1ROHPhKgCXomav-3BeppVQS-Vx48MlphH",
+          "path": "research_data/datasets/digital_behavior/ru_digital_household_internet_access_2010_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/digital_behavior/ru_digital_household_internet_access_2010_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/digital_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1gjYBPIqzyki5TtkJMP2yndps-kPYP2Gk",
+          "path": "research_data/datasets/digital_behavior/ru_digital_individual_internet_usage_2013_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/digital_behavior/ru_digital_individual_internet_usage_2013_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/digital_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1zMP1C852B9CTPmskEfsuyZ1Qqsdbc5Gh",
+          "path": "research_data/datasets/digital_behavior/ru_digital_internet_frequency_by_settlement_2023_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/digital_behavior/ru_digital_internet_frequency_by_settlement_2023_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/digital_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1W2X5JX8AqWgSZ9AA3hwqlc1XeUcA0kQf",
+          "path": "research_data/datasets/digital_behavior/ru_digital_mobile_devices_for_internet_2023_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/digital_behavior/ru_digital_mobile_devices_for_internet_2023_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/digital_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:15d7qcO5gzZES0LByHreE8R252JoeQ3PT",
+          "path": "research_data/datasets/digital_behavior/ru_digital_internet_activity_purposes_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/digital_behavior/ru_digital_internet_activity_purposes_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/digital_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:13utWM8fk48x5zbimxQdGGUYdmPUbNRi1",
+          "path": "research_data/datasets/digital_behavior/ru_digital_online_orders_penetration_2013_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/digital_behavior/ru_digital_online_orders_penetration_2013_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/digital_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:18IwJnzWDIPqarAU117cm2YoE7TLRPt4K",
+          "path": "research_data/datasets/digital_behavior/ru_digital_online_orders_by_sex_age_settlement_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/digital_behavior/ru_digital_online_orders_by_sex_age_settlement_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/digital_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1zG574HJkrxLjyRdS-00bTD0IXXLesPuR",
+          "path": "research_data/datasets/digital_behavior/ru_digital_online_purchase_categories_physical_and_digital_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/digital_behavior/ru_digital_online_purchase_categories_physical_and_digital_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/digital_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1AlKGv6kyytqsSSq3dfRISkjji6nJzMmF",
+          "path": "research_data/datasets/digital_behavior/ru_digital_online_payment_methods_2013_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/digital_behavior/ru_digital_online_payment_methods_2013_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/digital_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:10Dhiatiysd4TTWz_hzPCTstXEkoTLaf5",
+          "path": "research_data/datasets/digital_behavior/ru_digital_skills_by_age_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/digital_behavior/ru_digital_skills_by_age_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/digital_datasets_catalog.json"
+        }
+      ]
+    },
+    {
+      "intent_id": "online_shopping",
+      "user_questions": "Онлайн-покупки, платежи, цифровой контент",
+      "dataset_topic": "digital_behavior",
+      "candidate_dataset_ids": [
+        "DRIVE:13utWM8fk48x5zbimxQdGGUYdmPUbNRi1",
+        "DRIVE:18IwJnzWDIPqarAU117cm2YoE7TLRPt4K",
+        "DRIVE:1zG574HJkrxLjyRdS-00bTD0IXXLesPuR",
+        "DRIVE:1AlKGv6kyytqsSSq3dfRISkjji6nJzMmF"
+      ],
+      "candidate_links": [
+        "https://drive.google.com/file/d/13utWM8fk48x5zbimxQdGGUYdmPUbNRi1/view",
+        "https://drive.google.com/file/d/18IwJnzWDIPqarAU117cm2YoE7TLRPt4K/view",
+        "https://drive.google.com/file/d/1zG574HJkrxLjyRdS-00bTD0IXXLesPuR/view",
+        "https://drive.google.com/file/d/1AlKGv6kyytqsSSq3dfRISkjji6nJzMmF/view"
+      ],
+      "interpretation_warnings": [
+        "Покупатели цифрового контента != подписчики; категории пересекаются"
+      ],
+      "suggested_external_sources": [
+        "Яндекс Вордстат",
+        "Mediascope"
+      ],
+      "route_note": "Candidate hints, not automatic evidence. Verify the source passport, grain, geography and period before use.",
+      "candidate_repository_files": [
+        {
+          "dataset_id": "DRIVE:13utWM8fk48x5zbimxQdGGUYdmPUbNRi1",
+          "path": "research_data/datasets/digital_behavior/ru_digital_online_orders_penetration_2013_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/digital_behavior/ru_digital_online_orders_penetration_2013_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/digital_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:18IwJnzWDIPqarAU117cm2YoE7TLRPt4K",
+          "path": "research_data/datasets/digital_behavior/ru_digital_online_orders_by_sex_age_settlement_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/digital_behavior/ru_digital_online_orders_by_sex_age_settlement_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/digital_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1zG574HJkrxLjyRdS-00bTD0IXXLesPuR",
+          "path": "research_data/datasets/digital_behavior/ru_digital_online_purchase_categories_physical_and_digital_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/digital_behavior/ru_digital_online_purchase_categories_physical_and_digital_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/digital_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1AlKGv6kyytqsSSq3dfRISkjji6nJzMmF",
+          "path": "research_data/datasets/digital_behavior/ru_digital_online_payment_methods_2013_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/digital_behavior/ru_digital_online_payment_methods_2013_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/digital_datasets_catalog.json"
+        }
+      ]
+    },
+    {
+      "intent_id": "b2b_segments",
+      "user_questions": "Размер и структура B2B-клиентской базы, МСП, ИП",
+      "dataset_topic": "enterprises",
+      "candidate_dataset_ids": [
+        "DRIVE:1x-2zC80igUjJqly4eNQr1hokUmFCKrJ2",
+        "DRIVE:1FhWvPpfPJUSYJqTQ_p7RHneQskElSOvp",
+        "DRIVE:1IhJ5G4BYF8aF_l6HiEDhLveojUtWI9RF",
+        "DRIVE:1W7xKv1Sm6onRSK1UnpzC8uQVdIAaq2JI",
+        "DRIVE:1DlLorFly0z_QGF0xNVWPyixZedkrVlQ5",
+        "DRIVE:1z4lmHxdTNN8z96ngJzPwuL8cmFuXuOEA",
+        "DRIVE:1zeJAy4kQpx1KWfd_bxjse-akDO-inOo1",
+        "DRIVE:1IqGEJU7XaxDDUvqSfTlRCriBTOSUgfWU",
+        "DRIVE:1ITYCYdTh5OMCbgoaWAovg9blrToflt5B",
+        "DRIVE:15JA8jg-FDRZacwRtxjKocByHkrQpsy_b"
+      ],
+      "candidate_links": [
+        "https://drive.google.com/file/d/1x-2zC80igUjJqly4eNQr1hokUmFCKrJ2/view",
+        "https://drive.google.com/file/d/1FhWvPpfPJUSYJqTQ_p7RHneQskElSOvp/view",
+        "https://drive.google.com/file/d/1IhJ5G4BYF8aF_l6HiEDhLveojUtWI9RF/view",
+        "https://drive.google.com/file/d/1W7xKv1Sm6onRSK1UnpzC8uQVdIAaq2JI/view",
+        "https://drive.google.com/file/d/1DlLorFly0z_QGF0xNVWPyixZedkrVlQ5/view"
+      ],
+      "interpretation_warnings": [
+        "Юридические лица, ИП и МСП нельзя автоматически складывать"
+      ],
+      "suggested_external_sources": [
+        "ФНС",
+        "ЕИС закупок"
+      ],
+      "route_note": "Candidate hints, not automatic evidence. Verify the source passport, grain, geography and period before use.",
+      "candidate_repository_files": [
+        {
+          "dataset_id": "DRIVE:1x-2zC80igUjJqly4eNQr1hokUmFCKrJ2",
+          "path": "research_data/datasets/b2b/ru_b2b_registered_organizations_region_sector_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/b2b/ru_b2b_registered_organizations_region_sector_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/b2b_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1FhWvPpfPJUSYJqTQ_p7RHneQskElSOvp",
+          "path": "research_data/datasets/b2b/ru_b2b_organization_stock_by_ownership_2000_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/b2b/ru_b2b_organization_stock_by_ownership_2000_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/b2b_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1IhJ5G4BYF8aF_l6HiEDhLveojUtWI9RF",
+          "path": "research_data/datasets/b2b/ru_b2b_small_micro_industry_employment_turnover_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/b2b/ru_b2b_small_micro_industry_employment_turnover_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/b2b_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1W7xKv1Sm6onRSK1UnpzC8uQVdIAaq2JI",
+          "path": "research_data/datasets/b2b/ru_b2b_small_medium_business_metrics_2021_2023.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/b2b/ru_b2b_small_medium_business_metrics_2021_2023.metadata.json",
+          "source_catalog_path": "research_data/sources/b2b_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1DlLorFly0z_QGF0xNVWPyixZedkrVlQ5",
+          "path": "research_data/datasets/b2b/ru_b2b_active_sole_proprietors_industry_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/b2b/ru_b2b_active_sole_proprietors_industry_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/b2b_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1z4lmHxdTNN8z96ngJzPwuL8cmFuXuOEA",
+          "path": "research_data/datasets/b2b/ru_b2b_digital_technology_by_employee_band_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/b2b/ru_b2b_digital_technology_by_employee_band_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/b2b_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1zeJAy4kQpx1KWfd_bxjse-akDO-inOo1",
+          "path": "research_data/datasets/b2b/ru_b2b_enterprise_turnover_selected_industries_2022_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/b2b/ru_b2b_enterprise_turnover_selected_industries_2022_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/b2b_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1IqGEJU7XaxDDUvqSfTlRCriBTOSUgfWU",
+          "path": "research_data/datasets/b2b/ru_b2b_firm_birth_closure_rates_two_regions_2017_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/b2b/ru_b2b_firm_birth_closure_rates_two_regions_2017_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/b2b_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1ITYCYdTh5OMCbgoaWAovg9blrToflt5B",
+          "path": "research_data/datasets/b2b/ru_b2b_small_enterprise_digital_by_industry_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/b2b/ru_b2b_small_enterprise_digital_by_industry_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/b2b_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:15JA8jg-FDRZacwRtxjKocByHkrQpsy_b",
+          "path": "research_data/datasets/b2b/ru_b2b_organizations_digital_expenditure_2019_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/b2b/ru_b2b_organizations_digital_expenditure_2019_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/b2b_datasets_catalog.json"
+        }
+      ]
+    },
+    {
+      "intent_id": "b2b_digitalization",
+      "user_questions": "Цифровизация, ИКТ расходы компаний",
+      "dataset_topic": "enterprises",
+      "candidate_dataset_ids": [
+        "DRIVE:1z4lmHxdTNN8z96ngJzPwuL8cmFuXuOEA",
+        "DRIVE:1ITYCYdTh5OMCbgoaWAovg9blrToflt5B",
+        "DRIVE:15JA8jg-FDRZacwRtxjKocByHkrQpsy_b"
+      ],
+      "candidate_links": [
+        "https://drive.google.com/file/d/1z4lmHxdTNN8z96ngJzPwuL8cmFuXuOEA/view",
+        "https://drive.google.com/file/d/1ITYCYdTh5OMCbgoaWAovg9blrToflt5B/view",
+        "https://drive.google.com/file/d/15JA8jg-FDRZacwRtxjKocByHkrQpsy_b/view"
+      ],
+      "interpretation_warnings": [
+        "Размер компании и классы занятости отличаются по первоисточникам"
+      ],
+      "suggested_external_sources": [
+        "НИУ ВШЭ",
+        "Росстат"
+      ],
+      "route_note": "Candidate hints, not automatic evidence. Verify the source passport, grain, geography and period before use.",
+      "candidate_repository_files": [
+        {
+          "dataset_id": "DRIVE:1z4lmHxdTNN8z96ngJzPwuL8cmFuXuOEA",
+          "path": "research_data/datasets/b2b/ru_b2b_digital_technology_by_employee_band_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/b2b/ru_b2b_digital_technology_by_employee_band_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/b2b_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1ITYCYdTh5OMCbgoaWAovg9blrToflt5B",
+          "path": "research_data/datasets/b2b/ru_b2b_small_enterprise_digital_by_industry_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/b2b/ru_b2b_small_enterprise_digital_by_industry_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/b2b_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:15JA8jg-FDRZacwRtxjKocByHkrQpsy_b",
+          "path": "research_data/datasets/b2b/ru_b2b_organizations_digital_expenditure_2019_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/b2b/ru_b2b_organizations_digital_expenditure_2019_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/b2b_datasets_catalog.json"
+        }
+      ]
+    },
+    {
+      "intent_id": "consumer_spending_life",
+      "user_questions": "Потребление, структура расходов, качество жизни",
+      "dataset_topic": "consumption_living_time",
+      "candidate_dataset_ids": [
+        "DRIVE:13sGmL7RGfgnY1M7ND66DtrMk3hY-T0Ec",
+        "DRIVE:1HWLtTf4UFUQL6a9_BFaDFy4EZJkNCOg2",
+        "DRIVE:1xzWft7TMxiAV5dsXnJ4vY6bszyeLR3zS",
+        "DRIVE:1Q15dyRWFQ5jUZUR3FIFa4E9Xo4wEr3La",
+        "DRIVE:1h6LZCB8bkqGmIeFTaE8yyOnHZxYJEiQ6",
+        "DRIVE:1UnjQ-vvoaGDzb7w7XUgpR0xstCjlCmY_",
+        "DRIVE:10Ebx35pWHwtKHnHzTDGWmcUeJ8a0gWHf",
+        "DRIVE:19SFEuZ5-iZM9oIWrVwaed7oWDBA2RjHi",
+        "DRIVE:1v5oeWG84o4jZlEU0YOoXfdUW7AxibaSN"
+      ],
+      "candidate_links": [
+        "https://drive.google.com/file/d/13sGmL7RGfgnY1M7ND66DtrMk3hY-T0Ec/view",
+        "https://drive.google.com/file/d/1HWLtTf4UFUQL6a9_BFaDFy4EZJkNCOg2/view",
+        "https://drive.google.com/file/d/1xzWft7TMxiAV5dsXnJ4vY6bszyeLR3zS/view",
+        "https://drive.google.com/file/d/1Q15dyRWFQ5jUZUR3FIFa4E9Xo4wEr3La/view",
+        "https://drive.google.com/file/d/1h6LZCB8bkqGmIeFTaE8yyOnHZxYJEiQ6/view"
+      ],
+      "interpretation_warnings": [
+        "Доли расходов внутри бюджета != доля покупателей категории"
+      ],
+      "suggested_external_sources": [
+        "Росстат"
+      ],
+      "route_note": "Candidate hints, not automatic evidence. Verify the source passport, grain, geography and period before use.",
+      "candidate_repository_files": [
+        {
+          "dataset_id": "DRIVE:13sGmL7RGfgnY1M7ND66DtrMk3hY-T0Ec",
+          "path": "research_data/datasets/consumption/ru_household_spending_deciles_2023.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/consumption/ru_household_spending_deciles_2023.metadata.json",
+          "source_catalog_path": "research_data/sources/consumption_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1HWLtTf4UFUQL6a9_BFaDFy4EZJkNCOg2",
+          "path": "research_data/datasets/consumption/ru_household_leisure_spending_2019_2023.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/consumption/ru_household_leisure_spending_2019_2023.metadata.json",
+          "source_catalog_path": "research_data/sources/consumption_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1xzWft7TMxiAV5dsXnJ4vY6bszyeLR3zS",
+          "path": "research_data/datasets/consumption/ru_housing_stock_amenities_2019_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/consumption/ru_housing_stock_amenities_2019_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/consumption_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1Q15dyRWFQ5jUZUR3FIFa4E9Xo4wEr3La",
+          "path": "research_data/datasets/consumption/ru_housing_quality_by_settlement_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/consumption/ru_housing_quality_by_settlement_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/consumption_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1h6LZCB8bkqGmIeFTaE8yyOnHZxYJEiQ6",
+          "path": "research_data/datasets/consumption/ru_household_amenities_by_size_income_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/consumption/ru_household_amenities_by_size_income_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/consumption_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1UnjQ-vvoaGDzb7w7XUgpR0xstCjlCmY_",
+          "path": "research_data/datasets/consumption/ru_housing_satisfaction_household_groups_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/consumption/ru_housing_satisfaction_household_groups_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/consumption_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:10Ebx35pWHwtKHnHzTDGWmcUeJ8a0gWHf",
+          "path": "research_data/datasets/consumption/ru_housing_area_by_income_quintile_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/consumption/ru_housing_area_by_income_quintile_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/consumption_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:19SFEuZ5-iZM9oIWrVwaed7oWDBA2RjHi",
+          "path": "research_data/datasets/consumption/ru_regional_selected_time_use_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/consumption/ru_regional_selected_time_use_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/consumption_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1v5oeWG84o4jZlEU0YOoXfdUW7AxibaSN",
+          "path": "research_data/datasets/consumption/ru_national_gender_selected_time_use_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/consumption/ru_national_gender_selected_time_use_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/consumption_datasets_catalog.json"
+        }
+      ]
+    },
+    {
+      "intent_id": "time_use",
+      "user_questions": "Время, досуг, свободное время",
+      "dataset_topic": "consumption_living_time",
+      "candidate_dataset_ids": [
+        "DRIVE:19SFEuZ5-iZM9oIWrVwaed7oWDBA2RjHi",
+        "DRIVE:1v5oeWG84o4jZlEU0YOoXfdUW7AxibaSN"
+      ],
+      "candidate_links": [
+        "https://drive.google.com/file/d/19SFEuZ5-iZM9oIWrVwaed7oWDBA2RjHi/view",
+        "https://drive.google.com/file/d/1v5oeWG84o4jZlEU0YOoXfdUW7AxibaSN/view"
+      ],
+      "interpretation_warnings": [
+        "Региональные наблюдения не распространять на всю РФ"
+      ],
+      "suggested_external_sources": [
+        "Росстат"
+      ],
+      "route_note": "Candidate hints, not automatic evidence. Verify the source passport, grain, geography and period before use.",
+      "candidate_repository_files": [
+        {
+          "dataset_id": "DRIVE:19SFEuZ5-iZM9oIWrVwaed7oWDBA2RjHi",
+          "path": "research_data/datasets/consumption/ru_regional_selected_time_use_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/consumption/ru_regional_selected_time_use_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/consumption_datasets_catalog.json"
+        },
+        {
+          "dataset_id": "DRIVE:1v5oeWG84o4jZlEU0YOoXfdUW7AxibaSN",
+          "path": "research_data/datasets/consumption/ru_national_gender_selected_time_use_2024.csv",
+          "parts": [],
+          "assemble_to": null,
+          "metadata_path": "research_data/metadata/consumption/ru_national_gender_selected_time_use_2024.metadata.json",
+          "source_catalog_path": "research_data/sources/consumption_datasets_catalog.json"
+        }
+      ]
+    },
+    {
+      "intent_id": "competition_products",
+      "user_questions": "Конкуренты, альтернативы, тарифы, отзывы",
+      "dataset_topic": "external_sources",
+      "candidate_dataset_ids": [],
+      "candidate_links": [],
+      "interpretation_warnings": [
+        "Внутренние статданные не являются актуальной базой цен конкурентов"
+      ],
+      "suggested_external_sources": [
+        "RuStore",
+        "2ГИС",
+        "сайты компаний"
+      ],
+      "route_note": "Candidate hints, not automatic evidence. Verify the source passport, grain, geography and period before use.",
+      "candidate_repository_files": []
+    },
+    {
+      "intent_id": "demand_signals",
+      "user_questions": "Поисковый интерес, подтвержденные закупки, барьеры",
+      "dataset_topic": "external_sources",
+      "candidate_dataset_ids": [],
+      "candidate_links": [],
+      "interpretation_warnings": [
+        "Поисковые запросы != продажи; госзакупки != весь B2B рынок"
+      ],
+      "suggested_external_sources": [
+        "Вордстат",
+        "ЕИС закупок",
+        "отраслевые публикации"
+      ],
+      "route_note": "Candidate hints, not automatic evidence. Verify the source passport, grain, geography and period before use.",
+      "candidate_repository_files": []
+    },
+    {
+      "intent_id": "media_communications",
+      "user_questions": "Медиаохваты, аудитории, коммуникационные каналы",
+      "dataset_topic": "mediascope",
+      "candidate_dataset_ids": [],
+      "candidate_links": [],
+      "interpretation_warnings": [
+        "Mediascope в базе: документация и спецификации, не численные измерения; права проверять"
+      ],
+      "suggested_external_sources": [
+        "Mediascope",
+        "Яндекс Радар"
+      ],
+      "route_note": "Candidate hints, not automatic evidence. Verify the source passport, grain, geography and period before use.",
+      "candidate_repository_files": []
+    }
+  ],
+  "fallback_catalog": {
+    "id": "1bdGvkx6eh3YF3VSJtTlojxrTBkOnl8Eg",
+    "url": "https://drive.google.com/file/d/1bdGvkx6eh3YF3VSJtTlojxrTBkOnl8Eg/view",
+    "repository_path": "research_data/sources/internet_sources_catalog.json"
+  },
+  "selection_protocol": [
+    "Classify user task",
+    "Open route candidate",
+    "Read dataset passport and QA",
+    "Check period, geography, unit and denominator",
+    "Access the data file",
+    "Assess sufficiency; use external catalog if missing",
+    "Record fact vs assumption; link evidence"
+  ],
+  "github_copy": {
+    "repository": "Allishich/Agent_Allish",
+    "directory": "research_data",
+    "reference_manifest": "research_data/AI_CONTEXT/manifest.json",
+    "note": "Use candidate_repository_files for reading local GitHub files. Google Drive links remain for provenance and refresh."
+  }
+}
