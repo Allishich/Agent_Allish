@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "RU_RSC_008",
+  "filename": "ru_regional_selected_time_use_2024.csv",
+  "title": "Отдельные результаты обследования использования времени — Кировская область и Республика Коми, 2024",
+  "description": "Выборочные показатели буднего дня по времени занятий. В отличие от остальных наборов география РЕГИОНАЛЬНАЯ; значения не описывают РФ в целом.",
+  "records": 14,
+  "years": [
+    2024
+  ],
+  "territories": [
+    "Кировская область",
+    "Республика Коми"
+  ],
+  "unit_values": [
+    "min",
+    "pct"
+  ],
+  "source_id": [
+    "RSC-02",
+    "RSC-03"
+  ],
+  "source_urls": [
+    "https://43.rosstat.gov.ru/news_resp/document/273520",
+    "https://11.rosstat.gov.ru/news/document/274205"
+  ],
+  "source_status": "official_web_snippets_transcription_only; full article not downloaded",
+  "grain": "область × пол × будний день × занятие",
+  "limitations": [
+    "Не является общероссийской оценкой",
+    "Неполный набор видов деятельности: не проверять суммарное время против 1440 мин",
+    "Проценты от суточного времени и минуты являются разными метриками",
+    "Источник регионального уровня",
+    "Оценки Коми отмечены в публикации для буднего дня"
+  ],
+  "quality_checks": [
+    "nonnegative_times",
+    "pct_0_100"
+  ],
+  "sha256": "4a5838d75ab5deb3d3d59662816f93ec6358021386547bc162fb36b9f9fb2534",
+  "encoding": "UTF-8 BOM",
+  "delimiter": ",",
+  "web_access_date": "2026-11-17",
+  "columns": {
+    "year": "См. README с общей схемой таблиц",
+    "territory": "См. README с общей схемой таблиц",
+    "territory_level": "См. README с общей схемой таблиц",
+    "population_group": "См. README с общей схемой таблиц",
+    "dimension": "См. README с общей схемой таблиц",
+    "category": "См. README с общей схемой таблиц",
+    "value": "См. README с общей схемой таблиц",
+    "unit": "См. README с общей схемой таблиц",
+    "denominator": "См. README с общей схемой таблиц",
+    "source_id": "См. README с общей схемой таблиц",
+    "source_table": "См. README с общей схемой таблиц",
+    "source_page": "См. README с общей схемой таблиц",
+    "source_url": "См. README с общей схемой таблиц",
+    "note": "См. README с общей схемой таблиц"
+  },
+  "missing_policy": "не опубликованные занятия не создавались"
+}
