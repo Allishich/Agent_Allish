@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "project_id": "market-agent-russia",
+  "module": "b2b_enterprises_RU",
+  "as_of": "2026-11-17",
+  "source_policy": "Rosstat, HSE, FNS official published datasets, no mass nominal company registry",
+  "number_of_datasets": 10,
+  "total_observation_rows": 960,
+  "datasets": [
+    {
+      "dataset_id": "ru_b2b_registered_organizations_region_sector_2024",
+      "filename": "ru_b2b_registered_organizations_region_sector_2024.csv",
+      "metadata_filename": "ru_b2b_registered_organizations_region_sector_2024.metadata.json",
+      "rows": 576,
+      "sha256": "0bfff3211e9ddebb46848ca62ec076e8d90feab2036ce73852ff66700ea207bc",
+      "publisher_sources": "ROS_YEARBOOK_2025",
+      "source_table": "15.3",
+      "page": "320–321",
+      "verification_status": "verified_aggregates_official_pdf_text; independent_binary_pdf_not_archived",
+      "summary": "Зарегистрированные организации по 96 территориальным строкам и пяти отдельным отраслевым секциям ОКВЭД2"
+    },
+    {
+      "dataset_id": "ru_b2b_organization_stock_by_ownership_2000_2024",
+      "filename": "ru_b2b_organization_stock_by_ownership_2000_2024.csv",
+      "metadata_filename": "ru_b2b_organization_stock_by_ownership_2000_2024.metadata.json",
+      "rows": 30,
+      "sha256": "bc82881c5a074a4935623c2788a3a9bafe19d59d2d057134cd32c662bd4f85b1",
+      "publisher_sources": "ROS_YEARBOOK_2025",
+      "source_table": "15.2",
+      "page": "319",
+      "verification_status": "official_pdf_text_transcribed",
+      "summary": "Организации по формам собственности и нерегулярным контрольным годам"
+    },
+    {
+      "dataset_id": "ru_b2b_small_micro_industry_employment_turnover_2024",
+      "filename": "ru_b2b_small_micro_industry_employment_turnover_2024.csv",
+      "metadata_filename": "ru_b2b_small_micro_industry_employment_turnover_2024.metadata.json",
+      "rows": 80,
+      "sha256": "6aa95d1f86a143c4fd35e307f4e72de0bed1f72599252e0c443ebf0c7a9ba380",
+      "publisher_sources": "ROS_YEARBOOK_2025",
+      "source_table": "15.17",
+      "page": "349",
+      "verification_status": "official_pdf_text_transcribed",
+      "summary": "Средняя численность персонала и оборот малых (включая микро) и микро предприятий по отраслям в 2024 году"
+    },
+    {
+      "dataset_id": "ru_b2b_small_medium_business_metrics_2021_2023",
+      "filename": "ru_b2b_small_medium_business_metrics_2021_2023.csv",
+      "metadata_filename": "ru_b2b_small_medium_business_metrics_2021_2023.metadata.json",
+      "rows": 27,
+      "sha256": "60e66ea7fd48824c368efa11755b9a7da9780cfb2ecedab5d3253ed12e9be13c",
+      "publisher_sources": "ROS_SME_2024",
+      "source_table": "1.1",
+      "page": "10",
+      "verification_status": "official_pdf_text_transcribed",
+      "summary": "Средняя численность, среднемесячная начисленная зарплата и оборот малого/микро/среднего бизнеса за 2021–2023 гг."
+    },
+    {
+      "dataset_id": "ru_b2b_active_sole_proprietors_industry_2024",
+      "filename": "ru_b2b_active_sole_proprietors_industry_2024.csv",
+      "metadata_filename": "ru_b2b_active_sole_proprietors_industry_2024.metadata.json",
+      "rows": 44,
+      "sha256": "90f1bbfee41f2a88964883724ea89d7c0a833b449cc676d8a20d68d2304416ee",
+      "publisher_sources": "ROS_YEARBOOK_2025",
+      "source_table": "15.19",
+      "page": "352",
+      "verification_status": "official_pdf_text_transcribed",
+      "summary": "Фактически действующие индивидуальные предприниматели и их выручка по отраслям в 2024 г."
+    },
+    {
+      "dataset_id": "ru_b2b_digital_technology_by_employee_band_2024",
+      "filename": "ru_b2b_digital_technology_by_employee_band_2024.csv",
+      "metadata_filename": "ru_b2b_digital_technology_by_employee_band_2024.metadata.json",
+      "rows": 45,
+      "sha256": "9e650ad43df93acdca00f7c6a11e95541f244a3520abdf9c253bc6c24a734c57",
+      "publisher_sources": "HSE_ISEK_2026",
+      "source_table": "13.1",
+      "page": "202",
+      "verification_status": "official_HSE_screenshot_checked",
+      "summary": "Использование цифровых технологий в крупных и средних организациях по группам численности работников (2024)"
+    },
+    {
+      "dataset_id": "ru_b2b_enterprise_turnover_selected_industries_2022_2024",
+      "filename": "ru_b2b_enterprise_turnover_selected_industries_2022_2024.csv",
+      "metadata_filename": "ru_b2b_enterprise_turnover_selected_industries_2022_2024.metadata.json",
+      "rows": 12,
+      "sha256": "e866ca96f3ef734e2c49e251b235c97a42bb62804b7824c1efe5cc13b929e817",
+      "publisher_sources": "ROS_YEARBOOK_2025",
+      "source_table": "15.4",
+      "page": "322–323",
+      "verification_status": "official_pdf_text_transcribed_selected_rows",
+      "summary": "Оборот организаций России в целом и отдельных отраслевых групп, 2022–2024"
+    },
+    {
+      "dataset_id": "ru_b2b_firm_birth_closure_rates_two_regions_2017_2024",
+      "filename": "ru_b2b_firm_birth_closure_rates_two_regions_2017_2024.csv",
+      "metadata_filename": "ru_b2b_firm_birth_closure_rates_two_regions_2017_2024.metadata.json",
+      "rows": 32,
+      "sha256": "869d2d80338ca42956e683674da562abbf7669dffa4275199e44e411c9a45832",
+      "publisher_sources": [
+        "ROS_YAKUTIA_2024",
+        "ROS_PSKOV_2024"
+      ],
+      "source_table": "«Коэффициенты демографии организаций»; «Показатели демографии организаций по видам деятельности», строка «Всего»",
+      "page": "1–2",
+      "verification_status": "two_official_regional_pdf_tables_transcribed_national_source_not_ingested",
+      "summary": "Регистрация и официальная ликвидация организаций на 1000 организаций в двух субъектах РФ"
+    },
+    {
+      "dataset_id": "ru_b2b_small_enterprise_digital_by_industry_2024",
+      "filename": "ru_b2b_small_enterprise_digital_by_industry_2024.csv",
+      "metadata_filename": "ru_b2b_small_enterprise_digital_by_industry_2024.metadata.json",
+      "rows": 96,
+      "sha256": "7f1c06f46b6d8ff65c18248f66b211aed9bcd034c77b5315d46217e9ebf14105",
+      "publisher_sources": "HSE_ISEK_2026",
+      "source_table": "13.31",
+      "page": "234",
+      "verification_status": "official_HSE_screenshot_checked",
+      "summary": "Использование шести видов цифровых технологий обследованными малыми предприятиями по видам деятельности"
+    },
+    {
+      "dataset_id": "ru_b2b_organizations_digital_expenditure_2019_2024",
+      "filename": "ru_b2b_organizations_digital_expenditure_2019_2024.csv",
+      "metadata_filename": "ru_b2b_organizations_digital_expenditure_2019_2024.metadata.json",
+      "rows": 18,
+      "sha256": "fa0068ff0418ce32460e8e4b26fd7ea71e342e65fe5a49e5872d8e98db66e756",
+      "publisher_sources": "HSE_ISEK_2026",
+      "source_table": "2.2",
+      "page": "31",
+      "verification_status": "official_HSE_screenshot_checked",
+      "summary": "Затраты организаций России на внедрение и использование цифровых технологий: внутренние, внешние, всего"
+    }
+  ]
+}
