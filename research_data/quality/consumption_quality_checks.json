@@ -1,0 +1,271 @@
+{
+  "checks": [
+    {
+      "test": "records_and_hash_RU_RSC_001",
+      "status": "pass",
+      "details": "100 records"
+    },
+    {
+      "test": "unique_grain_RU_RSC_001",
+      "status": "pass",
+      "details": "unique dimension keys"
+    },
+    {
+      "test": "numerical_values_RU_RSC_001",
+      "status": "pass",
+      "details": "finite numeric values"
+    },
+    {
+      "test": "records_and_hash_RU_RSC_002",
+      "status": "pass",
+      "details": "60 records"
+    },
+    {
+      "test": "unique_grain_RU_RSC_002",
+      "status": "pass",
+      "details": "unique dimension keys"
+    },
+    {
+      "test": "numerical_values_RU_RSC_002",
+      "status": "pass",
+      "details": "finite numeric values"
+    },
+    {
+      "test": "records_and_hash_RU_RSC_003",
+      "status": "pass",
+      "details": "144 records"
+    },
+    {
+      "test": "unique_grain_RU_RSC_003",
+      "status": "pass",
+      "details": "unique dimension keys"
+    },
+    {
+      "test": "numerical_values_RU_RSC_003",
+      "status": "pass",
+      "details": "finite numeric values"
+    },
+    {
+      "test": "records_and_hash_RU_RSC_004",
+      "status": "pass",
+      "details": "56 records"
+    },
+    {
+      "test": "unique_grain_RU_RSC_004",
+      "status": "pass",
+      "details": "unique dimension keys"
+    },
+    {
+      "test": "numerical_values_RU_RSC_004",
+      "status": "pass",
+      "details": "finite numeric values"
+    },
+    {
+      "test": "records_and_hash_RU_RSC_005",
+      "status": "pass",
+      "details": "84 records"
+    },
+    {
+      "test": "unique_grain_RU_RSC_005",
+      "status": "pass",
+      "details": "unique dimension keys"
+    },
+    {
+      "test": "numerical_values_RU_RSC_005",
+      "status": "pass",
+      "details": "finite numeric values"
+    },
+    {
+      "test": "records_and_hash_RU_RSC_006",
+      "status": "pass",
+      "details": "80 records"
+    },
+    {
+      "test": "unique_grain_RU_RSC_006",
+      "status": "pass",
+      "details": "unique dimension keys"
+    },
+    {
+      "test": "numerical_values_RU_RSC_006",
+      "status": "pass",
+      "details": "finite numeric values"
+    },
+    {
+      "test": "records_and_hash_RU_RSC_007",
+      "status": "pass",
+      "details": "40 records"
+    },
+    {
+      "test": "unique_grain_RU_RSC_007",
+      "status": "pass",
+      "details": "unique dimension keys"
+    },
+    {
+      "test": "numerical_values_RU_RSC_007",
+      "status": "pass",
+      "details": "finite numeric values"
+    },
+    {
+      "test": "records_and_hash_RU_RSC_008",
+      "status": "pass",
+      "details": "14 records"
+    },
+    {
+      "test": "unique_grain_RU_RSC_008",
+      "status": "pass",
+      "details": "unique dimension keys"
+    },
+    {
+      "test": "numerical_values_RU_RSC_008",
+      "status": "pass",
+      "details": "finite numeric values"
+    },
+    {
+      "test": "satisfaction_total_Все домохозяйства",
+      "status": "pass",
+      "details": "99.9"
+    },
+    {
+      "test": "satisfaction_total_Городские домохозяйства",
+      "status": "pass",
+      "details": "100.0"
+    },
+    {
+      "test": "satisfaction_total_Сельские домохозяйства",
+      "status": "pass",
+      "details": "99.89999999999999"
+    },
+    {
+      "test": "satisfaction_total_1 человек",
+      "status": "pass",
+      "details": "100.0"
+    },
+    {
+      "test": "satisfaction_total_2 человека",
+      "status": "pass",
+      "details": "100.0"
+    },
+    {
+      "test": "satisfaction_total_3 человека",
+      "status": "pass",
+      "details": "99.9"
+    },
+    {
+      "test": "satisfaction_total_4 человека",
+      "status": "pass",
+      "details": "100.0"
+    },
+    {
+      "test": "satisfaction_total_5 и более человек",
+      "status": "pass",
+      "details": "100.0"
+    },
+    {
+      "test": "satisfaction_total_1 ребёнок",
+      "status": "pass",
+      "details": "100.1"
+    },
+    {
+      "test": "satisfaction_total_2 ребёнка",
+      "status": "pass",
+      "details": "100.0"
+    },
+    {
+      "test": "satisfaction_total_3 и более детей",
+      "status": "pass",
+      "details": "100.0"
+    },
+    {
+      "test": "satisfaction_total_Квинтиль 1 располагаемых ресурсов",
+      "status": "pass",
+      "details": "100.0"
+    },
+    {
+      "test": "satisfaction_total_Квинтиль 2 располагаемых ресурсов",
+      "status": "pass",
+      "details": "100.0"
+    },
+    {
+      "test": "satisfaction_total_Квинтиль 3 располагаемых ресурсов",
+      "status": "pass",
+      "details": "99.9"
+    },
+    {
+      "test": "satisfaction_total_Квинтиль 4 располагаемых ресурсов",
+      "status": "pass",
+      "details": "100.0"
+    },
+    {
+      "test": "satisfaction_total_Квинтиль 5 располагаемых ресурсов",
+      "status": "pass",
+      "details": "100.0"
+    },
+    {
+      "test": "floor_area_quintile_1",
+      "status": "pass",
+      "details": "100.1"
+    },
+    {
+      "test": "floor_area_quintile_2",
+      "status": "pass",
+      "details": "100.0"
+    },
+    {
+      "test": "floor_area_quintile_3",
+      "status": "pass",
+      "details": "100.0"
+    },
+    {
+      "test": "floor_area_quintile_4",
+      "status": "pass",
+      "details": "99.9"
+    },
+    {
+      "test": "floor_area_quintile_5",
+      "status": "pass",
+      "details": "100.10000000000001"
+    },
+    {
+      "test": "housing_amenity_all_Весь жилищный фонд",
+      "status": "pass",
+      "details": "6 years x 8 metrics"
+    },
+    {
+      "test": "housing_amenity_all_Городской жилищный фонд",
+      "status": "pass",
+      "details": "6 years x 8 metrics"
+    },
+    {
+      "test": "housing_amenity_all_Сельский жилищный фонд",
+      "status": "pass",
+      "details": "6 years x 8 metrics"
+    },
+    {
+      "test": "decile_order_2023",
+      "status": "pass",
+      "details": "10 groups"
+    },
+    {
+      "test": "leisure_share_total_2023",
+      "status": "pass",
+      "details": "37.1+62.9=100"
+    },
+    {
+      "test": "national_10_rows",
+      "status": "pass",
+      "details": "national subset extracted from comparison"
+    },
+    {
+      "test": "national_all_numeric",
+      "status": "pass",
+      "details": "national subset extracted from comparison"
+    },
+    {
+      "test": "national_country_only",
+      "status": "pass",
+      "details": "national subset extracted from comparison"
+    }
+  ],
+  "passed": 53,
+  "failed": 0
+}
