@@ -1,0 +1,106 @@
+﻿year,industry,category_type,employed_thousand_persons,geography,source_id,source_table,source_url,data_status
+2020,Всего,total,70133,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,Всего,total,71446,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,Всего,total,71903,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,Всего,total,72912,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,Всего,total,73267,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,"сельское, лесное хозяйство, охота, рыболовство и рыбоводство",industry,4566,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,"сельское, лесное хозяйство, охота, рыболовство и рыбоводство",industry,4515,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,"сельское, лесное хозяйство, охота, рыболовство и рыбоводство",industry,4495,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,"сельское, лесное хозяйство, охота, рыболовство и рыбоводство",industry,4408,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,"сельское, лесное хозяйство, охота, рыболовство и рыбоводство",industry,4273,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,добыча полезных ископаемых,industry,1149,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,добыча полезных ископаемых,industry,1163,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,добыча полезных ископаемых,industry,1198,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,добыча полезных ископаемых,industry,1218,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,добыча полезных ископаемых,industry,1234,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,обрабатывающие производства,industry,9792,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,обрабатывающие производства,industry,10066,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,обрабатывающие производства,industry,10113,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,обрабатывающие производства,industry,10317,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,обрабатывающие производства,industry,10571,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,"обеспечение электрической энергией, газом и паром; кондиционирование воздуха",industry,1598,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,"обеспечение электрической энергией, газом и паром; кондиционирование воздуха",industry,1594,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,"обеспечение электрической энергией, газом и паром; кондиционирование воздуха",industry,1571,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,"обеспечение электрической энергией, газом и паром; кондиционирование воздуха",industry,1554,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,"обеспечение электрической энергией, газом и паром; кондиционирование воздуха",industry,1505,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,"водоснабжение; водоотведение, организация сбора и утилизации отходов, деятельность по ликвидации загрязнений",industry,692,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,"водоснабжение; водоотведение, организация сбора и утилизации отходов, деятельность по ликвидации загрязнений",industry,715,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,"водоснабжение; водоотведение, организация сбора и утилизации отходов, деятельность по ликвидации загрязнений",industry,713,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,"водоснабжение; водоотведение, организация сбора и утилизации отходов, деятельность по ликвидации загрязнений",industry,702,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,"водоснабжение; водоотведение, организация сбора и утилизации отходов, деятельность по ликвидации загрязнений",industry,685,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,строительство,industry,6209,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,строительство,industry,6530,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,строительство,industry,6605,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,строительство,industry,6814,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,строительство,industry,6816,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,торговля оптовая и розничная; ремонт автотранспортных средств и мотоциклов,industry,13133,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,торговля оптовая и розничная; ремонт автотранспортных средств и мотоциклов,industry,13357,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,торговля оптовая и розничная; ремонт автотранспортных средств и мотоциклов,industry,13384,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,торговля оптовая и розничная; ремонт автотранспортных средств и мотоциклов,industry,13391,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,торговля оптовая и розничная; ремонт автотранспортных средств и мотоциклов,industry,13482,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,транспортировка и хранение,industry,5490,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,транспортировка и хранение,industry,5691,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,транспортировка и хранение,industry,5805,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,транспортировка и хранение,industry,5899,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,транспортировка и хранение,industry,5917,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,деятельность гостиниц и предприятий общественного питания,industry,1755,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,деятельность гостиниц и предприятий общественного питания,industry,1844,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,деятельность гостиниц и предприятий общественного питания,industry,1886,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,деятельность гостиниц и предприятий общественного питания,industry,1994,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,деятельность гостиниц и предприятий общественного питания,industry,2105,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,деятельность в области информации и связи,industry,1512,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,деятельность в области информации и связи,industry,1576,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,деятельность в области информации и связи,industry,1637,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,деятельность в области информации и связи,industry,1757,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,деятельность в области информации и связи,industry,1891,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,деятельность финансовая и страховая,industry,1325,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,деятельность финансовая и страховая,industry,1311,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,деятельность финансовая и страховая,industry,1315,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,деятельность финансовая и страховая,industry,1305,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,деятельность финансовая и страховая,industry,1276,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,деятельность по операциям с недвижимым имуществом,industry,1896,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,деятельность по операциям с недвижимым имуществом,industry,1917,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,деятельность по операциям с недвижимым имуществом,industry,1879,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,деятельность по операциям с недвижимым имуществом,industry,1877,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,деятельность по операциям с недвижимым имуществом,industry,1889,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,"деятельность профессиональная, научная и техническая",industry,2774,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,"деятельность профессиональная, научная и техническая",industry,2773,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,"деятельность профессиональная, научная и техническая",industry,2841,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,"деятельность профессиональная, научная и техническая",industry,2958,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,"деятельность профессиональная, научная и техническая",industry,2978,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,из них научные исследования и разработки,subindustry,849,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,из них научные исследования и разработки,subindustry,807,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,из них научные исследования и разработки,subindustry,805,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,из них научные исследования и разработки,subindustry,823,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,из них научные исследования и разработки,subindustry,802,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,деятельность административная и сопутствующие дополнительные услуги,industry,1975,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,деятельность административная и сопутствующие дополнительные услуги,industry,2052,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,деятельность административная и сопутствующие дополнительные услуги,industry,2107,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,деятельность административная и сопутствующие дополнительные услуги,industry,2245,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,деятельность административная и сопутствующие дополнительные услуги,industry,2297,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,государственное управление и обеспечение военной безопасности; социальное обеспечение,industry,3677,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,государственное управление и обеспечение военной безопасности; социальное обеспечение,industry,3667,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,государственное управление и обеспечение военной безопасности; социальное обеспечение,industry,3623,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,государственное управление и обеспечение военной безопасности; социальное обеспечение,industry,3543,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,государственное управление и обеспечение военной безопасности; социальное обеспечение,industry,3402,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,образование,industry,5371,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,образование,industry,5364,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,образование,industry,5316,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,образование,industry,5412,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,образование,industry,5359,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,деятельность в области здравоохранения и социальных услуг,industry,4433,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,деятельность в области здравоохранения и социальных услуг,industry,4487,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,деятельность в области здравоохранения и социальных услуг,industry,4484,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,деятельность в области здравоохранения и социальных услуг,industry,4524,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,деятельность в области здравоохранения и социальных услуг,industry,4531,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,"деятельность в области культуры, спорта, организации досуга и развлечений",industry,1124,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,"деятельность в области культуры, спорта, организации досуга и развлечений",industry,1155,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,"деятельность в области культуры, спорта, организации досуга и развлечений",industry,1173,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,"деятельность в области культуры, спорта, организации досуга и развлечений",industry,1197,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,"деятельность в области культуры, спорта, организации досуга и развлечений",industry,1210,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2020,предоставление прочих видов услуг,industry,1595,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2021,предоставление прочих видов услуг,industry,1605,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2022,предоставление прочих видов услуг,industry,1697,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2023,предоставление прочих видов услуг,industry,1725,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
+2024,предоставление прочих видов услуг,industry,1782,Российская Федерация,ROS-TR-2025-T3.7,3.7,https://rosstat.gov.ru/storage/mediabank/Trud_2025.pdf,direct_pdf_table_transcription
