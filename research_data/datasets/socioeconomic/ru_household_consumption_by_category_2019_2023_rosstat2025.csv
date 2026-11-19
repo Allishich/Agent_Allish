@@ -1,0 +1,66 @@
+﻿year,expense_category,category_type,value_rub_person_month,geography,source_id,source_table,source_url,data_status
+2019,Потребительские расходы – всего,total,19169.2,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2020,Потребительские расходы – всего,total,18578.5,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2021,Потребительские расходы – всего,total,20506.0,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2022,Потребительские расходы – всего,total,23067.6,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2023,Потребительские расходы – всего,total,25987.5,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2019,продукты питания и безалкогольные напитки,category,5700.1,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2020,продукты питания и безалкогольные напитки,category,6175.3,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2021,продукты питания и безалкогольные напитки,category,6601.1,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2022,продукты питания и безалкогольные напитки,category,7594.6,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2023,продукты питания и безалкогольные напитки,category,8183.5,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2019,"алкогольные напитки, табачные изделия",category,568.0,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2020,"алкогольные напитки, табачные изделия",category,605.3,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2021,"алкогольные напитки, табачные изделия",category,610.0,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2022,"алкогольные напитки, табачные изделия",category,711.9,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2023,"алкогольные напитки, табачные изделия",category,635.1,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2019,одежду и обувь,category,1565.2,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2020,одежду и обувь,category,1283.6,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2021,одежду и обувь,category,1595.6,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2022,одежду и обувь,category,1732.8,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2023,одежду и обувь,category,1939.9,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2019,"жилищно-коммунальные услуги, топливо",category,2067.3,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2020,"жилищно-коммунальные услуги, топливо",category,2204.6,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2021,"жилищно-коммунальные услуги, топливо",category,2337.0,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2022,"жилищно-коммунальные услуги, топливо",category,2520.2,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2023,"жилищно-коммунальные услуги, топливо",category,2701.5,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2019,"предметы домашнего обихода, бытовую технику и уход за домом",category,1018.9,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2020,"предметы домашнего обихода, бытовую технику и уход за домом",category,1168.8,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2021,"предметы домашнего обихода, бытовую технику и уход за домом",category,1133.7,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2022,"предметы домашнего обихода, бытовую технику и уход за домом",category,1222.3,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2023,"предметы домашнего обихода, бытовую технику и уход за домом",category,1471.8,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2019,здравоохранение,category,734.5,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2020,здравоохранение,category,735.7,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2021,здравоохранение,category,859.2,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2022,здравоохранение,category,915.8,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2023,здравоохранение,category,1065.0,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2019,транспорт,category,3094.9,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2020,транспорт,category,2772.9,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2021,транспорт,category,2901.7,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2022,транспорт,category,3328.1,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2023,транспорт,category,4104.2,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2019,связь,old_category,600.9,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2020,связь,old_category,626.1,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2021,информацию и коммуникацию,new_category,947.0,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2022,информацию и коммуникацию,new_category,992.7,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2023,информацию и коммуникацию,new_category,1081.4,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2019,организацию отдыха и культурные мероприятия,category,1614.4,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2020,организацию отдыха и культурные мероприятия,category,1071.3,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2021,организацию отдыха и культурные мероприятия,category,1142.6,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2022,организацию отдыха и культурные мероприятия,category,1164.4,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2023,организацию отдыха и культурные мероприятия,category,1403.2,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2019,образование,category,165.6,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2020,образование,category,158.7,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2021,образование,category,298.4,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2022,образование,category,350.5,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2023,образование,category,421.7,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2019,"гостиницы, кафе и рестораны",category,672.0,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2020,"гостиницы, кафе и рестораны",category,450.2,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2021,"гостиницы, кафе и рестораны",category,596.7,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2022,"гостиницы, кафе и рестораны",category,723.1,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2023,"гостиницы, кафе и рестораны",category,857.4,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2019,другие товары и услуги,category,1367.4,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2020,другие товары и услуги,category,1326.0,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2021,другие товары и услуги,category,1483.0,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2022,другие товары и услуги,category,1811.2,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
+2023,другие товары и услуги,category,2122.8,Российская Федерация,ROS-SP-2025-T8.11,8.11,https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf,direct_pdf_table_transcription
