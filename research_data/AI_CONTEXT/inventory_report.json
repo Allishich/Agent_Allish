@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-18",
+  "inventory_total": 150,
+  "folders_total": 38,
+  "dataset_records": 43,
+  "files_by_topic": {
+    "demography": 25,
+    "socioeconomics": 16,
+    "digital_behavior": 28,
+    "project_history": 14,
+    "enterprises": 31,
+    "consumption_living_time": 27,
+    "mediascope": 4,
+    "conversation_handoff": 2,
+    "external_sources": 3
+  },
+  "datasets_by_topic": {
+    "digital_behavior": 10,
+    "enterprises": 10,
+    "consumption_living_time": 9,
+    "demography": 9,
+    "socioeconomics": 5
+  },
+  "checks": {
+    "unique_drive_file_id": true,
+    "all_inventory_memberships_from_list_folder": true,
+    "no_duplicate_memberships": true,
+    "all_state_key_artifacts_present": true,
+    "all_semantic_records_reference_inventory": true,
+    "all_topical_folders_listed": true,
+    "full_binary_verification_performed": false,
+    "practical_agent_end_to_end_test_performed": false
+  },
+  "gaps": {
+    "dataset_missing_sidecars": [],
+    "empty_demography_folders": [
+      "01_демография/04_рождаемость_смертность_миграция",
+      "01_демография/05_прогнозы"
+    ],
+    "primary_originals_incomplete": "Social, digital, B2B and consumption datasets include transcriptions without fully downloaded original machine data; see existing provenance",
+    "access": "User must explicitly share Google Drive folder with colleague and connect tools; possession of manifest does not grant Google Drive permissions",
+    "source_catalog_only": "The Mediascope integration and 12-site catalog contain specifications, not live API integrations"
+  },
+  "coverage_note": "File-level enumeration complete for currently listable project tree as of snapshot. Content-level checks are selective, not an independent validation of 150 files.",
+  "github_copy": {
+    "as_of": "2026-11-19",
+    "repository": "Allishich/Agent_Allish",
+    "package_folder": "research_data",
+    "dataset_records": 43,
+    "metadata_sidecars": 29,
+    "partitioned_source": "RU-VPN2020-TAB04",
+    "note": "All 150 original inventory entries remain documented; only curated files are copied into GitHub. Original Drive snapshot status preserved."
+  }
+}
