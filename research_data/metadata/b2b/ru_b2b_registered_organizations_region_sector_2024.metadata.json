@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "ru_b2b_registered_organizations_region_sector_2024",
+  "file_name": "ru_b2b_registered_organizations_region_sector_2024.csv",
+  "created_on": "2026-11-17",
+  "project": "Рыночный агент — B2B Россия",
+  "country": "RU",
+  "scope": "only_Russian_Federation_and_published_region_rows",
+  "data_description": "Зарегистрированные организации по 96 территориальным строкам и пяти отдельным отраслевым секциям ОКВЭД2",
+  "rows": 576,
+  "sha256_csv": "0bfff3211e9ddebb46848ca62ec076e8d90feab2036ce73852ff66700ea207bc",
+  "fields": [
+    "year",
+    "territory",
+    "territory_type",
+    "federal_district",
+    "additive_at_parent_level",
+    "additive_nonoverlap_component",
+    "okved_section",
+    "sector_label",
+    "metric",
+    "value",
+    "unit",
+    "source_id",
+    "source_table",
+    "source_page",
+    "source_url"
+  ],
+  "field_definitions": {
+    "year": {
+      "data_type": "integer",
+      "description": "Год наблюдения, а не дата загрузки"
+    },
+    "territory": {
+      "data_type": "string",
+      "description": "Точное наименование территориальной строки из официального источника"
+    },
+    "territory_type": {
+      "data_type": "string",
+      "description": "country/district/territory либо региональная строка"
+    },
+    "federal_district": {
+      "data_type": "string",
+      "description": "Федеральный округ опубликованной территориальной строки"
+    },
+    "additive_at_parent_level": {
+      "data_type": "string",
+      "description": "yes — разрез для суммирования из областей целиком; exclude nested округа/without AO; сочетать только с единым территориальным уровнем"
+    },
+    "additive_nonoverlap_component": {
+      "data_type": "string",
+      "description": "yes — 85 непересекающихся территориальных компонентов; исключены агрегированные Архангельская и Тюменская области"
+    },
+    "okved_section": {
+      "data_type": "string",
+      "description": "Секция A–U ОКВЭД2 / TOTAL, только когда опубликована отдельная строка"
+    },
+    "sector_label": {
+      "data_type": "string",
+      "description": "Измерение или метаданные, буквальное значение по опубликованной строке"
+    },
+    "metric": {
+      "data_type": "string",
+      "description": "Наименование статистического показателя с определением в паспорте"
+    },
+    "value": {
+      "data_type": "number",
+      "description": "Опубликованное числовое значение, без модельных оценок"
+    },
+    "unit": {
+      "data_type": "string",
+      "description": "Точная единица измерения, не пересчитывать без указания масштаба"
+    },
+    "source_id": {
+      "data_type": "string",
+      "description": "Постоянный ID конкретной официальной таблицы"
+    },
+    "source_table": {
+      "data_type": "string",
+      "description": "Номер таблицы в публикации"
+    },
+    "source_page": {
+      "data_type": "string",
+      "description": "Номер страницы печатного издания"
+    },
+    "source_url": {
+      "data_type": "string",
+      "description": "URL официальной публикации или первичного издателя"
+    }
+  },
+  "row_grain": "территория × категория секции ОКВЭД2 × конец 2024 года",
+  "observation_population": "Организации по данным государственной регистрации, включая не только коммерческие предприятия; ИП не включаются",
+  "denominator_definition": "Абсолютное число зарегистрированных организаций",
+  "primary_key": [
+    "year",
+    "territory",
+    "okved_section"
+  ],
+  "source_ids": [
+    "ROS_YEARBOOK_2025"
+  ],
+  "source_table": "15.3",
+  "source_printed_pages": "320–321",
+  "source_urls": [
+    "https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf"
+  ],
+  "source_organization": [
+    "Федеральная служба государственной статистики (Росстат)"
+  ],
+  "processing": "Manual tabular transcription from official publishers’ indexed PDF text; HSE pages 13.1,13.31,2.2 independently visually checked via PDF screenshot; original binary PDF not deposited to Drive.",
+  "verification_status": "verified_aggregates_official_pdf_text; independent_binary_pdf_not_archived",
+  "source_value_type": "integer_organizations",
+  "analytic_use_cases": [
+    "TAM/SAM по количеству потенциальных организаций",
+    "Региональное и отраслевое распределение"
+  ],
+  "limitations": [
+    "TOTAL включает остальные отрасли; A+B+C+F+G не исчерпывают TOTAL",
+    "Сведения регистрации не равны численности фактически действующих предприятий",
+    "Число зарегистрированных организаций не делить на B2B/B2G без уточнения организационно-правовой формы",
+    "Контрольные признаки агрегирования территорий имеются: 82 региона с целыми областями либо 85 непересекающихся компонентов",
+    "География Росстата 2024 содержит специальные сведения по автономным округам; нельзя складывать область и ее округа одновременно"
+  ],
+  "prohibited_inferences": [
+    "Do not treat registered organizations as operating enterprises",
+    "Do not sum nested size classes, sector subclasses or geographic aggregates",
+    "Do not cross-join independent marginals to invent organization counts in unknown intersections",
+    "Do not infer customers, market demand, purchases or corporate budgets solely from registry stock"
+  ],
+  "missing_value_policy": "No zero imputation; values absent in the publication are not generated.",
+  "update_policy": "Update after new official publication and source reconciliation; keep prior file + manifest version and test results.",
+  "licensing_status": "Official openly published statistical table; check provider conditions before redistribution"
+}
