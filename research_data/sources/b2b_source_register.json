@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-17",
+  "sources": {
+    "ROS_YEARBOOK_2025": {
+      "publisher": "Федеральная служба государственной статистики (Росстат)",
+      "publication": "Российский статистический ежегодник. 2025",
+      "url": "https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf",
+      "format": "official_PDF_table_web_extraction",
+      "status": "official_pdf_table_text_read_and_manually_transcribed; binary_original_not_archived; screenshot_cache_miss",
+      "coverage": "Российская Федерация, опубликованная география и методологический охват сборника",
+      "caveat": "Не все организации являются коммерческими или фактически действующими; зарегистрированные организации, малые предприятия и фактически действующие ИП описываются разными показателями."
+    },
+    "ROS_SME_2024": {
+      "publisher": "Федеральная служба государственной статистики (Росстат)",
+      "publication": "Малое и среднее предпринимательство в России. 2024",
+      "url": "https://rosstat.gov.ru/storage/mediabank/Mal_pred_2024.pdf",
+      "format": "official_PDF_table_web_extraction",
+      "status": "official_pdf_table_text_read_and_manually_transcribed; binary_original_not_archived; screenshot_cache_miss",
+      "coverage": "Малые и средние предприятия — юридические лица, Россия",
+      "caveat": "Микропредприятия включены в малые предприятия; средние — отдельная категория. Данные 2021–2023 гг., а не 2024."
+    },
+    "HSE_ISEK_2026": {
+      "publisher": "Национальный исследовательский университет «Высшая школа экономики» (ИСИЭЗ), по данным Росстата",
+      "publication": "Индикаторы цифровой экономики: 2026",
+      "url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+      "format": "official_publisher_PDF_table; direct_screenshot_checked",
+      "status": "published_table_and_page_screenshot_checked; binary_original_not_archived",
+      "coverage": "Российская Федерация; разные обследуемые совокупности по таблицам",
+      "caveat": "Крупные/средние организации и обследованные малые предприятия имеют разные знаменатели, их показатели нельзя напрямую усреднять."
+    },
+    "ROS_YAKUTIA_2024": {
+      "publisher": "Территориальный орган Росстата по Республике Саха (Якутия)",
+      "publication": "Коэффициенты демографии организаций, 2017–2024",
+      "url": "https://14.rosstat.gov.ru/storage/mediabank/%D0%9A%D0%9E%D0%AD%D0%A4%D0%A4%D0%98%D0%A6%D0%98%D0%95%D0%9D%D0%A2%D0%AB%20%D0%94%D0%95%D0%9C%D0%9E%D0%93%D0%A0%D0%90%D0%A4%D0%98%D0%98%20%D0%9E%D0%A0%D0%93%D0%90%D0%9D%D0%98%D0%97%D0%90%D0%A6%D0%98%D0%99%202024.pdf",
+      "format": "territorial_Rosstat_PDF_short_table",
+      "status": "official_pdf_text_transcription; original_binary_not_archived",
+      "coverage": "Только Республика Саха (Якутия), НЕ Российская Федерация в целом",
+      "caveat": "Коэффициенты событий на 1000 организаций; это не абсолютное число созданных/ликвидированных компаний."
+    },
+    "ROS_PSKOV_2024": {
+      "publisher": "Территориальный орган Росстата по Псковской области",
+      "publication": "Показатели демографии организаций по видам экономической деятельности, 2017–2024",
+      "url": "https://60.rosstat.gov.ru/storage/mediabank/OSP250210_1.pdf",
+      "format": "territorial_Rosstat_PDF_short_table",
+      "status": "official_pdf_text_transcription; original_binary_not_archived",
+      "coverage": "Только Псковская область, НЕ Российская Федерация в целом",
+      "caveat": "Коэффициенты событий на 1000 организаций; это не абсолютное число созданных/ликвидированных компаний."
+    },
+    "FNS_SME_REGISTRY": {
+      "publisher": "Федеральная налоговая служба (ФНС России)",
+      "publication": "Открытые данные. Единый реестр субъектов малого и среднего предпринимательства",
+      "url": "https://www.nalog.gov.ru/opendata/7707329152-rsmp/",
+      "format": "open_data_machine_download_metadata_only",
+      "status": "source_identified_not_ingested_by_explicit_no_mass_individual_registry_rule",
+      "coverage": "Субъекты МСП: организации и ИП на дату записи реестра",
+      "caveat": "Для регионов × ОКВЭД2 × размер юридическое лицо/ИП нужен релевантный агрегированный срез, а не смешение дат отчётности и реестра."
+    }
+  }
+}
