@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "RU_DIG_007",
+  "title_ru": "Онлайн-заказы по возрасту, полу, типу поселения",
+  "data_filename": "ru_digital_online_orders_by_sex_age_settlement_2024.csv",
+  "description_ru": "Разрезы онлайн-покупателей по 12 возрастным группам × 3 типам местности и полу × 3 местностям. Источник публикует эти разрезы отдельно.",
+  "data_grain": "одна строка — один показатель × год × тип разреза × категория",
+  "unit": "percent",
+  "value_column": "value_pct",
+  "geographic_coverage": "Российская Федерация (в агрегированном виде); регионов-субъектов РФ нет",
+  "population_universe_ru": "Лица 15+ соответствующего пола или возраста и типа местности",
+  "denominator_rule_ru": "Численность соответствующей возрастной/половой группы в типе местности",
+  "reference_years": [
+    2024
+  ],
+  "time_coverage_ru": "2024",
+  "dimensions": [
+    "year",
+    "territory",
+    "dimension",
+    "segment",
+    "metric_code"
+  ],
+  "measurement_window_ru": "Онлайн-заказы за последний год.",
+  "publisher": "Институт статистических исследований и экономики знаний НИУ ВШЭ",
+  "underlying_data_owner": "Росстат, если не оговорено иное в таблице HSE",
+  "source_id": "HSE_DIGITAL_2026",
+  "source_publication_ru": "Индикаторы цифровой экономики: 2026. Статистический сборник. ИСИЭЗ НИУ ВШЭ. 2026. DOI 10.17323/978-5-7598-3047-4.",
+  "official_source_document_url": "https://issek.hse.ru/mirror/pubs/share/1122445658.pdf",
+  "original_rosstat_dataset_catalog_url": "https://rosstat.gov.ru/opendata/7708234640-IKT-twenty-twenty-five",
+  "source_tables_pages": [
+    {
+      "table": "15.2",
+      "printed_page": 254
+    },
+    {
+      "table": "15.3",
+      "printed_page": 255
+    }
+  ],
+  "ingest_method": "аккуратная структурированная транскрипция опубликованных таблиц/графиков PDF с визуальной сверкой страниц, без автоматического скачивания исходной таблицы Росстата",
+  "provenance_level": "published_hse_table_reproducing_rosstat_data",
+  "original_binary_status": "внешний PDF доступен по постоянной ссылке; оригинальные бинарные CSV Росстата на диск не выгружались",
+  "record_count": 42,
+  "row_column_names": [
+    "year",
+    "territory",
+    "dimension",
+    "segment",
+    "metric_code",
+    "metric_label_ru",
+    "value_pct",
+    "denominator_ru",
+    "measurement_window",
+    "source_id",
+    "source_table",
+    "source_page",
+    "source_url",
+    "note"
+  ],
+  "csv_encoding": "UTF-8 with BOM",
+  "csv_delimiter": ",",
+  "sha256": "089b0017d8f98326760718aaed4f74ae38b2aed56c637a85602cc8e4da4306c2",
+  "limits_and_avoid_ru": [
+    "Нет совместного среза возраст × пол × тип местности; разрезы возраст×местность и пол×местность не должны искусственно перемножаться.",
+    "Отсутствуют пользователи младше 15 лет.",
+    "Для расчёта числа клиентов нужны сопоставимые возрастные численности с теми же границами и годом."
+  ],
+  "qa_checks_ru": [
+    "42 строки: 36 возрастных и 6 половых",
+    "Во всех 12 группах возрастной показатель rural<=all<=urban"
+  ],
+  "files_are_derived": "yes, transcription",
+  "classification": "ecommerce_segments",
+  "additional_metadata": {},
+  "compiled_date": "2026-11-17",
+  "license_note": "Для первоисточника сохраняется ссылка и DOI; не заявляется право на свободное распространение оригинального PDF"
+}
