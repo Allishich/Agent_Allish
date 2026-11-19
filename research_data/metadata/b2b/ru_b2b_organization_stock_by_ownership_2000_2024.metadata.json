@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "ru_b2b_organization_stock_by_ownership_2000_2024",
+  "file_name": "ru_b2b_organization_stock_by_ownership_2000_2024.csv",
+  "created_on": "2026-11-17",
+  "project": "Рыночный агент — B2B Россия",
+  "country": "RU",
+  "scope": "only_Russian_Federation_and_published_region_rows",
+  "data_description": "Организации по формам собственности и нерегулярным контрольным годам",
+  "rows": 30,
+  "sha256_csv": "bc82881c5a074a4935623c2788a3a9bafe19d59d2d057134cd32c662bd4f85b1",
+  "fields": [
+    "year",
+    "ownership_type",
+    "metric",
+    "value",
+    "unit",
+    "geography",
+    "source_id",
+    "source_table",
+    "source_page",
+    "source_url"
+  ],
+  "field_definitions": {
+    "year": {
+      "data_type": "integer",
+      "description": "Год наблюдения, а не дата загрузки"
+    },
+    "ownership_type": {
+      "data_type": "string",
+      "description": "Форма собственности (не классификация B2B/B2G)"
+    },
+    "metric": {
+      "data_type": "string",
+      "description": "Наименование статистического показателя с определением в паспорте"
+    },
+    "value": {
+      "data_type": "number",
+      "description": "Опубликованное числовое значение, без модельных оценок"
+    },
+    "unit": {
+      "data_type": "string",
+      "description": "Точная единица измерения, не пересчитывать без указания масштаба"
+    },
+    "geography": {
+      "data_type": "string",
+      "description": "Российская Федерация (если нет подробного разреза)"
+    },
+    "source_id": {
+      "data_type": "string",
+      "description": "Постоянный ID конкретной официальной таблицы"
+    },
+    "source_table": {
+      "data_type": "string",
+      "description": "Номер таблицы в публикации"
+    },
+    "source_page": {
+      "data_type": "string",
+      "description": "Номер страницы печатного издания"
+    },
+    "source_url": {
+      "data_type": "string",
+      "description": "URL официальной публикации или первичного издателя"
+    }
+  },
+  "row_grain": "год (2000, 2010, 2022, 2023, 2024) × форма собственности",
+  "observation_population": "Все зарегистрированные организации соответствующего года",
+  "denominator_definition": "Число организаций на конец года, в тысячах, опубликовано с округлением",
+  "primary_key": [
+    "year",
+    "ownership_type"
+  ],
+  "source_ids": [
+    "ROS_YEARBOOK_2025"
+  ],
+  "source_table": "15.2",
+  "source_printed_pages": "319",
+  "source_urls": [
+    "https://rosstat.gov.ru/storage/mediabank/Ejegodnik_2025.pdf"
+  ],
+  "source_organization": [
+    "Федеральная служба государственной статистики (Росстат)"
+  ],
+  "processing": "Manual tabular transcription from official publishers’ indexed PDF text; HSE pages 13.1,13.31,2.2 independently visually checked via PDF screenshot; original binary PDF not deposited to Drive.",
+  "verification_status": "official_pdf_text_transcribed",
+  "source_value_type": "thousand_organizations_rounded",
+  "analytic_use_cases": [
+    "Разбивка государственной/муниципальной/частной собственности",
+    "Контекст охвата рыночных организаций"
+  ],
+  "limitations": [
+    "Не является типом B2B или B2G клиента; частная собственность ≠ только коммерческие организации",
+    "Годы 2011–2021 не представлены; временной ряд нерегулярный",
+    "Округления по тысячам вызывают несовпадение сумм отдельных категорий",
+    "Отличия табл.15.2 от точных значений табл.15.3 не заполнять вычисленными цифрами"
+  ],
+  "prohibited_inferences": [
+    "Do not treat registered organizations as operating enterprises",
+    "Do not sum nested size classes, sector subclasses or geographic aggregates",
+    "Do not cross-join independent marginals to invent organization counts in unknown intersections",
+    "Do not infer customers, market demand, purchases or corporate budgets solely from registry stock"
+  ],
+  "missing_value_policy": "No zero imputation; values absent in the publication are not generated.",
+  "update_policy": "Update after new official publication and source reconciliation; keep prior file + manifest version and test results.",
+  "licensing_status": "Official openly published statistical table; check provider conditions before redistribution"
+}
