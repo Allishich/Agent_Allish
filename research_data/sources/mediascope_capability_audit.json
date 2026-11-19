@@ -1,0 +1,332 @@
+{
+  "schema_version": "1.0",
+  "catalog_type": "source_capability_audit",
+  "provider": "АО Медиаскоп / Mediascope",
+  "as_of_date": "2026-11-17",
+  "scope": "Russian markets, multi-sector, not child-focused",
+  "status": "source_mapping_only_no_reproduction_no_data_download",
+  "priority": "main_source_after_rosstat_hse",
+  "products": [
+    {
+      "id": "MS-01",
+      "name": "BrandPulse",
+      "typical_indicators": [
+        "awareness_spontaneous",
+        "awareness_prompted",
+        "brand_first_mention",
+        "brand_consideration",
+        "reported_purchase",
+        "purchase_frequency",
+        "consumer_profile",
+        "consumer_lifestyle",
+        "brand_funnel",
+        "affinity_index"
+      ],
+      "methodology_modules": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "priority": 1,
+      "published_open_results": "Selected public articles and presentations only",
+      "detailed_data_access": "licensed_client_service",
+      "sources": [
+        "https://mediascope.net/services/media/brandpulse/",
+        "https://mediascope.net/about/clients/package-subscription-table/"
+      ],
+      "limitations": "Main panel Russian cities 100k+, age 14–64; other groups offered separately. Includes >420 categories; no full free market-level dataset verified."
+    },
+    {
+      "id": "MS-02",
+      "name": "Cross Web",
+      "typical_indicators": [
+        "monthly_reach",
+        "average_daily_reach",
+        "average_daily_duration",
+        "socio_demographics",
+        "site_or_app_audience",
+        "mobile_vs_desktop"
+      ],
+      "methodology_modules": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "priority": 1,
+      "published_open_results": "Public rankings and dashboard of selected resources",
+      "detailed_data_access": "licensed_cross_web_ui_delivery_api",
+      "sources": [
+        "https://mediascope.net/services/media/media-audience/internet/description/",
+        "https://mediascope.net/services/media/media-audience/internet/information/",
+        "https://mediascope.net/data/"
+      ],
+      "limitations": "National online audience 12+, mobile/desktop; scope, device, time and period must be recorded. Public dashboard not verified for programmatic access."
+    },
+    {
+      "id": "MS-03",
+      "name": "Share of Search / Поисковые запросы",
+      "typical_indicators": [
+        "search_volume",
+        "search_share_by_brand",
+        "search_share_by_category",
+        "search_platform_distribution",
+        "consumer_search_behavior"
+      ],
+      "methodology_modules": [
+        3,
+        4,
+        5
+      ],
+      "priority": 2,
+      "published_open_results": "Selected articles, public conference slides",
+      "detailed_data_access": "licensed_project_or_client_products",
+      "sources": [
+        "https://mediascope.net/news/2537864/",
+        "https://mediascope.net/news/3282172/",
+        "https://mediascope.net/about/clients/package-subscription-table/"
+      ],
+      "limitations": "Search interest != purchases, buyer counts or market revenue; cannot infer sales directly."
+    },
+    {
+      "id": "MS-04",
+      "name": "TV Index",
+      "typical_indicators": [
+        "tv_channel_share",
+        "reach",
+        "rating",
+        "audience_thousands",
+        "viewing_minutes"
+      ],
+      "methodology_modules": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "priority": 2,
+      "published_open_results": "Selected official open ratings",
+      "detailed_data_access": "licensed_tv_data",
+      "sources": [
+        "https://mediascope.net/data/"
+      ],
+      "limitations": "Must track target audience, geography, period and metric denominator; coverage differs from Cross Web."
+    },
+    {
+      "id": "MS-05",
+      "name": "Radio Index",
+      "typical_indicators": [
+        "reach_daily",
+        "reach_weekly",
+        "AQH",
+        "TSL",
+        "station_audience"
+      ],
+      "methodology_modules": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "priority": 3,
+      "published_open_results": "Selected official open ratings",
+      "detailed_data_access": "licensed_radio_data",
+      "sources": [
+        "https://mediascope.net/data/"
+      ],
+      "limitations": "Large-city and overall study populations differ; not equivalent to all-Russia population coverage."
+    },
+    {
+      "id": "MS-06",
+      "name": "NRS / Press",
+      "typical_indicators": [
+        "average_issue_readership",
+        "six_month_reach",
+        "press_audience"
+      ],
+      "methodology_modules": [
+        3,
+        4,
+        7
+      ],
+      "priority": 3,
+      "published_open_results": "Selected official open ratings",
+      "detailed_data_access": "licensed_nrs_data",
+      "sources": [
+        "https://mediascope.net/data/"
+      ],
+      "limitations": "NRS target audience and geography specified by the release."
+    },
+    {
+      "id": "MS-07",
+      "name": "Advertising monitoring",
+      "typical_indicators": [
+        "advertiser_activity",
+        "ad_campaign_presence",
+        "creative_and_medium",
+        "estimated_ad_intensity"
+      ],
+      "methodology_modules": [
+        4,
+        5,
+        7
+      ],
+      "priority": 3,
+      "published_open_results": "Only separate official news and descriptions",
+      "detailed_data_access": "licensed_monitoring_service",
+      "sources": [
+        "https://mediascope.net/services/monitoring/advertising/"
+      ],
+      "limitations": "Do not treat ad presence as spending/sales absent explicit confirmed metric."
+    },
+    {
+      "id": "MS-08",
+      "name": "Public presentations and research archive",
+      "typical_indicators": [
+        "published_market_estimates",
+        "consumer_patterns",
+        "historical_categories",
+        "ecommerce_research",
+        "digital_media_trends"
+      ],
+      "methodology_modules": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "priority": 1,
+      "published_open_results": "Open presentation index and selected published PDFs",
+      "detailed_data_access": "public_viewing_with_reuse_restrictions",
+      "sources": [
+        "https://mediascope.net/library/presentations/",
+        "https://mediascope.net/copyright/",
+        "https://mediascope.net/responsibility/"
+      ],
+      "limitations": "Each statistic needs exact slide/page, field definition, date, sample and source. Do not bulk reproduce protected content without consent."
+    },
+    {
+      "id": "MS-09",
+      "name": "Metric methodology / glossary",
+      "typical_indicators": [
+        "monthly_reach_definition",
+        "daily_reach_definition",
+        "average_duration_definition",
+        "affinity_index_formula",
+        "population_scope_rules"
+      ],
+      "methodology_modules": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "priority": 1,
+      "published_open_results": "Open methodology pages",
+      "detailed_data_access": "public_reference",
+      "sources": [
+        "https://mediascope.net/data/interpretation/"
+      ],
+      "limitations": "Metric definition documentation; no quantitative series."
+    },
+    {
+      "id": "MS-10",
+      "name": "Specialized audience / partner measurement products",
+      "typical_indicators": [
+        "audience_measurement_by_category",
+        "media_cross_platform",
+        "special_service_audience"
+      ],
+      "methodology_modules": [
+        3,
+        4,
+        5
+      ],
+      "priority": 3,
+      "published_open_results": "Limited public descriptions only",
+      "detailed_data_access": "licensed_on_request",
+      "sources": [
+        "https://mediascope.net/about/company/russia/aktsionernoe-obshchestvo-mediaskop/"
+      ],
+      "limitations": "Need a project-specific scope/eligibility check before claiming datasets available."
+    }
+  ],
+  "access_summary": {
+    "public_open": "Official presentation PDFs and articles; selected media ratings; internet audience dashboard displays selected results.",
+    "not_verified": "Free registered account/tier for Mediascope Delivery API; public anonymous documented endpoints; bulk export permission for free dashboard.",
+    "client_licensed": "Cross Web UI/Delivery API; BrandPulse panels; detailed media indexes, search share and advertising monitoring.",
+    "api_code_public": "Python code in official GitHub is open to read and use subject to repository license; data access is separate.",
+    "required_api_credentials": [
+      "username",
+      "password",
+      "client_id",
+      "client_secret",
+      "auth_server",
+      "root_url"
+    ],
+    "api_credential_source": "Mediascope account managers per official repository README",
+    "public_dashboard_browser_test": "The referenced webindex.mediascope.net dashboard returned HTTP 502 in the web research tool; cannot validate export or API from this observation.",
+    "copyright_note": "Mediascope copyright page: reproduction of materials requires written permission. Responsibility page prohibits commercial distribution/change/transfer to third parties absent written permission. Attribution is also required for web publication."
+  },
+  "suggested_use_modes": [
+    {
+      "mode": "source_registry",
+      "approved_status": "safe_to_prepare",
+      "contents": "Metadata, official links, project names, metric definitions, territorial coverage, time scope, access restrictions"
+    },
+    {
+      "mode": "on_demand_external_research",
+      "approved_status": "review_conditions_first",
+      "contents": "Brief factual findings from publicly published official sources with exact citations, in line with copyright terms"
+    },
+    {
+      "mode": "licensed_programmatic_integration",
+      "approved_status": "only_with_credentials_and_license",
+      "contents": "Delivery API analysis, client reports, branded segments, raw series"
+    },
+    {
+      "mode": "bulk_public_dashboard_copy",
+      "approved_status": "do_not_implement_without_explicit_permission",
+      "contents": "Programmatic scraping/republishing all dashboards/reports"
+    }
+  ],
+  "next_questions_to_verify": [
+    "Do Mediascope representatives provide a limited/test/free API tier, and under what written contract?",
+    "Which selected Cross Web public measures are exportable and under what legal conditions?",
+    "Can clients store and redistribute aggregate extracts to a local AI retrieval knowledge base?",
+    "Which BrandPulse public findings are explicitly authorized for archival machine-readable reuse?",
+    "Do offline or region-specific subpopulations exist as separate supported cuts and which periods are comparable?"
+  ],
+  "not_yet_done": [
+    "no Mediascope quantitative files downloaded",
+    "no API credentials requested or used",
+    "no production ingestion pipeline built",
+    "no user account opened",
+    "no public dashboard parsed by automation"
+  ],
+  "source_urls": {
+    "official_home": "https://mediascope.net/",
+    "brandpulse": "https://mediascope.net/services/media/brandpulse/",
+    "crossweb": "https://mediascope.net/services/media/media-audience/internet/description/",
+    "public_internet": "https://mediascope.net/services/media/media-audience/internet/information/",
+    "ratings": "https://mediascope.net/data/",
+    "presentations": "https://mediascope.net/library/presentations/",
+    "search_ecom": "https://mediascope.net/news/2537864/",
+    "ecom_2026": "https://mediascope.net/news/3282172/",
+    "ad_monitor": "https://mediascope.net/services/monitoring/advertising/",
+    "api_repo": "https://github.com/MEDIASCOPE-JSC/mediascope-api-lib",
+    "api_examples": "https://github.com/MEDIASCOPE-JSC/mediascope-jupyter",
+    "api_product": "https://mediascope.net/about/company/russia/aktsionernoe-obshchestvo-mediaskop/",
+    "product_subscription": "https://mediascope.net/about/clients/package-subscription-table/",
+    "terms": "https://mediascope.net/responsibility/",
+    "copyright": "https://mediascope.net/copyright/",
+    "metric_glossary": "https://mediascope.net/data/interpretation/"
+  }
+}
