@@ -1,0 +1,608 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/agent_allish/intake/brief.schema.json",
+  "title": "Shared human discovery brief 1.0 (product & communication)",
+  "description": "Подтверждённая структурированная версия пользовательских вводных; не доказательство рыночных фактов.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "interview_status": {
+      "type": "string",
+      "enum": [
+        "collecting",
+        "awaiting_confirmation",
+        "confirmed",
+        "paused",
+        "needs_reconfirmation"
+      ]
+    },
+    "decision_question": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "product": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "stage": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "capabilities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "delivery_model": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "description",
+        "stage",
+        "capabilities",
+        "delivery_model"
+      ]
+    },
+    "customer_need": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "problem": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "desired_outcome": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "current_alternatives": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "problem",
+        "desired_outcome",
+        "current_alternatives"
+      ]
+    },
+    "audience": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "buyer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "end_user": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "buyer",
+        "end_user",
+        "segments"
+      ]
+    },
+    "market": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "geography": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "industry": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "competitors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "geography",
+        "industry",
+        "competitors"
+      ]
+    },
+    "commercial": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "unit_of_sale": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pricing_model": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "price": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "amount": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "currency": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "billing_period": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "tax_basis": {
+                  "type": "string",
+                  "enum": [
+                    "tax_included",
+                    "tax_excluded",
+                    "unknown"
+                  ]
+                }
+              },
+              "required": [
+                "amount",
+                "currency",
+                "billing_period",
+                "tax_basis"
+              ]
+            }
+          ]
+        },
+        "sales_channels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sales_evidence": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "unit_of_sale",
+        "pricing_model",
+        "price",
+        "sales_channels",
+        "sales_evidence"
+      ]
+    },
+    "communications": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "positioning": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "current_messages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "current_channels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "brand_materials": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "positioning",
+        "current_messages",
+        "current_channels",
+        "brand_materials"
+      ]
+    },
+    "goals": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "reason_for_request": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "target_horizon": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "success_criteria": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "reason_for_request",
+        "target_horizon",
+        "success_criteria"
+      ]
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "available_materials": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "material_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uri": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "file",
+              "url",
+              "note",
+              "other"
+            ]
+          },
+          "access_status": {
+            "type": "string",
+            "enum": [
+              "available",
+              "not_provided",
+              "needs_permission",
+              "unknown"
+            ]
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "material_id",
+          "title",
+          "uri",
+          "kind",
+          "access_status",
+          "notes"
+        ]
+      }
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "field_path": {
+            "type": "string",
+            "pattern": "^/"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "type": "string",
+            "enum": [
+              "unknown",
+              "not_applicable",
+              "not_provided",
+              "conflicting"
+            ]
+          },
+          "owner": {
+            "type": "string",
+            "enum": [
+              "user",
+              "research",
+              "unknown"
+            ]
+          },
+          "priority": {
+            "type": "string",
+            "enum": [
+              "critical",
+              "normal",
+              "low"
+            ]
+          }
+        },
+        "required": [
+          "field_path",
+          "description",
+          "reason",
+          "owner",
+          "priority"
+        ]
+      }
+    },
+    "contradictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "field_paths": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^/",
+              "minLength": 1
+            }
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "unresolved",
+              "resolved"
+            ]
+          }
+        },
+        "required": [
+          "field_paths",
+          "description",
+          "status"
+        ]
+      }
+    },
+    "field_provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "field_path": {
+            "type": "string",
+            "pattern": "^/"
+          },
+          "source_type": {
+            "type": "string",
+            "enum": [
+              "user_reported",
+              "user_document",
+              "agent_hypothesis"
+            ]
+          },
+          "source_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "claim_status": {
+            "type": "string",
+            "enum": [
+              "reported_fact",
+              "reported_hypothesis",
+              "document_supported",
+              "agent_hypothesis"
+            ]
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "field_path",
+          "source_type",
+          "source_ref",
+          "claim_status",
+          "notes"
+        ]
+      }
+    },
+    "user_confirmed_brief": {
+      "type": "boolean"
+    },
+    "source_class": {
+      "const": "user_reported"
+    },
+    "confirmed_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "confirmation_summary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "case_id",
+    "revision",
+    "interview_status",
+    "decision_question",
+    "product",
+    "customer_need",
+    "audience",
+    "market",
+    "commercial",
+    "communications",
+    "goals",
+    "constraints",
+    "available_materials",
+    "unknowns",
+    "contradictions",
+    "field_provenance",
+    "user_confirmed_brief",
+    "source_class",
+    "confirmed_at",
+    "confirmation_summary"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "interview_status": {
+            "const": "confirmed"
+          }
+        },
+        "required": [
+          "interview_status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "user_confirmed_brief": {
+            "const": true
+          },
+          "decision_question": {
+            "type": "string",
+            "minLength": 1
+          },
+          "confirmed_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "confirmation_summary": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "anyOf": [
+          {
+            "properties": {
+              "product": {
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          },
+          {
+            "properties": {
+              "product": {
+                "properties": {
+                  "description": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "else": {
+        "properties": {
+          "user_confirmed_brief": {
+            "const": false
+          }
+        }
+      }
+    }
+  ]
+}

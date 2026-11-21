@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "case_id": "demo_intake_in_progress",
+  "revision": 1,
+  "interview_status": "collecting",
+  "decision_question": null,
+  "product": {
+    "name": null,
+    "description": "Предварительное описание идеи системы техобслуживания",
+    "stage": null,
+    "capabilities": [],
+    "delivery_model": null
+  },
+  "customer_need": {
+    "problem": "Инициатор считает, что предприятиям трудно контролировать сроки ремонтных работ",
+    "desired_outcome": null,
+    "current_alternatives": [
+      "таблицы Excel"
+    ]
+  },
+  "audience": {
+    "buyer": null,
+    "end_user": null,
+    "segments": []
+  },
+  "market": {
+    "geography": [],
+    "industry": null,
+    "competitors": []
+  },
+  "commercial": {
+    "unit_of_sale": null,
+    "pricing_model": null,
+    "price": null,
+    "sales_channels": [],
+    "sales_evidence": null
+  },
+  "communications": {
+    "positioning": null,
+    "current_messages": [],
+    "current_channels": [],
+    "brand_materials": []
+  },
+  "goals": {
+    "reason_for_request": null,
+    "target_horizon": null,
+    "success_criteria": []
+  },
+  "constraints": [],
+  "available_materials": [],
+  "unknowns": [
+    {
+      "field_path": "/decision_question",
+      "description": "Ещё не уточнено решение, ради которого требуется анализ",
+      "reason": "not_provided",
+      "owner": "user",
+      "priority": "critical"
+    }
+  ],
+  "contradictions": [],
+  "field_provenance": [
+    {
+      "field_path": "/product/description",
+      "source_type": "user_reported",
+      "source_ref": "discovery.md#ответ-1",
+      "claim_status": "reported_fact",
+      "notes": "Неподтверждённое описание идеи инициатором"
+    }
+  ],
+  "user_confirmed_brief": false,
+  "source_class": "user_reported",
+  "confirmed_at": null,
+  "confirmation_summary": null
+}

@@ -1,0 +1,80 @@
+schema_version: '0.1'
+module_id: common_intake
+role: parent_agent_component
+starts_before: [product_strategy, communication_strategy]
+no_python_required: true
+interview_mode:
+  adaptive: true
+  one_independent_question_per_turn: true
+  ask_again_if_known: false
+  allow_unknown_answer: true
+  no_fixed_questionnaire: true
+  do_not_collect_market_research_from_initiator_by_default: true
+source_documents:
+  main_agent_rules: AGENTS.md
+  main_agent_methodology: methodology.md
+  product_contract: validation/product_strategy/contracts.json#/$defs/brief
+files_per_case:
+  working_log: cases/{case_id}/discovery.md
+  current_brief: cases/{case_id}/brief.json
+  previous_versions: cases/{case_id}/history/brief_v{revision}.json
+  product_strategy_outputs: cases/{case_id}/product_strategy/
+  communication_strategy_outputs: cases/{case_id}/communication_strategy/
+statuses:
+  - collecting
+  - awaiting_confirmation
+  - confirmed
+  - paused
+  - needs_reconfirmation
+sequence:
+  - id: parse
+    action: Сформировать первичный бриф из запроса и реально доступных приложений
+    next: collect
+  - id: collect
+    action: Задать один вопрос, обновить историю и черновик, устранить решающие противоречия
+    repeat_until: readiness_check_passed
+    next: summary
+  - id: summary
+    action: Кратко пересказать решение, вводные, ограничения, гипотезы и неизвестное
+    confirmation_question: Я правильно понял задачу?
+    next_on_yes: confirm
+    next_on_correction: collect
+    next_on_pause: paused
+  - id: confirm
+    action: Подтвердить и сохранить brief.json, увеличить revision
+    writes: [brief.json, discovery.md]
+    next: handoff
+  - id: handoff
+    action: По команде главного агента сформировать вход для нужного модуля по brief_mapping.yaml
+    allowed_only_if: interview_status == confirmed and user_confirmed_brief == true
+  - id: paused
+    action: Сохранить состояние и ближайший вопрос при наличии хранилища
+readiness_check:
+  require_decision_question: true
+  require_product_identity_or_description: true
+  checklist:
+    - product_and_need
+    - reason_for_request
+    - decision_to_support
+    - audience_or_not_yet_defined
+    - product_stage_and_prior_evidence
+    - goals_and_relevant_constraints
+    - available_materials_or_none
+  other_missing_information: explicit_unknown_or_not_applicable
+  user_confirmed_summary: true
+provenance_rules:
+  distinguish: [reported_fact, reported_hypothesis, document_supported, agent_hypothesis]
+  reported_is_not_market_validated: true
+  no_fabricated_interviews_or_sales: true
+  unknown_text: null
+  unknown_list: []
+revision_rules:
+  unique_case_id: true
+  never_silently_overwrite: true
+  preserve_previous_version_if_storage_exists: true
+  significant_change_requires_reconfirmation: true
+  downstream_recalculation_only_if_affected: true
+persistence:
+  save_claim_only_after_verified_write: true
+  fallback_when_no_write_access: return_full_content_and_unsaved_status
+  do_not_commit_live_user_data_to_repository: true
