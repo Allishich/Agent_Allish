@@ -1,0 +1,503 @@
+schema_version: '0.1'
+document_type: product_strategy_seven_stage_route
+status: agreed_working_scheme
+prepared_on: '2026-11-21'
+method_count: 21
+scope: Только продуктовая стратегия; не заменяет общие инструкции диалога и коммуникационную стратегию коллеги.
+workflow:
+  interview_before_stages: true
+  context_source: Подтверждённый файл вводных после интервью; договор о структуре файла будет дан в обвязке.
+  fixed_stage_order:
+  - S01
+  - S02
+  - S03
+  - S04
+  - S05
+  - S06
+  - S07
+  all_seven_stage_results_required: true
+  all_methods_required: false
+  selection_policy: На каждом этапе сначала проверять применимость base_methods, затем подключать conditional_methods
+    только если они могут изменить вывод. Отсутствие входных данных не разрешает выдумывать значения.
+  if_no_method_applicable: Сформировать результат этапа из доступных обоснованных вводных либо зафиксировать пробелы;
+    не запускать метод ради заполнения списка.
+  if_primary_data_needed: Создать отдельный результат метода со статусом awaiting_data и кратким заданием человеку; продолжить
+    следующие доступные этапы.
+  if_data_received_later: Обновить тот же результат метода и затронутые выводы соответствующих этапов без автоматического
+    перезапуска полного исследования.
+  method_result_path_template: results/methods/{method_id}.json
+  stage_result_path_template: results/stages/{stage_number}_stage.json
+  final_strategy_outline: results/product_strategy_outline.json
+  source_evidence_policy: Не превращать гипотезу или ответ пользователя в подтверждённый рыночный факт; сохранять ссылки
+    на исходные сведения и ограничения.
+  not_in_scope:
+  - Общий диалог и интервью агента
+  - Коммуникационная стратегия
+  - Автоматическое проведение интервью/пилотов
+  - Переписывание 21 методики
+  - Детальный роутинг по каждой формулировке задачи
+stages:
+- stage_id: S01
+  order: 1
+  title: Продукт и границы рынка
+  main_question: Что продаём, какую задачу решаем и какой рынок рассматриваем?
+  required_output_fields:
+  - продукт_и_состояние
+  - задача_клиента
+  - категория_и_заменители
+  - география
+  - покупатель_и_пользователь
+  - период_и_ограничения
+  base_methods: []
+  conditional_methods:
+  - M05
+  implementation_note: Базовые сведения интервью и представленные материалы; при неясности задачи — M05.
+  stage_result_path: results/stages/01_stage.json
+- stage_id: S02
+  order: 2
+  title: Потребители и приоритетная аудитория
+  main_question: Кто покупает и использует продукт, почему он нужен и кому его предлагать в первую очередь?
+  required_output_fields:
+  - сегменты
+  - задачи_и_барьеры
+  - приоритетные_покупатели
+  - доказательства_или_гипотезы
+  base_methods:
+  - M01
+  conditional_methods:
+  - M06
+  - M11
+  - M12
+  - M15
+  implementation_note: Сегментация M01 как опора; дополнительные первичные исследования только по необходимости.
+  stage_result_path: results/stages/02_stage.json
+- stage_id: S03
+  order: 3
+  title: Объём рынка и спрос
+  main_question: Сколько покупателей существует и какая часть рынка потенциально доступна и достижима?
+  required_output_fields:
+  - существующий_рынок
+  - TAM
+  - SAM
+  - SOM
+  - допущения_и_пробелы
+  base_methods:
+  - M02
+  conditional_methods: []
+  implementation_note: M02 без требования выдумывать численные TAM/SAM/SOM при отсутствии данных.
+  stage_result_path: results/stages/03_stage.json
+- stage_id: S04
+  order: 4
+  title: Конкуренты и рыночные цены
+  main_question: Какие существуют альтернативы, сколько они стоят и на каких условиях продаются?
+  required_output_fields:
+  - конкуренты_и_заменители
+  - сопоставимые_цены_и_условия
+  - сравнение_по_ценности
+  - барьеры_переключения
+  base_methods:
+  - M04
+  conditional_methods:
+  - M03
+  implementation_note: M04 — сравнение конкретных альтернатив; M03 — только если важна структура отрасли.
+  stage_result_path: results/stages/04_stage.json
+- stage_id: S05
+  order: 5
+  title: Ценообразование и бизнес-модель
+  main_question: За что, сколько и как клиент будет платить; при каких затратах экономика продукта имеет смысл?
+  required_output_fields:
+  - модель_монетизации
+  - ориентир_цены_или_неизвестное
+  - тарифы_и_единица_оплаты
+  - выручка_затраты_маржинальность
+  - проверка_экономики
+  base_methods:
+  - M07
+  conditional_methods:
+  - M14
+  - M16
+  - M20
+  - M21
+  implementation_note: M07 как основа; M14/M16 — при наличии или необходимости сбора первичных данных; M20/M21 — при
+    данных действующего продукта.
+  stage_result_path: results/stages/05_stage.json
+- stage_id: S06
+  order: 6
+  title: Каналы продаж, условия выхода и риски
+  main_question: Где и каким способом продавать, что требуется для поставки и что способно помешать?
+  required_output_fields:
+  - каналы_и_модель_продаж
+  - путь_клиента_к_покупке
+  - условия_поставки_и_поддержки
+  - зависимости_партнёры
+  - регуляторные_и_операционные_риски
+  base_methods: []
+  conditional_methods:
+  - M09
+  - M19
+  implementation_note: Собираем из результатов S02/S04/S05 и открытых сведений; M09/M19 только при соответствующих основаниях.
+  stage_result_path: results/stages/06_stage.json
+- stage_id: S07
+  order: 7
+  title: Альтернативы и каркас продуктовой стратегии
+  main_question: Какое направление выбрать, почему и при каких условиях проверять или пересматривать решение?
+  required_output_fields:
+  - не_менее_трёх_содержательных_альтернатив
+  - основания_выбора
+  - целевой_сегмент_и_ценность
+  - цена_каналы_приоритеты
+  - что_не_делать
+  - риски_условия_пересмотра
+  - план_проверки
+  base_methods:
+  - M08
+  conditional_methods:
+  - M10
+  - M13
+  - M17
+  - M18
+  implementation_note: M08 как опорное сравнение; M10 и прикладные проверки подключаются только при наличии оснований.
+    Итог — продуктовый каркас, не коммуникационная стратегия.
+  stage_result_path: results/stages/07_stage.json
+method_registry:
+  M01:
+    title: STP — сегментирование, выбор целевого рынка и продуктовое позиционирование
+    version: 1.0.0
+    source:
+      filename: 01_stp.yaml
+      drive_id: 1ZVjwXHRwT3I7dkmUZbiafl-QcWJ7GBkO
+      drive_url: https://drive.google.com/file/d/1ZVjwXHRwT3I7dkmUZbiafl-QcWJ7GBkO/view
+      group: core
+    home_stage: S02
+    priority: base
+    execution_type: analytical
+    use_when: Аудиторию и/или приоритетные сегменты требуется определить, уточнить или сравнить.
+    input_gate: Характеристики продукта, рыночные границы, сведения о клиентах; без численности возможна качественная
+      сегментация.
+    secondary_use_in:
+    - S01
+    - S03
+    - S07
+  M02:
+    title: 'Размер рынка: фактический рынок, TAM, SAM, SOM'
+    version: 1.0.0
+    source:
+      filename: 02_tam_sam_som.yaml
+      drive_id: 12fHm5_rFUAEeDVlBVrpvXCbePJ1qUVVa
+      drive_url: https://drive.google.com/file/d/12fHm5_rFUAEeDVlBVrpvXCbePJ1qUVVa/view
+      group: core
+    home_stage: S03
+    priority: base
+    execution_type: analytical
+    use_when: Нужно описать существующий рынок, потенциальную ёмкость и достижимую часть.
+    input_gate: Границы рынка, единица покупки, численность/объём, цена, период, ограничения; при пропусках только модель
+      с неизвестными.
+    secondary_use_in:
+    - S05
+    - S07
+  M03:
+    title: Пять конкурентных сил Портера — структура отрасли цифрового продукта
+    version: 1.0.0
+    source:
+      filename: 03_porter_five_forces.yaml
+      drive_id: 1GFo4Ijrl4gtgYUcrD3PafBOcn8Xmqysj
+      drive_url: https://drive.google.com/file/d/1GFo4Ijrl4gtgYUcrD3PafBOcn8Xmqysj/view
+      group: core
+    home_stage: S04
+    priority: conditional
+    execution_type: analytical
+    use_when: Структура отрасли, переговорная сила сторон или входные барьеры способны изменить решение.
+    input_gate: Категория, участники, тип покупателя, источники о структуре и заменителях.
+    secondary_use_in:
+    - S06
+  M04:
+    title: Сравнительный анализ конкурентов и заменителей (competitive benchmarking)
+    version: 1.0.1
+    source:
+      filename: 04_competitive_benchmarking.yaml
+      drive_id: 1AgPV01xY593pBhjJfkh2REm2wyCIpZTY
+      drive_url: https://drive.google.com/file/d/1AgPV01xY593pBhjJfkh2REm2wyCIpZTY/view
+      group: core
+    home_stage: S04
+    priority: base
+    execution_type: analytical
+    use_when: Существуют прямые конкуренты, заменители или возможность ничего не менять.
+    input_gate: Сопоставимые предложения, тарифы, условия, источники; неизвестные цены не заполняются.
+    secondary_use_in:
+    - S05
+    - S06
+  M05:
+    title: Jobs to Be Done — выявление задачи клиента и причин выбора
+    version: 1.0.0
+    source:
+      filename: 05_jobs_to_be_done.yaml
+      drive_id: 1_6dtrn_3U4OapkSNFN36ksg6_0Zgtqku
+      drive_url: https://drive.google.com/file/d/1_6dtrn_3U4OapkSNFN36ksg6_0Zgtqku/view
+      group: core
+    home_stage: S01
+    priority: conditional
+    execution_type: analytical
+    use_when: Из вводных неясна задача клиента, триггеры смены решений или ключевые альтернативы.
+    input_gate: Наблюдения/высказывания клиентов либо гипотезы с явной маркировкой; без них вывод только гипотетический.
+    secondary_use_in:
+    - S02
+  M06:
+    title: Value Proposition Canvas — проверка соответствия клиентской задаче
+    version: 1.0.1
+    source:
+      filename: 06_value_proposition_canvas.yaml
+      drive_id: 1gBChlYAzjhH7DL4taVkWOrueScQ7QzvV
+      drive_url: https://drive.google.com/file/d/1gBChlYAzjhH7DL4taVkWOrueScQ7QzvV/view
+      group: core
+    home_stage: S02
+    priority: conditional
+    execution_type: analytical
+    use_when: Нужно проверить, насколько характеристики продукта соответствуют потребностям выбранного сегмента.
+    input_gate: Сегмент, задачи/выгоды/проблемы, реальные свойства продукта, свидетельства или пометки гипотез.
+    secondary_use_in:
+    - S05
+    - S07
+  M07:
+    title: Business Model Canvas — логика создания, доставки и присвоения ценности
+    version: 1.0.0
+    source:
+      filename: 07_business_model_canvas.yaml
+      drive_id: 13-7-Oop9fj4fPoqFUdMZJWO0HPP3-gIp
+      drive_url: https://drive.google.com/file/d/13-7-Oop9fj4fPoqFUdMZJWO0HPP3-gIp/view
+      group: core
+    home_stage: S05
+    priority: base
+    execution_type: analytical
+    use_when: Необходимо описать, как продукт создаёт, доставляет и монетизирует ценность.
+    input_gate: Сегменты, ценность, каналы, ресурсы, расходы и доходы; допускаются гипотезы вместо фактов.
+    secondary_use_in:
+    - S06
+    - S07
+  M08:
+    title: Сравнительная оценка стратегических альтернатив (MCDA и сценарный анализ)
+    version: 1.0.1
+    source:
+      filename: 08_strategic_alternatives.yaml
+      drive_id: 1c-Pk0_ZjE6xSxXNSJNwykcMKByPVu423
+      drive_url: https://drive.google.com/file/d/1c-Pk0_ZjE6xSxXNSJNwykcMKByPVu423/view
+      group: core
+    home_stage: S07
+    priority: base
+    execution_type: analytical
+    use_when: Нужно сравнить варианты действия, включая сохранение текущего положения и отказ/закрытие.
+    input_gate: Результаты предыдущих этапов, цель, ограничения, альтернативы; численный рейтинг только с заданными весами.
+    secondary_use_in: []
+  M09:
+    title: PESTEL — анализ факторов внешней среды цифрового продукта в России
+    version: 1.0.0
+    source:
+      filename: 09_pestel.yaml
+      drive_id: 1Hl_FsiZnwmaLm7aZXjiadjFo4fJMkCxj
+      drive_url: https://drive.google.com/file/d/1Hl_FsiZnwmaLm7aZXjiadjFo4fJMkCxj/view
+      group: core
+    home_stage: S06
+    priority: conditional
+    execution_type: analytical
+    use_when: Правовые, технологические, экономические или иные внешние факторы существенно влияют на продажу/исполнение.
+    input_gate: Рынок/география, горизонт, источники факторов, статус норм на дату проверки.
+    secondary_use_in:
+    - S01
+    - S07
+  M10:
+    title: Матрица Ансоффа — выбор направлений продуктово-рыночного роста
+    version: 1.0.0
+    source:
+      filename: 10_ansoff_matrix.yaml
+      drive_id: 1C7BGJu03M0L57tNUntKZDgf7scx2MD0H
+      drive_url: https://drive.google.com/file/d/1C7BGJu03M0L57tNUntKZDgf7scx2MD0H/view
+      group: core
+    home_stage: S07
+    priority: conditional
+    execution_type: analytical
+    use_when: Рассматривается развитие существующего продукта на текущем или новом рынке.
+    input_gate: Текущее определение продукта и рынка, варианты расширения, ограничения.
+    secondary_use_in:
+    - S03
+    - S06
+  M11:
+    title: 'Глубинные интервью: выявление задач и проблем клиентов'
+    version: 1.0.0
+    source:
+      filename: 11_in_depth_interviews.yaml
+      drive_id: 1Ri08lFOgzsdEU9mxcKT9lWcOnBxlj_n8
+      drive_url: https://drive.google.com/file/d/1Ri08lFOgzsdEU9mxcKT9lWcOnBxlj_n8/view
+      group: additional_new_idea
+    home_stage: S02
+    priority: conditional
+    execution_type: human_research
+    use_when: Нужны реальные описания потребностей, проблем и причин выбора клиентов.
+    input_gate: Согласованное исследование и материалы реальных интервью; до их получения — подготовка и ожидание.
+    secondary_use_in:
+    - S01
+  M12:
+    title: Количественный опрос потребностей и поведения
+    version: 1.0.1
+    source:
+      filename: 12_quantitative_survey.yaml
+      drive_id: 1czBK7VQLoqp8IIDLowsQ5UykYKDXP0fV
+      drive_url: https://drive.google.com/file/d/1czBK7VQLoqp8IIDLowsQ5UykYKDXP0fV/view
+      group: additional_new_idea
+    home_stage: S02
+    priority: conditional
+    execution_type: human_research
+    use_when: Нужно измерить доли ответов/различия между группами в описанной выборке.
+    input_gate: План выборки, реально собранные ответы и определения переменных; опрос не доказывает причинность.
+    secondary_use_in:
+    - S03
+    - S05
+  M13:
+    title: Тестирование концепции и раннего прототипа
+    version: 1.0.0
+    source:
+      filename: 13_concept_prototype_testing.yaml
+      drive_id: 1wM8y6GEwGzR4XCvZ2ON2ouMAYwJaMQQn
+      drive_url: https://drive.google.com/file/d/1wM8y6GEwGzR4XCvZ2ON2ouMAYwJaMQQn/view
+      group: additional_new_idea
+    home_stage: S07
+    priority: conditional
+    execution_type: human_research
+    use_when: Нужно проверить восприятие концепции или раннего прототипа до решения об инвестициях/масштабе.
+    input_gate: Описание концепции/прототип, реальные ответы участников или план их получения.
+    secondary_use_in:
+    - S02
+    - S05
+  M14:
+    title: Исследование ценовой чувствительности
+    version: 1.0.1
+    source:
+      filename: 14_price_sensitivity.yaml
+      drive_id: 1yZLQiQwD-P0hbzq-YFfHOWyWSl5TMvWi
+      drive_url: https://drive.google.com/file/d/1yZLQiQwD-P0hbzq-YFfHOWyWSl5TMvWi/view
+      group: additional_new_idea
+    home_stage: S05
+    priority: conditional
+    execution_type: human_research
+    use_when: Ценовой диапазон или модель оплаты неясны и нужны данные восприятия цены.
+    input_gate: Единица цены, предложение, реальные ответы респондентов; PSM не равен фактической цене сделки.
+    secondary_use_in:
+    - S04
+  M15:
+    title: Контекстное наблюдение за пользователями
+    version: 1.0.0
+    source:
+      filename: 15_contextual_observation.yaml
+      drive_id: 1uQNlOS2kgC6GmJ2xY7lqVkWkUCDDc7QY
+      drive_url: https://drive.google.com/file/d/1uQNlOS2kgC6GmJ2xY7lqVkWkUCDDc7QY/view
+      group: additional_new_idea
+    home_stage: S02
+    priority: conditional
+    execution_type: human_research
+    use_when: Контекст использования и обходные процессы нельзя надёжно понять по интервью и документам.
+    input_gate: Разрешённое наблюдение и записи фактического поведения; до него — инструкция и статус ожидания.
+    secondary_use_in:
+    - S01
+    - S06
+  M16:
+    title: Conjoint-анализ предпочтений к характеристикам продукта
+    version: 1.0.1
+    source:
+      filename: 16_choice_based_conjoint.yaml
+      drive_id: 1Z9aMse2Wwe5BmpTT-n4xPYTI9YrXJz1F
+      drive_url: https://drive.google.com/file/d/1Z9aMse2Wwe5BmpTT-n4xPYTI9YrXJz1F/view
+      group: additional_new_idea
+    home_stage: S05
+    priority: conditional
+    execution_type: human_research
+    use_when: Нужно выбрать комплектность, характеристики или тарифные компромиссы между альтернативами.
+    input_gate: Корректный дизайн заданий выбора, реальные ответы, кодировка атрибутов и уровней.
+    secondary_use_in:
+    - S02
+    - S07
+  M17:
+    title: A/B-тестирование цифрового продукта
+    version: 1.0.1
+    source:
+      filename: 17_ab_testing.yaml
+      drive_id: 1n3iy3tdHPNYjzbNsQjR3ba7eUY41lIEn
+      drive_url: https://drive.google.com/file/d/1n3iy3tdHPNYjzbNsQjR3ba7eUY41lIEn/view
+      group: additional_existing_product
+    home_stage: S07
+    priority: conditional
+    execution_type: human_research
+    use_when: Для работающего продукта предложено изменение, причинный эффект которого нужно проверить.
+    input_gate: Схема рандомизации, основная и защитные метрики, данные эксперимента или план запуска.
+    secondary_use_in:
+    - S05
+  M18:
+    title: Юзабилити-тестирование цифрового продукта
+    version: 1.0.0
+    source:
+      filename: 18_usability_testing.yaml
+      drive_id: 13_hdzBzQ7_g0071QBXcxxiPar_0Q2Ia3
+      drive_url: https://drive.google.com/file/d/13_hdzBzQ7_g0071QBXcxxiPar_0Q2Ia3/view
+      group: additional_existing_product
+    home_stage: S07
+    priority: conditional
+    execution_type: human_research
+    use_when: Нужно проверить выполнение пользователем ключевых задач в интерфейсе.
+    input_gate: Задачи, рабочий интерфейс/прототип, наблюдения реальных пользователей.
+    secondary_use_in:
+    - S02
+  M19:
+    title: Пилотное внедрение цифрового продукта
+    version: 1.0.1
+    source:
+      filename: 19_pilot_implementation.yaml
+      drive_id: 1oeQxHNN3GUTubxmJFrRTynMf16LOIypK
+      drive_url: https://drive.google.com/file/d/1oeQxHNN3GUTubxmJFrRTynMf16LOIypK/view
+      group: additional_existing_product
+    home_stage: S06
+    priority: conditional
+    execution_type: human_research
+    use_when: Нужны подтверждения внедряемости, реальных ограничений поставки или эксплуатации B2B-продукта.
+    input_gate: Согласованный пилот, критерии успеха, показатели до/после и материалы внедрения.
+    secondary_use_in:
+    - S07
+  M20:
+    title: Когортный анализ цифрового продукта
+    version: 1.0.1
+    source:
+      filename: 20_cohort_analysis.yaml
+      drive_id: 1n9b0hb1jaKI-jzwXgOmajnK15x1BJzm4
+      drive_url: https://drive.google.com/file/d/1n9b0hb1jaKI-jzwXgOmajnK15x1BJzm4/view
+      group: additional_existing_product
+    home_stage: S05
+    priority: conditional
+    execution_type: analytical
+    use_when: Есть действующий продукт и нужно учитывать удержание, повторные платежи или потери выручки.
+    input_gate: История пользователей/клиентов или платежей с идентификаторами, датами и едиными определениями.
+    secondary_use_in:
+    - S02
+    - S07
+  M21:
+    title: Unit Economics цифрового продукта
+    version: 1.0.1
+    source:
+      filename: 21_unit_economics.yaml
+      drive_id: 1V6_ghuuy3_gtRMEgN3NYY2QqpLI-hl_h
+      drive_url: https://drive.google.com/file/d/1V6_ghuuy3_gtRMEgN3NYY2QqpLI-hl_h/view
+      group: additional_existing_product
+    home_stage: S05
+    priority: conditional
+    execution_type: analytical
+    use_when: Нужно оценить стоимость привлечения, обслуживания, маржинальность и окупаемость клиента.
+    input_gate: Проверяемые выручка и затраты по экономической единице; до продаж только сценарная модель.
+    secondary_use_in:
+    - S07
+integration_notes:
+  data_routing: Источники данных маршрутизируются отдельно в research_data/AI_CONTEXT/routing.json; настоящий файл выбирает
+    методы, а не датасеты.
+  first_stage_has_no_obligatory_method: Первый этап может оформляться по материалам интервью; M05 применяется при необходимости
+    исследовать задачу клиента.
+  stage_six_without_new_core_method: Для каналов продаж используем блок каналов/партнёрств M07 и результаты анализа аудитории
+    и конкурентов; не придумываем двадцать вторую методику.
+  human_research: M11–M19 предполагают собственные первичные данные либо требуют участия человека; анализ возможен после
+    их предоставления, но не синтеза ответов.
+  current_product_metrics: M20 и M21 являются аналитическими после загрузки внутренних продуктовых данных.
+  strategic_choice: В S07 сохранять варианты «оставить как есть» и «отказаться от направления/закрыть», наряду с содержательной
+    инициативой развития.

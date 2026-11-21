@@ -1,0 +1,106 @@
+{
+  "document_type": "module_response",
+  "protocol_version": "0.2",
+  "request_id": "req_demo_002",
+  "module_id": "product_strategy",
+  "case_id": "demo_b2b_saas",
+  "action": "run_next_stage",
+  "status": "awaiting_parent",
+  "state_revision": 2,
+  "summary": "Этап S01 описан на основе брифа. Выводы частичные, так как заменители и задача покупателя не подтверждены.",
+  "stage_id": "S01",
+  "artifacts": [
+    {
+      "path": "cases/demo_b2b_saas/results/stages/01_stage.json",
+      "kind": "stage_result",
+      "saved": false,
+      "content": {
+        "document_type": "stage_record",
+        "protocol_version": "0.2",
+        "case_id": "demo_b2b_saas",
+        "stage_id": "S01",
+        "record_status": "partial",
+        "fields": {
+          "продукт_и_состояние": "Идея облачного сервиса учёта заявок (со слов инициатора).",
+          "задача_клиента": "Гипотеза: исключить потерю информации о техобслуживании.",
+          "категория_и_заменители": null,
+          "география": "Россия (со слов инициатора).",
+          "покупатель_и_пользователь": "Предположительно промышленное предприятие и специалисты технического обслуживания.",
+          "период_и_ограничения": "Нет подтверждённых продаж, интервью и сведений о заменителях."
+        },
+        "methods_used": [],
+        "evidence_refs": [
+          {
+            "source_id": "USR_BRIEF_001",
+            "source_type": "user_reported",
+            "title": "Подтверждённые вводные инициатора",
+            "file_path": "cases/demo_b2b_saas/brief.json",
+            "statement": "Идея B2B облачного сервиса для учёта технических заявок."
+          }
+        ],
+        "unknowns": [
+          "Не проверены заменители и реальные ситуации использования."
+        ],
+        "limitations": [
+          "Вводные пользователя не являются доказательствами спроса."
+        ],
+        "pending_method_ids": [],
+        "version": 1
+      },
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "cases/demo_b2b_saas/state.json",
+      "kind": "state",
+      "saved": false,
+      "content": {
+        "document_type": "case_state",
+        "protocol_version": "0.2",
+        "module_id": "product_strategy",
+        "case_id": "demo_b2b_saas",
+        "revision": 2,
+        "brief_ref": "cases/demo_b2b_saas/brief.json",
+        "stage_order": [
+          "S01",
+          "S02",
+          "S03",
+          "S04",
+          "S05",
+          "S06",
+          "S07"
+        ],
+        "stage_states": {
+          "S01": "awaiting_parent_approval",
+          "S02": "not_started",
+          "S03": "not_started",
+          "S04": "not_started",
+          "S05": "not_started",
+          "S06": "not_started",
+          "S07": "not_started"
+        },
+        "method_states": {},
+        "method_selection": [],
+        "current_stage": "S01",
+        "pending_parent_stage": "S01",
+        "pending_data_requests": [],
+        "result_refs": {
+          "method_results": [],
+          "stage_results": [
+            "cases/demo_b2b_saas/results/stages/01_stage.json"
+          ],
+          "outline": null
+        },
+        "last_request_id": "req_demo_002"
+      },
+      "sensitivity": "restricted"
+    }
+  ],
+  "data_requests": [],
+  "limitations": [
+    "Пример без внешнего поиска и без вымышленных рыночных сведений."
+  ],
+  "errors": [],
+  "next_action": "approve_stage",
+  "persistence_status": "delegated_or_unavailable",
+  "awaiting_parent_confirmation": true
+}

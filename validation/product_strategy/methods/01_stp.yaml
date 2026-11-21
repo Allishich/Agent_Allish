@@ -1,0 +1,377 @@
+meta:
+  schema_version: '1.0'
+  method_id: M01
+  slug: stp
+  title: STP — сегментирование, выбор целевого рынка и продуктовое позиционирование
+  language: ru
+  version: 1.0.0
+  prepared_on: '2026-11-21'
+  method_family: Стратегия целевых клиентов
+  document_status: полная методологическая спецификация; не отчет по конкретному продукту
+  editorial_license_note: Оригинальное изложение общепринятых методов; тексты SKILL.md Dean Peters не воспроизводятся
+role:
+  goal: |-
+    Сформировать воспроизводимую карту групп покупателей, выбрать обоснованные целевые сегменты и задать конкурентное продуктовое позиционирование. Позиционирование здесь — выбор категории, ценности и альтернатив, а не разработка рекламного слогана.
+  questions:
+  - Кого именно можно считать потенциальным покупателем и пользователем?
+  - Какие сегменты различаются по потребности, способности купить и доступности?
+  - Чем предлагаемый продукт отличается от заменителей в целевом сегменте?
+  applicability:
+  - Новая цифровая идея
+  - Смена рыночного сегмента
+  - Расширение B2B/B2C продукта
+  - Анализ неоднородного спроса
+  not_applicable_when:
+  - Нет определения продукта или задачи клиента даже на уровне гипотезы
+  - Требуется только диагностика конкретной ошибки интерфейса
+  mode: Самостоятельный метод; не требует выполнения других 9 методов
+  scope_boundary: |-
+    Предмет — продуктовая стратегия цифрового продукта для российского рынка. Выбор каналов продвижения, медиаплан и коммуникационные сообщения не являются результатом данного метода. Метод не принимает решений за эксперта: фиксирует варианты и их фактическую обоснованность.
+theory:
+  concepts:
+  - term: Segmentation
+    meaning: Разбиение доступной совокупности на однозначно описываемые группы с различимым поведением/потребностями.
+  - term: Targeting
+    meaning: Выбор одной или нескольких групп по привлекательности и возможности их обслужить.
+  - term: Positioning
+    meaning: Основание для восприятия продукта относительно альтернатив конкретным клиентом; продуктовые свойства и выгодное
+      отличие.
+  - term: Критерии добротного сегмента
+    meaning: Измеримость, достаточный размер, доступность, различимость, пригодность к практическим действиям.
+  - term: Buyer/User split
+    meaning: Для B2B отделять пользователя, экономического покупателя, ИТ/ИБ и инициатора закупки.
+  formulas:
+  - name: Число объектов сегмента
+    expression: N_s = count(objects with all verified segment predicates)
+    units: объектов / период
+    conditions: |-
+      Только если доступна совместная таблица с совместимым охватом, без двойного счёта.
+    interpretation: |-
+      Численность сегмента, не величина рыночного спроса.
+  - name: Доля сегмента
+    expression: share_s = N_s / N_base
+    units: доля (0..1)
+    conditions: |-
+      N_base соответствует той же совокупности и периоду; сегменты могут перекрываться.
+    interpretation: |-
+      Доля выбранной совокупности, не доля покупки.
+input_contract:
+  mandatory:
+  - field: definition_of_product
+    definition: Категория ПО, решаемый процесс, основные функции, форма поставки
+    data_type: text
+    preferred_source: Эксперт / продуктовые документы
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  - field: market_population
+    definition: Кого и в какой географии допустимо считать потенциальной совокупностью
+    data_type: text
+    preferred_source: Росстат / ФНС / первичные данные
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  - field: segmentation_basis
+    definition: Признаки и определения категорий сегментов, непересекаемость/перекрытия
+    data_type: text
+    preferred_source: Эксперт и паспорт источника
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  - field: observable_segment_counts
+    definition: Численность либо доли сегментов с единицей наблюдения, периодом и знаменателем
+    data_type: array[number,segment,units,period]
+    preferred_source: Только статистика совместимого охвата
+    if_missing: Сегмент описывается качественно; количественная оценка null
+  helpful:
+  - field: behavior_or_need
+    definition: Проверенные различия по проблемам, частоте задачи и препятствиям
+    data_type: text
+    preferred_source: Интервью, исследования клиентов
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  - field: ability_to_purchase
+    definition: Бюджет, цикл закупки, полномочия, экономический эффект
+    data_type: text
+    preferred_source: Сведения организации и интервью
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  - field: competitive_options
+    definition: Конкретные заменители и альтернативы для каждого сегмента
+    data_type: text
+    preferred_source: Публичные продуктовые страницы/опросы
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  - field: product_constraints
+    definition: Языки, on-prem, интеграции, информационная безопасность, стоимость поддержки
+    data_type: text
+    preferred_source: Эксперт
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  expert_inputs:
+  - Описание продукта
+  - Наблюдения о клиентах и закупках
+  - Ресурсные ограничения на обслуживание сегментов
+  local_data_candidates:
+  - dataset_id: ru_b2b_registered_organizations_region_sector_2024
+    possible_use: B2B-сегменты по отдельным секциям ОКВЭД2 и территориям
+    critical_limit: Всего 5 выделенных отраслевых секций; зарегистрированные организации не равны действующим покупателям;
+      территориальные строки пересекаются.
+    data_file_url: https://drive.google.com/file/d/1x-2zC80igUjJqly4eNQr1hokUmFCKrJ2/view
+    data_file_drive_id: 1x-2zC80igUjJqly4eNQr1hokUmFCKrJ2
+    passport_url: https://drive.google.com/file/d/13a70dRR4DG-asVNLn1s1ta7KDULoTcKe/view
+    source_publication: ROS_YEARBOOK_2025
+    years_in_catalog: null
+    population_in_catalog: null
+    denominator_in_catalog: null
+    quality_status_in_catalog: verified_aggregates_official_pdf_text; independent_binary_pdf_not_archived
+  - dataset_id: ru_b2b_small_micro_industry_employment_turnover_2024
+    possible_use: Сегменты по размерам предприятий и отрасли
+    critical_limit: Малые предприятия уже включают микро; численность и оборот не доказывают платежеспособность по конкретному
+      продукту.
+    data_file_url: https://drive.google.com/file/d/1IhJ5G4BYF8aF_l6HiEDhLveojUtWI9RF/view
+    data_file_drive_id: 1IhJ5G4BYF8aF_l6HiEDhLveojUtWI9RF
+    passport_url: https://drive.google.com/file/d/16toM7n9bSaSuXjUYJk_pQjTRHS195_UE/view
+    source_publication: ROS_YEARBOOK_2025
+    years_in_catalog: null
+    population_in_catalog: null
+    denominator_in_catalog: null
+    quality_status_in_catalog: official_pdf_text_transcribed
+  - dataset_id: ru_b2b_small_enterprise_digital_by_industry_2024
+    possible_use: Цифровая готовность обследованных малых компаний по отраслям
+    critical_limit: Доли относятся к собственной совокупности и не совмещаются автоматически с региональным реестром.
+    data_file_url: https://drive.google.com/file/d/1ITYCYdTh5OMCbgoaWAovg9blrToflt5B/view
+    data_file_drive_id: 1ITYCYdTh5OMCbgoaWAovg9blrToflt5B
+    passport_url: https://drive.google.com/file/d/1wFHEoM_KQQibzYFwdGo7Ab53RnBkj1_b/view
+    source_publication: HSE_ISEK_2026
+    years_in_catalog: null
+    population_in_catalog: null
+    denominator_in_catalog: null
+    quality_status_in_catalog: official_HSE_screenshot_checked
+  - dataset_id: RU_DIG_007
+    possible_use: B2C-различия в онлайн-покупках по возрасту/полу/местности
+    critical_limit: Измеряется онлайн-покупка вообще, а не спрос на приложение/подписку.
+    data_file_url: https://drive.google.com/file/d/18IwJnzWDIPqarAU117cm2YoE7TLRPt4K/view
+    data_file_drive_id: 18IwJnzWDIPqarAU117cm2YoE7TLRPt4K
+    passport_url: https://drive.google.com/file/d/1mDfRhoQAjU8oup7uZZaeabJAIEClbLTJ/view
+    source_publication: https://issek.hse.ru/mirror/pubs/share/1122445658.pdf
+    years_in_catalog:
+    - 2024
+    population_in_catalog: Лица 15+ соответствующего пола или возраста и типа местности
+    denominator_in_catalog: Численность соответствующей возрастной/половой группы в типе местности
+    quality_status_in_catalog: published_hse_table_reproducing_rosstat_data
+  - dataset_id: RU-POP-AGE-SEX-2024-ROS-001
+    possible_use: Демографическая база для B2C
+    critical_limit: Возраст/пол и географию сверить с паспортом; не смешивать с ВПН-2020.
+    data_file_url: https://drive.google.com/file/d/1ZbLK2vAtUy3gExMXClrenRksDejrT4dA/view
+    data_file_drive_id: 1ZbLK2vAtUy3gExMXClrenRksDejrT4dA
+    passport_url: null
+    source_publication: https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+    years_in_catalog: '2024-01-01'
+    population_in_catalog: null
+    denominator_in_catalog: null
+    quality_status_in_catalog: null
+  - dataset_id: RU_DIG_010
+    possible_use: Цифровые навыки населения 15+ по возрастам
+    critical_limit: Не является прямым показателем установки или оплаты конкретного продукта.
+    data_file_url: https://drive.google.com/file/d/10Dhiatiysd4TTWz_hzPCTstXEkoTLaf5/view
+    data_file_drive_id: 10Dhiatiysd4TTWz_hzPCTstXEkoTLaf5
+    passport_url: https://drive.google.com/file/d/1aMGreKeOcgAeP_UVh7hTwNGUyLCNetyd/view
+    source_publication: https://issek.hse.ru/mirror/pubs/share/1122445658.pdf
+    years_in_catalog:
+    - 2024
+    population_in_catalog: Население 15 лет и старше в соответствующей возрастной группе
+    denominator_in_catalog: Все лица соответствующей возрастной группы
+    quality_status_in_catalog: published_hse_table_reproducing_rosstat_data
+  external_data_candidates:
+  - 'ФНС: реестр МСП для границ B2B и классификации субъектов'
+  - 'Росстат: отрасль, размер, цифровая активность'
+  - Публичные страницы реальных конкурентов и условия поставки
+  data_use_rule: |-
+    Указанные наборы «Рыночного агента» являются кандидатами, а не готовыми значениями. По каждому необходимы доступ к CSV, паспорт, первоисточник, проверка охвата, года и знаменателя; использовать только действительно совместимые наблюдения. Статистика 2020–2024 и публикации 2025 года не должна представляться как измерение 2026 года.
+procedure:
+- step: 01.1 Границы
+  procedure: |-
+    Зафиксировать единицу: человек, домохозяйство, компания, площадка или платящая учетная запись. Определить продуктовую категорию, рынок РФ/субъекты, период, B2B/B2C/B2G и реальные случаи использования. Отделить пользователя от покупателя.
+  verification: |-
+    Проверить отсутствие смешения числителя разных единиц, например филиалов и юрлиц.
+  output: market_definition
+- step: 01.2 Выбор признаков
+  procedure: |-
+    Выбрать 2–4 признака, причинно связанные с задачей и доступностью продукта: для B2B отрасль×масштаб, цифровая зрелость, тип закупки; для B2C возраст, ситуация пользования, цифровые навыки. Для каждого описать допустимые значения и источник.
+  verification: |-
+    Признак должен быть измерим либо помечен гипотезой; избегать псевдосегментов по красивым маркетинговым названиям.
+  output: segmentation_variables
+- step: 01.3 Матрица сегментов
+  procedure: |-
+    Составить таблицу сегмент × значение признаков × численность/доля × период × источник. Если признаки доступны только по отдельности, оставить совместный разрез неизвестным: не реконструировать кросс-табуляцию перемножением долей без доказанной независимости.
+  verification: |-
+    Сумма взаимоисключающих сегментов равна совместимому итогу в пределах точности. Для пересекающихся групп суммирование запрещено.
+  output: segments_table
+- step: 01.4 Потребности
+  procedure: |-
+    Для каждого сегмента описать задачу клиента, текущую альтернативу, частоту и последствия проблемы, покупателя и типовой путь приобретения. Неподтверждённые характеристики — гипотезы.
+  verification: |-
+    Потребность не следует из отраслевого ОКВЭД или цифровой грамотности сама по себе.
+  output: segment_need_profiles
+- step: 01.5 Привлекательность
+  procedure: |-
+    Сопоставить размер, тенденции, доступность, интенсивность конкуренции, стоимость обслуживания, организационные ограничения. Не требовать общей балльной оценки; если баллы используются, зафиксировать шкалы и источники, провести проверку чувствительности.
+  verification: |-
+    Нельзя подменять измерение спроса численностью предприятий; отдельно отметить отсутствующую готовность платить.
+  output: segment_attractiveness
+- step: 01.6 Выбор целей
+  procedure: |-
+    Показать 1–3 приоритетных сегмента и невыбранные альтернативы, включая критерии исключения. Зафиксировать критерии выбора в понятных для эксперта терминах.
+  verification: |-
+    Решение должно измениться при изменении критического допущения; зафиксировать это допущение.
+  output: target_segments
+- step: 01.7 Продуктовое позиционирование
+  procedure: |-
+    Описать для каждого выбранного сегмента: текущую альтернативу, категорию продукта, ключевой измеримый результат использования, подтверждённое отличие и главную непроверенную предпосылку. Не создавать коммуникационное сообщение.
+  verification: |-
+    Отличие подтверждать характеристиками продукта/сравнением, не эпитетами «лучший», «уникальный».
+  output: positioning_hypotheses
+- step: 01.8 Проверка границ
+  procedure: |-
+    Представить то, что сегментация не доказывает: возможность платного спроса, покупательские мотивы, соответствие потребностей и наличие бюджета. Назначить процедуру добора недостающих данных.
+  verification: |-
+    У неизвестных величин статус missing, а не ноль.
+  output: gaps_and_checks
+russian_digital_market: |-
+  Российская статистика часто построена по ОКВЭД2 и группам размера предприятия; фактический клиент ПО может принадлежать нескольким отраслям и иметь множество филиалов. Регистр ФНС МСП и статистические обследования Росстата описывают разные совокупности. Для B2G дополнительно анализируется режим закупки. Для цифрового продукта релевантны язык интерфейса, доступность зарубежных SaaS, on-prem, интеграции с российским ПО, условия обработки данных. Региональные и национальные доли цифровизации не должны механически переноситься на конкретные группы без совпадающего знаменателя.
+interpretation_rules: |-
+  Высокая доля интернет-пользователей подтверждает инфраструктурную возможность, но не готовность платить. Отраслевая регистрация сообщает наличие хозяйствующих субъектов, но не количество потенциальных лицензий. Продуктовое позиционирование — проверяемая гипотеза о результате и отличии для сегмента; не готовое рекламное сообщение.
+quality_control:
+  global_data_checks:
+  - Проверять существование исходного файла, dataset_id, паспорт и версию; каталог сам по себе не подтверждает значения.
+  - 'Сопоставлять единицу наблюдения: компания, ИП, субъект МСП, домохозяйство, человек или пользователь 15+.'
+  - Проверять дату, территорию, классификатор, числитель, знаменатель и охват выборки перед соединением таблиц.
+  - При суммировании регионов исключать пересечения территорий и вложенные автономные округа; предпочитать национальный
+    итог издателя.
+  - Не объединять доли из разных генеральных совокупностей без отдельного, проверяемого обоснования.
+  - Отличать отсутствие данных от числового нуля; не восстанавливать несуществующие совместные разрезы.
+  - Помечать синтетические примеры как учебные, выводы и оценки — по уровню подтверждения.
+  - Не утверждать существование работающего внешнего коннектора только потому, что источник описан в каталоге.
+  method_specific:
+  - Определены одинаковые единицы наблюдения и период у численностей
+  - Обоснована возможность собрать совместный разрез для каждого сегмента
+  - Идентифицированы несовместимые B2B/B2C источники
+  - Проверено, что данные 15+ не распространены на несовершеннолетних
+  - Показаны альтернативы и причина выбора целевого сегмента
+  anti_patterns:
+  - Сегментация «все компании России» без связи с задачей
+  - Кросс-табуляция из независимых маргинальных долей без проверки
+  - Суммирование микро и малых при включении одних в другие
+  - Позиционирование только на основании самоописания компании
+  - Объединение пользователей и плательщиков
+  stop_if: 'Не выводить численное заключение, если требуется отсутствующая генеральная совокупность, база пересчета,
+    существенный коэффициент или независимое подтверждение: пометить результат partial/hypothesis_only/insufficient_data.'
+structured_analytical_result:
+  note: Схема результата — перечень логических полей, не самостоятельная JSON Schema; значения формируются при реальном
+    применении.
+  top_level_required:
+  - method_id
+  - case_id
+  - analysis_date
+  - product_context
+  - status
+  - inputs_used
+  - outputs
+  - evidence_register
+  - assumptions_and_gaps
+  - interpretation
+  - quality_checks
+  - expert_decision_required
+  method_fields:
+  - field: market_boundary
+    type: object
+    required: true
+  - field: segmentation_variables
+    type: array[object]
+    required: true
+  - field: segments
+    type: array[{segment_id,definition,observed_size,unit,period,source_ids,needs,access_constraints,evidence_grade}]
+    required: true
+  - field: selected_targets
+    type: array[{segment_id,rationale,assumptions,alternatives}]
+    required: true
+  - field: positioning_hypotheses
+    type: array[{segment_id,alternative,customer_outcome,differentiator,evidence_ids}]
+    required: true
+  - field: missing_joint_distributions
+    type: array[text]
+    required: true
+  evidence_standard:
+    record_type: evidence
+    required_fields:
+    - 'evidence_id: уникальный ID'
+    - 'claim_or_parameter_id: идентификатор вывода/параметра'
+    - 'evidence_type: observed_fact | computed | interpretation | assumption | expert_assertion'
+    - 'source_title: первоисточник или файл эксперта'
+    - 'source_url_or_file_id: прямой путь/ID либо null с причиной'
+    - 'dataset_id_and_version: если использован локальный набор'
+    - 'date_observed_or_published: исходный год/дата'
+    - 'retrieved_at: дата обращения, если внешняя веб-страница'
+    - 'geography_and_population: географический охват, совокупность и знаменатель'
+    - 'value_unit_formula_filters: значение, единица, формула и фильтры по возможности'
+    - 'limitations: методические ограничения, в том числе наличие/отсутствие независимой проверки'
+    integrity_rule: |-
+      Ни один существенный численный вывод не должен существовать только как текст без ссылки на исходные показатели; предположения, суждения эксперта и наблюдаемые факты не являются одним типом доказательства. Нельзя присваивать статистический статус маркетинговым догадкам. Нельзя выдумывать цену, долю рынка, интервью, цитату, количественную частоту потребности или конверсию.
+  status_values:
+  - value: complete_with_evidence
+    meaning: все существенные шаги проведены; источники и ограничения доступны
+  - value: partial
+    meaning: проведена подтвержденная часть; неопределенности и пробелы указаны
+  - value: hypothesis_only
+    meaning: получена проверяемая модель или гипотеза, но нет необходимых наблюдений
+  - value: insufficient_data
+    meaning: без ключевых данных выполнение метода недостоверно
+  - value: not_applicable
+    meaning: метод неприменим к задаче; причина записана
+  serialization_policy: Числа как числа, не строки; отдельно валюты, периоды, единицы, знаменатели; null при неизвестном
+    значении; дата и URL исходного источника; никаких фабрикованных данных
+worked_example:
+  is_synthetic: true
+  case: Условный SaaS для учёта заявок на техобслуживание
+  inputs:
+  - 'Сегменты: малые предприятия пищевого производства и небольшие сервисные подрядчики'
+  - Из совместимого исследования есть число обследованных малых фирм по отдельным отраслям, но нет пересечения «отрасль
+    × регион × зрелость»
+  procedure:
+  - Взять доступное число предприятий по подтверждённым секциям и отделить от используемых цифровых инструментов.
+  - 'Для двух сегментов описать разные задачи: управление ремонтом собственного оборудования и выполнение внешних заявок.'
+  - Отметить неизвестный регионально-отраслевой совместный сегмент как null, а не рассчитать его по произведению долей.
+  - Предложить отдельную проверку закупщика и типовой стоимости отказа оборудования.
+  output: Две карточки сегментов, ограничения численности, разные JTBD-гипотезы, выбор приоритетного сегмента остаётся
+    за экспертом.
+  not_real_data_warning: Все примерные решения являются иллюстрациями, числовая оценка рынка не произведена.
+sources:
+- title: 'OpenStax Principles of Marketing, Chapter 5: STP'
+  url: https://openstax.org/books/principles-marketing/pages/5-6-product-positioning
+  role: Классическая методология
+  access: открытая страница / библиографическая ссылка
+- title: OpenStax, Essential Factors in Effective Market Segmentation
+  url: https://openstax.org/books/principles-marketing/pages/5-4-essential-factors-in-effective-market-segmentation
+  role: Классическая методология
+  access: открытая страница / библиографическая ссылка
+- title: Dean Peters, Jobs to Be Done skill
+  url: https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/jobs-to-be-done/SKILL.md
+  role: Сопоставление подходов; авторские инструкции не копируются
+  access: открытая страница / библиографическая ссылка
+- title: Dean Peters, Market Landscape Scan skill
+  url: https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/market-landscape-scan/SKILL.md
+  role: Референс исследовательского объема и сопоставимости
+  access: открытая страница / библиографическая ссылка
+- title: Росстат, статистика науки, инноваций и цифровых технологий
+  url: https://rosstat.gov.ru/statistics/science
+  role: Статистика России; проверять применимость конкретной таблицы
+  access: открытая страница / библиографическая ссылка
+- title: ФНС, Единый реестр субъектов малого и среднего предпринимательства
+  url: https://rmsp.nalog.ru/
+  role: Внешние данные о МСП; реестровая запись не означает покупательский спрос
+  access: открытая страница / библиографическая ссылка
+- title: Каталог исследовательской базы «Рыночный агент»
+  url: https://drive.google.com/drive/folders/1Y9ejj2e_TAgy0GJlrVgUbY9Z9Ab47oIy
+  role: Файлы проекта; паспорта каждого набора обязательны
+  access: открытая страница / библиографическая ссылка
+- title: Dean Peters, Product-Manager-Skills licensing
+  url: https://github.com/deanpeters/Product-Manager-Skills/blob/main/LICENSING.md
+  role: Лицензионные ограничения на прямое копирование
+  access: открытая страница / библиографическая ссылка
+completion_conditions:
+- Каждый требуемый показатель имеет определение и источник либо явно обозначен неизвестным.
+- Выходные поля заполнены или содержат null и reason_missing; исключены неподтвержденные значения.
+- Решение или альтернативы сопровождаются границами применимости и качеством доказательств.
+- Обнаруженные противоречия не скрываются; для спорных фактов сохранены обе версии и их происхождение.
+- Пример не интерпретирован как фактический результат российского рынка.

@@ -1,0 +1,38 @@
+{
+  "document_type": "method_record",
+  "protocol_version": "0.2",
+  "case_id": "demo_b2b_saas",
+  "method_id": "M11",
+  "home_stage": "S02",
+  "status": "awaiting_data",
+  "native_result": null,
+  "selected_because": "Необходимы первичные свидетельства о реальных задачах покупателей",
+  "method_file": "methods/11_in_depth_interviews.yaml",
+  "evidence_refs": [],
+  "assumptions": [
+    "Боль клиента пока гипотетическая"
+  ],
+  "limitations": [
+    "Интервью не проводились"
+  ],
+  "data_requests": [
+    {
+      "method_id": "M11",
+      "request_id": "data_M11_interview_001",
+      "purpose": "Проверить гипотезы о задачах реальных покупателей",
+      "required_data": [
+        "Обезличенные протоколы реальных интервью",
+        "Описание ролей респондентов и критериев отбора"
+      ],
+      "collection_instructions": [
+        "Получить согласие/законное основание на обработку",
+        "Не конструировать ответы; записать реально сказанное",
+        "Удалить прямые персональные идентификаторы перед передачей"
+      ],
+      "recommended_format": "JSON/CSV/обезличенные заметки",
+      "consent_or_permission_needed": true,
+      "status": "open"
+    }
+  ],
+  "version": 1
+}

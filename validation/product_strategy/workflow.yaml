@@ -1,0 +1,113 @@
+schema_version: "0.2"
+document_type: declarative_product_strategy_workflow
+module_id: product_strategy
+module_version: "0.2.0"
+invocation: parent_agent_only
+platform_neutral: true
+requires_python: false
+requires_file_or_artifact_persistence: true
+files:
+  module_instruction: MODULE.md
+  routing: method_routing.yaml
+  handoff: handoff.yaml
+  contracts: contracts.json
+  executor: EXECUTOR.md
+  methods_directory: methods/
+  case_brief: cases/{case_id}/brief.json
+  case_state: cases/{case_id}/state.json
+  method_result: cases/{case_id}/results/methods/{method_id}.json
+  stage_result: cases/{case_id}/results/stages/{stage_number}_stage.json
+  strategy_outline: cases/{case_id}/results/product_strategy_outline.json
+  history: cases/{case_id}/history/{artifact_type}_{revision}.json
+stages:
+  order: [S01, S02, S03, S04, S05, S06, S07]
+  source_of_truth: method_routing.yaml#stages
+  require_stage_record_for_each: true
+  require_all_methods: false
+  max_stages_per_run_next_stage: 1
+  gate: next_stage_requires_parent_approve_stage
+  incomplete_stage_policy: "partial допустим с объяснением пробелов; главный агент может согласовать переход без выдумывания данных"
+method_selection:
+  route_registry: method_routing.yaml#method_registry
+  base_methods: "Выбрать применимые опорные методы из текущего этапа; при невозможности выполнения сохранить partial/неприменимость с причиной"
+  conditional_methods: "Выбрать только если конкретный вопрос способен изменить вывод; решение и причину сохранять в state.method_selection"
+  no_forced_execution: true
+  no_unbounded_iteration: true
+  analytical: "Выполнить на доступных данных; недостаток данных => partial"
+  human_research: "Нет настоящих первичных данных => awaiting_data и запрос через главного агента; не блокировать другие этапы"
+  internal_statuses_preserved: "Нативный статус содержится внутри native_result и не заменяется статусом оболочки"
+actions:
+  start_case:
+    required: [case_id, confirmed_brief_or_ref]
+    effect: "Инициализировать brief.json, state.json, ревизию 1, все семь этапов not_started; не запускать этап автоматически"
+    repeat: "Повтор с тем же request_id и той же ревизией не должен создавать второй кейс"
+  run_next_stage:
+    required: [case_id, available_state]
+    precondition: "Нет другого этапа awaiting_parent_approval; предыдущий этап accepted; если S01 — бриф подтверждён"
+    effect: "Выполнить один этап с выбранными методами, сохранить method/stage records, перевести этап в awaiting_parent_approval"
+  approve_stage:
+    required: [case_id, stage_id, parent_approval]
+    precondition: "Указанный этап ожидает согласования; родитель сообщает действительно полученное согласие пользователя по своим правилам"
+    effect: "Отметить этап accepted; открыть возможность перейти к следующему"
+  attach_human_data:
+    required: [case_id, method_id, data_artifacts]
+    precondition: "Материалы получены законно, допустимы для обработки и относятся к указанному методу"
+    effect: "Зарегистрировать сведения, продолжить метод при достаточности данных; затронутые этапы отметить needs_review, сохранить предыдущие версии"
+  update_brief:
+    required: [case_id, updated_brief]
+    effect: "Обновить подтверждённые вводные, сохранить предыдущую ревизию, отметить зависимые результаты needs_review"
+  get_status:
+    required: [case_id]
+    effect: "Только прочитать и вернуть состояние"
+  get_outline:
+    required: [case_id]
+    precondition: "Существуют записи результатов всех семи этапов, в том числе partial"
+    effect: "Агрегировать выводы уже выполненных этапов; не выдумывать новые факты; вернуть outline со статусом draft"
+method_lifecycle:
+  states: [not_selected, planned, in_progress, awaiting_data, partial, completed, not_applicable, needs_review]
+  transitions:
+    not_selected: [planned]
+    planned: [in_progress, awaiting_data, not_applicable]
+    in_progress: [partial, completed, awaiting_data, not_applicable]
+    awaiting_data: [in_progress, partial]
+    partial: [in_progress, awaiting_data, completed, needs_review]
+    completed: [needs_review]
+    not_applicable: [planned]
+    needs_review: [in_progress, partial, completed]
+  requirements:
+    awaiting_data: "data_requests непуст; ни одного вымышленного результата полевого исследования"
+    completed: "native_result присутствует, обязательные поля методики присутствуют, доказательность не преувеличена"
+    partial: "limitations/unknowns раскрывают недостающие сведения"
+stage_lifecycle:
+  states: [not_started, in_progress, awaiting_parent_approval, accepted, needs_review]
+  transitions:
+    not_started: [in_progress]
+    in_progress: [awaiting_parent_approval]
+    awaiting_parent_approval: [accepted, in_progress]
+    accepted: [needs_review]
+    needs_review: [in_progress, accepted]
+  record_statuses: [partial, completed]
+  rule: "Согласие на переход не приравнивается к доказанности выводов"
+late_human_data:
+  no_full_restart: true
+  update_only_method_and_affected_stages: true
+  preserve_history: true
+  reconfirm_if_prior_accepted_conclusion_changed: true
+  no_auto_rewrite_communication_strategy: true
+artifacts:
+  native_method_result: "Полный результат из исходной YAML, без потери обязательных полей и с исходным внутренним статусом"
+  stage_result: "Поля строго по method_routing.yaml#stages[*].required_output_fields; неизвестное = null с пояснением"
+  outline: "Каркас стратегии из семи этапов, не готовая коммуникационная стратегия"
+  evidence: "Наблюдения, расчёты, пользовательские сведения, гипотезы и сценарии различаются"
+storage:
+  mode: module_or_parent_persistence
+  if_storage_unavailable: "Вернуть артефакт в module_response.artifacts[].content, saved:false, не обещать восстановление"
+  never_commit_cases_to_repo: true
+  state_revision: "Повышать только после успешного изменения сохраняемого состояния"
+  previous_revisions: "Сохранять предыдущую версию изменяемого содержательного результата"
+errors:
+  unsupported_action: "blocked с explanation"
+  invalid_case: "blocked без создания фиктивного кейса"
+  unconfirmed_brief: "blocked + запрос согласованных вводных через parent"
+  stale_revision: "blocked; перечитать состояние; не затереть новые данные"
+  no_data_or_tool: "partial/awaiting_data с ограничением вместо вымышленных фактов"

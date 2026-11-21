@@ -1,0 +1,37 @@
+{
+  "document_type": "case_state",
+  "protocol_version": "0.2",
+  "module_id": "product_strategy",
+  "case_id": "demo_b2b_saas",
+  "revision": 1,
+  "brief_ref": "cases/demo_b2b_saas/brief.json",
+  "stage_order": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07"
+  ],
+  "stage_states": {
+    "S01": "not_started",
+    "S02": "not_started",
+    "S03": "not_started",
+    "S04": "not_started",
+    "S05": "not_started",
+    "S06": "not_started",
+    "S07": "not_started"
+  },
+  "method_states": {},
+  "method_selection": [],
+  "current_stage": "S01",
+  "pending_parent_stage": null,
+  "pending_data_requests": [],
+  "result_refs": {
+    "method_results": [],
+    "stage_results": [],
+    "outline": null
+  },
+  "last_request_id": "req_demo_001"
+}

@@ -1,0 +1,406 @@
+meta:
+  schema_version: '1.0'
+  method_id: M02
+  slug: tam_sam_som
+  title: 'Размер рынка: фактический рынок, TAM, SAM, SOM'
+  language: ru
+  version: 1.0.0
+  prepared_on: '2026-11-21'
+  method_family: Количественная рыночная оценка
+  document_status: полная методологическая спецификация; не отчет по конкретному продукту
+  editorial_license_note: Оригинальное изложение общепринятых методов; тексты SKILL.md Dean Peters не воспроизводятся
+role:
+  goal: |-
+    Развести подтвержденный оборот существующего рынка и потенциальные уровни спроса; представить воспроизводимую модель размерности рынка, доступной части и достижимых продаж в определённом горизонте с явными источниками каждого параметра.
+  questions:
+  - Каков измеренный денежный/натуральный объём определённой категории сейчас?
+  - Какова верхняя граница потенциального спроса при полной достижимости?
+  - Какую часть можно обслужить имеющимся продуктом?
+  - Что можно реалистично продать с указанными ресурсами и ограничениями?
+  applicability:
+  - Вывод цифрового продукта на рынок
+  - Решение о размере инвестиции
+  - Сопоставление продуктовых ниш
+  - Проверка экономической реалистичности гипотезы
+  not_applicable_when:
+  - Внутренний цифровой сервис без рынка внешних покупателей
+  - Нет определения категории, покупателя и единицы цены даже условно
+  mode: Самостоятельный метод; не требует выполнения других 9 методов
+  scope_boundary: |-
+    Предмет — продуктовая стратегия цифрового продукта для российского рынка. Выбор каналов продвижения, медиаплан и коммуникационные сообщения не являются результатом данного метода. Метод не принимает решений за эксперта: фиксирует варианты и их фактическую обоснованность.
+theory:
+  concepts:
+  - term: Observed market
+    meaning: Фактически совершенные продажи по согласованной категории, территории и году; не эквивалент TAM.
+  - term: TAM
+    meaning: Ограниченная и определённая моделью максимальная совокупность годового спроса для выбранной продуктовой
+      задачи.
+  - term: SAM
+    meaning: Часть TAM, которую продукт может обслужить с учётом требований, отраслей, ограничений и доступности.
+  - term: SOM
+    meaning: Достижимые продажи на заданном горизонте с проверяемыми ограничениями каналов и ресурсов.
+  - term: Top-down cross-check
+    meaning: Независимая проверка оценки через опубликованный рынок схожей категории, не замена bottom-up.
+  - term: Scenario vs evidence
+    meaning: Сценарный коэффициент допустим только под явным допущением; не превращать в наблюдаемую долю.
+  formulas:
+  - name: Натуральная верхняя база
+    expression: N_TAM = sum(non_overlapping eligible paying units)
+    units: платящие единицы
+    conditions: |-
+      Не сумма всех зарегистрированных организаций; каждая единица должна соответствовать модели оплаты.
+    interpretation: |-
+      Верхняя граница количества потенциальных покупательских единиц.
+  - name: Bottom-up денежный TAM
+    expression: TAM_year = sum_over_segments(N_s * transactions_per_year_s * net_price_per_transaction_s)
+    units: рублей/год
+    conditions: |-
+      Однородная база, оплаченная единица и цена; не учитывать налоги/скидки непоследовательно.
+    interpretation: |-
+      Расчётная потенциальная выручка при охвате всех релевантных единиц в пределах определения.
+  - name: SAM
+    expression: SAM_year = sum_over_served_segments(eligible_units_s * annual_revenue_per_unit_s)
+    units: рублей/год
+    conditions: |-
+      Не использовать долю без подтверждения пересечения фильтров.
+    interpretation: |-
+      Экономически доступная часть исходной совокупности.
+  - name: SOM снизу вверх
+    expression: SOM_year = min(qualified_leads * win_rate * realized_annual_value, deployment_capacity * realized_annual_value)
+    units: рублей/год
+    conditions: |-
+      Все множители измерены за совместимый горизонт; учитывается цикл сделки и доступная выручка в году.
+    interpretation: |-
+      Не гарантированная выручка; при неподтвержденных коэффициентах сценарий.
+input_contract:
+  mandatory:
+  - field: product_market_definition
+    definition: Категория цифрового продукта и границы решаемой задачи
+    data_type: text
+    preferred_source: Эксперт, тариф и аналоги
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  - field: unit_of_sale
+    definition: Лицензия/рабочее место/компания/месяц/транзакция/объём использования
+    data_type: text
+    preferred_source: Эксперт и проверенная бизнес-модель
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  - field: base_population_N
+    definition: Число потенциально релевантных единиц, год, территория, фильтры
+    data_type: nonnegative_integer
+    preferred_source: Паспортизованная статистика/реестр
+    if_missing: Денежный TAM не вычисляется
+  - field: annual_price_or_spend
+    definition: Цена и период на одну платящую единицу с валютой и условиями
+    data_type: money_per_unit_per_year
+    preferred_source: Проверенные тарифы, счета или сценарная гипотеза
+    if_missing: Числовая денежная оценка null; можно дать натуральную
+  - field: sam_filter_logic
+    definition: Ограничения доступности по совместимым, не перекрывающимся критериям
+    data_type: text
+    preferred_source: Исходные данные, технические и правовые требования
+    if_missing: SAM оставляется как диапазон/неизвестное
+  - field: som_capacity_model
+    definition: Проверяемая пропускная способность продаж и обслуживания, горизонт
+    data_type: text
+    preferred_source: CRM/план продаж, эксперт
+    if_missing: SOM неизвестен; не подменять долей 1–5%
+  helpful:
+  - field: competitor_market_actuals
+    definition: Рыночный оборот или выручка сопоставимых продуктовых категорий
+    data_type: text
+    preferred_source: Отчётность, отраслевые исследования
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  - field: conversion_and_retention
+    definition: Исторические конверсии, удержание, продажи и воронка
+    data_type: text
+    preferred_source: Собственные продуктовые данные
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  - field: reachable_accounts
+    definition: Список достижимых компаний или верифицированная оценка адресуемых аккаунтов
+    data_type: text
+    preferred_source: CRM и отраслевые списки
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  - field: inflation_and_fx
+    definition: Дефлятор/курс при сопоставлении разных периодов и валют
+    data_type: text
+    preferred_source: Официальные показатели
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  expert_inputs:
+  - Цена, валюта, биллинг и фактическая единица продажи
+  - Ограничения поставки и коммерческого охвата
+  - Прогнозируемые ресурсы продаж и внедрения
+  local_data_candidates:
+  - dataset_id: ru_b2b_registered_organizations_region_sector_2024
+    possible_use: Потенциальное количество организаций отдельных отраслей и регионов
+    critical_limit: Регистрация не означает действующую компанию, целевую задачу или покупательский спрос.
+    data_file_url: https://drive.google.com/file/d/1x-2zC80igUjJqly4eNQr1hokUmFCKrJ2/view
+    data_file_drive_id: 1x-2zC80igUjJqly4eNQr1hokUmFCKrJ2
+    passport_url: https://drive.google.com/file/d/13a70dRR4DG-asVNLn1s1ta7KDULoTcKe/view
+    source_publication: ROS_YEARBOOK_2025
+    years_in_catalog: null
+    population_in_catalog: null
+    denominator_in_catalog: null
+    quality_status_in_catalog: verified_aggregates_official_pdf_text; independent_binary_pdf_not_archived
+  - dataset_id: ru_b2b_active_sole_proprietors_industry_2024
+    possible_use: Проверка возможного ИП-сегмента
+    critical_limit: Не смешивать показатели индивидуальных предпринимателей с зарегистрированными организациями.
+    data_file_url: https://drive.google.com/file/d/1DlLorFly0z_QGF0xNVWPyixZedkrVlQ5/view
+    data_file_drive_id: 1DlLorFly0z_QGF0xNVWPyixZedkrVlQ5
+    passport_url: https://drive.google.com/file/d/1-Eyuva47wvdu-Ls-OySnlyCEiMeTCCuA/view
+    source_publication: ROS_YEARBOOK_2025
+    years_in_catalog: null
+    population_in_catalog: null
+    denominator_in_catalog: null
+    quality_status_in_catalog: official_pdf_text_transcribed
+  - dataset_id: ru_b2b_small_enterprise_digital_by_industry_2024
+    possible_use: Прокси технологической готовности малых предприятий
+    critical_limit: Не переносить долю обследованных по отрасли на несопоставимую общую совокупность.
+    data_file_url: https://drive.google.com/file/d/1ITYCYdTh5OMCbgoaWAovg9blrToflt5B/view
+    data_file_drive_id: 1ITYCYdTh5OMCbgoaWAovg9blrToflt5B
+    passport_url: https://drive.google.com/file/d/1wFHEoM_KQQibzYFwdGo7Ab53RnBkj1_b/view
+    source_publication: HSE_ISEK_2026
+    years_in_catalog: null
+    population_in_catalog: null
+    denominator_in_catalog: null
+    quality_status_in_catalog: official_HSE_screenshot_checked
+  - dataset_id: ru_b2b_organizations_digital_expenditure_2019_2024
+    possible_use: Контекст расходов организаций на цифровизацию
+    critical_limit: Включает внутренние и внешние расходы; не равно объёму продаж SaaS.
+    data_file_url: https://drive.google.com/file/d/15JA8jg-FDRZacwRtxjKocByHkrQpsy_b/view
+    data_file_drive_id: 15JA8jg-FDRZacwRtxjKocByHkrQpsy_b
+    passport_url: https://drive.google.com/file/d/1k-4HItdItk8E5hexnaVOhTiz6lkIldjs/view
+    source_publication: HSE_ISEK_2026
+    years_in_catalog: null
+    population_in_catalog: null
+    denominator_in_catalog: null
+    quality_status_in_catalog: official_HSE_screenshot_checked
+  - dataset_id: RU_DIG_007
+    possible_use: Общий контекст B2C покупок
+    critical_limit: Покупки в интернете не тождественны оплате конкретного сервиса.
+    data_file_url: https://drive.google.com/file/d/18IwJnzWDIPqarAU117cm2YoE7TLRPt4K/view
+    data_file_drive_id: 18IwJnzWDIPqarAU117cm2YoE7TLRPt4K
+    passport_url: https://drive.google.com/file/d/1mDfRhoQAjU8oup7uZZaeabJAIEClbLTJ/view
+    source_publication: https://issek.hse.ru/mirror/pubs/share/1122445658.pdf
+    years_in_catalog:
+    - 2024
+    population_in_catalog: Лица 15+ соответствующего пола или возраста и типа местности
+    denominator_in_catalog: Численность соответствующей возрастной/половой группы в типе местности
+    quality_status_in_catalog: published_hse_table_reproducing_rosstat_data
+  - dataset_id: RU-POP-AGE-SEX-2024-ROS-001
+    possible_use: Предельные демографические совокупности
+    critical_limit: Не число пользователей конкретного продукта.
+    data_file_url: https://drive.google.com/file/d/1ZbLK2vAtUy3gExMXClrenRksDejrT4dA/view
+    data_file_drive_id: 1ZbLK2vAtUy3gExMXClrenRksDejrT4dA
+    passport_url: null
+    source_publication: https://www.rosstat.gov.ru/storage/mediabank/Soc_pol_2025.pdf
+    years_in_catalog: '2024-01-01'
+    population_in_catalog: null
+    denominator_in_catalog: null
+    quality_status_in_catalog: null
+  - dataset_id: ru_b2b_enterprise_turnover_selected_industries_2022_2024
+    possible_use: Макроэкономический ориентир отдельных отраслей
+    critical_limit: Оборот отрасли не является IT-бюджетом компаний.
+    data_file_url: https://drive.google.com/file/d/1zeJAy4kQpx1KWfd_bxjse-akDO-inOo1/view
+    data_file_drive_id: 1zeJAy4kQpx1KWfd_bxjse-akDO-inOo1
+    passport_url: https://drive.google.com/file/d/1_xMBt2zBcu97365Ji2cvcPQ4U5jR02Xf/view
+    source_publication: ROS_YEARBOOK_2025
+    years_in_catalog: null
+    population_in_catalog: null
+    denominator_in_catalog: null
+    quality_status_in_catalog: official_pdf_text_transcribed_selected_rows
+  external_data_candidates:
+  - 'ФНС МСП/Росстат: только совместимые единицы учёта'
+  - Отчётность аналогов и опубликованные тарифы (фактические условия)
+  - Результаты продаж и финансовая отчётность компании-эксперта
+  data_use_rule: |-
+    Указанные наборы «Рыночного агента» являются кандидатами, а не готовыми значениями. По каждому необходимы доступ к CSV, паспорт, первоисточник, проверка охвата, года и знаменателя; использовать только действительно совместимые наблюдения. Статистика 2020–2024 и публикации 2025 года не должна представляться как измерение 2026 года.
+procedure:
+- step: 02.1 Измеряемая категория
+  procedure: |-
+    Зафиксировать продукт, единицу платящего спроса, территорию, год, режим продажи и рассматриваемый горизонт SOM. Составить список включённых/исключённых продуктов. Отдельно назвать «фактический рынок» и «потенциальный рынок».
+  verification: |-
+    Если категория не соотносится с опубликованной статистикой, не выдавать широкий ИТ-рынок за рынок продукта.
+  output: market_scope
+- step: 02.2 Факт продаж
+  procedure: |-
+    По возможности получить наблюдаемый объём продаж релевантного класса ПО/услуги и правила его расчёта. Различить выручку, оплаченные контракты, бюджеты и отраслевые расходы, учесть НДС при сравнении цен.
+  verification: |-
+    Выручка поставщиков и бюджеты покупателей не должны механически складываться; проверять выборку и отсутствие двойного счёта.
+  output: observed_market
+- step: 02.3 Bottom-up TAM
+  procedure: |-
+    Определить совместимую численность релевантных платящих единиц N, частоту приобретения и годовую плату. Если продукт продаётся на рабочие места, N — не компании: нужно отдельно оценить количество лицензируемых мест на компанию.
+  verification: |-
+    Не применять цену без единицы «на что, за какой срок». Не использовать национальную долю при отсутствии совпадающего знаменателя.
+  output: tam_model
+- step: 02.4 SAM
+  procedure: |-
+    Наложить измеримые ограничения доступности: сектор, тип организации, техническая совместимость, география, требования закупок и локализации. Предпочитать прямой подсчёт пересечения критериев; при отсутствии совместного распределения получить верхние/нижние границы или оставить null.
+  verification: |-
+    Не перемножать независимые на вид коэффициенты доступности без статистического основания независимости. Контролировать SAM <= TAM на сопоставимой основе.
+  output: sam_model
+- step: 02.5 SOM
+  procedure: |-
+    Описать цепочку «адресуемые аккаунты → контакты → квалифицированные лиды → контракты → активные/оплаченные». Использовать наблюдаемые показатели либо диапазоны гипотез с объяснением; ограничить оценку продажами, мощностями внедрения, поддержкой и сроком.
+  verification: |-
+    При отсутствии проверенной пропускной способности выдавать модель с неизвестными параметрами, а не «возьмём 3% SAM».
+  output: som_capacity_model
+- step: 02.6 Независимая проверка
+  procedure: |-
+    Сопоставить bottom-up с реальной выручкой сравнимых решений, отраслевым исследованием или агрегированными закупками. Различать сегменты, лицензии и периоды. Зафиксировать расхождение, не усреднять несовместимые рынки.
+  verification: |-
+    При существенном расхождении расследовать несовпадающую категорию/цену/базу, не скрывать расхождение.
+  output: cross_check
+- step: 02.7 Сценарии и чувствительность
+  procedure: |-
+    Для 2–4 наиболее неопределённых параметров сделать консервативный, базовый и оптимистичный сценарии; рассчитать диапазон, отдельно показать исходные факты и гипотезы. Проверить влияние каждого входа на результат.
+  verification: |-
+    Сценарии не являются вероятностным прогнозом без калибровки вероятностей.
+  output: scenarios
+- step: 02.8 Аналитический вывод
+  procedure: |-
+    Вернуть натуральные и денежные диапазоны, отдельно зафиксировать невозможность оценки отсутствующих уровней. Показать источники, формулы, ограничения и требуемые измерения для уточнения.
+  verification: |-
+    Проверить сравнимость: TAM >= SAM >= SOM только при одинаковом горизонте, валюте, цене и знаменателе.
+  output: market_size_result
+russian_digital_market: |-
+  Российские численности компаний имеют разную правовую и статистическую природу: ЕГРЮЛ, МСП, статистические организации, ИП. Отечественная специфика ПО: on-prem, подписка, бессрочные лицензии, интеграционные работы и НДС; государственный спрос часто учитывается через отдельные процедуры закупок. Для оценок учитывать курс/инфляцию, ограничения доступа к зарубежным решениям и инфраструктуре, требования информационной безопасности, фактическую возможность поставки. Показатели затрат организаций на цифровые технологии НЕ равны доходу российского рынка SaaS: включают собственные работы и иные статьи.
+interpretation_rules: |-
+  TAM — модель потенциальной выручки по определённой задаче, а не официальный размер рынка. SAM — достижимая с технической стороны часть TAM, SOM — результат ресурсно ограниченной модели на конкретный срок. Любая граница может быть неизвестной при отсутствии данных; лучше корректный null с формулой, чем произвольный миллион.
+quality_control:
+  global_data_checks:
+  - Проверять существование исходного файла, dataset_id, паспорт и версию; каталог сам по себе не подтверждает значения.
+  - 'Сопоставлять единицу наблюдения: компания, ИП, субъект МСП, домохозяйство, человек или пользователь 15+.'
+  - Проверять дату, территорию, классификатор, числитель, знаменатель и охват выборки перед соединением таблиц.
+  - При суммировании регионов исключать пересечения территорий и вложенные автономные округа; предпочитать национальный
+    итог издателя.
+  - Не объединять доли из разных генеральных совокупностей без отдельного, проверяемого обоснования.
+  - Отличать отсутствие данных от числового нуля; не восстанавливать несуществующие совместные разрезы.
+  - Помечать синтетические примеры как учебные, выводы и оценки — по уровню подтверждения.
+  - Не утверждать существование работающего внешнего коннектора только потому, что источник описан в каталоге.
+  method_specific:
+  - У всех сумм есть валюта, год, налоговая база и единица продажи
+  - Для каждого коэффициента отмечен факт/оценка/сценарий
+  - Проверено отсутствие двойного счёта на пересекающихся территориях/сегментах
+  - Чувствительность показана хотя бы по N, цене, конверсии/охвату
+  - Неизвестный SOM не подставлен автоматически
+  - При совместимости сопоставления соблюдается TAM >= SAM >= SOM
+  anti_patterns:
+  - ТAM = все компании × средний чек без определения покупателя
+  - SAM = TAM × произвольный процент из экспертного впечатления
+  - SOM = 1% рынка без модели продаж
+  - Цена за пользователя умножена на число компаний
+  - Условный годовой чек ошибочно сравнивается с месячным оборотом
+  - Внутренние расходы организаций приравнены к продажам внешних поставщиков
+  stop_if: 'Не выводить численное заключение, если требуется отсутствующая генеральная совокупность, база пересчета,
+    существенный коэффициент или независимое подтверждение: пометить результат partial/hypothesis_only/insufficient_data.'
+structured_analytical_result:
+  note: Схема результата — перечень логических полей, не самостоятельная JSON Schema; значения формируются при реальном
+    применении.
+  top_level_required:
+  - method_id
+  - case_id
+  - analysis_date
+  - product_context
+  - status
+  - inputs_used
+  - outputs
+  - evidence_register
+  - assumptions_and_gaps
+  - interpretation
+  - quality_checks
+  - expert_decision_required
+  method_fields:
+  - field: scope
+    type: object
+    required: true
+  - field: observed_market
+    type: object|null
+    required: true
+  - field: tam
+    type: '{natural_value,monetary_value,unit,period,formula,inputs,evidence,scenario}'
+    required: true
+  - field: sam
+    type: '{eligible_population,filters,lower_bound,upper_bound,monetary_value,missing_cross_tabs}'
+    required: true
+  - field: som
+    type: '{horizon,capacity_assumptions,conversion_assumptions,model,scenarios,monetary_value}'
+    required: true
+  - field: sensitivity_analysis
+    type: array[parameter,variation,effect]
+    required: true
+  - field: cross_check
+    type: object|null
+    required: true
+  evidence_standard:
+    record_type: evidence
+    required_fields:
+    - 'evidence_id: уникальный ID'
+    - 'claim_or_parameter_id: идентификатор вывода/параметра'
+    - 'evidence_type: observed_fact | computed | interpretation | assumption | expert_assertion'
+    - 'source_title: первоисточник или файл эксперта'
+    - 'source_url_or_file_id: прямой путь/ID либо null с причиной'
+    - 'dataset_id_and_version: если использован локальный набор'
+    - 'date_observed_or_published: исходный год/дата'
+    - 'retrieved_at: дата обращения, если внешняя веб-страница'
+    - 'geography_and_population: географический охват, совокупность и знаменатель'
+    - 'value_unit_formula_filters: значение, единица, формула и фильтры по возможности'
+    - 'limitations: методические ограничения, в том числе наличие/отсутствие независимой проверки'
+    integrity_rule: |-
+      Ни один существенный численный вывод не должен существовать только как текст без ссылки на исходные показатели; предположения, суждения эксперта и наблюдаемые факты не являются одним типом доказательства. Нельзя присваивать статистический статус маркетинговым догадкам. Нельзя выдумывать цену, долю рынка, интервью, цитату, количественную частоту потребности или конверсию.
+  status_values:
+  - value: complete_with_evidence
+    meaning: все существенные шаги проведены; источники и ограничения доступны
+  - value: partial
+    meaning: проведена подтвержденная часть; неопределенности и пробелы указаны
+  - value: hypothesis_only
+    meaning: получена проверяемая модель или гипотеза, но нет необходимых наблюдений
+  - value: insufficient_data
+    meaning: без ключевых данных выполнение метода недостоверно
+  - value: not_applicable
+    meaning: метод неприменим к задаче; причина записана
+  serialization_policy: Числа как числа, не строки; отдельно валюты, периоды, единицы, знаменатели; null при неизвестном
+    значении; дата и URL исходного источника; никаких фабрикованных данных
+worked_example:
+  is_synthetic: true
+  case: Условный B2B SaaS по обслуживанию оборудования; все числа учебные
+  inputs:
+  - 1 000 условно релевантных платящих организаций
+  - 120 000 руб. в год за организацию
+  - Из отдельного прямого обследования — 400 организаций проходят условия продукта
+  - У отдела продаж 100 квалифицированных лидов за год; наблюдаемая конверсия 20%; внедрение допускает 30 новых клиентов
+  procedure:
+  - TAM = 1 000 × 120 000 = 120 000 000 руб./год.
+  - SAM = 400 × 120 000 = 48 000 000 руб./год.
+  - Сделки = min(100 × 0.20, 30) = 20; SOM = 20 × 120 000 = 2 400 000 руб./год.
+  - Если конверсия не подтверждена, SOM должен стать сценарным, а не достоверным.
+  output: Модель рынка с исходными фактами, формулами и отдельной моделью продаж; никакие 1 000 и 400 не взяты из реальной
+    базы.
+  not_real_data_warning: Статистические числа и коэффициенты вымышлены исключительно для объяснения процедуры.
+sources:
+- title: Dean Peters, TAM/SAM/SOM Calculator skill
+  url: https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/tam-sam-som-calculator/SKILL.md
+  role: Референс раздельного расчета и аналитического обоснования
+  access: открытая страница / библиографическая ссылка
+- title: Росстат, статистика науки, инноваций и цифровых технологий
+  url: https://rosstat.gov.ru/statistics/science
+  role: Статистика России; проверять применимость конкретной таблицы
+  access: открытая страница / библиографическая ссылка
+- title: ФНС, Единый реестр субъектов малого и среднего предпринимательства
+  url: https://rmsp.nalog.ru/
+  role: Внешние данные о МСП; реестровая запись не означает покупательский спрос
+  access: открытая страница / библиографическая ссылка
+- title: Каталог исследовательской базы «Рыночный агент»
+  url: https://drive.google.com/drive/folders/1Y9ejj2e_TAgy0GJlrVgUbY9Z9Ab47oIy
+  role: Файлы проекта; паспорта каждого набора обязательны
+  access: открытая страница / библиографическая ссылка
+- title: Dean Peters, Product-Manager-Skills licensing
+  url: https://github.com/deanpeters/Product-Manager-Skills/blob/main/LICENSING.md
+  role: Лицензионные ограничения на прямое копирование
+  access: открытая страница / библиографическая ссылка
+completion_conditions:
+- Каждый требуемый показатель имеет определение и источник либо явно обозначен неизвестным.
+- Выходные поля заполнены или содержат null и reason_missing; исключены неподтвержденные значения.
+- Решение или альтернативы сопровождаются границами применимости и качеством доказательств.
+- Обнаруженные противоречия не скрываются; для спорных фактов сохранены обе версии и их происхождение.
+- Пример не интерпретирован как фактический результат российского рынка.
