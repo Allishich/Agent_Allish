@@ -1,0 +1,376 @@
+meta:
+  schema_version: '1.0'
+  method_id: M07
+  slug: business_model_canvas
+  title: Business Model Canvas — логика создания, доставки и присвоения ценности
+  language: ru
+  version: 1.0.0
+  prepared_on: '2026-11-21'
+  method_family: Структурный анализ бизнес-модели
+  document_status: полная методологическая спецификация; не отчет по конкретному продукту
+  editorial_license_note: Оригинальное изложение общепринятых методов; тексты SKILL.md Dean Peters не воспроизводятся
+role:
+  goal: |-
+    Описать и подвергнуть проверке девять взаимосвязанных компонентов бизнес-модели цифрового продукта: целевые группы, ценность, взаимодействие, способ доставки, выручку, ресурсы, операции, партнёров и затраты. Выявить противоречия между обещанной ценностью, моделью поставки и экономикой без подмены Canvas финансовым прогнозом.
+  questions:
+  - Кто покупает продукт, кто его использует и за что платит?
+  - Какое предложение и схема поставки позволяют обслуживать рынок?
+  - Какие зависимости и издержки критичны?
+  - Какие элементы модели противоречат друг другу или не подтверждены?
+  applicability:
+  - Новая цифровая бизнес-модель
+  - Перевод лицензии на подписку
+  - Выбор SaaS/on-prem/гибрид
+  - Пересмотр роли внедрения и поддержки
+  - Выход в корпоративный сегмент
+  not_applicable_when:
+  - Пользователи не определены даже гипотетически
+  - Требуется только медиа-стратегия без оценки продукта и бизнес-операций
+  mode: Самостоятельный метод; не требует выполнения других 9 методов
+  scope_boundary: |-
+    Предмет — продуктовая стратегия цифрового продукта для российского рынка. Выбор каналов продвижения, медиаплан и коммуникационные сообщения не являются результатом данного метода. Метод не принимает решений за эксперта: фиксирует варианты и их фактическую обоснованность.
+theory:
+  concepts:
+  - term: Customer Segments
+    meaning: Роли и группы покупателей; для B2B разделять пользователи, экономические покупатели, партнеры и интеграторы.
+  - term: Value Propositions
+    meaning: Результаты и преимущества по сегменту, а не абстрактная «платформа будущего».
+  - term: Channels
+    meaning: В этой методике — механизм доставки, продажи, внедрения и поддержки продукта, не рекламные каналы и контент.
+  - term: Customer Relationships
+    meaning: Self-service, сопровождение, сервисные контракты, техническая поддержка и удержание.
+  - term: Revenue Streams
+    meaning: Подписка, разовая лицензия, платеж за активность/место, внедрение, поддержка, API usage.
+  - term: Key Resources
+    meaning: Код, инфраструктура, данные, команда, права доступа, патенты/лицензии.
+  - term: Key Activities
+    meaning: Разработка, внедрение, сопровождение, мониторинг доступности, безопасность.
+  - term: Key Partners
+    meaning: Облако, дистрибьюторы, интеграторы, правообладатели компонентов, API/данные.
+  - term: Cost Structure
+    meaning: Разработка, облако, техническая поддержка, внедрение, хранение, продажи и иные расходы.
+  formulas:
+  - name: Годовая повторяющаяся выручка
+    expression: ARR = sum(active_paid_subscriptions_i * net_annual_price_i)
+    units: руб./год
+    conditions: |-
+      Только повторяющиеся доходы; разовые внедрения и невозобновляемые лицензии отдельно.
+    interpretation: |-
+      Расчетный run-rate или договорная повторяющаяся выручка в зависимости от формулировки; определения фиксировать.
+  - name: Месячная валовая прибыль
+    expression: gross_profit_month = monthly_revenue - attributable_direct_service_costs
+    units: руб./месяц
+    conditions: |-
+      Сопоставимый месяц, определить прямые расходы; общие офисные расходы не называются себестоимостью без учетной политики.
+    interpretation: |-
+      Базовая проверка, не полноценный отчет о прибыли.
+  - name: Себестоимость на клиента
+    expression: cost_per_active_account = direct_service_costs / average_active_accounts
+    units: руб./аккаунт/период
+    conditions: |-
+      Клиенты и затраты в одном периоде; учитывать диапазон нагрузок и тарифы инфраструктуры.
+    interpretation: |-
+      Драйвер масштабирования модели; нельзя переносить между разными архитектурами без проверки.
+input_contract:
+  mandatory:
+  - field: product_value_and_user
+    definition: Описание цифрового продукта, отдельные покупатель и пользователь
+    data_type: text
+    preferred_source: Эксперт и продуктовая документация
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  - field: revenue_mechanism
+    definition: За что и кто платит; цена, период, единица, налоговая база
+    data_type: text
+    preferred_source: Тарифы, контракты, эксперт
+    if_missing: Модель монетизации — только гипотеза
+  - field: delivery_model
+    definition: SaaS, API, on-prem, гибрид, сервис с внедрением
+    data_type: text
+    preferred_source: Архитектура и операционная модель
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  - field: nine_canvas_elements
+    definition: Девять блоков с описанием известных фактов и допущений
+    data_type: object
+    preferred_source: Эксперт, документы, публичные условия
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  helpful:
+  - field: direct_unit_costs
+    definition: Себестоимость на пользователя/клиента/запрос и ее компоненты
+    data_type: text
+    preferred_source: Финансовые и инфраструктурные логи
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  - field: customer_process
+    definition: Закупочные роли, срок сделки, переход, контракт, сопровождение
+    data_type: text
+    preferred_source: CRM, интервью
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  - field: partner_terms
+    definition: Договоры, ограничения API, реселлерские комиссии, облачные тарифы
+    data_type: text
+    preferred_source: Условия провайдеров, контракты
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  - field: churn_and_expansion
+    definition: Фактическое удержание и выручка по аккаунту
+    data_type: text
+    preferred_source: Финансовая и продуктовая аналитика
+    if_missing: Зафиксировать отсутствие; не подменять догадкой
+  expert_inputs:
+  - Тарифы и продуктовая комплектация
+  - Доступные ресурсы команды и инфраструктуры
+  - Структура выручки и затрат — факты либо гипотезы
+  - Схема внедрения, продаж и поддержки
+  local_data_candidates:
+  - dataset_id: ru_b2b_small_micro_industry_employment_turnover_2024
+    possible_use: Контекст размера и оборота компаний для модели сегментов
+    critical_limit: Денежный оборот компаний не определяет IT-бюджет и WTP.
+    data_file_url: https://drive.google.com/file/d/1IhJ5G4BYF8aF_l6HiEDhLveojUtWI9RF/view
+    data_file_drive_id: 1IhJ5G4BYF8aF_l6HiEDhLveojUtWI9RF
+    passport_url: https://drive.google.com/file/d/16toM7n9bSaSuXjUYJk_pQjTRHS195_UE/view
+    source_publication: ROS_YEARBOOK_2025
+    years_in_catalog: null
+    population_in_catalog: null
+    denominator_in_catalog: null
+    quality_status_in_catalog: official_pdf_text_transcribed
+  - dataset_id: ru_b2b_organizations_digital_expenditure_2019_2024
+    possible_use: Общие тенденции затрат организаций на цифровые технологии
+    critical_limit: Не выручка конкретной SaaS категории; внутренние расходы составляют часть суммы.
+    data_file_url: https://drive.google.com/file/d/15JA8jg-FDRZacwRtxjKocByHkrQpsy_b/view
+    data_file_drive_id: 15JA8jg-FDRZacwRtxjKocByHkrQpsy_b
+    passport_url: https://drive.google.com/file/d/1k-4HItdItk8E5hexnaVOhTiz6lkIldjs/view
+    source_publication: HSE_ISEK_2026
+    years_in_catalog: null
+    population_in_catalog: null
+    denominator_in_catalog: null
+    quality_status_in_catalog: official_HSE_screenshot_checked
+  - dataset_id: ru_b2b_small_enterprise_digital_by_industry_2024
+    possible_use: Фон готовности малых предприятий по секторам
+    critical_limit: Не свидетельствует о реальной модели доставки и цене.
+    data_file_url: https://drive.google.com/file/d/1ITYCYdTh5OMCbgoaWAovg9blrToflt5B/view
+    data_file_drive_id: 1ITYCYdTh5OMCbgoaWAovg9blrToflt5B
+    passport_url: https://drive.google.com/file/d/1wFHEoM_KQQibzYFwdGo7Ab53RnBkj1_b/view
+    source_publication: HSE_ISEK_2026
+    years_in_catalog: null
+    population_in_catalog: null
+    denominator_in_catalog: null
+    quality_status_in_catalog: official_HSE_screenshot_checked
+  - dataset_id: RU_DIG_007
+    possible_use: B2C-фон онлайн-платежей/заказов
+    critical_limit: Не число подписок конкретного сервиса.
+    data_file_url: https://drive.google.com/file/d/18IwJnzWDIPqarAU117cm2YoE7TLRPt4K/view
+    data_file_drive_id: 18IwJnzWDIPqarAU117cm2YoE7TLRPt4K
+    passport_url: https://drive.google.com/file/d/1mDfRhoQAjU8oup7uZZaeabJAIEClbLTJ/view
+    source_publication: https://issek.hse.ru/mirror/pubs/share/1122445658.pdf
+    years_in_catalog:
+    - 2024
+    population_in_catalog: Лица 15+ соответствующего пола или возраста и типа местности
+    denominator_in_catalog: Численность соответствующей возрастной/половой группы в типе местности
+    quality_status_in_catalog: published_hse_table_reproducing_rosstat_data
+  external_data_candidates:
+  - ФНС и Росстат для границ групп клиентов
+  - Публичные тарифы и условия сопоставимых отечественных решений
+  - Технические условия облака, баз данных, API, интеграции
+  - Требования отдельных заказчиков к модели установки
+  data_use_rule: |-
+    Указанные наборы «Рыночного агента» являются кандидатами, а не готовыми значениями. По каждому необходимы доступ к CSV, паспорт, первоисточник, проверка охвата, года и знаменателя; использовать только действительно совместимые наблюдения. Статистика 2020–2024 и публикации 2025 года не должна представляться как измерение 2026 года.
+procedure:
+- step: 07.1 Определить модель
+  procedure: |-
+    Зафиксировать продукт, сегменты, покупателя, пользователя, рынок, дату и стадию продукта. Для отдельных редакций или сегментов допустимы разные модели — не сводить в один Canvas несовместимые SaaS/B2G/B2C процессы.
+  verification: |-
+    Есть единица монетизации и понятная граница бизнеса; текущие факты отделены от планов.
+  output: model_context
+- step: 07.2 Клиенты и ценность
+  procedure: |-
+    Описать Customer Segments и Value Propositions. Для каждой пары сегмент–ценность указать задачу, результат, альтернативу и доказательство. Отличать пользователя от платящего заказчика.
+  verification: |-
+    Не описывать ценность как список функциональности без исхода для клиента.
+  output: customer_value_pairs
+- step: 07.3 Доставка и отношения
+  procedure: |-
+    Установить Channels как реальные процессы продажи, внедрения, предоставления доступа и обслуживания; Customer Relationships как поддержку, сопровождение и цикл продления. Не проектировать рекламные кампании.
+  verification: |-
+    Проверить, что модель self-service совместима с требованиями внедрения и согласования закупки.
+  output: service_and_relationships
+- step: 07.4 Денежные потоки
+  procedure: |-
+    Построить Revenue Streams по каждому сегменту: за что, как часто, в каких единицах, при каких правилах выставления счета. Разделить подписку, лицензии, внедрение и поддержку, скидки, сезонность.
+  verification: |-
+    Не складывать MRR и разовые внедренческие платежи как однородный показатель.
+  output: revenue_mechanisms
+- step: 07.5 Операционная основа
+  procedure: |-
+    Указать Key Resources, Key Activities, Key Partners с критичностью и заменяемостью. Проверить владение данными, зависимость от инфраструктуры и право эксплуатации компонента.
+  verification: |-
+    Зависимость от одного провайдера нельзя маскировать общим словом «партнеры».
+  output: operational_model
+- step: 07.6 Издержки
+  procedure: |-
+    Составить Cost Structure: фиксированные и переменные расходы, инфраструктура, внедрение, поддержка, лицензии сторонних компонентов, продажи и безопасность. Назвать драйверы затрат, не придумывая величины.
+  verification: |-
+    Критически важно отделить стоимость разработки продукта от себестоимости обслуживания нового клиента.
+  output: cost_drivers
+- step: 07.7 Проверить связность
+  procedure: |-
+    Проследить цепочку: ценность → покупатель → предложение → доставка → поступление денег → операционные ресурсы → себестоимость. Выявить невыполнимые обещания и конфликтующие предпосылки.
+  verification: |-
+    Canvas с девятью заполненными клетками не считается проверенным, если цепочка ресурсов и денег не связана.
+  output: consistency_gaps
+- step: 07.8 Варианты модели
+  procedure: |-
+    Если существует выбор — сравнить 2–3 модели (подписка, лицензия, hybrid) по допущениям, рискам и требованиям к тестам. Если выбор уже сделан, сформировать узкие проверки его жизнеспособности.
+  verification: |-
+    Не присваивать финансовый ROI без достаточных данных; получить сценарную расчетную модель с missing параметрами.
+  output: model_alternatives
+- step: 07.9 Итог и требования к данным
+  procedure: |-
+    Вернуть все девять блоков с фактами и unknown, карту зависимостей, проверки совместимости и гипотезы, способные изменить модель. Эксперт подтверждает выбор, а не метод автоматически.
+  verification: |-
+    Полнота описания не равна коммерческой жизнеспособности; статус решения должен это отражать.
+  output: business_model_result
+russian_digital_market: |-
+  Для цифрового продукта в России наряду с SaaS встречаются on-prem и смешанные модели, где выручка от внедрения и кастомизации существенна. Для отдельных клиентов имеют значение отечественные инфраструктура и стек, учётные системы, условия хранения и обработки данных, информационная безопасность и специфика закупок. Правовую применимость проверять к категории продукта и данным конкретного заказчика. В финансовой части не смешивать ежемесячную подписку, бессрочную лицензию и стоимость человеко-дней внедрения; при необходимости учитывать НДС, инфляцию и курс раздельно.
+interpretation_rules: |-
+  Canvas — карта текущих фактов и структурных гипотез, а не автоматический бизнес-план. Его задача выявить причинно связанную модель работы. Даже при заполненных девяти блоках нельзя утверждать положительную маржу или наличие рынка без показателей затрат и продаж. Каналы здесь описывают доставку и коммерческий процесс, а не коммуникационную стратегию коллеги.
+quality_control:
+  global_data_checks:
+  - Проверять существование исходного файла, dataset_id, паспорт и версию; каталог сам по себе не подтверждает значения.
+  - 'Сопоставлять единицу наблюдения: компания, ИП, субъект МСП, домохозяйство, человек или пользователь 15+.'
+  - Проверять дату, территорию, классификатор, числитель, знаменатель и охват выборки перед соединением таблиц.
+  - При суммировании регионов исключать пересечения территорий и вложенные автономные округа; предпочитать национальный
+    итог издателя.
+  - Не объединять доли из разных генеральных совокупностей без отдельного, проверяемого обоснования.
+  - Отличать отсутствие данных от числового нуля; не восстанавливать несуществующие совместные разрезы.
+  - Помечать синтетические примеры как учебные, выводы и оценки — по уровню подтверждения.
+  - Не утверждать существование работающего внешнего коннектора только потому, что источник описан в каталоге.
+  method_specific:
+  - Есть девять блоков с пометкой степени подтверждения
+  - Проверена логика сегмент → ценность → деньги → доставка → затраты
+  - В разделе выручки единицы времени и оплаты совместимы
+  - Критические партнерские зависимости названы конкретно
+  - Экономические показатели отсутствуют либо вычислены по проверенным входам
+  - Каналы рекламного продвижения не подменяют операционные каналы доставки
+  anti_patterns:
+  - Заполнены девять блоков без связей между ними
+  - Вся выручка названа ARR, включая внедрение
+  - Внедрение и поддержка заявлены бесплатными без учёта затрат
+  - Расходы по облаку забыты при usage-based модели
+  - Смешение покупателей, пользователей, интеграторов
+  - Пустые финансовые поля скрыты произвольными «рыночными» значениями
+  stop_if: 'Не выводить численное заключение, если требуется отсутствующая генеральная совокупность, база пересчета,
+    существенный коэффициент или независимое подтверждение: пометить результат partial/hypothesis_only/insufficient_data.'
+structured_analytical_result:
+  note: Схема результата — перечень логических полей, не самостоятельная JSON Schema; значения формируются при реальном
+    применении.
+  top_level_required:
+  - method_id
+  - case_id
+  - analysis_date
+  - product_context
+  - status
+  - inputs_used
+  - outputs
+  - evidence_register
+  - assumptions_and_gaps
+  - interpretation
+  - quality_checks
+  - expert_decision_required
+  method_fields:
+  - field: canvas_blocks
+    type: object{customer_segments,value_propositions,channels,customer_relationships,revenue_streams,key_resources,key_activities,key_partners,cost_structure}
+    required: true
+  - field: segment_value_links
+    type: array[object]
+    required: true
+  - field: revenue_models
+    type: array[object]
+    required: true
+  - field: cost_drivers
+    type: array[object]
+    required: true
+  - field: critical_dependencies
+    type: array[object]
+    required: true
+  - field: consistency_findings
+    type: array[object]
+    required: true
+  - field: business_model_options
+    type: array[object]
+    required: true
+  evidence_standard:
+    record_type: evidence
+    required_fields:
+    - 'evidence_id: уникальный ID'
+    - 'claim_or_parameter_id: идентификатор вывода/параметра'
+    - 'evidence_type: observed_fact | computed | interpretation | assumption | expert_assertion'
+    - 'source_title: первоисточник или файл эксперта'
+    - 'source_url_or_file_id: прямой путь/ID либо null с причиной'
+    - 'dataset_id_and_version: если использован локальный набор'
+    - 'date_observed_or_published: исходный год/дата'
+    - 'retrieved_at: дата обращения, если внешняя веб-страница'
+    - 'geography_and_population: географический охват, совокупность и знаменатель'
+    - 'value_unit_formula_filters: значение, единица, формула и фильтры по возможности'
+    - 'limitations: методические ограничения, в том числе наличие/отсутствие независимой проверки'
+    integrity_rule: |-
+      Ни один существенный численный вывод не должен существовать только как текст без ссылки на исходные показатели; предположения, суждения эксперта и наблюдаемые факты не являются одним типом доказательства. Нельзя присваивать статистический статус маркетинговым догадкам. Нельзя выдумывать цену, долю рынка, интервью, цитату, количественную частоту потребности или конверсию.
+  status_values:
+  - value: complete_with_evidence
+    meaning: все существенные шаги проведены; источники и ограничения доступны
+  - value: partial
+    meaning: проведена подтвержденная часть; неопределенности и пробелы указаны
+  - value: hypothesis_only
+    meaning: получена проверяемая модель или гипотеза, но нет необходимых наблюдений
+  - value: insufficient_data
+    meaning: без ключевых данных выполнение метода недостоверно
+  - value: not_applicable
+    meaning: метод неприменим к задаче; причина записана
+  serialization_policy: Числа как числа, не строки; отдельно валюты, периоды, единицы, знаменатели; null при неизвестном
+    значении; дата и URL исходного источника; никаких фабрикованных данных
+worked_example:
+  is_synthetic: true
+  case: 'Условная система учета заявок: SaaS vs on-prem'
+  inputs:
+  - 'SaaS: 9 000 руб./мес. за компанию — предположение'
+  - 'On-prem: 180 000 руб. бессрочно + отдельно внедрение — предположение'
+  - Вариант SaaS требует облака и службы поддержки, вариант on-prem требует инсталляции
+  procedure:
+  - Дать отдельные девять блоков для двух моделей, поскольку операционные ресурсы и выручка разные.
+  - SaaS годовая плата на одну компанию при 12 месяцах = 108 000 руб., не включая разовое внедрение.
+  - On-prem нельзя автоматически сравнить со 108 000 без горизонта TCO, затрат и модели поддержки.
+  - Проверить предпочтения закупщиков и себестоимость поддержки каждого варианта.
+  output: Два Canvas, карта противоречий и список необходимых затрат для выбора.
+  not_real_data_warning: Тарифы и условия вымышлены для демонстрации.
+sources:
+- title: Strategyzer, Business Model Canvas
+  url: https://www.strategyzer.com/library/the-business-model-canvas
+  role: Классическая методология
+  access: открытая страница / библиографическая ссылка
+- title: Strategyzer, What is a Business Model?
+  url: https://www.strategyzer.com/library/what-is-a-business-model
+  role: Классическая методология
+  access: открытая страница / библиографическая ссылка
+- title: Strategyzer, Value Proposition Canvas
+  url: https://www.strategyzer.com/library/the-value-proposition-canvas
+  role: Классическая методология
+  access: открытая страница / библиографическая ссылка
+- title: Dean Peters, Product Strategy Session skill
+  url: https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/product-strategy-session/SKILL.md
+  role: Референс продуктовой постановки и decision points
+  access: открытая страница / библиографическая ссылка
+- title: Каталог исследовательской базы «Рыночный агент»
+  url: https://drive.google.com/drive/folders/1Y9ejj2e_TAgy0GJlrVgUbY9Z9Ab47oIy
+  role: Файлы проекта; паспорта каждого набора обязательны
+  access: открытая страница / библиографическая ссылка
+- title: Dean Peters, Product-Manager-Skills licensing
+  url: https://github.com/deanpeters/Product-Manager-Skills/blob/main/LICENSING.md
+  role: Лицензионные ограничения на прямое копирование
+  access: открытая страница / библиографическая ссылка
+- title: 'Федеральное казначейство: ЕИС закупок'
+  url: https://roskazna.gov.ru/gis/eis-zakupki-gov-ru
+  role: Официальная справка об инфраструктуре закупок
+  access: открытая страница / библиографическая ссылка
+completion_conditions:
+- Каждый требуемый показатель имеет определение и источник либо явно обозначен неизвестным.
+- Выходные поля заполнены или содержат null и reason_missing; исключены неподтвержденные значения.
+- Решение или альтернативы сопровождаются границами применимости и качеством доказательств.
+- Обнаруженные противоречия не скрываются; для спорных фактов сохранены обе версии и их происхождение.
+- Пример не интерпретирован как фактический результат российского рынка.

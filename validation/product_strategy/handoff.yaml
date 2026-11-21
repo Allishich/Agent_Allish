@@ -1,0 +1,54 @@
+protocol_version: "0.2"
+document_type: parent_module_handoff
+module_id: product_strategy
+role:
+  parent_agent:
+    owns: [initial_user_interview, brief_confirmation, communication_with_user, stage_approval, access_permissions, tool_selection, orchestration_with_other_modules, communication_strategy, final_document]
+  product_module:
+    owns: [seven_stage_product_research, method_selection, methodology_execution, native_method_results, stage_records, primary_data_requests, product_strategy_outline]
+  human:
+    owns: [real_interviews_and_surveys, real_experiments_and_pilots, strategic_approvals]
+interaction:
+  invocation_only_by_parent: true
+  calls:
+    - start_case
+    - run_next_stage
+    - approve_stage
+    - attach_human_data
+    - update_brief
+    - get_status
+    - get_outline
+  request_shape: contracts.json#/$defs/module_request
+  response_shape: contracts.json#/$defs/module_response
+  response_channel: "Возврат в контекст главного агента; не прямое сообщение конечному пользователю"
+  portability: "Передача объектов JSON; нет обязательного Python, CLI, API-провайдера или конкретного хоста"
+input_mapping:
+  source: "Подтверждённый бриф, подготовленный главным агентом в ходе начального интервью"
+  required: [case_id, decision_question, product, user_confirmed_brief]
+  optional: [market, routing_signals, requested_methods, available_materials, constraints, interview_notes]
+  if_unknown: "null/[] с пометкой пробела; не домысливать"
+  user_speech_provenance: user_reported
+  security: "Родитель передаёт только разрешённые материалы; приватные источники не раскрываются наружу"
+response_meaning:
+  accepted: "Вызов принят, создано/обновлено состояние без необходимости немедленного согласования этапа"
+  awaiting_parent: "Этап подготовлен, родителю необходимо показать вывод пользователю и согласовать дальнейший переход"
+  needs_human_data: "Практический метод ожидает реальные данные, но не блокирует остальную работу"
+  blocked: "Требуются обязательные вводные, доступ или устранение ошибки; фиктивного результата нет"
+  done: "Каркас продуктовой стратегии сформирован, контроль остаётся за главным агентом"
+  artifact_saved: "saved=true только если запись действительно состоялась и хост подтверждает доступность"
+  artifact_pending: "saved=false содержит content для сохранения главным агентом"
+  next_action: "Одно из: run_next_stage, approve_stage, attach_human_data, get_outline, get_status, await_parent"
+primary_research:
+  from_module: "data_requests[] с идентификатором метода, вопросом, инструкцией, форматом данных и ограничениями"
+  via_parent: "Главный агент передаёт инструкцию человеку и затем возвращает разрешённые реальные данные через attach_human_data"
+  not_allowed: "Модуль сам обращается к клиентам или моделирует ответы"
+completion:
+  mandatory_stage_records: 7
+  optional_method_records: "Только выбранные, при ожидании данных сохраняется статус"
+  output: "Каркас продуктовой стратегии и список ограничений/нерешённых исследований"
+  downstream: "Главный агент вправе использовать продуктовые результаты для коммуникационной стратегии; продуктовый модуль её не генерирует"
+conflict_resolution:
+  external_reply_format: contracts.json
+  product_method_content: methods/{method_filename}
+  routing: method_routing.yaml
+  priority: "Правила хоста и безопасности > инструкции главного агента о взаимодействии > MODULE.md для продуктового блока"

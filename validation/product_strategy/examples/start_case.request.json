@@ -1,0 +1,40 @@
+{
+  "document_type": "module_request",
+  "protocol_version": "0.2",
+  "module_id": "product_strategy",
+  "request_id": "req_demo_001",
+  "case_id": "demo_b2b_saas",
+  "action": "start_case",
+  "expected_revision": 0,
+  "brief": {
+    "case_id": "demo_b2b_saas",
+    "decision_question": "Для какой аудитории и на каких условиях выводить сервис планирования техобслуживания?",
+    "product": {
+      "name": "Сервис планирования техобслуживания",
+      "description": "Идея облачной системы учёта заявок и работ",
+      "stage": "idea"
+    },
+    "market": {
+      "geography": "Россия",
+      "customer": "Промышленные предприятия (гипотеза)",
+      "end_user": "Технические специалисты (гипотеза)",
+      "pricing": null
+    },
+    "routing_signals": [],
+    "requested_methods": [],
+    "available_materials": [],
+    "constraints": [
+      "Нет подтверждённых покупок и интервью"
+    ],
+    "interview_notes": "Все рыночные характеристики пока являются гипотезами инициатора.",
+    "user_confirmed_brief": true,
+    "source_class": "user_reported"
+  },
+  "capabilities": {
+    "read_sources": true,
+    "write_artifacts": false,
+    "browse_web": false,
+    "calculate": false,
+    "validate_schema": false
+  }
+}

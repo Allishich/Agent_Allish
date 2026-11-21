@@ -1,0 +1,45 @@
+{
+  "document_type": "strategy_outline",
+  "protocol_version": "0.2",
+  "case_id": "demo_b2b_saas",
+  "status": "draft",
+  "stage_result_refs": [
+    "cases/demo_b2b_saas/results/stages/01_stage.json",
+    "cases/demo_b2b_saas/results/stages/02_stage.json",
+    "cases/demo_b2b_saas/results/stages/03_stage.json",
+    "cases/demo_b2b_saas/results/stages/04_stage.json",
+    "cases/demo_b2b_saas/results/stages/05_stage.json",
+    "cases/demo_b2b_saas/results/stages/06_stage.json",
+    "cases/demo_b2b_saas/results/stages/07_stage.json"
+  ],
+  "product_decision": null,
+  "audience": null,
+  "market": null,
+  "competition": null,
+  "pricing_business_model": null,
+  "sales_conditions_risks": null,
+  "alternatives": [
+    {
+      "alternative_type": "status_quo",
+      "description": "Не предпринимать изменений до получения подтверждений"
+    },
+    {
+      "alternative_type": "develop",
+      "description": "Вариант развития, подлежащий определению по исследованиям"
+    },
+    {
+      "alternative_type": "exit",
+      "description": "Отказаться от запуска при неустранимых ограничениях"
+    }
+  ],
+  "validation_plan": null,
+  "unresolved_questions": [
+    "Нет реальных данных; этот файл демонстрирует только форму"
+  ],
+  "pending_method_ids": [
+    "M11"
+  ],
+  "limitations": [
+    "Синтетический пример, не результат исследования."
+  ]
+}

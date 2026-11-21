@@ -1,0 +1,188 @@
+{
+  "package": "product_strategy_declarative_v0_2",
+  "module_id": "product_strategy",
+  "module_version": "0.2.0",
+  "protocol_version": "0.2",
+  "created_date": "2026-11-21",
+  "purpose": "Подключаемый платформенно-нейтральный модуль продуктового исследования",
+  "method_count": 21,
+  "stage_count": 7,
+  "requires_python": false,
+  "parent_agent_controls_dialog": true,
+  "legacy_python_included": false,
+  "approved_original_route": "seven_stage_route_v0_1.yaml",
+  "files": {
+    "CHANGELOG.md": {
+      "size": 2270,
+      "sha256": "247be5520e96b1a8add6fa61d3c5eac6384edfa70fe7aade35571caa8be3b581"
+    },
+    "EXECUTOR.md": {
+      "size": 15416,
+      "sha256": "246d60cb22d0a6d310ca359391f83725cb07ec6bb09346df994552d6b76354ee"
+    },
+    "FOR_PARENT_AGENT.md": {
+      "size": 2976,
+      "sha256": "4cd553863e5b62bc0ce8397dedf9238733cdfd87538e149bff7b915c5f3fe197"
+    },
+    "INTEGRATION.md": {
+      "size": 6648,
+      "sha256": "a50da99d3806b3f8c6673b525f8e01347ff188be925bea7315ffda9309a2f724"
+    },
+    "MODULE.md": {
+      "size": 9904,
+      "sha256": "d7680b52ed76122cbd0ada23ec14f581af862fc96247bdf88cd2d850f6803200"
+    },
+    "README.md": {
+      "size": 7836,
+      "sha256": "6ea215a14e6a56f1f2d910c5fee1bf2c09835393e29c487f75a2f13ad425406d"
+    },
+    "VALIDATION.md": {
+      "size": 2700,
+      "sha256": "9755eccf5adb58dd536c1cd3b88c8d2020d1984a1186c647174e574ac387837f"
+    },
+    "adapters/README.md": {
+      "size": 1380,
+      "sha256": "dc65f170b157f704917d8c0081b485a0e0fb68f633b6b99871256e79ae0d03bb"
+    },
+    "contracts.json": {
+      "size": 25917,
+      "sha256": "07dc0c3e744f8be34496869618e1d571ebaf57cf10f428ab28c837d8092a55e2"
+    },
+    "examples/M11.awaiting_data.example.json": {
+      "size": 1582,
+      "sha256": "c19b78eab5fcb7190443ed3db0c6399986707b394c72c78e847bc6d3753d6099"
+    },
+    "examples/approve_stage.request.example.json": {
+      "size": 269,
+      "sha256": "fd0e08a193964e5b0d667c561f85630793de7401bfad1e140f393bb39dae62b2"
+    },
+    "examples/attach_human_data.request.example.json": {
+      "size": 586,
+      "sha256": "bbf86e4ec6369e96dc32b8fc2e25f4307f2d8b1448b1b35405e1c98234d323a3"
+    },
+    "examples/case_state.example.json": {
+      "size": 772,
+      "sha256": "8c9ff060d3d2c684a08371c9eb1bdd326e570ca4f0889726486432a198af8995"
+    },
+    "examples/outline.draft.example.json": {
+      "size": 1587,
+      "sha256": "8be5a5ffa0bf1fe4c7715fd97da2eb5c547314733e8702cac185f5f6e22b85f0"
+    },
+    "examples/run_next_stage.request.json": {
+      "size": 222,
+      "sha256": "ac3062e1517055a47b479ff55fff1253b8c6c401a328ee56eeff33cc157cbb45"
+    },
+    "examples/run_next_stage.response.json": {
+      "size": 4114,
+      "sha256": "965adf0cc1bea2b5cba9b9d72957a3f9c0282715efc10d5f5e6313eb3a18eec5"
+    },
+    "examples/stage_S01.partial.example.json": {
+      "size": 1691,
+      "sha256": "3731993ea128fbf2728d0108773b7ea9472aa24c927e0b9a93dc3dba5500a0f2"
+    },
+    "examples/start_case.request.json": {
+      "size": 1516,
+      "sha256": "2a35e58888ce6df56a2c8c632fb00238a83bf80b1fc3271623426108234b0041"
+    },
+    "examples/start_case.response.json": {
+      "size": 3315,
+      "sha256": "ed6ed07a72089695a29dbad68805692f45e4dbc7b7c1b2de17c4ee6531a9b462"
+    },
+    "handoff.yaml": {
+      "size": 4700,
+      "sha256": "3facfc8c23a0db65689934f3e6b98f614565c54a5ac00a73588a4d9a803135e7"
+    },
+    "method_routing.yaml": {
+      "size": 27417,
+      "sha256": "794594c8c2a8dac5262ed4baadaa692bc82c1f4e3367e1b7b51bb165b929daae"
+    },
+    "methods/01_stp.yaml": {
+      "size": 34454,
+      "sha256": "64bec9f735282d626d2bf22d687e26978d1fedfce2f9ccf0ae5579987b85d733"
+    },
+    "methods/02_tam_sam_som.yaml": {
+      "size": 36130,
+      "sha256": "343c895e59919cf66805fdbbd829e2c67bb7eaae7b7837468c5011a818f18472"
+    },
+    "methods/03_porter_five_forces.yaml": {
+      "size": 30970,
+      "sha256": "f6ed2177649a3921b851fce4855f1397c6e112727b4ed580f0d8f35fae779a32"
+    },
+    "methods/04_competitive_benchmarking.yaml": {
+      "size": 31682,
+      "sha256": "77b2eac973ae84bd72cfe4dafccd10d17022578bf6bcaf2bc4115765738d02f6"
+    },
+    "methods/05_jobs_to_be_done.yaml": {
+      "size": 29515,
+      "sha256": "1e7d98f2bfc0803055bc91595b2d4c962256207f6a070d3a38b847df029d1f44"
+    },
+    "methods/06_value_proposition_canvas.yaml": {
+      "size": 30926,
+      "sha256": "34433eb752cfe2026756e4f2b63bce0a3ade747486542d6b53d6acc8bd6fd91e"
+    },
+    "methods/07_business_model_canvas.yaml": {
+      "size": 33287,
+      "sha256": "8048943db07df8489274fa3ab3fce6d1410d66329e14b4147fb484cb298d0a68"
+    },
+    "methods/08_strategic_alternatives.yaml": {
+      "size": 32697,
+      "sha256": "66ae593efef5f738f27409c4b185d42ccbf5f0c216396cf197f610ea01d2fa25"
+    },
+    "methods/09_pestel.yaml": {
+      "size": 34191,
+      "sha256": "4507589efab33e5fd35cb52009e6055d4bf070b4ac710189053df08fff2a30bc"
+    },
+    "methods/10_ansoff_matrix.yaml": {
+      "size": 35009,
+      "sha256": "55148286b47cba5eded742dab79223309f4b81139a44d4dd9e23b68e4784951f"
+    },
+    "methods/11_in_depth_interviews.yaml": {
+      "size": 12149,
+      "sha256": "58aeae0c63dbc44447e2639c52d865e14d52e201efa44550773c60671aca37f4"
+    },
+    "methods/12_quantitative_survey.yaml": {
+      "size": 13018,
+      "sha256": "da0afb78d2ca0cb11d4ecb40324a470ec47a2e52571259d15de6546173d9b3ba"
+    },
+    "methods/13_concept_prototype_testing.yaml": {
+      "size": 11163,
+      "sha256": "45bac7576c2aeecaf7795d680572f714f6e638c809effcacf9c3edbe7e558135"
+    },
+    "methods/14_price_sensitivity.yaml": {
+      "size": 12690,
+      "sha256": "5064029af301fae6abe42ec117e383a029cc2c07fb6682b72f5b6f5c1295bbbd"
+    },
+    "methods/15_contextual_observation.yaml": {
+      "size": 10876,
+      "sha256": "0d75048a96f5b3fc2bce6bf82a43dcb9dbab313bbf49dea04dc3322adf495770"
+    },
+    "methods/16_choice_based_conjoint.yaml": {
+      "size": 13903,
+      "sha256": "8364fca7ba1f76d36e1bd701bcf1163e9045939201e01d447c5eaaae8c71b3bd"
+    },
+    "methods/17_ab_testing.yaml": {
+      "size": 15348,
+      "sha256": "4bb59078f55c6cc778a0a92ff4b731a5aa0aeab8eb26838080298098b27d45ef"
+    },
+    "methods/18_usability_testing.yaml": {
+      "size": 11145,
+      "sha256": "6d437832a3fc75514dce43624338ce1a58797b5482226992fc92b45dd64a8ce3"
+    },
+    "methods/19_pilot_implementation.yaml": {
+      "size": 12129,
+      "sha256": "942280d66fc69543fb16b452869e9dd6a2acd498ce70300334893c2caf9b534a"
+    },
+    "methods/20_cohort_analysis.yaml": {
+      "size": 13540,
+      "sha256": "2dc75c4ba2f554adb3d03961583cb91d6f58c73898098fbfc1d69794cc90b1fa"
+    },
+    "methods/21_unit_economics.yaml": {
+      "size": 15878,
+      "sha256": "ad2abe58350a7d2be93ab80c070ca1111fe3192e70736259ae711373ff29b166"
+    },
+    "workflow.yaml": {
+      "size": 8244,
+      "sha256": "2f86bfdd9ec84188236a98ae0527f9dd98f52c508a5de8d2d59897cbaa129c55"
+    }
+  }
+}
