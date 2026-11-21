@@ -1,0 +1,76 @@
+schema_version: '0.1'
+source_document: cases/{case_id}/brief.json
+source_schema: brief.schema.json
+precondition: interview_status == confirmed and user_confirmed_brief == true
+policy:
+  one_source_of_truth: true
+  use_read_only_projections: true
+  never_mutate_original_brief_during_mapping: true
+  keep_null_and_empty_arrays: true
+  no_inferred_facts: true
+  report_invalid_unmappable_fields: true
+  preserve_provenance_in_source_document: true
+product_strategy:
+  status: existing_contract_verified
+  module_id: product_strategy
+  module_version: '0.2'
+  target_contract: validation/product_strategy/contracts.json#/$defs/module_request
+  action: start_case
+  wrapper_fields:
+    document_type: module_request
+    protocol_version: '0.2'
+    module_id: product_strategy
+    request_id: parent_generated_unique_id
+    case_id: /case_id
+    action: start_case
+    expected_revision: 0
+  brief_fields:
+    case_id: /case_id
+    decision_question: /decision_question
+    product: /product
+    market:
+      geography: 'join /market/geography with comma and space; null if []'
+      customer: /audience/buyer
+      end_user: /audience/end_user
+      industry: /market/industry
+      competitors: /market/competitors
+      pricing: /commercial/price
+      unit_of_sale: /commercial/unit_of_sale
+      pricing_model: /commercial/pricing_model
+    routing_signals: []
+    requested_methods: []
+    available_materials: /available_materials
+    constraints: /constraints
+    interview_notes: 'short, attributed summary of /customer_need, /goals and /unknowns; all hypotheses clearly labelled'
+    user_confirmed_brief: /user_confirmed_brief
+    source_class: user_reported
+  prohibited:
+    - 'Do not pass the entire shared brief: product contract rejects unknown keys'
+    - 'Do not set requested_methods or routing_signals speculatively'
+    - 'Do not turn reported hypotheses into market-verified facts'
+communication_strategy:
+  status: provisional_needs_owner_agreement
+  source_schema: brief.schema.json
+  target_schema: communication_context.schema.json
+  document_type: communication_context
+  fields:
+    case_id: /case_id
+    brief_revision: /revision
+    product: /product
+    customer_need: /customer_need
+    audience: /audience
+    market: /market
+    communications: /communications
+    goals: /goals
+    constraints: /constraints
+    available_materials: /available_materials
+    unknowns: /unknowns
+    field_provenance: /field_provenance
+    product_strategy_output_ref: 'null before product analysis; verified reference when available'
+  safety:
+    - 'No advertising promises drawn from unverified interview hypotheses'
+    - 'No automatic copy of private raw attachments'
+    - 'Do not claim this schema is already supported by the communication module'
+future_adapter_policy:
+  if_target_contract_changes: update_only_corresponding_mapping_and_example
+  no_change_to_shared_brief_without_schema_revision: true

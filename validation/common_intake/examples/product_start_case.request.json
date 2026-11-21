@@ -1,0 +1,49 @@
+{
+  "document_type": "module_request",
+  "protocol_version": "0.2",
+  "module_id": "product_strategy",
+  "request_id": "req_demo_001",
+  "case_id": "demo_maintenance_saas",
+  "action": "start_case",
+  "expected_revision": 0,
+  "brief": {
+    "case_id": "demo_maintenance_saas",
+    "decision_question": "Кому и на каких условиях выводить прототип сервиса учёта техобслуживания?",
+    "product": {
+      "name": "Сервис учёта техобслуживания",
+      "description": "Прототип облачной системы заявок и планирования работ",
+      "stage": "prototype",
+      "capabilities": [
+        "учёт заявок",
+        "планирование работ"
+      ],
+      "delivery_model": "облачный сервис"
+    },
+    "market": {
+      "geography": "Россия",
+      "customer": "Промышленные предприятия (гипотеза инициатора)",
+      "end_user": "Специалисты технических служб (гипотеза инициатора)",
+      "industry": "Промышленность (гипотеза)",
+      "competitors": [],
+      "pricing": null,
+      "unit_of_sale": null,
+      "pricing_model": null
+    },
+    "routing_signals": [],
+    "requested_methods": [],
+    "available_materials": [],
+    "constraints": [
+      "Реальных клиентских интервью и продаж пока нет"
+    ],
+    "interview_notes": "Со слов инициатора: предполагаемые покупатели — промышленные предприятия; это неподтверждённая гипотеза. Не определены цена, модель монетизации и приоритетный сегмент. Реальных интервью и продаж нет.",
+    "user_confirmed_brief": true,
+    "source_class": "user_reported"
+  },
+  "capabilities": {
+    "read_sources": true,
+    "write_artifacts": false,
+    "browse_web": false,
+    "calculate": false,
+    "validate_schema": false
+  }
+}

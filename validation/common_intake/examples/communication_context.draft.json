@@ -1,0 +1,105 @@
+{
+  "document_type": "communication_context",
+  "schema_version": "0.1-draft",
+  "contract_status": "proposed_not_approved",
+  "case_id": "demo_maintenance_saas",
+  "brief_revision": 1,
+  "product": {
+    "name": "Сервис учёта техобслуживания",
+    "description": "Прототип облачной системы заявок и планирования работ",
+    "stage": "prototype",
+    "capabilities": [
+      "учёт заявок",
+      "планирование работ"
+    ],
+    "delivery_model": "облачный сервис"
+  },
+  "customer_need": {
+    "problem": "Инициатор считает, что предприятиям трудно контролировать сроки ремонтных работ",
+    "desired_outcome": "Более прозрачное планирование и учёт заявок",
+    "current_alternatives": [
+      "таблицы Excel"
+    ]
+  },
+  "audience": {
+    "buyer": "Промышленные предприятия (гипотеза инициатора)",
+    "end_user": "Специалисты технических служб (гипотеза инициатора)",
+    "segments": []
+  },
+  "market": {
+    "geography": [
+      "Россия"
+    ],
+    "industry": "Промышленность (гипотеза)",
+    "competitors": []
+  },
+  "communications": {
+    "positioning": null,
+    "current_messages": [],
+    "current_channels": [],
+    "brand_materials": []
+  },
+  "goals": {
+    "reason_for_request": "Выбор первой целевой аудитории и коммерческих условий",
+    "target_horizon": null,
+    "success_criteria": []
+  },
+  "constraints": [
+    "Реальных клиентских интервью и продаж пока нет"
+  ],
+  "available_materials": [],
+  "unknowns": [
+    {
+      "field_path": "/commercial/pricing_model",
+      "description": "Не определена модель монетизации",
+      "reason": "unknown",
+      "owner": "research",
+      "priority": "normal"
+    },
+    {
+      "field_path": "/commercial/price",
+      "description": "Не установлена приемлемая цена",
+      "reason": "unknown",
+      "owner": "research",
+      "priority": "normal"
+    },
+    {
+      "field_path": "/audience/segments",
+      "description": "Приоритетный сегмент ещё не подтверждён",
+      "reason": "unknown",
+      "owner": "research",
+      "priority": "critical"
+    },
+    {
+      "field_path": "/communications/current_channels",
+      "description": "Каналы коммуникации ещё не использовались",
+      "reason": "not_applicable",
+      "owner": "unknown",
+      "priority": "low"
+    }
+  ],
+  "field_provenance": [
+    {
+      "field_path": "/product/description",
+      "source_type": "user_reported",
+      "source_ref": "discovery.md#ответ-1",
+      "claim_status": "reported_fact",
+      "notes": "Описание состояния продукта только со слов инициатора"
+    },
+    {
+      "field_path": "/audience/buyer",
+      "source_type": "user_reported",
+      "source_ref": "discovery.md#ответ-2",
+      "claim_status": "reported_hypothesis",
+      "notes": "Нет подтверждённых покупателей"
+    },
+    {
+      "field_path": "/market/industry",
+      "source_type": "user_reported",
+      "source_ref": "discovery.md#ответ-2",
+      "claim_status": "reported_hypothesis",
+      "notes": null
+    }
+  ],
+  "product_strategy_output_ref": null
+}

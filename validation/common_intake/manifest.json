@@ -1,0 +1,64 @@
+{
+  "package": "common_intake_module_v0_1",
+  "module_id": "common_intake",
+  "module_version": "0.1.0",
+  "created_date": "2026-11-21",
+  "requires_python": false,
+  "github_modified": false,
+  "communication_contract_status": "proposed_not_approved",
+  "product_contract": "product_strategy_v0_2",
+  "files": {
+    "INTEGRATION_PLAN.md": {
+      "size": 4835,
+      "sha256": "b63afd6ed51a448af4d14ab02810794b81dbd22054e1b967d451196708359e95"
+    },
+    "INTERVIEW_MODULE.md": {
+      "size": 9524,
+      "sha256": "e2ad9e352e2d3be8e4e2d8a7c97b810277043482e9df3a7438360a97785fc962"
+    },
+    "README.md": {
+      "size": 4471,
+      "sha256": "0fc2d82faf665a2711a874d29390f05a8e1ff47ff5a99cc0275193695dd3e326"
+    },
+    "VALIDATION.md": {
+      "size": 2892,
+      "sha256": "5e43f2a491eeef678af49c656817ac001c88372c90a821672d588059bccd4bb9"
+    },
+    "brief.schema.json": {
+      "size": 12912,
+      "sha256": "021ebd52c0d94e6456248d7017f8c8ae1d8805c80ef1dc05a12c3c82c0895df9"
+    },
+    "brief_mapping.yaml": {
+      "size": 2925,
+      "sha256": "1a9d31d8260e68d63c4b1a5ee27390f8ac1743833b19aebe93698844fac7b232"
+    },
+    "communication_context.schema.json": {
+      "size": 8389,
+      "sha256": "0bd3667c001f39dcf9fddabb673473907ef23a873b3b3c8d07fbf69f093616d3"
+    },
+    "examples/brief.collecting.example.json": {
+      "size": 2019,
+      "sha256": "df4cc06d4a6488f002ed96918a2d5eade1339ae532ea5e76ed941da7af12ecbb"
+    },
+    "examples/brief.confirmed.example.json": {
+      "size": 4202,
+      "sha256": "012c5787f4c76d5ffa80cd67902dfa0b9668988f9f8378edfdd8d32aa5607e1e"
+    },
+    "examples/communication_context.draft.json": {
+      "size": 3641,
+      "sha256": "17c821d63372ec87c67e6e5facbe7f2eea14c38b871e8e2cd1542c18c4e76eea"
+    },
+    "examples/discovery.example.md": {
+      "size": 2095,
+      "sha256": "c230141151ef9571389728dad282eb8c8e41b8c81de70f43b357f8cb6531001b"
+    },
+    "examples/product_start_case.request.json": {
+      "size": 2160,
+      "sha256": "b0d3d31ce0ae1c113128baad59ddbcefdad9edcbc2ff303c3c68e732c9bd39ba"
+    },
+    "intake_workflow.yaml": {
+      "size": 3331,
+      "sha256": "fad9aae920dc992629e36ba35c58fc93033dd5d9e635371a46138460f0ac3448"
+    }
+  }
+}
