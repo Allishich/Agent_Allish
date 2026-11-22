@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 
 try:
-    from jsonschema import Draft202012Validator, RefResolver
+    from jsonschema import Draft202012Validator
 except ImportError:
     sys.exit("Install dependency: python -m pip install jsonschema>=4")
 
@@ -21,6 +21,7 @@ KINDS = {
     "state.json": (None, "case_state"),
     "product_strategy_outline.json": ("product", "strategy_outline"),
     "communication_strategy_draft.json": ("communication", "strategy"),
+    "communication_strategy.json": ("communication", "strategy"),
 }
 
 def schema_for(path):
@@ -45,6 +46,7 @@ def run(case_dir):
     for key, schema in schemas.items():
         Draft202012Validator.check_schema(schema)
     documents = []
+    observed = set()
     for path in sorted(case_dir.rglob("*.json")):
         kind, definition = schema_for(path)
         if not kind:
@@ -62,14 +64,30 @@ def run(case_dir):
             for issue in validator.iter_errors(obj):
                 errors.append(f"{path}: {list(issue.path)}: {issue.message}")
             documents.append((path, obj))
+            observed.add(path.relative_to(case_dir).as_posix())
         except (OSError, ValueError) as exc:
             errors.append(f"{path}: {exc}")
+    required = {"brief.json", "product_strategy/state.json", "communication_strategy/state.json"}
+    for stage in range(1, 8):
+        required.add(f"product_strategy/results/stages/{stage:02d}_stage.json")
+    for stage in range(1, 7):
+        required.add(f"communication_strategy/results/stages/{stage:02d}_stage.json")
+    for missing in sorted(required - observed):
+        errors.append(f"{case_dir}: missing mandatory artifact {missing}")
     if not documents:
         errors.append(f"{case_dir}: no recognizable JSON artifacts")
     case_id = case_dir.name
     for path, obj in documents:
-        if isinstance(obj, dict) and obj.get("case_id") not in (None, case_id):
+        if isinstance(obj, dict) and obj.get("case_id") != case_id:
             errors.append(f"{path}: case_id mismatch: {obj.get('case_id')} != {case_id}")
+    brief = case_dir / "brief.json"
+    if brief.exists():
+        try:
+            data = json.loads(brief.read_text(encoding="utf-8"))
+            if data.get("interview_status") != "confirmed" or data.get("user_confirmed_brief") is not True:
+                errors.append(f"{brief}: brief not confirmed by user")
+        except (ValueError, OSError) as exc:
+            errors.append(f"{brief}: cannot check confirmation: {exc}")
     return errors, len(documents)
 
 def main():
@@ -86,7 +104,7 @@ def main():
     for error in errors:
         print("ERROR:", error)
     if not errors:
-        print("Structural schema checks passed. NOT a full semantic, provenance, approval or runtime verification.")
+        print("Structural schema and mandatory file checks passed. NOT a full semantic, provenance, approval or runtime verification.")
     sys.exit(1 if errors else 0)
 
 if __name__ == "__main__":
