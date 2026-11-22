@@ -1,0 +1,21 @@
+schema_version: "0.1"
+method_id: M12
+name: "Анализ результатов коммуникаций"
+stage: C06
+selection: conditional
+trigger: "Есть реальные данные кампаний, тестов или когорт"
+purpose: "Проверь определения метрик, периоды, сопоставимость групп и альтернативные объяснения; не изображай причинность без дизайна проверки."
+inputs: [confirmed_brief, available_product_outputs, relevant_evidence]
+procedure:
+  - "Определи конкретный вопрос, на который должен ответить метод."
+  - "Проверь доступные материалы и происхождение каждого утверждения."
+  - "Проверь определения метрик, периоды, сопоставимость групп и альтернативные объяснения; не изображай причинность без дизайна проверки."
+  - "Сравни альтернативные объяснения и ограничения."
+  - "Зафиксируй вывод, влияние на решение и недостающие данные."
+outputs:
+  required: [question, evidence_refs, findings, decision_impact, assumptions, limitations, data_requests, status]
+evidence_rules:
+  do_not_fabricate_primary_research: true
+  label_hypotheses: true
+  no_unsupported_metrics: true
+  insufficient_data: partial_or_awaiting_data
