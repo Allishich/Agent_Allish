@@ -1,0 +1,170 @@
+{
+  "document_type": "module_request",
+  "module_id": "communication_strategy",
+  "protocol_version": "0.1",
+  "request_id": "req_comm_demo_001",
+  "case_id": "demo_maintenance_saas",
+  "action": "start_case",
+  "expected_revision": 0,
+  "confirmed_brief": {
+    "schema_version": "1.0",
+    "case_id": "demo_maintenance_saas",
+    "revision": 1,
+    "interview_status": "confirmed",
+    "decision_question": "Кому и на каких условиях выводить прототип сервиса учёта техобслуживания?",
+    "product": {
+      "name": "Сервис учёта техобслуживания",
+      "description": "Прототип облачной системы заявок и планирования работ",
+      "stage": "prototype",
+      "capabilities": [
+        "учёт заявок",
+        "планирование работ"
+      ],
+      "delivery_model": "облачный сервис"
+    },
+    "customer_need": {
+      "problem": "Инициатор считает, что предприятиям трудно контролировать сроки ремонтных работ",
+      "desired_outcome": "Более прозрачное планирование и учёт заявок",
+      "current_alternatives": [
+        "таблицы Excel"
+      ]
+    },
+    "audience": {
+      "buyer": "Промышленные предприятия (гипотеза инициатора)",
+      "end_user": "Специалисты технических служб (гипотеза инициатора)",
+      "segments": []
+    },
+    "market": {
+      "geography": [
+        "Россия"
+      ],
+      "industry": "Промышленность (гипотеза)",
+      "competitors": []
+    },
+    "commercial": {
+      "unit_of_sale": null,
+      "pricing_model": null,
+      "price": null,
+      "sales_channels": [],
+      "sales_evidence": null
+    },
+    "communications": {
+      "positioning": null,
+      "current_messages": [],
+      "current_channels": [],
+      "brand_materials": []
+    },
+    "goals": {
+      "reason_for_request": "Выбор первой целевой аудитории и коммерческих условий",
+      "target_horizon": null,
+      "success_criteria": []
+    },
+    "constraints": [
+      "Реальных клиентских интервью и продаж пока нет"
+    ],
+    "available_materials": [],
+    "unknowns": [
+      {
+        "field_path": "/commercial/pricing_model",
+        "description": "Не определена модель монетизации",
+        "reason": "unknown",
+        "owner": "research",
+        "priority": "normal"
+      },
+      {
+        "field_path": "/commercial/price",
+        "description": "Не установлена приемлемая цена",
+        "reason": "unknown",
+        "owner": "research",
+        "priority": "normal"
+      },
+      {
+        "field_path": "/audience/segments",
+        "description": "Приоритетный сегмент ещё не подтверждён",
+        "reason": "unknown",
+        "owner": "research",
+        "priority": "critical"
+      },
+      {
+        "field_path": "/communications/current_channels",
+        "description": "Каналы коммуникации ещё не использовались",
+        "reason": "not_applicable",
+        "owner": "unknown",
+        "priority": "low"
+      }
+    ],
+    "contradictions": [],
+    "field_provenance": [
+      {
+        "field_path": "/product/description",
+        "source_type": "user_reported",
+        "source_ref": "discovery.md#ответ-1",
+        "claim_status": "reported_fact",
+        "notes": "Описание состояния продукта только со слов инициатора"
+      },
+      {
+        "field_path": "/audience/buyer",
+        "source_type": "user_reported",
+        "source_ref": "discovery.md#ответ-2",
+        "claim_status": "reported_hypothesis",
+        "notes": "Нет подтверждённых покупателей"
+      },
+      {
+        "field_path": "/market/industry",
+        "source_type": "user_reported",
+        "source_ref": "discovery.md#ответ-2",
+        "claim_status": "reported_hypothesis",
+        "notes": null
+      }
+    ],
+    "user_confirmed_brief": true,
+    "source_class": "user_reported",
+    "confirmed_at": "2026-11-21T12:00:00Z",
+    "confirmation_summary": "Пользователь подтвердил описание прототипа, гипотезу об аудитории и задачу выбора рынка и модели выхода."
+  },
+  "product_strategy_outline": {
+    "document_type": "strategy_outline",
+    "protocol_version": "0.2",
+    "case_id": "demo_maintenance_saas",
+    "status": "draft",
+    "stage_result_refs": [
+      "cases/demo_maintenance_saas/product_strategy/results/stages/01_stage.json",
+      "cases/demo_maintenance_saas/product_strategy/results/stages/02_stage.json",
+      "cases/demo_maintenance_saas/product_strategy/results/stages/03_stage.json",
+      "cases/demo_maintenance_saas/product_strategy/results/stages/04_stage.json",
+      "cases/demo_maintenance_saas/product_strategy/results/stages/05_stage.json",
+      "cases/demo_maintenance_saas/product_strategy/results/stages/06_stage.json",
+      "cases/demo_maintenance_saas/product_strategy/results/stages/07_stage.json"
+    ],
+    "product_decision": null,
+    "audience": null,
+    "market": null,
+    "competition": null,
+    "pricing_business_model": null,
+    "sales_conditions_risks": null,
+    "alternatives": [
+      {
+        "alternative_type": "status_quo",
+        "description": "Не предпринимать изменений до получения подтверждений"
+      },
+      {
+        "alternative_type": "develop",
+        "description": "Вариант развития, подлежащий определению по исследованиям"
+      },
+      {
+        "alternative_type": "exit",
+        "description": "Отказаться от запуска при неустранимых ограничениях"
+      }
+    ],
+    "validation_plan": null,
+    "unresolved_questions": [
+      "Нет реальных данных; этот файл демонстрирует только форму"
+    ],
+    "pending_method_ids": [
+      "M11"
+    ],
+    "limitations": [
+      "Синтетический пример, не результат исследования."
+    ]
+  }
+}

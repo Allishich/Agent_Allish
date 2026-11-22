@@ -42,10 +42,7 @@
           ]
         },
         "confirmed_brief": {
-          "type": [
-            "object",
-            "null"
-          ]
+          "$ref": "#/$defs/confirmed_brief"
         },
         "product_strategy_outline": {
           "type": [
@@ -70,7 +67,27 @@
           }
         }
       },
-      "additionalProperties": true
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "action": {
+                "const": "start_case"
+              }
+            },
+            "required": [
+              "action"
+            ]
+          },
+          "then": {
+            "required": [
+              "confirmed_brief",
+              "product_strategy_outline"
+            ]
+          }
+        }
+      ]
     },
     "module_response": {
       "type": "object",
@@ -224,6 +241,78 @@
           "items": {
             "type": "string"
           }
+        }
+      },
+      "additionalProperties": true
+    },
+    "confirmed_brief": {
+      "$comment": "Input is the original common_intake brief.json. This is an envelope/invariant check; first validate the full value against validation/common_intake/brief.schema.json (Draft 2020-12). Request case_id must match confirmed_brief.case_id (runtime check).",
+      "type": "object",
+      "required": [
+        "schema_version",
+        "case_id",
+        "revision",
+        "interview_status",
+        "decision_question",
+        "product",
+        "customer_need",
+        "audience",
+        "market",
+        "commercial",
+        "communications",
+        "goals",
+        "constraints",
+        "available_materials",
+        "unknowns",
+        "contradictions",
+        "field_provenance",
+        "user_confirmed_brief",
+        "source_class",
+        "confirmed_at",
+        "confirmation_summary"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "1.0"
+        },
+        "case_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "interview_status": {
+          "const": "confirmed"
+        },
+        "decision_question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "user_confirmed_brief": {
+          "const": true
+        },
+        "confirmed_at": {
+          "type": "string",
+          "minLength": 1,
+          "format": "date-time"
+        },
+        "confirmation_summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_class": {
+          "const": "user_reported"
+        },
+        "field_provenance": {
+          "type": "array"
+        },
+        "unknowns": {
+          "type": "array"
+        },
+        "contradictions": {
+          "type": "array"
         }
       },
       "additionalProperties": true

@@ -84,7 +84,7 @@
 - `validation/communication_strategy/handoff.yaml`
 - `validation/communication_strategy/contracts.json`
 
-Подготовь `start_case` по **собственному** контракту коммуникационного модуля (протокол `0.1`): передай подтверждённый бриф и доступный `product_strategy_outline` с указанием статусов, источников и ограничений. Проектный адаптер `common_intake/brief_mapping.yaml` для коммуникаций имеет предварительный статус; не считай его утверждённым контрактом и не выдавай неподтверждённую интеграцию за работающую.
+Подготовь `start_case` протокола `0.1` по **собственному** `contracts.json` коммуникационного модуля и действующему `validation/common_intake/brief_mapping.yaml#communication_strategy`: передай **всё подтверждённое `brief.json`** как `confirmed_brief`, а достоверный `product_strategy_outline` отдельно (либо `null`, если он недоступен). Проверь исходный бриф по `common_intake/brief.schema.json`, совпадение `case_id`, актуальность `brief.revision`, отдельно `expected_revision` состояния коммуникационного модуля, подлинность продуктового результата, происхождение сведений и ограничения. Не требуй равенства `brief.revision` и `expected_revision`. Не передавай устаревшую оболочку `document_type: communication_context`. Декларативное согласование формата не равно подтверждённому runtime-вызову или записи.
 
 Выполни **каждый** этап `C01 → C02 → C03 → C04 → C05 → C06`. Применимые базовые методы обязательны к рассмотрению; условные выбирай по `method_routing.yaml`, фиксируя основания. Перед выполнением каждого выбранного метода **прочитай исходный YAML** в `methods/`.
 
