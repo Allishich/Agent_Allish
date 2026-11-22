@@ -2,13 +2,33 @@
 """Offline validation of saved Agent_Allish records; not an agent executor."""
 import argparse
 import json
+import re
 import sys
+from datetime import datetime
 from pathlib import Path
 
 try:
-    from jsonschema import Draft202012Validator
+    from jsonschema import Draft202012Validator, FormatChecker
 except ImportError:
     sys.exit("Install dependency: python -m pip install jsonschema>=4")
+
+FORMAT_CHECKER = FormatChecker()
+_RFC3339_DATETIME = re.compile(
+    r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$"
+)
+
+
+@FORMAT_CHECKER.checks("date-time")
+def is_valid_datetime(value):
+    """Fail closed for impossible calendar dates or missing UTC offsets."""
+    if not isinstance(value, str) or _RFC3339_DATETIME.fullmatch(value) is None:
+        return False
+    try:
+        dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return False
+    return dt.tzinfo is not None and dt.utcoffset() is not None
+
 
 ROOT = Path(__file__).resolve().parent.parent
 SCHEMAS = {
@@ -95,7 +115,7 @@ def run(case_dir, require_complete=True):
                     continue
                 schema = {"$ref": f"#/$defs/{definition}", "$defs": schemas[kind]["$defs"],
                           "$schema": "https://json-schema.org/draft/2020-12/schema"}
-            validator = Draft202012Validator(schema)
+            validator = Draft202012Validator(schema, format_checker=FORMAT_CHECKER)
             for issue in validator.iter_errors(obj):
                 errors.append(f"{path}: {list(issue.path)}: {issue.message}")
             documents.append((path, obj))

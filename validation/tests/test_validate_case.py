@@ -12,6 +12,28 @@ spec.loader.exec_module(validator)
 
 
 class CaseValidatorTests(unittest.TestCase):
+    def test_brief_datetime_format(self):
+        """Validate real calendar dates even without optional RFC3339 packages."""
+        import copy
+        example = validator.ROOT / "validation/common_intake/examples/brief.confirmed.example.json"
+        source = json.loads(example.read_text(encoding="utf-8"))
+        cases = [
+            ("2026-11-21T12:00:00Z", True),
+            ("2026-02-30T12:00:00Z", False),
+            ("2026-11-21T12:00:00", False),
+        ]
+        with tempfile.TemporaryDirectory() as temp:
+            case = Path(temp) / "example"
+            case.mkdir()
+            for value, expected in cases:
+                with self.subTest(value=value):
+                    obj = copy.deepcopy(source)
+                    obj["case_id"] = "example"
+                    obj["confirmed_at"] = value
+                    (case / "brief.json").write_text(json.dumps(obj, ensure_ascii=False), encoding="utf-8")
+                    errors, _ = validator.run(case, require_complete=False)
+                    self.assertEqual(not any("confirmed_at" in err for err in errors), expected, errors)
+
     def test_stage_paths(self):
         case = Path("cases/example")
         self.assertEqual(validator.schema_for(case / "communication_strategy/results/stages/C01.json"),
