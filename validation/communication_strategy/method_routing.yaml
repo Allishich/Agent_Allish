@@ -1,0 +1,27 @@
+schema_version: "0.1"
+module_id: communication_strategy
+fixed_stage_order: [C01, C02, C03, C04, C05, C06]
+selection_policy:
+  base: "Проверять всегда; при отсутствии данных сохранять partial, не выдумывать результаты"
+  conditional: "Выбирать только если ответ способен изменить решение; фиксировать причину"
+  use_product_outputs_first: true
+stages:
+  C01: {title: "Диагностика", base_methods: [M01], conditional_methods: [M02]}
+  C02: {title: "Аудитория и барьеры", base_methods: [M03], conditional_methods: [M04]}
+  C03: {title: "Позиционирование", base_methods: [M06], conditional_methods: [M05]}
+  C04: {title: "Сообщения и доказательства", base_methods: [M07, M08], conditional_methods: []}
+  C05: {title: "Каналы и взаимодействие", base_methods: [M09], conditional_methods: [M10]}
+  C06: {title: "Проверка эффективности", base_methods: [M11], conditional_methods: [M12]}
+method_registry:
+  M01: {file: "methods/M01.yaml", stage: C01, selection: base, trigger: "Всегда"}
+  M02: {file: "methods/M02.yaml", stage: C01, selection: conditional, trigger: "Есть сайт, реклама, CRM, материалы или результаты коммуникаций"}
+  M03: {file: "methods/M03.yaml", stage: C02, selection: base, trigger: "Всегда"}
+  M04: {file: "methods/M04.yaml", stage: C02, selection: conditional, trigger: "Неизвестны причины непонимания, недоверия или отказа"}
+  M05: {file: "methods/M05.yaml", stage: C03, selection: conditional, trigger: "Сравнение рыночных обещаний способно изменить позицию"}
+  M06: {file: "methods/M06.yaml", stage: C03, selection: base, trigger: "Всегда"}
+  M07: {file: "methods/M07.yaml", stage: C04, selection: base, trigger: "Всегда"}
+  M08: {file: "methods/M08.yaml", stage: C04, selection: base, trigger: "Всегда"}
+  M09: {file: "methods/M09.yaml", stage: C05, selection: base, trigger: "Всегда"}
+  M10: {file: "methods/M10.yaml", stage: C05, selection: conditional, trigger: "Для решения критична последовательность касаний, onboarding или CRM"}
+  M11: {file: "methods/M11.yaml", stage: C06, selection: base, trigger: "Всегда"}
+  M12: {file: "methods/M12.yaml", stage: C06, selection: conditional, trigger: "Есть реальные данные кампаний, тестов или когорт"}
