@@ -1,0 +1,50 @@
+{
+  "document_type": "method_record",
+  "module_id": "communication_strategy",
+  "protocol_version": "0.1",
+  "case_id": "demo_maintenance_saas",
+  "method_id": "M01",
+  "home_stage": "C01",
+  "status": "partial",
+  "native_result": {
+    "question": "Как объяснить ценность прототипа? (синтетический пример)",
+    "confirmed_context": {
+      "product_name": "Сервис учёта техобслуживания"
+    },
+    "decision_question": "Как проверить понятность сообщения для заявленной аудитории?",
+    "desired_communication_change": "Понимание концепции (гипотеза)",
+    "symptoms": [],
+    "competing_explanations": [
+      "Отсутствуют наблюдения"
+    ],
+    "problem_statement": "Предварительная диагностика без подтверждённых данных аудитории",
+    "evidence_refs": [],
+    "prioritized_unknowns": [
+      "Нет данных реальных пользователей"
+    ],
+    "validation_plan": [
+      "Проверить понимание описания с реальными представителями аудитории"
+    ],
+    "product_gap_flags": [],
+    "decision_impact": "Нельзя масштабировать коммуникации без проверки",
+    "assumptions": [
+      "Предполагаемая аудитория не проверена"
+    ],
+    "limitations": [
+      "Синтетический пример; нет полевых данных"
+    ],
+    "data_requests": [],
+    "status": "partial"
+  },
+  "selected_because": "Базовая диагностика C01",
+  "method_file": "validation/communication_strategy/methods/M01.yaml",
+  "evidence_refs": [],
+  "assumptions": [
+    "Покупатель не подтверждён"
+  ],
+  "limitations": [
+    "Нет полевых данных"
+  ],
+  "data_requests": [],
+  "version": 1
+}

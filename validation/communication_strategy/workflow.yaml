@@ -10,6 +10,18 @@ stages:
   all_methods_required: false
   max_stages_per_run_next_stage: 1
   gate: parent_approval_before_next_stage
+validation:
+  schema: contracts.json
+  request: '#/$defs/module_request'
+  response: '#/$defs/module_response'
+  method: '#/$defs/method_record'
+  stage: '#/$defs/stage_record'
+  case_state: '#/$defs/case_state'
+  strategy: '#/$defs/strategy'
+  shared_user_brief: validation/common_intake/brief.schema.json
+  product_outline: validation/product_strategy/contracts.json#/$defs/strategy_outline
+  cross_document_checks: [matching_case_ids, source_brief_revision, expected_state_revision, recorded_parent_approval, verified_persistence]
+  native_method_required_fields: 'methods/Mxx.yaml#outputs.required'
 method_selection:
   registry: method_routing.yaml
   base: consider_and_run_with_available_evidence_or_mark_partial
@@ -33,6 +45,7 @@ persistence:
   stage_result: cases/{case_id}/communication_strategy/results/stages/{stage_id}.json
   method_result: cases/{case_id}/communication_strategy/results/methods/{method_id}.json
   strategy: cases/{case_id}/communication_strategy/results/communication_strategy.json
+  artifact_contract: contracts.json#/$defs/artifact_ref
   history: cases/{case_id}/communication_strategy/history/{artifact_type}_{revision}.json
   common_intake_brief_owner: common_intake
   never_write_shared_user_brief: true

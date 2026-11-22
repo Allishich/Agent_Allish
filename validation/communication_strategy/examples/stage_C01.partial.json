@@ -1,0 +1,26 @@
+{
+  "document_type": "stage_record",
+  "module_id": "communication_strategy",
+  "protocol_version": "0.1",
+  "case_id": "demo_maintenance_saas",
+  "stage_id": "C01",
+  "record_status": "partial",
+  "fields": {
+    "diagnosis": "Коммуникационная задача предварительна; синтетический пример",
+    "method_refs": [
+      "cases/demo_maintenance_saas/communication_strategy/results/methods/M01.json"
+    ]
+  },
+  "methods_used": [
+    "M01"
+  ],
+  "evidence_refs": [],
+  "unknowns": [
+    "Нет наблюдений реакции целевой аудитории"
+  ],
+  "limitations": [
+    "Результат условный"
+  ],
+  "pending_method_ids": [],
+  "version": 1
+}

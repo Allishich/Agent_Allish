@@ -10,7 +10,7 @@
 - `examples/communication_context.draft.json` по-прежнему остаётся историческим примером с `proposed_not_approved`; **не** использовать его в качестве активного входа.
 - Новый `examples/communication_start_case.request.json` должен проходить `validation/communication_strategy/contracts.json#/$defs/module_request`; вложенный `confirmed_brief` независимо проходит `brief.schema.json`, а переданный продуктовый каркас — `validation/product_strategy/contracts.json#/$defs/strategy_outline`.
 - При `start_case` отклонять отсутствие `confirmed_brief`, `null`, незавершённый или неподтверждённый бриф и отсутствие поля `product_strategy_outline` (его значение может быть `null`). Совпадение `case_id` разных документов проверять исполнителем; стандартная JSON Schema не обеспечивает сравнение значений разных путей.
-- Схему вызова проверять именно по указанному `$defs/module_request`; дальнейшее усиление корневого контракта и машинных форматов всех результатов — отдельная задача.
+- Для всех объектов коммуникационного модуля теперь действует корневой `oneOf` в `contracts.json`: `module_request`, `module_response`, `method_record`, `stage_record`, `case_state`, `strategy`. Доступны синтетические образцы и негативные проверки `validation/communication_strategy/tests/validate_contracts.py`. Межобъектное совпадение `case_id` и контроль ревизии остаются обязанностью исполнителя.
 
 ## Границы технических проверок
 

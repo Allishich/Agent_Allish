@@ -1,0 +1,58 @@
+{
+  "document_type": "case_state",
+  "module_id": "communication_strategy",
+  "protocol_version": "0.1",
+  "case_id": "demo_maintenance_saas",
+  "revision": 2,
+  "source_brief_revision": 1,
+  "brief_ref": "cases/demo_maintenance_saas/communication_strategy/brief.json",
+  "product_strategy_outline_ref": "cases/demo_maintenance_saas/product_strategy/results/product_strategy_outline.json",
+  "stage_order": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06"
+  ],
+  "stage_states": {
+    "C01": "awaiting_parent_approval",
+    "C02": "not_started",
+    "C03": "not_started",
+    "C04": "not_started",
+    "C05": "not_started",
+    "C06": "not_started"
+  },
+  "method_states": {
+    "M01": "partial",
+    "M02": "not_selected"
+  },
+  "method_selection": [
+    {
+      "method_id": "M01",
+      "stage_id": "C01",
+      "selected": true,
+      "reason": "Базовый метод"
+    },
+    {
+      "method_id": "M02",
+      "stage_id": "C01",
+      "selected": false,
+      "reason": "Нет коммуникационных материалов для аудита"
+    }
+  ],
+  "current_stage": "C01",
+  "pending_parent_stage": "C01",
+  "pending_data_requests": [],
+  "result_refs": {
+    "method_results": [
+      "cases/demo_maintenance_saas/communication_strategy/results/methods/M01.json"
+    ],
+    "stage_results": [
+      "cases/demo_maintenance_saas/communication_strategy/results/stages/C01.json"
+    ],
+    "strategy": null
+  },
+  "last_request_id": "req_run_next_stage_sample",
+  "updated_at": "2026-11-22T11:00:00Z"
+}

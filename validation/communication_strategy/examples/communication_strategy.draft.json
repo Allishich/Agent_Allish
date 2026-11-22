@@ -1,0 +1,49 @@
+{
+  "document_type": "communication_strategy_draft",
+  "module_id": "communication_strategy",
+  "protocol_version": "0.1",
+  "case_id": "demo_maintenance_saas",
+  "status": "draft",
+  "source_brief_revision": 1,
+  "stage_result_refs": [
+    "cases/demo_maintenance_saas/communication_strategy/results/stages/C01.json",
+    "cases/demo_maintenance_saas/communication_strategy/results/stages/C02.json",
+    "cases/demo_maintenance_saas/communication_strategy/results/stages/C03.json",
+    "cases/demo_maintenance_saas/communication_strategy/results/stages/C04.json",
+    "cases/demo_maintenance_saas/communication_strategy/results/stages/C05.json",
+    "cases/demo_maintenance_saas/communication_strategy/results/stages/C06.json"
+  ],
+  "audience_and_situation": "Синтетическая гипотеза: технические службы промпредприятий",
+  "communication_barrier": "Не проверен",
+  "desired_change": "Проверить понятность предлагаемого механизма",
+  "alternatives": [
+    {
+      "alternative_type": "status_quo",
+      "description": "Не запускать коммуникации до проверки продукта"
+    },
+    {
+      "alternative_type": "develop",
+      "description": "Нейтрально описать прототип и протестировать понимание"
+    },
+    {
+      "alternative_type": "other",
+      "description": "Проверить объяснение на отраслевой встрече без рекламных обещаний"
+    }
+  ],
+  "positioning": "Предварительное описание концепции без обещания эффекта",
+  "messages_and_proofs": [],
+  "channel_roles": [],
+  "action_plan": [],
+  "validation_plan": [
+    {
+      "hypothesis": "Пользователи понимают функцию учёта заявок",
+      "method": "Синтетический план теста; реальные наблюдения отсутствуют"
+    }
+  ],
+  "evidence_limitations": [
+    "Это только пример формата, а не готовое исследование"
+  ],
+  "product_dependencies": [
+    "Нет фактических подтверждений спроса и результатов"
+  ]
+}
