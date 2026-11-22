@@ -1,0 +1,11 @@
+{
+  "document_type": "module_request",
+  "module_id": "communication_strategy",
+  "protocol_version": "0.1",
+  "request_id": "req_approve_stage_sample",
+  "case_id": "demo_maintenance_saas",
+  "action": "approve_stage",
+  "expected_revision": 2,
+  "stage_id": "C01",
+  "parent_approval": true
+}

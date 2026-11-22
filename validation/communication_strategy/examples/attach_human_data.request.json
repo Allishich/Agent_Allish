@@ -1,0 +1,18 @@
+{
+  "document_type": "module_request",
+  "module_id": "communication_strategy",
+  "protocol_version": "0.1",
+  "request_id": "req_attach_human_data_sample",
+  "case_id": "demo_maintenance_saas",
+  "action": "attach_human_data",
+  "expected_revision": 3,
+  "method_id": "M12",
+  "data_artifacts": [
+    {
+      "path": "cases/demo_maintenance_saas/communication_strategy/inputs/M12/observations.json",
+      "kind": "file",
+      "source_ref": "synthetic://sample-observations",
+      "consent_or_permission": true
+    }
+  ]
+}

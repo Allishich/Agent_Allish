@@ -24,8 +24,13 @@ input:
   unknown: "null с объяснением, не выдумывать"
 interaction:
   invocation_only_by_parent: true
-  request_schema: contracts.json
-  response_schema: contracts.json
+  request_schema: contracts.json#/$defs/module_request
+  response_schema: contracts.json#/$defs/module_response
+  method_record_schema: contracts.json#/$defs/method_record
+  stage_record_schema: contracts.json#/$defs/stage_record
+  case_state_schema: contracts.json#/$defs/case_state
+  strategy_schema: contracts.json#/$defs/strategy
+  validate_native_result_with: methods/Mxx.yaml#outputs.required
   user_questions_via_parent: true
   no_direct_modification_of_other_modules: true
 output:

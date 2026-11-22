@@ -1,0 +1,172 @@
+{
+  "document_type": "module_response",
+  "module_id": "communication_strategy",
+  "protocol_version": "0.1",
+  "request_id": "req_run_next_stage_sample",
+  "case_id": "demo_maintenance_saas",
+  "action": "run_next_stage",
+  "status": "awaiting_parent",
+  "state_revision": 2,
+  "summary": "Синтетический пример завершения C01; ожидается согласование",
+  "stage_id": "C01",
+  "artifacts": [
+    {
+      "path": "cases/demo_maintenance_saas/communication_strategy/results/methods/M01.json",
+      "kind": "method_result",
+      "saved": false,
+      "content": {
+        "document_type": "method_record",
+        "module_id": "communication_strategy",
+        "protocol_version": "0.1",
+        "case_id": "demo_maintenance_saas",
+        "method_id": "M01",
+        "home_stage": "C01",
+        "status": "partial",
+        "native_result": {
+          "question": "Как объяснить ценность прототипа? (синтетический пример)",
+          "confirmed_context": {
+            "product_name": "Сервис учёта техобслуживания"
+          },
+          "decision_question": "Как проверить понятность сообщения для заявленной аудитории?",
+          "desired_communication_change": "Понимание концепции (гипотеза)",
+          "symptoms": [],
+          "competing_explanations": [
+            "Отсутствуют наблюдения"
+          ],
+          "problem_statement": "Предварительная диагностика без подтверждённых данных аудитории",
+          "evidence_refs": [],
+          "prioritized_unknowns": [
+            "Нет данных реальных пользователей"
+          ],
+          "validation_plan": [
+            "Проверить понимание описания с реальными представителями аудитории"
+          ],
+          "product_gap_flags": [],
+          "decision_impact": "Нельзя масштабировать коммуникации без проверки",
+          "assumptions": [
+            "Предполагаемая аудитория не проверена"
+          ],
+          "limitations": [
+            "Синтетический пример; нет полевых данных"
+          ],
+          "data_requests": [],
+          "status": "partial"
+        },
+        "selected_because": "Базовая диагностика C01",
+        "method_file": "validation/communication_strategy/methods/M01.yaml",
+        "evidence_refs": [],
+        "assumptions": [
+          "Покупатель не подтверждён"
+        ],
+        "limitations": [
+          "Нет полевых данных"
+        ],
+        "data_requests": [],
+        "version": 1
+      }
+    },
+    {
+      "path": "cases/demo_maintenance_saas/communication_strategy/results/stages/C01.json",
+      "kind": "stage_result",
+      "saved": false,
+      "content": {
+        "document_type": "stage_record",
+        "module_id": "communication_strategy",
+        "protocol_version": "0.1",
+        "case_id": "demo_maintenance_saas",
+        "stage_id": "C01",
+        "record_status": "partial",
+        "fields": {
+          "diagnosis": "Коммуникационная задача предварительна; синтетический пример",
+          "method_refs": [
+            "cases/demo_maintenance_saas/communication_strategy/results/methods/M01.json"
+          ]
+        },
+        "methods_used": [
+          "M01"
+        ],
+        "evidence_refs": [],
+        "unknowns": [
+          "Нет наблюдений реакции целевой аудитории"
+        ],
+        "limitations": [
+          "Результат условный"
+        ],
+        "pending_method_ids": [],
+        "version": 1
+      }
+    },
+    {
+      "path": "cases/demo_maintenance_saas/communication_strategy/state.json",
+      "kind": "state",
+      "saved": false,
+      "content": {
+        "document_type": "case_state",
+        "module_id": "communication_strategy",
+        "protocol_version": "0.1",
+        "case_id": "demo_maintenance_saas",
+        "revision": 2,
+        "source_brief_revision": 1,
+        "brief_ref": "cases/demo_maintenance_saas/communication_strategy/brief.json",
+        "product_strategy_outline_ref": "cases/demo_maintenance_saas/product_strategy/results/product_strategy_outline.json",
+        "stage_order": [
+          "C01",
+          "C02",
+          "C03",
+          "C04",
+          "C05",
+          "C06"
+        ],
+        "stage_states": {
+          "C01": "awaiting_parent_approval",
+          "C02": "not_started",
+          "C03": "not_started",
+          "C04": "not_started",
+          "C05": "not_started",
+          "C06": "not_started"
+        },
+        "method_states": {
+          "M01": "partial",
+          "M02": "not_selected"
+        },
+        "method_selection": [
+          {
+            "method_id": "M01",
+            "stage_id": "C01",
+            "selected": true,
+            "reason": "Базовый метод"
+          },
+          {
+            "method_id": "M02",
+            "stage_id": "C01",
+            "selected": false,
+            "reason": "Нет коммуникационных материалов для аудита"
+          }
+        ],
+        "current_stage": "C01",
+        "pending_parent_stage": "C01",
+        "pending_data_requests": [],
+        "result_refs": {
+          "method_results": [
+            "cases/demo_maintenance_saas/communication_strategy/results/methods/M01.json"
+          ],
+          "stage_results": [
+            "cases/demo_maintenance_saas/communication_strategy/results/stages/C01.json"
+          ],
+          "strategy": null
+        },
+        "last_request_id": "req_run_next_stage_sample",
+        "updated_at": "2026-11-22T11:00:00Z"
+      }
+    }
+  ],
+  "data_requests": [],
+  "product_gap_flags": [],
+  "limitations": [
+    "Нет реальных исследований аудитории"
+  ],
+  "errors": [],
+  "next_action": "approve_stage",
+  "persistence_status": "delegated_or_unavailable",
+  "awaiting_parent_confirmation": true
+}
