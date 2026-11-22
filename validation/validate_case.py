@@ -72,6 +72,11 @@ def run(case_dir):
         required.add(f"product_strategy/results/stages/{stage:02d}_stage.json")
     for stage in range(1, 7):
         required.add(f"communication_strategy/results/stages/C{stage:02d}.json")
+    required.add("product_strategy/results/product_strategy_outline.json")
+    # Communication final artifact has the module's actual persisted filename.
+    if not ({"communication_strategy/results/communication_strategy.json",
+             "communication_strategy/results/communication_strategy_draft.json"} & observed):
+        errors.append(f"{case_dir}: missing mandatory communication strategy final artifact")
     for missing in sorted(required - observed):
         errors.append(f"{case_dir}: missing mandatory artifact {missing}")
     if not documents:
