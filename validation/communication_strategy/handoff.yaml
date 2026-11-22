@@ -1,0 +1,26 @@
+protocol_version: "0.1"
+module_id: communication_strategy
+role:
+  parent_agent:
+    owns: [initial_user_interview, brief_confirmation, user_communication, stage_approval, product_module_orchestration, final_document]
+  communication_module:
+    owns: [communication_diagnosis, method_selection, communication_stage_results, communication_strategy_draft, product_gap_flags]
+  product_module:
+    owns: [product_research, product_choices, economics, product_strategy_outline]
+input:
+  source: parent_agent
+  required: [case_id, confirmed_brief]
+  optional: [product_strategy_outline, product_stage_results, existing_communications, audience_research, constraints]
+  unknown: "null с объяснением, не выдумывать"
+interaction:
+  invocation_only_by_parent: true
+  request_schema: contracts.json
+  response_schema: contracts.json
+  user_questions_via_parent: true
+  no_direct_modification_of_other_modules: true
+output:
+  artifact: communication_strategy_draft
+  return_to: parent_agent
+  always_produce_strategy: true
+  if_product_gap: "Сообщить ограничение и зависимость; не обещать неподтверждённые свойства"
+integration_status: "Контракт локальный; подключение к существующему главному агенту ещё не выполнено"
