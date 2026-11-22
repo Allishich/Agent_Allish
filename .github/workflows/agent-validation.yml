@@ -6,7 +6,7 @@ on:
       - '.github/workflows/agent-validation.yml'
   push:
     branches:
-      - 'fix/strategy-goals-final-qa-20261122'
+      - main
   workflow_dispatch:
 jobs:
   validator-tests:
@@ -16,5 +16,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m pip install 'jsonschema>=4'
+      - run: python -m pip install 'jsonschema>=4' 'PyYAML>=6'
       - run: python -m unittest discover -s validation/tests -v
+      - run: python validation/communication_strategy/tests/validate_contracts.py
