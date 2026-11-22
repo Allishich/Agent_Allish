@@ -33,3 +33,19 @@ python validation/validate_case.py /path/to/cases/synthetic_case
 
 ## Отчёт о проверке
 Для каждого шага: `executed / simulated / not_run`, вход, ожидаемое поведение, наблюдаемый результат, путь к доказательству, ограничения. Ни один тест нельзя считать пройденным только потому, что его инструкция написана.
+
+
+## Regression scenario: no approval, no next stage (2026-11-22)
+
+**Mode:** mock; this is a specified acceptance test, not a verified autonomous agent run.
+
+**Input:** confirmed test brief for a dating service with no likes, intended to arrange in-person dates. The product module produces S01 version 1; the user has **not** approved S01.
+
+**Expected:** show S01 and request approval; keep `pending_parent_stage=S01` and `stage_states.S01=awaiting_parent_approval`; do not invoke `approve_stage`, execute S02, or claim `live_user` approval. A synthetic user reply is never evidence of a real approval.
+
+**Negative variants:**
+- A simulated user says “approved”: mark `approval_origin=mock`; no `live_user` approval.
+- An approval exists for S01 version 1 but S01 is revised to version 2: demand renewed approval.
+- State says `accepted` but has no verifiable user message/revision: report `approval_unverified` and block live completion.
+
+**Current verification:** AGENTS.md specifies the intended behavior. The JSON contracts do not currently require an approval evidence record, and no executable agent runtime has been exercised against these variants. **Status: not passed / runtime unverified.** This test is a release blocker until actual runtime execution and persisted approval evidence are demonstrated.
