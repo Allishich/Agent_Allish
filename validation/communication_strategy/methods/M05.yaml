@@ -1,0 +1,21 @@
+schema_version: "0.1"
+method_id: M05
+name: "Анализ коммуникаций конкурентов"
+stage: C03
+selection: conditional
+trigger: "Сравнение рыночных обещаний способно изменить позицию"
+purpose: "Сравни сообщения и доказательства конкурентов по доступным первоисточникам; не подменяй коммуникационный анализ анализом размера рынка."
+inputs: [confirmed_brief, available_product_outputs, relevant_evidence]
+procedure:
+  - "Определи конкретный вопрос, на который должен ответить метод."
+  - "Проверь доступные материалы и происхождение каждого утверждения."
+  - "Сравни сообщения и доказательства конкурентов по доступным первоисточникам; не подменяй коммуникационный анализ анализом размера рынка."
+  - "Сравни альтернативные объяснения и ограничения."
+  - "Зафиксируй вывод, влияние на решение и недостающие данные."
+outputs:
+  required: [question, evidence_refs, findings, decision_impact, assumptions, limitations, data_requests, status]
+evidence_rules:
+  do_not_fabricate_primary_research: true
+  label_hypotheses: true
+  no_unsupported_metrics: true
+  insufficient_data: partial_or_awaiting_data
