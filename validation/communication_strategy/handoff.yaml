@@ -23,4 +23,17 @@ output:
   return_to: parent_agent
   always_produce_strategy: true
   if_product_gap: "Сообщить ограничение и зависимость; не обещать неподтверждённые свойства"
-integration_status: "Контракт локальный; подключение к существующему главному агенту ещё не выполнено"
+integration_status: "Инструкционный маршрут добавлен в корневой AGENTS.md; отдельный исполняемый модуль, адаптер common_intake и постоянное хранилище не подтверждены и не реализованы этой правкой"
+integration_mode:
+  parent_instruction_entrypoint: AGENTS.md
+  module_entrypoint: validation/communication_strategy/MODULE.md
+  request_contract: validation/communication_strategy/contracts.json
+  runtime_invocation_verified: false
+  common_intake_adapter_verified: false
+  persistence_verified: false
+  fallback: "Главный агент применяет инструкции выбранных методов вручную, фиксирует режим manual, отдаёт артефакты с saved=false при отсутствии хранилища"
+  preconditions:
+    - "Бриф подтверждён пользователем; неизвестные и происхождение сведений сохранены"
+    - "Продуктовые результаты передаются только при наличии и с пометкой их статуса"
+  parent_gate: "После каждого C01–C06 показать результат и получить подтверждение до следующего этапа"
+  no_cross_module_changes: true
