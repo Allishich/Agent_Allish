@@ -40,6 +40,41 @@ def schema_for(path):
         return ("product" if "product_strategy" in path.parts else "communication"), "method_record"
     return KINDS.get(name, (None, None))
 
+def check_approval_evidence(case_dir, state, module):
+    """Reject accepted stages without matching, versioned live-user evidence.
+
+    Offline message_ref presence cannot prove the referenced message is authentic.
+    """
+    errors = []
+    evidence = state.get("approval_evidence") or {}
+    for stage, status in (state.get("stage_states") or {}).items():
+        if status != "accepted":
+            continue
+        record = evidence.get(stage)
+        if not isinstance(record, dict):
+            errors.append(f"{module}/{stage}: accepted without approval evidence")
+            continue
+        if record.get("approval_origin") != "live_user":
+            errors.append(f"{module}/{stage}: accepted without live_user approval")
+        if record.get("case_id") != case_dir.name or record.get("stage_id") != stage:
+            errors.append(f"{module}/{stage}: approval identity mismatch")
+        if not record.get("message_ref"):
+            errors.append(f"{module}/{stage}: missing approval message reference")
+        filename = (f"{stage[1:]}_stage.json" if module == "product_strategy"
+                    else f"{stage}.json")
+        stage_path = case_dir / module / "results" / "stages" / filename
+        if not stage_path.exists():
+            errors.append(f"{module}/{stage}: accepted but stage record missing")
+            continue
+        try:
+            stage_obj = json.loads(stage_path.read_text(encoding="utf-8"))
+            if record.get("stage_version") != stage_obj.get("version"):
+                errors.append(f"{module}/{stage}: approval version mismatch")
+        except (OSError, ValueError) as exc:
+            errors.append(f"{module}/{stage}: cannot read approved version: {exc}")
+    return errors
+
+
 def run(case_dir):
     errors = []
     schemas = {k: json.loads(p.read_text(encoding="utf-8")) for k, p in SCHEMAS.items()}
@@ -81,6 +116,15 @@ def run(case_dir):
         errors.append(f"{case_dir}: missing mandatory artifact {missing}")
     if not documents:
         errors.append(f"{case_dir}: no recognizable JSON artifacts")
+    for module in ("product_strategy", "communication_strategy"):
+        state_path = case_dir / module / "state.json"
+        if state_path.exists():
+            try:
+                state_obj = json.loads(state_path.read_text(encoding="utf-8"))
+                if isinstance(state_obj, dict):
+                    errors.extend(check_approval_evidence(case_dir, state_obj, module))
+            except (OSError, ValueError):
+                pass  # Already reported by schema/JSON validation above.
     case_id = case_dir.name
     for path, obj in documents:
         if isinstance(obj, dict) and obj.get("case_id") != case_id:
