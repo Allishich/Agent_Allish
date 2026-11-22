@@ -13,12 +13,13 @@ files:
   contracts: contracts.json
   executor: EXECUTOR.md
   methods_directory: methods/
-  case_brief: cases/{case_id}/brief.json
-  case_state: cases/{case_id}/state.json
-  method_result: cases/{case_id}/results/methods/{method_id}.json
-  stage_result: cases/{case_id}/results/stages/{stage_number}_stage.json
-  strategy_outline: cases/{case_id}/results/product_strategy_outline.json
-  history: cases/{case_id}/history/{artifact_type}_{revision}.json
+  shared_user_brief_read_only: cases/{case_id}/brief.json
+  case_brief: cases/{case_id}/product_strategy/brief.json
+  case_state: cases/{case_id}/product_strategy/state.json
+  method_result: cases/{case_id}/product_strategy/results/methods/{method_id}.json
+  stage_result: cases/{case_id}/product_strategy/results/stages/{stage_number}_stage.json
+  strategy_outline: cases/{case_id}/product_strategy/results/product_strategy_outline.json
+  history: cases/{case_id}/product_strategy/history/{artifact_type}_{revision}.json
 stages:
   order: [S01, S02, S03, S04, S05, S06, S07]
   source_of_truth: method_routing.yaml#stages
@@ -39,7 +40,7 @@ method_selection:
 actions:
   start_case:
     required: [case_id, confirmed_brief_or_ref]
-    effect: "Инициализировать brief.json, state.json, ревизию 1, все семь этапов not_started; не запускать этап автоматически"
+    effect: "Инициализировать локальную проекцию brief.json и state.json только в cases/{case_id}/product_strategy/; общий бриф common_intake не изменять; ревизия 1, все семь этапов not_started; не запускать этап автоматически"
     repeat: "Повтор с тем же request_id и той же ревизией не должен создавать второй кейс"
   run_next_stage:
     required: [case_id, available_state]
@@ -101,6 +102,10 @@ artifacts:
   evidence: "Наблюдения, расчёты, пользовательские сведения, гипотезы и сценарии различаются"
 storage:
   mode: module_or_parent_persistence
+  namespace: cases/{case_id}/product_strategy/
+  shared_user_brief_owner: common_intake
+  shared_user_brief_access: read_only
+  relative_result_paths: "Пути results/... из неизменённого method_routing.yaml разрешаются относительно namespace, не относительно cases/{case_id}/"
   if_storage_unavailable: "Вернуть артефакт в module_response.artifacts[].content, saved:false, не обещать восстановление"
   never_commit_cases_to_repo: true
   state_revision: "Повышать только после успешного изменения сохраняемого состояния"

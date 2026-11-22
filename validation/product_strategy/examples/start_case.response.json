@@ -11,7 +11,7 @@
   "stage_id": null,
   "artifacts": [
     {
-      "path": "cases/demo_b2b_saas/brief.json",
+      "path": "cases/demo_b2b_saas/product_strategy/brief.json",
       "kind": "brief",
       "saved": false,
       "content": {
@@ -41,7 +41,7 @@
       "sensitivity": "restricted"
     },
     {
-      "path": "cases/demo_b2b_saas/state.json",
+      "path": "cases/demo_b2b_saas/product_strategy/state.json",
       "kind": "state",
       "saved": false,
       "content": {
@@ -50,7 +50,7 @@
         "module_id": "product_strategy",
         "case_id": "demo_b2b_saas",
         "revision": 1,
-        "brief_ref": "cases/demo_b2b_saas/brief.json",
+        "brief_ref": "cases/demo_b2b_saas/product_strategy/brief.json",
         "stage_order": [
           "S01",
           "S02",

@@ -4,7 +4,7 @@
   "module_id": "product_strategy",
   "case_id": "demo_b2b_saas",
   "revision": 1,
-  "brief_ref": "cases/demo_b2b_saas/brief.json",
+  "brief_ref": "cases/demo_b2b_saas/product_strategy/brief.json",
   "stage_order": [
     "S01",
     "S02",

@@ -23,6 +23,13 @@ output:
   return_to: parent_agent
   always_produce_strategy: true
   if_product_gap: "Сообщить ограничение и зависимость; не обещать неподтверждённые свойства"
+storage_ownership:
+  shared_user_brief: cases/{case_id}/brief.json
+  shared_user_brief_access: read_only
+  own_namespace: cases/{case_id}/communication_strategy/
+  own_state: cases/{case_id}/communication_strategy/state.json
+  own_method_results: cases/{case_id}/communication_strategy/results/methods/
+  do_not_write_product_strategy_namespace: true
 integration_status: "Инструкционный маршрут добавлен в корневой AGENTS.md; отдельный исполняемый модуль, адаптер common_intake и постоянное хранилище не подтверждены и не реализованы этой правкой"
 integration_mode:
   parent_instruction_entrypoint: AGENTS.md

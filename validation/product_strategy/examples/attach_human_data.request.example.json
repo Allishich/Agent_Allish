@@ -9,7 +9,7 @@
   "method_id": "M11",
   "data_artifacts": [
     {
-      "path": "cases/demo_b2b_saas/inputs/M11/anonymized_interviews.json",
+      "path": "cases/demo_b2b_saas/product_strategy/inputs/M11/anonymized_interviews.json",
       "kind": "human_input",
       "saved": true,
       "sensitivity": "sensitive",
