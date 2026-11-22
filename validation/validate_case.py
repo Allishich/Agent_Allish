@@ -75,7 +75,7 @@ def check_approval_evidence(case_dir, state, module):
     return errors
 
 
-def run(case_dir):
+def run(case_dir, require_complete=True):
     errors = []
     schemas = {k: json.loads(p.read_text(encoding="utf-8")) for k, p in SCHEMAS.items()}
     for key, schema in schemas.items():
@@ -102,14 +102,17 @@ def run(case_dir):
             observed.add(path.relative_to(case_dir).as_posix())
         except (OSError, ValueError) as exc:
             errors.append(f"{path}: {exc}")
-    required = {"brief.json", "product_strategy/state.json", "communication_strategy/state.json"}
-    for stage in range(1, 8):
-        required.add(f"product_strategy/results/stages/{stage:02d}_stage.json")
-    for stage in range(1, 7):
-        required.add(f"communication_strategy/results/stages/C{stage:02d}.json")
-    required.add("product_strategy/results/product_strategy_outline.json")
+    required = {"brief.json"}
+    if require_complete:
+        required.update({"product_strategy/state.json", "communication_strategy/state.json"})
+    if require_complete:
+        for stage in range(1, 8):
+            required.add(f"product_strategy/results/stages/{stage:02d}_stage.json")
+        for stage in range(1, 7):
+            required.add(f"communication_strategy/results/stages/C{stage:02d}.json")
+        required.add("product_strategy/results/product_strategy_outline.json")
     # Communication final artifact has the module's actual persisted filename.
-    if not ({"communication_strategy/results/communication_strategy.json",
+    if require_complete and not ({"communication_strategy/results/communication_strategy.json",
              "communication_strategy/results/communication_strategy_draft.json"} & observed):
         errors.append(f"{case_dir}: missing mandatory communication strategy final artifact")
     for missing in sorted(required - observed):
@@ -142,11 +145,12 @@ def run(case_dir):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("case_dir", type=Path)
+    parser.add_argument("--in-progress", action="store_true", help="Validate partial case without requiring final artifacts")
     args = parser.parse_args()
     if not args.case_dir.is_dir():
         parser.error("case_dir must be an existing directory")
     try:
-        errors, count = run(args.case_dir)
+        errors, count = run(args.case_dir, require_complete=not args.in_progress)
     except Exception as exc:
         sys.exit(f"Validator setup failed: {exc}")
     print(f"Checked {count} recognized JSON artifacts; errors: {len(errors)}")
