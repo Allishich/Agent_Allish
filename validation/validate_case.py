@@ -34,7 +34,7 @@ def schema_for(path):
         return "brief", None
     if name == "state.json":
         return ("product" if path.parent.name == "product_strategy" else "communication"), "case_state"
-    if name.endswith("_stage.json"):
+    if name.endswith("_stage.json") or (name.startswith("C0") and name.endswith(".json") and "stages" in path.parts):
         return ("product" if "product_strategy" in path.parts else "communication"), "stage_record"
     if name.endswith(".json") and "methods" in path.parts:
         return ("product" if "product_strategy" in path.parts else "communication"), "method_record"
@@ -71,7 +71,7 @@ def run(case_dir):
     for stage in range(1, 8):
         required.add(f"product_strategy/results/stages/{stage:02d}_stage.json")
     for stage in range(1, 7):
-        required.add(f"communication_strategy/results/stages/{stage:02d}_stage.json")
+        required.add(f"communication_strategy/results/stages/C{stage:02d}.json")
     for missing in sorted(required - observed):
         errors.append(f"{case_dir}: missing mandatory artifact {missing}")
     if not documents:
