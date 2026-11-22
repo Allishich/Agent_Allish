@@ -1,0 +1,232 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Communication Strategy Module v0.1",
+  "$defs": {
+    "module_request": {
+      "type": "object",
+      "required": [
+        "document_type",
+        "module_id",
+        "protocol_version",
+        "request_id",
+        "case_id",
+        "action"
+      ],
+      "properties": {
+        "document_type": {
+          "const": "module_request"
+        },
+        "module_id": {
+          "const": "communication_strategy"
+        },
+        "protocol_version": {
+          "const": "0.1"
+        },
+        "request_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "action": {
+          "enum": [
+            "start_case",
+            "run_next_stage",
+            "approve_stage",
+            "attach_human_data",
+            "update_brief",
+            "get_status",
+            "get_strategy"
+          ]
+        },
+        "confirmed_brief": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "product_strategy_outline": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "expected_revision": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "stage_id": {
+          "type": "string"
+        },
+        "parent_approval": {
+          "type": "boolean"
+        },
+        "data_artifacts": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "module_response": {
+      "type": "object",
+      "required": [
+        "document_type",
+        "module_id",
+        "protocol_version",
+        "case_id",
+        "status",
+        "artifacts",
+        "next_action"
+      ],
+      "properties": {
+        "document_type": {
+          "const": "module_response"
+        },
+        "module_id": {
+          "const": "communication_strategy"
+        },
+        "protocol_version": {
+          "const": "0.1"
+        },
+        "case_id": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "accepted",
+            "awaiting_parent",
+            "needs_human_data",
+            "blocked",
+            "done"
+          ]
+        },
+        "revision": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "artifacts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "path",
+              "saved"
+            ],
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "saved": {
+                "type": "boolean"
+              },
+              "content": {}
+            },
+            "additionalProperties": true
+          }
+        },
+        "data_requests": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "product_gap_flags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "next_action": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "strategy": {
+      "type": "object",
+      "required": [
+        "audience_and_situation",
+        "communication_barrier",
+        "desired_change",
+        "alternatives",
+        "positioning",
+        "messages_and_proofs",
+        "channel_roles",
+        "action_plan",
+        "validation_plan",
+        "evidence_limitations"
+      ],
+      "properties": {
+        "audience_and_situation": {
+          "type": "string"
+        },
+        "communication_barrier": {
+          "type": "string"
+        },
+        "desired_change": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object"
+          }
+        },
+        "positioning": {
+          "type": "string"
+        },
+        "messages_and_proofs": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "channel_roles": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "action_plan": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "validation_plan": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "evidence_limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "product_dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}
