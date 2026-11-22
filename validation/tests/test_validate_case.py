@@ -42,6 +42,29 @@ class CaseValidatorTests(unittest.TestCase):
             state["approval_evidence"]["S01"]["stage_version"] = 2
             self.assertEqual(validator.check_approval_evidence(case, state, "product_strategy"), [])
 
+    def test_in_progress_case_does_not_require_future_stages(self):
+        with tempfile.TemporaryDirectory() as temp:
+            case = Path(temp) / "example"
+            case.mkdir()
+            errors, count = validator.run(case, require_complete=False)
+            self.assertEqual(count, 0)
+            self.assertFalse(any("mandatory artifact" in e and "stages" in e for e in errors))
+            self.assertFalse(any("mandatory communication strategy" in e for e in errors))
+
+    def test_communication_approval_gate(self):
+        with tempfile.TemporaryDirectory() as temp:
+            case = Path(temp) / "example"
+            stage_dir = case / "communication_strategy/results/stages"
+            stage_dir.mkdir(parents=True)
+            (stage_dir / "C01.json").write_text(json.dumps({"version": 3}))
+            state = {"stage_states": {"C01": "accepted"}, "approval_evidence": {
+                "C01": {"approval_origin": "mock", "message_ref": "test",
+                        "stage_version": 3, "case_id": "example", "stage_id": "C01"}}}
+            errors = validator.check_approval_evidence(case, state, "communication_strategy")
+            self.assertTrue(any("without live_user approval" in e for e in errors))
+            state["approval_evidence"]["C01"]["approval_origin"] = "live_user"
+            self.assertEqual(validator.check_approval_evidence(case, state, "communication_strategy"), [])
+
     def test_empty_case_fails_closed(self):
         with tempfile.TemporaryDirectory() as temp:
             case = Path(temp) / "example"
