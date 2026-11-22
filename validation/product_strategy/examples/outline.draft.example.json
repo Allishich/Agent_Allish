@@ -4,13 +4,13 @@
   "case_id": "demo_b2b_saas",
   "status": "draft",
   "stage_result_refs": [
-    "cases/demo_b2b_saas/results/stages/01_stage.json",
-    "cases/demo_b2b_saas/results/stages/02_stage.json",
-    "cases/demo_b2b_saas/results/stages/03_stage.json",
-    "cases/demo_b2b_saas/results/stages/04_stage.json",
-    "cases/demo_b2b_saas/results/stages/05_stage.json",
-    "cases/demo_b2b_saas/results/stages/06_stage.json",
-    "cases/demo_b2b_saas/results/stages/07_stage.json"
+    "cases/demo_b2b_saas/product_strategy/results/stages/01_stage.json",
+    "cases/demo_b2b_saas/product_strategy/results/stages/02_stage.json",
+    "cases/demo_b2b_saas/product_strategy/results/stages/03_stage.json",
+    "cases/demo_b2b_saas/product_strategy/results/stages/04_stage.json",
+    "cases/demo_b2b_saas/product_strategy/results/stages/05_stage.json",
+    "cases/demo_b2b_saas/product_strategy/results/stages/06_stage.json",
+    "cases/demo_b2b_saas/product_strategy/results/stages/07_stage.json"
   ],
   "product_decision": null,
   "audience": null,

@@ -26,10 +26,16 @@ actions:
 stage_states: [not_started, in_progress, awaiting_parent_approval, accepted, needs_review]
 method_states: [not_selected, planned, in_progress, awaiting_data, partial, completed, not_applicable, needs_review]
 persistence:
-  case_state: cases/{case_id}/state.json
-  stage_result: cases/{case_id}/results/stages/{stage_id}.json
-  method_result: cases/{case_id}/results/methods/{method_id}.json
-  strategy: cases/{case_id}/results/communication_strategy.json
+  namespace: cases/{case_id}/communication_strategy/
+  shared_user_brief_read_only: cases/{case_id}/brief.json
+  case_brief: cases/{case_id}/communication_strategy/brief.json
+  case_state: cases/{case_id}/communication_strategy/state.json
+  stage_result: cases/{case_id}/communication_strategy/results/stages/{stage_id}.json
+  method_result: cases/{case_id}/communication_strategy/results/methods/{method_id}.json
+  strategy: cases/{case_id}/communication_strategy/results/communication_strategy.json
+  history: cases/{case_id}/communication_strategy/history/{artifact_type}_{revision}.json
+  common_intake_brief_owner: common_intake
+  never_write_shared_user_brief: true
   do_not_commit_private_cases_to_repository: true
   if_unavailable: return_artifacts_with_saved_false
 completion:
