@@ -21,6 +21,27 @@ class CaseValidatorTests(unittest.TestCase):
         self.assertEqual(validator.schema_for(case / "communication_strategy/results/methods/M01.json"),
                          ("communication", "method_record"))
 
+    def test_approval_evidence_gate(self):
+        with tempfile.TemporaryDirectory() as temp:
+            case = Path(temp) / "example"
+            stage_dir = case / "product_strategy/results/stages"
+            stage_dir.mkdir(parents=True)
+            (stage_dir / "01_stage.json").write_text(json.dumps({"version": 2}))
+            state = {"stage_states": {"S01": "accepted"}}
+            errors = validator.check_approval_evidence(case, state, "product_strategy")
+            self.assertTrue(any("without approval evidence" in e for e in errors))
+            state["approval_evidence"] = {"S01": {
+                "approval_origin": "mock", "message_ref": "mock-1",
+                "stage_version": 2, "case_id": "example", "stage_id": "S01"}}
+            errors = validator.check_approval_evidence(case, state, "product_strategy")
+            self.assertTrue(any("without live_user approval" in e for e in errors))
+            state["approval_evidence"]["S01"]["approval_origin"] = "live_user"
+            state["approval_evidence"]["S01"]["stage_version"] = 1
+            errors = validator.check_approval_evidence(case, state, "product_strategy")
+            self.assertTrue(any("approval version mismatch" in e for e in errors))
+            state["approval_evidence"]["S01"]["stage_version"] = 2
+            self.assertEqual(validator.check_approval_evidence(case, state, "product_strategy"), [])
+
     def test_empty_case_fails_closed(self):
         with tempfile.TemporaryDirectory() as temp:
             case = Path(temp) / "example"
