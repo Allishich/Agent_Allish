@@ -1,0 +1,21 @@
+schema_version: "0.1"
+method_id: M10
+name: "Проектирование коммуникационного пути"
+stage: C05
+selection: conditional
+trigger: "Для решения критична последовательность касаний, onboarding или CRM"
+purpose: "Спроектируй последовательность контактов, триггеры, сообщения и ограничения частоты; отметь гипотезы."
+inputs: [confirmed_brief, available_product_outputs, relevant_evidence]
+procedure:
+  - "Определи конкретный вопрос, на который должен ответить метод."
+  - "Проверь доступные материалы и происхождение каждого утверждения."
+  - "Спроектируй последовательность контактов, триггеры, сообщения и ограничения частоты; отметь гипотезы."
+  - "Сравни альтернативные объяснения и ограничения."
+  - "Зафиксируй вывод, влияние на решение и недостающие данные."
+outputs:
+  required: [question, evidence_refs, findings, decision_impact, assumptions, limitations, data_requests, status]
+evidence_rules:
+  do_not_fabricate_primary_research: true
+  label_hypotheses: true
+  no_unsupported_metrics: true
+  insufficient_data: partial_or_awaiting_data
