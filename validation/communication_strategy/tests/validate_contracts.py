@@ -9,6 +9,8 @@ from __future__ import annotations
 
 import copy
 import json
+import re
+from datetime import datetime
 from pathlib import Path
 
 from jsonschema import Draft202012Validator, FormatChecker
@@ -19,6 +21,24 @@ COMM = ROOT / "validation/communication_strategy"
 INTAKE = ROOT / "validation/common_intake"
 PRODUCT = ROOT / "validation/product_strategy"
 checker = FormatChecker()
+
+# Explicitly register date-time: jsonschema may silently skip the format
+# when the optional rfc3339-validator dependency is not installed.
+_RFC3339_DATETIME = re.compile(
+    r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$"
+)
+
+
+@checker.checks("date-time")
+def check_rfc3339_datetime(value):
+    """Require a real calendar date with an explicit UTC offset."""
+    if not isinstance(value, str) or not _RFC3339_DATETIME.fullmatch(value):
+        return False
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return False
+    return parsed.tzinfo is not None and parsed.utcoffset() is not None
 
 
 def load(path: Path):
@@ -39,6 +59,20 @@ def valid(schema, item) -> bool:
 def require(cond: bool, message: str):
     if not cond:
         raise AssertionError(message)
+
+
+def check_date_time_regression():
+    source = load(INTAKE / "examples/brief.confirmed.example.json")
+    cases = (
+        ("2026-11-21T12:00:00Z", True),
+        ("2026-02-30T12:00:00Z", False),
+        ("2026-11-21T12:00:00", False),
+    )
+    for value, expected in cases:
+        sample = copy.deepcopy(source)
+        sample["confirmed_at"] = value
+        require(valid(brief_schema, sample) == expected,
+                f"Unexpected date-time validation: {value}")
 
 
 def enforce_interop(request):
@@ -65,6 +99,7 @@ def check_paths(state, method_record, stage_record, strategy):
 
 
 def main():
+    check_date_time_regression()
     good = {
         "start_case": load(INTAKE / "examples/communication_start_case.request.json"),
         "run_next_stage": load(COMM / "examples/run_next_stage.request.json"),

@@ -99,6 +99,9 @@
   "source_ids": [
     "ROS_YEARBOOK_2025"
   ],
+  "source_id_aliases": {
+    "B2B-RU-001": "ROS_YEARBOOK_2025"
+  },
   "source_table": "15.3",
   "source_printed_pages": "320–321",
   "source_urls": [

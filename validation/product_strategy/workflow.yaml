@@ -47,7 +47,7 @@ actions:
     precondition: "Нет другого этапа awaiting_parent_approval; предыдущий этап accepted; если S01 — бриф подтверждён"
     effect: "Выполнить один этап с выбранными методами, сохранить method/stage records, перевести этап в awaiting_parent_approval"
   approve_stage:
-    required: [case_id, stage_id, parent_approval]
+    required: [case_id, stage_id, parent_approved]
     precondition: "Указанный этап ожидает согласования; родитель сообщает действительно полученное согласие пользователя по своим правилам"
     effect: "Отметить этап accepted; открыть возможность перейти к следующему"
   attach_human_data:
