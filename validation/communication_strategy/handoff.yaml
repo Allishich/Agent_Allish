@@ -38,6 +38,8 @@ output:
   return_to: parent_agent
   always_produce_strategy: true
   if_product_gap: "Сообщить ограничение и зависимость; не обещать неподтверждённые свойства"
+  claim_gate: "Для каждого ключевого обещания C04/C05 зафиксировать конкретную подтверждённую возможность/источник либо статус гипотезы; неизвестные свойства и эффекты запрещено выдавать за факт"
+  dependency_trace: "Переносить из продукта ограничения, статус проверки, ценовые и ресурсные условия; при отсутствии подтверждённого результата показывать product_gap_flags"
 storage_ownership:
   shared_user_brief: cases/{case_id}/brief.json
   shared_user_brief_access: read_only
