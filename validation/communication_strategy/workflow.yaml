@@ -1,0 +1,39 @@
+schema_version: "0.1"
+document_type: declarative_communication_strategy_workflow
+module_id: communication_strategy
+invocation: parent_agent_only
+platform_neutral: true
+requires_python: false
+stages:
+  order: [C01, C02, C03, C04, C05, C06]
+  all_stage_results_required: true
+  all_methods_required: false
+  max_stages_per_run_next_stage: 1
+  gate: parent_approval_before_next_stage
+method_selection:
+  registry: method_routing.yaml
+  base: consider_and_run_with_available_evidence_or_mark_partial
+  conditional: select_only_if_result_can_change_decision
+  record_reason_for_selection_and_skipping: true
+actions:
+  - start_case
+  - run_next_stage
+  - approve_stage
+  - attach_human_data
+  - update_brief
+  - get_status
+  - get_strategy
+stage_states: [not_started, in_progress, awaiting_parent_approval, accepted, needs_review]
+method_states: [not_selected, planned, in_progress, awaiting_data, partial, completed, not_applicable, needs_review]
+persistence:
+  case_state: cases/{case_id}/state.json
+  stage_result: cases/{case_id}/results/stages/{stage_id}.json
+  method_result: cases/{case_id}/results/methods/{method_id}.json
+  strategy: cases/{case_id}/results/communication_strategy.json
+  do_not_commit_private_cases_to_repository: true
+  if_unavailable: return_artifacts_with_saved_false
+completion:
+  strategy_always_required: true
+  missing_evidence: explicit_hypothesis_and_validation_plan
+  product_gap: flag_to_parent_without_unverified_claims
+  output: communication_strategy_draft
