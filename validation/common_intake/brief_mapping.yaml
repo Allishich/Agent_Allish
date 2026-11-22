@@ -49,28 +49,45 @@ product_strategy:
     - 'Do not set requested_methods or routing_signals speculatively'
     - 'Do not turn reported hypotheses into market-verified facts'
 communication_strategy:
-  status: provisional_needs_owner_agreement
-  source_schema: brief.schema.json
-  target_schema: communication_context.schema.json
-  document_type: communication_context
-  fields:
+  status: aligned_declarative_contract_v0_1
+  module_id: communication_strategy
+  protocol_version: '0.1'
+  target_contract: validation/communication_strategy/contracts.json#/$defs/module_request
+  action: start_case
+  wrapper_fields:
+    document_type: module_request
+    module_id: communication_strategy
+    protocol_version: '0.1'
+    request_id: parent_generated_unique_id
     case_id: /case_id
-    brief_revision: /revision
-    product: /product
-    customer_need: /customer_need
-    audience: /audience
-    market: /market
-    communications: /communications
-    goals: /goals
-    constraints: /constraints
-    available_materials: /available_materials
-    unknowns: /unknowns
-    field_provenance: /field_provenance
-    product_strategy_output_ref: 'null before product analysis; verified reference when available'
+    action: start_case
+    expected_revision: 0  # New communication module state, NOT the source brief revision
+    confirmed_brief: /    # Entire original common_intake brief object, without flattening or dropping fields
+    product_strategy_outline: 'real product_strategy get_outline object with matching case_id if available; otherwise explicit null'
+  validation:
+    shared_brief_schema: validation/common_intake/brief.schema.json
+    require_interview_status: confirmed
+    require_user_confirmed_brief: true
+    require_matching_case_id: true
+    preserve_brief_revision_from: /revision
+    reject_if_brief_changed_after_confirmation: true
+    verify_product_outline_source: cases/{case_id}/product_strategy/results/product_strategy_outline.json
+    verify_product_outline_case_id_when_present: true
+    check_product_outline_against: validation/product_strategy/contracts.json#/$defs/strategy_outline
+    do_not_infer_missing_product_results: true
+  scope:
+    common_intake_brief: cases/{case_id}/brief.json
+    common_intake_brief_access: read_only
+    communication_local_copy: cases/{case_id}/communication_strategy/brief.json
+    product_strategy_outputs_access: read_only
+  deprecated:
+    - 'communication_context.schema.json and communication_context.draft.json are historical proposed projections, NOT active module_request payloads'
+    - 'Do not send document_type communication_context to communication_strategy'
   safety:
-    - 'No advertising promises drawn from unverified interview hypotheses'
-    - 'No automatic copy of private raw attachments'
-    - 'Do not claim this schema is already supported by the communication module'
+    - 'Do not mutate the source brief during projection'
+    - 'Do not strip unknowns, contradictions, field_provenance, or source_class'
+    - 'Do not add unverified findings or marketing claims to confirmed_brief'
+    - 'Do not fabricate a product_strategy_outline to satisfy the envelope'
 future_adapter_policy:
   if_target_contract_changes: update_only_corresponding_mapping_and_example
   no_change_to_shared_brief_without_schema_revision: true
